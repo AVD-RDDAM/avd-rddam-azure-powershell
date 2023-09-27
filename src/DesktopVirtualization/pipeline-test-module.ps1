@@ -37,7 +37,7 @@ $ProgressPreference = 'SilentlyContinue'
 $baseName = $filePath.BaseName
 $requireResourceModule = (($baseName -ne "Resources") -and ($Record.IsPresent -or $Live.IsPresent))
 . (Join-Path $filePath 'check-dependencies.ps1') -Isolated -Accounts:$false -Pester -Resources:$requireResourceModule -RegenerateSupportModule:$RegenerateSupportModule
-. ("$filePath\test\utils.ps1")
+. ("$filePath\test\pipeline-utils.ps1")
 
 if ($requireResourceModule)
 {
