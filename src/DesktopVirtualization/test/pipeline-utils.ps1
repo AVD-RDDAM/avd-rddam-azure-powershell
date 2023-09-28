@@ -33,4 +33,94 @@ $null = $env.Add("PersistentRemoteAppGroup", "alecbRemoteAppHP-DAG")
 # Currently the scaling tests need to be run in a context with @microsoft, while the other tests are run with a test account
 # Modify the env.json manually after recording the necessary tests to get around this issue.
 
+ # Due to a limitation on how the powershell tests are validated during the PR process,
+# any "cross-module" calls (Az.Network or similar) cannot be ran in the test file.
+# the following commands will set up non-persistent resources that will be cleaned up at
+# the end of each test run.
+
+#variables used for internal setup
+
+#PrivateLink Workspace resources
+Write-Host -ForegroundColor Green 'Creating Private Link resources required for testing...'
+try {
+    $workspace = New-AzWvdWorkspace -ResourceGroupName $env.ResourceGroup `
+    -Location $env.Location `
+    -Name $env.PvtLinkWS `
+    -FriendlyName 'fri' `
+    -ApplicationGroupReference $null `
+    -Description 'des'
+
+    $privateLinkServiceConnectionWS = New-AzPrivateLinkServiceConnection -Name $env.PrivateEndpointConnectionNameWS `
+                                        -PrivateLinkServiceId $workspace.ID `
+                                        -GroupId $env.PECGroupIdWorkspace
+
+    $privateLinkServiceConnectionWS1 = New-AzPrivateLinkServiceConnection -Name $env.PrivateEndpointConnectionNameWS1 `
+                                            -PrivateLinkServiceId $workspace.ID `
+                                            -GroupId $env.PECGroupIdWorkspace
+
+    $vnet = Get-AzVirtualNetwork -ResourceGroupName $env.ResourceGroup `
+    -Name $env.VnetName
+
+    New-AzPrivateEndpoint -ResourceGroupName $env.ResourceGroup `
+    -Name $env.PrivateEndpointNameWS `
+    -Location $env.Location `
+    -Subnet $vnet.Subnets[0] `
+    -PrivateLinkServiceConnection $privateLinkServiceConnectionWS `
+    -Force
+
+    New-AzPrivateEndpoint -ResourceGroupName $env.ResourceGroup `
+    -Name $env.PrivateEndpointNameWS1 `
+    -Location $env.Location `
+    -Subnet $vnet.Subnets[0] `
+    -PrivateLinkServiceConnection $privateLinkServiceConnectionWS1 `
+    -Force
+
+    #Private Link HostPool Resources
+    $hostpool = New-AzWvdHostPool -SubscriptionId $env.SubscriptionId `
+        -ResourceGroupName $env.ResourceGroup `
+        -Name $env.PvtLinkHP `
+        -Location $env.Location `
+        -HostPoolType 'Pooled' `
+        -LoadBalancerType 'DepthFirst' `
+        -RegistrationTokenOperation 'Update' `
+        -ExpirationTime $((get-date).ToUniversalTime().AddDays(1).ToString('yyyy-MM-ddTHH:mm:ss.fffffffZ')) `
+        -Description 'des' `
+        -FriendlyName 'fri' `
+        -MaxSessionLimit 5 `
+        -VMTemplate '{option1}' `
+        -CustomRdpProperty $null `
+        -Ring $null `
+        -ValidationEnvironment:$false `
+        -PreferredAppGroupType 'Desktop' `
+        -StartVMOnConnect:$false
+
+    $privateLinkServiceConnectionHP = New-AzPrivateLinkServiceConnection -Name $env.PrivateEndpointConnectionNameHP `
+                                        -PrivateLinkServiceId $hostpool.ID `
+                                        -GroupId $env.PECGroupIdHostPool
+
+    $privateLinkServiceConnectionHP1 = New-AzPrivateLinkServiceConnection -Name $env.PrivateEndpointConnectionNameHP1 `
+                                        -PrivateLinkServiceId $hostpool.ID `
+                                        -GroupId $env.PECGroupIdHostPool
+
+    $vnet = Get-AzVirtualNetwork -ResourceGroupName $env.ResourceGroup `
+                                -Name $env.VnetName
+
+    New-AzPrivateEndpoint -ResourceGroupName $env.ResourceGroup `
+                            -Name $env.PrivateEndpointNameHP `
+                            -Location $env.Location `
+                            -Subnet $vnet.Subnets[0] `
+                            -PrivateLinkServiceConnection $privateLinkServiceConnectionHP `
+                            -Force
+
+    New-AzPrivateEndpoint -ResourceGroupName $env.ResourceGroup `
+                            -Name $env.PrivateEndpointNameHP1 `
+                            -Location $env.Location `
+                            -Subnet $vnet.Subnets[0] `
+                            -PrivateLinkServiceConnection $privateLinkServiceConnectionHP1 `
+                            -Force
+}
+catch {
+    Write-Host -ForegroundColor Red 'Failed to create Private Link Workspace resources required for testing...'
+    Write-Host -ForegroundColor Red $_.Exception.Message
+}
 set-content -Path "$filePath\test\$envFile" -Value (ConvertTo-Json $env)
