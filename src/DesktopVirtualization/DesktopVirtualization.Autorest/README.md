@@ -47,21 +47,29 @@ In this directory, run AutoRest:
 > see https://aka.ms/autorest
 
 ``` yaml
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/README.md
 branch: d3edca94ae4ddb854e88142cba6a7337ef1a5eed
 =======
 commit: 50175f111e9c899249e79eb082a75fb8a7aba0e2
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/README.md
+=======
+commit: 50175f111e9c899249e79eb082a75fb8a7aba0e2
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 require:
   - $(this-folder)/../../readme.azure.noprofile.md
 sanitize-names: true
 subject-prefix: 'Wvd'
 input-file:
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/README.md
 - $(repo)/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2023-07-07-preview/desktopvirtualization.json
 =======
 - $(repo)/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/stable/2023-09-05/desktopvirtualization.json
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/README.md
+=======
+- $(repo)/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/stable/2023-09-05/desktopvirtualization.json
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 
 module-version: 2.1.0
 title: DesktopVirtualizationClient

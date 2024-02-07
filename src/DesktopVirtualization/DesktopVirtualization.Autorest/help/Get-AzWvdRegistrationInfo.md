@@ -118,11 +118,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/Get-AzWvdRegistrationInfo.md
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.RegistrationInfo
 =======
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.RegistrationInfo
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/Get-AzWvdRegistrationInfo.md
+=======
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.RegistrationInfo
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 
 ## NOTES
 

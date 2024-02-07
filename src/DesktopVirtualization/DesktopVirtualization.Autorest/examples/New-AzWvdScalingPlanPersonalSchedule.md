@@ -3,6 +3,7 @@
 New-AzWvdScalingPlanPersonalSchedule -ResourceGroupName rgName `
                                         -ScalingPlanName spName `
                                         -ScalingPlanScheduleName scheduleName `
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/examples/New-AzWvdScalingPlanPersonalSchedule.md
                                         -daysOfWeek @('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday') `
                                         -rampUpStartTimeHour 6 `
@@ -34,6 +35,8 @@ New-AzWvdScalingPlanPersonalSchedule -ResourceGroupName rgName `
                                         -offPeakActionOnLogoff Deallocate `
                                         -offPeakMinutesToWaitOnLogoff 10
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
                                         -DaysOfWeek @('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday') `
                                         -RampUpStartTimeHour 6 `
                                         -RampUpStartTimeMinute 30 `
@@ -63,7 +66,10 @@ New-AzWvdScalingPlanPersonalSchedule -ResourceGroupName rgName `
                                         -OffPeakMinutesToWaitOnDisconnect 10 `
                                         -OffPeakActionOnLogoff Deallocate `
                                         -OffPeakMinutesToWaitOnLogoff 10
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/examples/New-AzWvdScalingPlanPersonalSchedule.md
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ```
 
 ```output

@@ -23,20 +23,28 @@ Create Windows virtual desktop registration info.
 New-AzWvdRegistrationInfo -ResourceGroupName rgName -HostPoolName hpName -ExpirationTime "2050-02-14 12:00"
 
 .Outputs
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/exports/New-AzWvdRegistrationInfo.ps1
 Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IRegistrationInfo
 =======
 Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IRegistrationInfo
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/exports/New-AzWvdRegistrationInfo.ps1
+=======
+Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IRegistrationInfo
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 .Link
 https://learn.microsoft.com/powershell/module/az.desktopvirtualization/new-azwvdregistrationinfo
 #>
 function New-AzWvdRegistrationInfo {
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/exports/New-AzWvdRegistrationInfo.ps1
 [OutputType([Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IRegistrationInfo])]
 =======
 [OutputType([Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IRegistrationInfo])]
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/exports/New-AzWvdRegistrationInfo.ps1
+=======
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IRegistrationInfo])]
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 [CmdletBinding(PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
     [Parameter(Mandatory)]

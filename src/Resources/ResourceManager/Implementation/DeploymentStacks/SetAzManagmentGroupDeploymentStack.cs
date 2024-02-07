@@ -45,9 +45,8 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
         [ValidateNotNullOrEmpty]
         public string ManagementGroupId { get; set; }
 
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true,
+        [Parameter(Mandatory = false, ValueFromPipelineByPropertyName = true,
             HelpMessage = "The subscription Id at which the deployment should be created.")]
-        [ValidateNotNullOrEmpty]
         public string DeploymentSubscriptionId { get; set; }
 
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true,
@@ -100,20 +99,12 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
             try
             {
                 Hashtable parameters = new Hashtable();
-                string filePath = "";
 
                 switch (ParameterSetName)
                 {
                     case ParameterlessTemplateFileParameterSetName:
                     case ParameterUriTemplateFileParameterSetName:
-                        filePath = this.TryResolvePath(TemplateFile);
-                        if (!File.Exists(filePath))
-                        {
-                            throw new PSInvalidOperationException(
-                                string.Format(ProjectResources.InvalidFilePath, TemplateFile));
-                        }
-                        filePath = ResolveBicepFile(filePath);
-                        TemplateUri = filePath;
+                        ResolveTemplate();
                         break;
                     case ParameterFileTemplateSpecParameterSetName:
                     case ParameterFileTemplateUriParameterSetName:
@@ -130,29 +121,13 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
                         break;
                     case ParameterFileTemplateFileParameterSetName:
                         parameters = ResolveParameters();
-
-                        filePath = this.TryResolvePath(TemplateFile);
-                        if (!File.Exists(filePath))
-                        {
-                            throw new PSInvalidOperationException(
-                                string.Format(ProjectResources.InvalidFilePath, TemplateFile));
-                        }
-                        filePath = ResolveBicepFile(filePath);
-
-                        TemplateUri = filePath;
+                        ResolveTemplate();
                         break;
                     case ByParameterFileWithNoTemplateParameterSetName:
                         parameters = ResolveParameters();
                         break;
                     case ParameterObjectTemplateFileParameterSetName:
-                        filePath = this.TryResolvePath(TemplateFile);
-                        if (!File.Exists(filePath))
-                        {
-                            throw new PSInvalidOperationException(
-                                string.Format(ProjectResources.InvalidFilePath, TemplateFile));
-                        }
-                        filePath = ResolveBicepFile(filePath);
-                        TemplateUri = filePath;
+                        ResolveTemplate();
                         parameters = GetTemplateParameterObject(TemplateParameterObject);
                         break;
                     case ParameterObjectTemplateSpecParameterSetName:
@@ -183,8 +158,11 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
                 var shouldDeleteResources = (DeleteAll.ToBool() || DeleteResources.ToBool()) ? true : false;
                 var shouldDeleteResourceGroups = (DeleteAll.ToBool() || DeleteResourceGroups.ToBool()) ? true : false;
 
-                // construct deploymentScope if ResourceGroup was provided
-                var deploymentScope = "/subscriptions/" + DeploymentSubscriptionId;
+                string deploymentScope = null;
+                if (DeploymentSubscriptionId != null)
+                {
+                    deploymentScope = "/subscriptions/" + DeploymentSubscriptionId;
+                }
 
                 var currentStack = DeploymentStacksSdkClient.GetManagementGroupDeploymentStack(ManagementGroupId, Name, throwIfNotExists: false);
                 if (currentStack != null && Tag == null)

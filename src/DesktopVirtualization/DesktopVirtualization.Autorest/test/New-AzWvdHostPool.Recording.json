@@ -1,15 +1,21 @@
 {
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
   "New-AzWvdHostPool+[NoContext]+FullSenerioCreate+$PUT+https://management.azure.com/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourceGroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/hostPools/HostPoolPowershellContained1?api-version=2023-07-07-preview+1": {
     "Request": {
       "Method": "PUT",
       "RequestUri": "https://management.azure.com/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourceGroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/hostPools/HostPoolPowershellContained1?api-version=2023-07-07-preview",
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
   "New-AzWvdHostPool+[NoContext]+FullSenerioCreate+$PUT+https://management.azure.com/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourceGroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/hostPools/HostPoolPowershellContained1?api-version=2023-09-05+1": {
     "Request": {
       "Method": "PUT",
       "RequestUri": "https://management.azure.com/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourceGroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/hostPools/HostPoolPowershellContained1?api-version=2023-09-05",
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       "Content": "{\r\n  \"location\": \"westus2\",\r\n  \"properties\": {\r\n    \"hostPoolType\": \"Pooled\",\r\n    \"loadBalancerType\": \"DepthFirst\",\r\n    \"preferredAppGroupType\": \"Desktop\"\r\n  }\r\n}",
       "isContentBase64": false,
       "Headers": {
@@ -29,6 +35,7 @@
         "X-Rate-Limit-Remaining": [ "9223372036854775807" ],
         "X-Rate-Limit-Reset": [ "0" ],
         "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvZGJlZGVmMjUtMTg0Yy00MzBmLWIzODMtMGVlYjg3YzMyMDVkL3Jlc291cmNlR3JvdXBzL2FsZWNiVXNlclNlc3Npb25UZXN0cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9ob3N0UG9vbHMvSG9zdFBvb2xQb3dlcnNoZWxsQ29udGFpbmVkMQ==" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-lamport-ts": [ "115577832" ],
         "x-ms-correlation-id": [ "7b86c4ab-282c-48ab-8b04-a70d2546cf7f" ],
@@ -63,6 +70,15 @@
       "Method": "PUT",
       "RequestUri": "https://management.azure.com/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourceGroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/applicationGroups/FullSenerioCreateAG?api-version=2023-07-07-preview",
 =======
+=======
+        "x-ms-lamport-ts": [ "139427151" ],
+        "x-ms-correlation-id": [ "2c161a29-72e7-4a63-959e-82b7131817a6" ],
+        "x-ms-request-id": [ "c9957de1-a3ec-49cc-b041-630d074b8079" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Set-Cookie": [ "ARRAffinity=bd0dfb948b4e67ff60a11cd6e169712e6848609ad034c4789ebdf993fcec41fb;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvdselfhost.microsoft.com", "ARRAffinitySameSite=bd0dfb948b4e67ff60a11cd6e169712e6848609ad034c4789ebdf993fcec41fb;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvdselfhost.microsoft.com" ],
+        "Server": [ "Microsoft-IIS/10.0" ],
+        "X-Powered-By": [ "ASP.NET" ],
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "x-ms-ratelimit-remaining-subscription-writes": [ "1133" ],
         "x-ms-correlation-request-id": [ "50773bf5-cced-4cb5-9920-b6b38e37e4d1" ],
         "x-ms-routing-request-id": [ "WESTUS:20231222T043535Z:50773bf5-cced-4cb5-9920-b6b38e37e4d1" ],
@@ -82,7 +98,10 @@
     "Request": {
       "Method": "PUT",
       "RequestUri": "https://management.azure.com/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourceGroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/applicationGroups/FullSenerioCreateAG?api-version=2023-09-05",
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       "Content": "{\r\n  \"location\": \"westus2\",\r\n  \"properties\": {\r\n    \"hostPoolArmPath\": \"/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourcegroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/hostpools/HostPoolPowershellContained1\",\r\n    \"applicationGroupType\": \"Desktop\"\r\n  }\r\n}",
       "isContentBase64": false,
       "Headers": {
@@ -102,6 +121,7 @@
         "X-Rate-Limit-Remaining": [ "9223372036854775807" ],
         "X-Rate-Limit-Reset": [ "0" ],
         "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvZGJlZGVmMjUtMTg0Yy00MzBmLWIzODMtMGVlYjg3YzMyMDVkL3Jlc291cmNlR3JvdXBzL2FsZWNiVXNlclNlc3Npb25UZXN0cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9hcHBsaWNhdGlvbkdyb3Vwcy9GdWxsU2VuZXJpb0NyZWF0ZUFH" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-lamport-ts": [ "115577888" ],
         "x-ms-correlation-id": [ "87890a2a-af61-4472-9d77-db49a673088f" ],
@@ -130,6 +150,8 @@
       "Method": "PUT",
       "RequestUri": "https://management.azure.com/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourceGroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/workspaces/FullSenerioCreateWS?api-version=2023-07-07-preview",
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "x-ms-lamport-ts": [ "139427091" ],
         "x-ms-correlation-id": [ "af808757-5cea-4c8b-bba5-29655bd6d4a0" ],
         "x-ms-request-id": [ "813d6ac3-4d43-4d3b-81e5-8915ffb0271d" ],
@@ -156,7 +178,10 @@
     "Request": {
       "Method": "PUT",
       "RequestUri": "https://management.azure.com/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourceGroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/workspaces/FullSenerioCreateWS?api-version=2023-09-05",
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       "Content": "{\r\n  \"location\": \"westus2\",\r\n  \"properties\": {\r\n    \"applicationGroupReferences\": [ \"/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourcegroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/applicationgroups/FullSenerioCreateAG\" ]\r\n  }\r\n}",
       "isContentBase64": false,
       "Headers": {
@@ -176,6 +201,7 @@
         "X-Rate-Limit-Remaining": [ "9223372036854775807" ],
         "X-Rate-Limit-Reset": [ "0" ],
         "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvZGJlZGVmMjUtMTg0Yy00MzBmLWIzODMtMGVlYjg3YzMyMDVkL3Jlc291cmNlR3JvdXBzL2FsZWNiVXNlclNlc3Npb25UZXN0cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi93b3Jrc3BhY2VzL0Z1bGxTZW5lcmlvQ3JlYXRlV1M=" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-lamport-ts": [ "115577896" ],
         "x-ms-correlation-id": [ "fe17360d-0dd6-4ecd-9bc5-bb250e797676" ],
@@ -190,6 +216,8 @@
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "Date": [ "Thu, 17 Aug 2023 07:18:39 GMT" ]
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "x-ms-lamport-ts": [ "139427096" ],
         "x-ms-correlation-id": [ "1be2856f-6a51-4957-9788-fc3820b918f2" ],
         "x-ms-request-id": [ "aa1d5ed7-398e-4c00-8d79-27a64fd2095b" ],
@@ -202,13 +230,17 @@
         "x-ms-routing-request-id": [ "WESTUS:20231222T043537Z:036ab69a-fe85-4098-8465-7ac08a503cc5" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "Date": [ "Fri, 22 Dec 2023 04:35:37 GMT" ]
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       },
       "ContentHeaders": {
         "Content-Length": [ "944" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
       "Content": "{\"name\":\"FullSenerioCreateWS\",\"id\":\"/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourcegroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/workspaces/FullSenerioCreateWS\",\"type\":\"Microsoft.DesktopVirtualization/workspaces\",\"location\":\"westus2\",\"tags\":null,\"kind\":null,\"systemData\":{\"createdBy\":\"admin@wvdtesttenant.onmicrosoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2023-08-17T07:18:40.08Z\",\"lastModifiedBy\":\"admin@wvdtesttenant.onmicrosoft.com\",\"lastModifiedByType\":\"User\",\"lastModifiedAt\":\"2023-08-17T07:18:40.08Z\"},\"properties\":{\"privateEndpointConnections\":null,\"publicNetworkAccess\":\"Enabled\",\"description\":null,\"friendlyName\":null,\"applicationGroupReferences\":[\"/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourcegroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/applicationgroups/FullSenerioCreateAG\"],\"cloudPcResource\":false,\"objectId\":\"3d0e263c-6753-4630-af37-bffbfad6b1b4\"}}",
       "isContentBase64": false
@@ -228,6 +260,8 @@
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/v9.0.1", "PSVersion/v7.2.13", "Az.DesktopVirtualization/2.1.0" ],
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       "Content": "{\"name\":\"FullSenerioCreateWS\",\"id\":\"/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourcegroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/workspaces/FullSenerioCreateWS\",\"type\":\"Microsoft.DesktopVirtualization/workspaces\",\"location\":\"westus2\",\"tags\":null,\"kind\":null,\"systemData\":{\"createdBy\":\"admin@wvdtesttenant.onmicrosoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2023-12-22T04:35:36.96Z\",\"lastModifiedBy\":\"admin@wvdtesttenant.onmicrosoft.com\",\"lastModifiedByType\":\"User\",\"lastModifiedAt\":\"2023-12-22T04:35:36.96Z\"},\"properties\":{\"privateEndpointConnections\":null,\"publicNetworkAccess\":\"Enabled\",\"description\":null,\"friendlyName\":null,\"applicationGroupReferences\":[\"/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourcegroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/applicationgroups/FullSenerioCreateAG\"],\"cloudPcResource\":false,\"objectId\":\"eede502e-0775-4ee3-8a6c-95976c276d60\"}}",
       "isContentBase64": false
     }
@@ -245,7 +279,10 @@
         "FullCommandName": [ "Remove-AzWvdApplicationGroup_Delete" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/v0.0.0", "PSVersion/v7.2.17", "Az.DesktopVirtualization/2.1.0" ],
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -257,15 +294,20 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Vary": [ "Accept-Encoding" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-ratelimit-remaining-subscription-deletes": [ "14929" ],
 =======
         "x-ms-ratelimit-remaining-subscription-deletes": [ "14931" ],
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14931" ],
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "X-Rate-Limit-Limit": [ "0" ],
         "X-Rate-Limit-Remaining": [ "9223372036854775807" ],
         "X-Rate-Limit-Reset": [ "0" ],
         "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvZGJlZGVmMjUtMTg0Yy00MzBmLWIzODMtMGVlYjg3YzMyMDVkL3Jlc291cmNlR3JvdXBzL2FsZWNiVXNlclNlc3Npb25UZXN0cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9hcHBsaWNhdGlvbkdyb3Vwcy9GdWxsU2VuZXJpb0NyZWF0ZUFH" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-lamport-ts": [ "115577840" ],
         "x-ms-correlation-id": [ "1f759575-4e97-4fca-b498-7717e8d5a2a5" ],
@@ -308,6 +350,15 @@
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/v9.0.1", "PSVersion/v7.2.13", "Az.DesktopVirtualization/2.1.0" ],
 =======
+=======
+        "x-ms-lamport-ts": [ "139427154" ],
+        "x-ms-correlation-id": [ "d812e7f8-e14f-48cb-b5c7-290123cfd241" ],
+        "x-ms-request-id": [ "72aaae5f-92f1-4fe9-a6f6-082412238306" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Set-Cookie": [ "ARRAffinity=bd0dfb948b4e67ff60a11cd6e169712e6848609ad034c4789ebdf993fcec41fb;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvdselfhost.microsoft.com", "ARRAffinitySameSite=bd0dfb948b4e67ff60a11cd6e169712e6848609ad034c4789ebdf993fcec41fb;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvdselfhost.microsoft.com" ],
+        "Server": [ "Microsoft-IIS/10.0" ],
+        "X-Powered-By": [ "ASP.NET" ],
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "x-ms-correlation-request-id": [ "608e6cb4-06b7-4d96-bb4f-a273909b0c9f" ],
         "x-ms-routing-request-id": [ "WESTUS:20231222T043539Z:608e6cb4-06b7-4d96-bb4f-a273909b0c9f" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
@@ -335,7 +386,10 @@
         "FullCommandName": [ "Remove-AzWvdHostPool_Delete" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/v0.0.0", "PSVersion/v7.2.17", "Az.DesktopVirtualization/2.1.0" ],
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -347,15 +401,20 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Vary": [ "Accept-Encoding" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-ratelimit-remaining-subscription-deletes": [ "14928" ],
 =======
         "x-ms-ratelimit-remaining-subscription-deletes": [ "14930" ],
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14930" ],
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "X-Rate-Limit-Limit": [ "0" ],
         "X-Rate-Limit-Remaining": [ "9223372036854775807" ],
         "X-Rate-Limit-Reset": [ "0" ],
         "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvZGJlZGVmMjUtMTg0Yy00MzBmLWIzODMtMGVlYjg3YzMyMDVkL3Jlc291cmNlR3JvdXBzL2FsZWNiVXNlclNlc3Npb25UZXN0cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9ob3N0UG9vbHMvSG9zdFBvb2xQb3dlcnNoZWxsQ29udGFpbmVkMQ==" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-lamport-ts": [ "115577895" ],
         "x-ms-correlation-id": [ "49b2337a-c5a1-4d6e-96b6-d19a9c2a31a4" ],
@@ -392,6 +451,8 @@
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/v9.0.1", "PSVersion/v7.2.13", "Az.DesktopVirtualization/2.1.0" ],
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "x-ms-lamport-ts": [ "139427094" ],
         "x-ms-correlation-id": [ "94f41376-821a-4332-8d56-9f34625dcc20" ],
         "x-ms-request-id": [ "718da31c-cb5e-4b89-96ba-65c77539f107" ],
@@ -426,7 +487,10 @@
         "FullCommandName": [ "Remove-AzWvdWorkspace_Delete" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/v0.0.0", "PSVersion/v7.2.17", "Az.DesktopVirtualization/2.1.0" ],
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -438,15 +502,20 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Vary": [ "Accept-Encoding" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-ratelimit-remaining-subscription-deletes": [ "14927" ],
 =======
         "x-ms-ratelimit-remaining-subscription-deletes": [ "14929" ],
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14929" ],
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "X-Rate-Limit-Limit": [ "0" ],
         "X-Rate-Limit-Remaining": [ "9223372036854775807" ],
         "X-Rate-Limit-Reset": [ "0" ],
         "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvZGJlZGVmMjUtMTg0Yy00MzBmLWIzODMtMGVlYjg3YzMyMDVkL3Jlc291cmNlR3JvdXBzL2FsZWNiVXNlclNlc3Npb25UZXN0cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi93b3Jrc3BhY2VzL0Z1bGxTZW5lcmlvQ3JlYXRlV1M=" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-lamport-ts": [ "115577905" ],
         "x-ms-correlation-id": [ "88e14114-23dc-4c97-973e-77d67e02d81d" ],
@@ -460,6 +529,8 @@
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "Date": [ "Thu, 17 Aug 2023 07:18:42 GMT" ]
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "x-ms-lamport-ts": [ "139427099" ],
         "x-ms-correlation-id": [ "73c4087b-b0e3-4070-bf48-f7e58ce0e0bf" ],
         "x-ms-request-id": [ "04b347b1-1e5d-44ca-9b15-632b0be04444" ],
@@ -471,13 +542,17 @@
         "x-ms-routing-request-id": [ "WESTUS:20231222T043541Z:0d4c6f1b-48ab-4a6d-8794-ff6de6c8577a" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "Date": [ "Fri, 22 Dec 2023 04:35:41 GMT" ]
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       },
       "ContentHeaders": {
         "Content-Length": [ "538" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
       "Content": "{\"name\":\"FullSenerioCreateWS\",\"id\":\"/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourcegroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/workspaces/FullSenerioCreateWS\",\"type\":\"Microsoft.DesktopVirtualization/workspaces\",\"location\":\"westus2\",\"tags\":null,\"kind\":null,\"systemData\":null,\"properties\":{\"privateEndpointConnections\":[],\"publicNetworkAccess\":\"Enabled\",\"description\":null,\"friendlyName\":null,\"applicationGroupReferences\":[],\"cloudPcResource\":false,\"objectId\":\"3d0e263c-6753-4630-af37-bffbfad6b1b4\"}}",
       "isContentBase64": false
@@ -489,6 +564,8 @@
       "RequestUri": "https://management.azure.com/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourceGroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/hostPools/HostPoolPowershellContained1?api-version=2023-07-07-preview",
       "Content": "{\r\n  \"location\": \"westus2\",\r\n  \"properties\": {\r\n    \"registrationInfo\": {\r\n      \"expirationTime\": \"2023-08-18T01:18:41.7255821-06:00\",\r\n      \"registrationTokenOperation\": \"Update\"\r\n    },\r\n    \"friendlyName\": \"fri\",\r\n    \"description\": \"des\",\r\n    \"hostPoolType\": \"Pooled\",\r\n    \"customRdpProperty\": \"\",\r\n    \"maxSessionLimit\": 5,\r\n    \"loadBalancerType\": \"DepthFirst\",\r\n    \"ring\": 0,\r\n    \"validationEnvironment\": false,\r\n    \"vmTemplate\": \"{option1}\",\r\n    \"preferredAppGroupType\": \"Desktop\",\r\n    \"startVMOnConnect\": false\r\n  }\r\n}",
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       "Content": "{\"name\":\"FullSenerioCreateWS\",\"id\":\"/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourcegroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/workspaces/FullSenerioCreateWS\",\"type\":\"Microsoft.DesktopVirtualization/workspaces\",\"location\":\"westus2\",\"tags\":null,\"kind\":null,\"systemData\":null,\"properties\":{\"privateEndpointConnections\":[],\"publicNetworkAccess\":\"Enabled\",\"description\":null,\"friendlyName\":null,\"applicationGroupReferences\":[],\"cloudPcResource\":false,\"objectId\":\"eede502e-0775-4ee3-8a6c-95976c276d60\"}}",
       "isContentBase64": false
     }
@@ -498,7 +575,10 @@
       "Method": "PUT",
       "RequestUri": "https://management.azure.com/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourceGroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/hostPools/HostPoolPowershellContained1?api-version=2023-09-05",
       "Content": "{\r\n  \"location\": \"westus2\",\r\n  \"properties\": {\r\n    \"registrationInfo\": {\r\n      \"expirationTime\": \"2023-12-22T21:35:39.8587144-07:00\",\r\n      \"registrationTokenOperation\": \"Update\"\r\n    },\r\n    \"friendlyName\": \"fri\",\r\n    \"description\": \"des\",\r\n    \"hostPoolType\": \"Pooled\",\r\n    \"customRdpProperty\": \"\",\r\n    \"maxSessionLimit\": 5,\r\n    \"loadBalancerType\": \"DepthFirst\",\r\n    \"ring\": 0,\r\n    \"validationEnvironment\": false,\r\n    \"vmTemplate\": \"{option1}\",\r\n    \"preferredAppGroupType\": \"Desktop\",\r\n    \"startVMOnConnect\": false\r\n  }\r\n}",
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       "isContentBase64": false,
       "Headers": {
       },
@@ -517,6 +597,7 @@
         "X-Rate-Limit-Remaining": [ "9223372036854775807" ],
         "X-Rate-Limit-Reset": [ "0" ],
         "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvZGJlZGVmMjUtMTg0Yy00MzBmLWIzODMtMGVlYjg3YzMyMDVkL3Jlc291cmNlR3JvdXBzL2FsZWNiVXNlclNlc3Npb25UZXN0cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9ob3N0UG9vbHMvSG9zdFBvb2xQb3dlcnNoZWxsQ29udGFpbmVkMQ==" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-lamport-ts": [ "115577843" ],
         "x-ms-correlation-id": [ "d9ac17dc-3faa-4947-834c-e0341a2b74b4" ],
@@ -560,6 +641,15 @@
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/v9.0.1", "PSVersion/v7.2.13", "Az.DesktopVirtualization/2.1.0" ],
 =======
+=======
+        "x-ms-lamport-ts": [ "139427157" ],
+        "x-ms-correlation-id": [ "1e2294de-f27c-4525-ae88-56cde1b5efd3" ],
+        "x-ms-request-id": [ "43460944-9169-43b5-9a39-7da488c31144" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Set-Cookie": [ "ARRAffinity=bd0dfb948b4e67ff60a11cd6e169712e6848609ad034c4789ebdf993fcec41fb;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvdselfhost.microsoft.com", "ARRAffinitySameSite=bd0dfb948b4e67ff60a11cd6e169712e6848609ad034c4789ebdf993fcec41fb;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvdselfhost.microsoft.com" ],
+        "Server": [ "Microsoft-IIS/10.0" ],
+        "X-Powered-By": [ "ASP.NET" ],
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "x-ms-ratelimit-remaining-subscription-writes": [ "1130" ],
         "x-ms-correlation-request-id": [ "93581909-cae1-435b-9746-6136941cffd9" ],
         "x-ms-routing-request-id": [ "WESTUS:20231222T043543Z:93581909-cae1-435b-9746-6136941cffd9" ],
@@ -588,7 +678,10 @@
         "FullCommandName": [ "Get-AzWvdHostPool_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/v0.0.0", "PSVersion/v7.2.17", "Az.DesktopVirtualization/2.1.0" ],
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -600,15 +693,20 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Vary": [ "Accept-Encoding" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-ratelimit-remaining-subscription-reads": [ "11879" ],
 =======
         "x-ms-correlation-request-id": [ "f553f129-e684-488a-8b46-ae47ca473f5f" ],
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+        "x-ms-correlation-request-id": [ "f553f129-e684-488a-8b46-ae47ca473f5f" ],
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "X-Rate-Limit-Limit": [ "0" ],
         "X-Rate-Limit-Remaining": [ "9223372036854775807" ],
         "X-Rate-Limit-Reset": [ "0" ],
         "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvZGJlZGVmMjUtMTg0Yy00MzBmLWIzODMtMGVlYjg3YzMyMDVkL3Jlc291cmNlR3JvdXBzL2FsZWNiVXNlclNlc3Npb25UZXN0cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9ob3N0UG9vbHMvSG9zdFBvb2xQb3dlcnNoZWxsQ29udGFpbmVkMQ==" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-lamport-ts": [ "115577900" ],
         "x-ms-correlation-id": [ "85aea4aa-b9ea-4fe1-9e83-729f28cc2cec" ],
@@ -645,6 +743,8 @@
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/v9.0.1", "PSVersion/v7.2.13", "Az.DesktopVirtualization/2.1.0" ],
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "x-ms-lamport-ts": [ "139427097" ],
         "x-ms-correlation-id": [ "fcb9c3da-2635-478d-b17d-c41664370e89" ],
         "x-ms-request-id": [ "b4241e5f-4f2c-4354-a3b1-b33ddbf69d90" ],
@@ -679,7 +779,10 @@
         "FullCommandName": [ "Remove-AzWvdHostPool_Delete" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/v0.0.0", "PSVersion/v7.2.17", "Az.DesktopVirtualization/2.1.0" ],
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -691,15 +794,20 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Vary": [ "Accept-Encoding" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-ratelimit-remaining-subscription-deletes": [ "14926" ],
 =======
         "x-ms-ratelimit-remaining-subscription-deletes": [ "14928" ],
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14928" ],
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "X-Rate-Limit-Limit": [ "0" ],
         "X-Rate-Limit-Remaining": [ "9223372036854775807" ],
         "X-Rate-Limit-Reset": [ "0" ],
         "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvZGJlZGVmMjUtMTg0Yy00MzBmLWIzODMtMGVlYjg3YzMyMDVkL3Jlc291cmNlR3JvdXBzL2FsZWNiVXNlclNlc3Npb25UZXN0cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9ob3N0UG9vbHMvSG9zdFBvb2xQb3dlcnNoZWxsQ29udGFpbmVkMQ==" ],
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/New-AzWvdHostPool.Recording.json
         "x-ms-lamport-ts": [ "115577908" ],
         "x-ms-correlation-id": [ "a3b55746-7fbd-4406-9cd8-267a6eb61b30" ],
@@ -720,6 +828,8 @@
       },
       "Content": "{\"identity\":null,\"name\":\"HostPoolPowershellContained1\",\"id\":\"/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourcegroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/hostpools/HostPoolPowershellContained1\",\"type\":\"Microsoft.DesktopVirtualization/hostpools\",\"location\":\"westus2\",\"tags\":null,\"kind\":null,\"systemData\":{\"createdBy\":\"admin@wvdtesttenant.onmicrosoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2023-08-17T07:18:43.84Z\",\"lastModifiedBy\":\"admin@wvdtesttenant.onmicrosoft.com\",\"lastModifiedByType\":\"User\",\"lastModifiedAt\":\"2023-08-17T07:18:43.84Z\"},\"properties\":{\"agentUpdate\":null,\"privateEndpointConnections\":[],\"publicNetworkAccess\":\"Enabled\",\"friendlyName\":\"fri\",\"description\":\"des\",\"hostPoolType\":\"Pooled\",\"personalDesktopAssignmentType\":null,\"applicationGroupReferences\":[],\"appAttachPackageReferences\":[],\"customRdpProperty\":\"\",\"maxSessionLimit\":5,\"loadBalancerType\":\"DepthFirst\",\"validationEnvironment\":false,\"ring\":null,\"registrationInfo\":{\"expirationTime\":\"2023-08-18T07:18:41.7255821Z\",\"token\":\"eyJhbGciOiJSUzI1NiIsImtpZCI6IkVFRjU0MkQzRjhBQTlEN0UzNjIyNzgxNzUyNzkwMENEMjM1NTIwQzMiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6IjhjNWM1OGY4LWYxMGYtNGQ1NS04YzljLWE1MjZmODhjMWY1YyIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy11cy1yMC53dmRzZWxmaG9zdC5taWNyb3NvZnQuY29tLyIsIkRpYWdub3N0aWNzVXJpIjoiaHR0cHM6Ly9yZGRpYWdub3N0aWNzLWctdXMtcjAud3Zkc2VsZmhvc3QubWljcm9zb2Z0LmNvbS8iLCJFbmRwb2ludFBvb2xJZCI6ImU0ZmRlN2FkLWQ1YTMtNGUzNC1hMDAzLTRhNmRlMTUzODRkMyIsIkdsb2JhbEJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXIud3Zkc2VsZmhvc3QubWljcm9zb2Z0LmNvbS8iLCJHZW9ncmFwaHkiOiJVUyIsIkdsb2JhbEJyb2tlclJlc291cmNlSWRVcmkiOiJodHRwczovL2U0ZmRlN2FkLWQ1YTMtNGUzNC1hMDAzLTRhNmRlMTUzODRkMy5yZGJyb2tlci53dmRzZWxmaG9zdC5taWNyb3NvZnQuY29tLyIsIkJyb2tlclJlc291cmNlSWRVcmkiOiJodHRwczovL2U0ZmRlN2FkLWQ1YTMtNGUzNC1hMDAzLTRhNmRlMTUzODRkMy5yZGJyb2tlci1nLXVzLXIwLnd2ZHNlbGZob3N0Lm1pY3Jvc29mdC5jb20vIiwiRGlhZ25vc3RpY3NSZXNvdXJjZUlkVXJpIjoiaHR0cHM6Ly9lNGZkZTdhZC1kNWEzLTRlMzQtYTAwMy00YTZkZTE1Mzg0ZDMucmRkaWFnbm9zdGljcy1nLXVzLXIwLnd2ZHNlbGZob3N0Lm1pY3Jvc29mdC5jb20vIiwiQUFEVGVuYW50SWQiOiI3NGJjMmRmMC1mYzU3LTQzNjEtYjE1MC0yZDZkZDUxY2I2NjMiLCJuYmYiOjE2OTIyNTY3MjQsImV4cCI6MTY5MjM0MzEyMSwiaXNzIjoiUkRJbmZyYVRva2VuTWFuYWdlciIsImF1ZCI6IlJEbWkifQ.mjPUPKKBjhTQmzLIVhkuecIPSDlTvTcsgEvXHloqEHhhFr8QMtGYQuhKDgUaVGbVTK-keiOyM0rYuiXZHX0xAcpdOGivMI8R1iME3_XCU0ocaT2QrCwqFAl_D51h5xDy3v4bTVlQL8cuuOLnbuW7i2aLlVEgjwkZDOZXmz9vKCGmc23JmreisJe2HwPNhFDpflUoo9kBvGZhrHwVR-nM3yGN1jHR0aZVg_X6wzLgDMZiBvtJ97P5UDD178kBMHvVOhauEY2cBwfM1iIqlWLbN0mYH5tBjxF5xVSpfxDmtHUpFzgYjsj3cXEspDO_QVs-XKyPzJeS2bx6HEvL1nofJw\",\"registrationTokenOperation\":\"None\"},\"vmTemplate\":\"{option1}\",\"preferredAppGroupType\":\"Desktop\",\"migrationRequest\":null,\"cloudPcResource\":false,\"startVMOnConnect\":false,\"ssoadfsAuthority\":null,\"ssoClientId\":null,\"ssoClientSecretKeyVaultPath\":null,\"ssoSecretType\":null,\"objectId\":\"e4fde7ad-d5a3-4e34-a003-4a6de15384d3\"}}",
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
         "x-ms-lamport-ts": [ "139427105" ],
         "x-ms-correlation-id": [ "5d7320b7-9b8c-4dcf-ad00-0d5697b6d7fa" ],
         "x-ms-request-id": [ "4848fca1-4c0a-430c-a664-df86abb51965" ],
@@ -738,7 +848,10 @@
         "Expires": [ "-1" ]
       },
       "Content": "{\"identity\":null,\"name\":\"HostPoolPowershellContained1\",\"id\":\"/subscriptions/dbedef25-184c-430f-b383-0eeb87c3205d/resourcegroups/alecbUserSessionTests/providers/Microsoft.DesktopVirtualization/hostpools/HostPoolPowershellContained1\",\"type\":\"Microsoft.DesktopVirtualization/hostpools\",\"location\":\"westus2\",\"tags\":null,\"kind\":null,\"systemData\":{\"createdBy\":\"admin@wvdtesttenant.onmicrosoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2023-12-22T04:35:41.86Z\",\"lastModifiedBy\":\"admin@wvdtesttenant.onmicrosoft.com\",\"lastModifiedByType\":\"User\",\"lastModifiedAt\":\"2023-12-22T04:35:41.86Z\"},\"properties\":{\"agentUpdate\":null,\"privateEndpointConnections\":[],\"publicNetworkAccess\":\"Enabled\",\"friendlyName\":\"fri\",\"description\":\"des\",\"hostPoolType\":\"Pooled\",\"personalDesktopAssignmentType\":null,\"applicationGroupReferences\":[],\"customRdpProperty\":\"\",\"maxSessionLimit\":5,\"loadBalancerType\":\"DepthFirst\",\"validationEnvironment\":false,\"ring\":null,\"registrationInfo\":{\"expirationTime\":\"2023-12-23T04:35:39.8587144Z\",\"token\":\"eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc3MzMwQzhGRDQ0RDk1NTAzMkQ0RjY2M0YzRjU4MDM5RkRCQTMwREQiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6ImQxMDYyODY1LTZmZjItNDExNi05ZTBkLTA5MjJmZWFjZDZiZSIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy11cy1yMC53dmRzZWxmaG9zdC5taWNyb3NvZnQuY29tLyIsIkRpYWdub3N0aWNzVXJpIjoiaHR0cHM6Ly9yZGRpYWdub3N0aWNzLWctdXMtcjAud3Zkc2VsZmhvc3QubWljcm9zb2Z0LmNvbS8iLCJFbmRwb2ludFBvb2xJZCI6IjAyMDdmYjYzLTdkMmEtNDU5MC1hMTQ1LTljNjBmZGFlOTJkYiIsIkdsb2JhbEJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXIud3Zkc2VsZmhvc3QubWljcm9zb2Z0LmNvbS8iLCJHZW9ncmFwaHkiOiJVUyIsIkdsb2JhbEJyb2tlclJlc291cmNlSWRVcmkiOiJodHRwczovLzAyMDdmYjYzLTdkMmEtNDU5MC1hMTQ1LTljNjBmZGFlOTJkYi5yZGJyb2tlci53dmRzZWxmaG9zdC5taWNyb3NvZnQuY29tLyIsIkJyb2tlclJlc291cmNlSWRVcmkiOiJodHRwczovLzAyMDdmYjYzLTdkMmEtNDU5MC1hMTQ1LTljNjBmZGFlOTJkYi5yZGJyb2tlci1nLXVzLXIwLnd2ZHNlbGZob3N0Lm1pY3Jvc29mdC5jb20vIiwiRGlhZ25vc3RpY3NSZXNvdXJjZUlkVXJpIjoiaHR0cHM6Ly8wMjA3ZmI2My03ZDJhLTQ1OTAtYTE0NS05YzYwZmRhZTkyZGIucmRkaWFnbm9zdGljcy1nLXVzLXIwLnd2ZHNlbGZob3N0Lm1pY3Jvc29mdC5jb20vIiwiQUFEVGVuYW50SWQiOiI3NGJjMmRmMC1mYzU3LTQzNjEtYjE1MC0yZDZkZDUxY2I2NjMiLCJuYmYiOjE3MDMyMTk3NDIsImV4cCI6MTcwMzMwNjEzOSwiaXNzIjoiUkRJbmZyYVRva2VuTWFuYWdlciIsImF1ZCI6IlJEbWkifQ.MtsMQC7W3Rmly4LTIek1sZ_wB_plF1o46GszpraoXdlgvctXKGAEwqFJlEGyVo7BkTmknzkdUV0is5XtvjFaC58idTjfAw_sJI3zpzZeSXaY3-IoBXpQ83ZwseFFZPQ-k_2Xn7xAn_Xyj1DbrWPf7bxk0TTeMaUMLGqWkwuWRR5-qv7hPds5aao-Myep2UJ7emf9qw4Go6sg9e5VAGIaBzvEqA2k10jBMMun__L9HYMlmTgBFGd42hVY7xuxW8tOCenYINgVE-60lTic1tcNa5i6XllJSzWrAl8VatxV7-qWZp43DBY4K0s_pz5Uf3zPZ3vCW5BuMEQETma_x8kj5g\",\"registrationTokenOperation\":\"None\"},\"vmTemplate\":\"{option1}\",\"preferredAppGroupType\":\"Desktop\",\"migrationRequest\":null,\"cloudPcResource\":false,\"startVMOnConnect\":false,\"ssoadfsAuthority\":null,\"ssoClientId\":null,\"ssoClientSecretKeyVaultPath\":null,\"ssoSecretType\":null,\"objectId\":\"0207fb63-7d2a-4590-a145-9c60fdae92db\"}}",
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/New-AzWvdHostPool.Recording.json
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       "isContentBase64": false
     }
   }

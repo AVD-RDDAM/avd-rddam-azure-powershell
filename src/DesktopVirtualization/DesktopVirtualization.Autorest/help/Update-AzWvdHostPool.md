@@ -78,11 +78,15 @@ Maintenance windows are 2 hours long.
 To construct, see NOTES section for AGENTUPDATEMAINTENANCEWINDOW properties and create a hash table.
 
 ```yaml
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/Update-AzWvdHostPool.md
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IMaintenanceWindowPatchProperties[]
 =======
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IMaintenanceWindowPatchProperties[]
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/Update-AzWvdHostPool.md
+=======
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IMaintenanceWindowPatchProperties[]
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 Parameter Sets: (All)
 Aliases:
 
@@ -542,6 +546,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/Update-AzWvdHostPool.md
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IHostPool
 
@@ -575,10 +580,15 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkspaceName <String>]`: The name of the workspace
 
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IHostPool
 
 ## NOTES
 
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/Update-AzWvdHostPool.md
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ## RELATED LINKS
 

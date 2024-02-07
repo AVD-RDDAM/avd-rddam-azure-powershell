@@ -25,11 +25,15 @@ Get-AzWvdScalingPlanPooledSchedule -ResourceGroupName rgName -ScalingPlanName sc
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
 .Outputs
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/exports/Get-AzWvdScalingPlanPersonalSchedule.ps1
 Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IScalingPlanPersonalSchedule
 =======
 Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingPlanPersonalSchedule
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/exports/Get-AzWvdScalingPlanPersonalSchedule.ps1
+=======
+Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingPlanPersonalSchedule
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 .Notes
 COMPLEX PARAMETER PROPERTIES
 
@@ -54,11 +58,15 @@ INPUTOBJECT <IDesktopVirtualizationIdentity>: Identity Parameter
 https://learn.microsoft.com/powershell/module/az.desktopvirtualization/get-azwvdscalingplanpersonalschedule
 #>
 function Get-AzWvdScalingPlanPersonalSchedule {
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/exports/Get-AzWvdScalingPlanPersonalSchedule.ps1
 [OutputType([Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IScalingPlanPersonalSchedule])]
 =======
 [OutputType([Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingPlanPersonalSchedule])]
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/exports/Get-AzWvdScalingPlanPersonalSchedule.ps1
+=======
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingPlanPersonalSchedule])]
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 [CmdletBinding(DefaultParameterSetName='List', PositionalBinding=$false)]
 param(
     [Parameter(ParameterSetName='Get', Mandatory)]

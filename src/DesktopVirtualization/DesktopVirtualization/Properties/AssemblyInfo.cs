@@ -24,6 +24,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(false)]
 [assembly: Guid("5FAC4032-09B2-4E1D-A7CB-078DEA39CAF1")]
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Properties/AssemblyInfo.cs
 [assembly: AssemblyVersion("5.1.0")]
 [assembly: AssemblyFileVersion("5.1.0")]
@@ -31,3 +32,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("4.3.0")]
 [assembly: AssemblyFileVersion("4.3.0")]
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization/Properties/AssemblyInfo.cs
+=======
+[assembly: AssemblyVersion("4.3.0")]
+[assembly: AssemblyFileVersion("4.3.0")]
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654

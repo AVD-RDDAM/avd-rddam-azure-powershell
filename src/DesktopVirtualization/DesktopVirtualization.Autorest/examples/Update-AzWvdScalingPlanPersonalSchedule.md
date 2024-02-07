@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/examples/Update-AzWvdScalingPlanPersonalSchedule.md
 ### Example 1: Update a ScalingPlanPooledSchedule
 ```powershell
@@ -26,6 +27,8 @@ Update-AzWvdScalingPlanPooledSchedule -ResourceGroupName rgName `
                                         -offPeakStartTimeMinute 45 `
                                         -offPeakLoadBalancingAlgorithm DepthFirst
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ### Example 1: Update a ScalingPlanPersonalSchedule
 ```powershell
 Update-AzWvdScalingPlanPersonalSchedule -ResourceGroupName rgName `
@@ -60,7 +63,10 @@ Update-AzWvdScalingPlanPersonalSchedule -ResourceGroupName rgName `
                                         -OffPeakMinutesToWaitOnDisconnect 10 `
                                         -OffPeakActionOnLogoff Deallocate `
                                         -OffPeakMinutesToWaitOnLogoff 10
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/examples/Update-AzWvdScalingPlanPersonalSchedule.md
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ```
 
 ```output

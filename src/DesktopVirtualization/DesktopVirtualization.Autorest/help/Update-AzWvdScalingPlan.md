@@ -167,11 +167,15 @@ List of ScalingHostPoolReference definitions.
 To construct, see NOTES section for HOSTPOOLREFERENCE properties and create a hash table.
 
 ```yaml
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/Update-AzWvdScalingPlan.md
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IScalingHostPoolReference[]
 =======
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingHostPoolReference[]
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/Update-AzWvdScalingPlan.md
+=======
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingHostPoolReference[]
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 Parameter Sets: (All)
 Aliases:
 
@@ -234,11 +238,15 @@ List of ScalingSchedule definitions.
 To construct, see NOTES section for SCHEDULE properties and create a hash table.
 
 ```yaml
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/Update-AzWvdScalingPlan.md
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IScalingSchedule[]
 =======
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingSchedule[]
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/Update-AzWvdScalingPlan.md
+=======
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingSchedule[]
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 Parameter Sets: (All)
 Aliases:
 
@@ -334,6 +342,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/Update-AzWvdScalingPlan.md
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IScalingPlan
 
@@ -391,10 +400,15 @@ To create the parameters described below, construct a hash table containing the 
   - `[RampUpStartTimeMinute <Int32?>]`: The minute.
 
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingPlan
 
 ## NOTES
 
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/Update-AzWvdScalingPlan.md
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ## RELATED LINKS
 

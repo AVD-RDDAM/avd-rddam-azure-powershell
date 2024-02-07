@@ -19,6 +19,31 @@
 -->
 ## Upcoming Release
 
+## Version 4.14.0
+* Added `DatabaseFormat` and `PricingModel` parameters to `New-AzSqlInstance`, `Set-AzSqlInstance`
+* Added breaking change message for `New-AzSqlDatabaseFailoverGroup` and `Set-AzSqlDatabaseFailoverGroup`
+    - The default value of `FailoverPolicy` parameter will be changed from `Automatic` to `Manual`
+* Added a new cmdlet for Azure SQL Managed Instance refresh external governance status
+  - 'Invoke-AzSqlInstanceExternalGovernanceStatusRefresh'
+* Updated `Get-AzSqlInstance` to support returning the `ExternalGovernanceStatus` property
+
+## Version 4.13.0
+* Fixed `Set-AzSqlDatabaseFailoverGroup` when going from multi-secondary to single secondary
+* Added `SecondaryComputeModel`, `AutoPauseDelayInMinutes` and `MinimumCapacity` parameters within `New-AzSqlDatabaseSecondary`
+
+## Version 4.12.0
+* Added new parameters `MaintenanceConfigurationId`, `DnsZone` to `AzSqlInstancePool` cmdlets
+
+## Version 4.11.0
+* Added new parameters to `New-AzSqlDatabaseFailoverGroup`, `Set-AzSqlDatabaseFailoverGroup`
+    - PartnerServers
+    - ReadOnlyEndpointTargetServer
+* Added `UseFreeLimit` and `FreeLimitExhaustionBehavior` parameters to `New-AzSqlDatabase`, `Get-AzSqlDatabase`, `Set-AzSqlDatabase`
+* Added new cmdlets for Elastic Job Private Endpoints `Get-AzSqlElasticJobPrivateEndpoint`, `New-AzSqlElasticJobPrivateEndpoint`, `Remove-AzSqlElasticJobPrivateEndpoint`
+* Added new parameters `WorkerCount`, `SkuName`, `Identity` to `AzSqlElasticJobAgent` cmdlets
+* Added support for optional SQL auth for Elastic Job Agent cmdlets
+*   - The following parameters are now optional: `CredentialName`, `OutputCredentialName`, `RefreshCredentialName`
+
 ## Version 4.10.0
 * Fixed cmdlets to use 2018-06-01-preview api version
     - 'Set-AzSqlInstanceDatabaseSensitivityClassification',

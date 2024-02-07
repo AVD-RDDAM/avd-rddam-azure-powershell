@@ -226,6 +226,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.AgentUpdatePatchProperties</Name>
       <ViewSelectedBy>
@@ -235,6 +236,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.AgentUpdatePatchProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.AgentUpdatePatchProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.AgentUpdatePatchProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -260,6 +266,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.AgentUpdateProperties</Name>
       <ViewSelectedBy>
@@ -269,6 +276,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.AgentUpdateProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.AgentUpdateProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.AgentUpdateProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -294,6 +306,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.Application</Name>
       <ViewSelectedBy>
@@ -303,6 +316,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.Application</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.Application</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.Application</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -322,6 +340,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ApplicationGroup</Name>
       <ViewSelectedBy>
@@ -331,6 +350,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroup</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroup</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroup</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -452,6 +476,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ApplicationGroupList</Name>
       <ViewSelectedBy>
@@ -461,6 +486,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -480,6 +510,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ApplicationGroupPatch</Name>
       <ViewSelectedBy>
@@ -489,6 +520,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupPatch</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupPatch</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupPatch</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -508,6 +544,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ApplicationGroupPatchProperties</Name>
       <ViewSelectedBy>
@@ -517,6 +554,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupPatchProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupPatchProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupPatchProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -548,6 +590,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ApplicationGroupPatchTags</Name>
       <ViewSelectedBy>
@@ -557,6 +600,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupPatchTags</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupPatchTags</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupPatchTags</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -576,6 +624,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ApplicationGroupProperties</Name>
       <ViewSelectedBy>
@@ -585,6 +634,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationGroupProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -646,6 +700,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ApplicationList</Name>
       <ViewSelectedBy>
@@ -655,6 +710,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -674,6 +734,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ApplicationPatchProperties</Name>
       <ViewSelectedBy>
@@ -683,6 +744,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationPatchProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationPatchProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationPatchProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -762,6 +828,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ApplicationPatchTags</Name>
       <ViewSelectedBy>
@@ -771,6 +838,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationPatchTags</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationPatchTags</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationPatchTags</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -790,6 +862,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ApplicationProperties</Name>
       <ViewSelectedBy>
@@ -799,6 +872,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ApplicationProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -896,6 +974,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.CloudErrorProperties</Name>
       <ViewSelectedBy>
@@ -905,6 +984,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.CloudErrorProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.CloudErrorProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.CloudErrorProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -930,6 +1014,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.Desktop</Name>
       <ViewSelectedBy>
@@ -939,6 +1024,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.Desktop</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.Desktop</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.Desktop</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -958,6 +1048,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.DesktopList</Name>
       <ViewSelectedBy>
@@ -967,6 +1058,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.DesktopList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.DesktopList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.DesktopList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -986,6 +1082,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.DesktopPatchProperties</Name>
       <ViewSelectedBy>
@@ -995,6 +1092,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.DesktopPatchProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.DesktopPatchProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.DesktopPatchProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1020,6 +1122,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.DesktopPatchTags</Name>
       <ViewSelectedBy>
@@ -1029,6 +1132,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.DesktopPatchTags</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.DesktopPatchTags</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.DesktopPatchTags</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1048,6 +1156,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.DesktopProperties</Name>
       <ViewSelectedBy>
@@ -1057,6 +1166,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.DesktopProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.DesktopProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.DesktopProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1100,6 +1214,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ExpandMsixImage</Name>
       <ViewSelectedBy>
@@ -1109,6 +1224,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ExpandMsixImage</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ExpandMsixImage</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ExpandMsixImage</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1128,6 +1248,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ExpandMsixImageList</Name>
       <ViewSelectedBy>
@@ -1137,6 +1258,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ExpandMsixImageList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ExpandMsixImageList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ExpandMsixImageList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1156,6 +1282,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ExpandMsixImageProperties</Name>
       <ViewSelectedBy>
@@ -1165,6 +1292,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ExpandMsixImageProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ExpandMsixImageProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ExpandMsixImageProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1244,6 +1376,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.HostPool</Name>
       <ViewSelectedBy>
@@ -1253,6 +1386,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPool</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPool</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPool</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1374,6 +1512,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.HostPoolList</Name>
       <ViewSelectedBy>
@@ -1383,6 +1522,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1402,6 +1546,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.HostPoolPatch</Name>
       <ViewSelectedBy>
@@ -1411,6 +1556,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolPatch</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolPatch</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolPatch</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1430,6 +1580,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.HostPoolPatchProperties</Name>
       <ViewSelectedBy>
@@ -1439,6 +1590,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolPatchProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolPatchProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolPatchProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1548,6 +1704,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.HostPoolPatchTags</Name>
       <ViewSelectedBy>
@@ -1557,6 +1714,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolPatchTags</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolPatchTags</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolPatchTags</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1576,6 +1738,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.HostPoolProperties</Name>
       <ViewSelectedBy>
@@ -1585,6 +1748,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.HostPoolProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1718,6 +1886,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.LogSpecification</Name>
       <ViewSelectedBy>
@@ -1727,6 +1896,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.LogSpecification</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.LogSpecification</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.LogSpecification</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1758,6 +1932,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.MaintenanceWindowPatchProperties</Name>
       <ViewSelectedBy>
@@ -1767,6 +1942,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MaintenanceWindowPatchProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MaintenanceWindowPatchProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MaintenanceWindowPatchProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1792,6 +1972,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.MaintenanceWindowProperties</Name>
       <ViewSelectedBy>
@@ -1801,6 +1982,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MaintenanceWindowProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MaintenanceWindowProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MaintenanceWindowProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1826,6 +2012,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.MsixImageUri</Name>
       <ViewSelectedBy>
@@ -1835,6 +2022,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixImageUri</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixImageUri</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixImageUri</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1854,6 +2046,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.MsixPackage</Name>
       <ViewSelectedBy>
@@ -1863,6 +2056,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackage</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackage</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackage</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1882,6 +2080,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.MsixPackageApplications</Name>
       <ViewSelectedBy>
@@ -1891,6 +2090,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackageApplications</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackageApplications</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackageApplications</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1946,6 +2150,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.MsixPackageDependencies</Name>
       <ViewSelectedBy>
@@ -1955,6 +2160,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackageDependencies</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackageDependencies</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackageDependencies</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1986,6 +2196,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.MsixPackageList</Name>
       <ViewSelectedBy>
@@ -1995,6 +2206,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackageList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackageList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackageList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2014,6 +2230,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.MsixPackagePatch</Name>
       <ViewSelectedBy>
@@ -2023,6 +2240,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackagePatch</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackagePatch</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackagePatch</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2042,6 +2264,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.MsixPackagePatchProperties</Name>
       <ViewSelectedBy>
@@ -2051,6 +2274,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackagePatchProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackagePatchProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackagePatchProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2082,6 +2310,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.MsixPackageProperties</Name>
       <ViewSelectedBy>
@@ -2091,6 +2320,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackageProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackageProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.MsixPackageProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2158,6 +2392,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.PrivateEndpointConnectionListResultWithSystemData</Name>
       <ViewSelectedBy>
@@ -2167,6 +2402,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateEndpointConnectionListResultWithSystemData</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateEndpointConnectionListResultWithSystemData</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateEndpointConnectionListResultWithSystemData</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2186,6 +2426,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.PrivateEndpointConnectionWithSystemData</Name>
       <ViewSelectedBy>
@@ -2195,6 +2436,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateEndpointConnectionWithSystemData</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateEndpointConnectionWithSystemData</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateEndpointConnectionWithSystemData</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2244,6 +2490,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.PrivateLinkResource</Name>
       <ViewSelectedBy>
@@ -2253,6 +2500,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateLinkResource</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateLinkResource</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateLinkResource</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2272,6 +2524,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.PrivateLinkResourceListResult</Name>
       <ViewSelectedBy>
@@ -2281,6 +2534,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateLinkResourceListResult</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateLinkResourceListResult</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateLinkResourceListResult</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2300,6 +2558,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.PrivateLinkResourceProperties</Name>
       <ViewSelectedBy>
@@ -2309,6 +2568,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateLinkResourceProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateLinkResourceProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.PrivateLinkResourceProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2340,6 +2604,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.RegistrationInfo</Name>
       <ViewSelectedBy>
@@ -2349,6 +2614,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.RegistrationInfo</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.RegistrationInfo</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.RegistrationInfo</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2380,6 +2650,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.RegistrationInfoPatch</Name>
       <ViewSelectedBy>
@@ -2389,6 +2660,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.RegistrationInfoPatch</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.RegistrationInfoPatch</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.RegistrationInfoPatch</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2414,6 +2690,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ResourceProviderOperation</Name>
       <ViewSelectedBy>
@@ -2423,6 +2700,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ResourceProviderOperation</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ResourceProviderOperation</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ResourceProviderOperation</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2448,6 +2730,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ResourceProviderOperationDisplay</Name>
       <ViewSelectedBy>
@@ -2457,6 +2740,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ResourceProviderOperationDisplay</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ResourceProviderOperationDisplay</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ResourceProviderOperationDisplay</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2494,6 +2782,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ResourceProviderOperationList</Name>
       <ViewSelectedBy>
@@ -2503,6 +2792,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ResourceProviderOperationList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ResourceProviderOperationList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ResourceProviderOperationList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2522,6 +2816,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingHostPoolReference</Name>
       <ViewSelectedBy>
@@ -2531,6 +2826,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingHostPoolReference</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingHostPoolReference</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingHostPoolReference</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2556,6 +2856,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingPlan</Name>
       <ViewSelectedBy>
@@ -2565,6 +2866,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlan</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlan</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlan</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2686,6 +2992,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingPlanList</Name>
       <ViewSelectedBy>
@@ -2695,6 +3002,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2714,6 +3026,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingPlanPatchProperties</Name>
       <ViewSelectedBy>
@@ -2723,6 +3036,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPatchProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPatchProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPatchProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2760,6 +3078,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingPlanPatchTags</Name>
       <ViewSelectedBy>
@@ -2769,6 +3088,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPatchTags</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPatchTags</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPatchTags</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2788,6 +3112,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingPlanPersonalSchedule</Name>
       <ViewSelectedBy>
@@ -2797,6 +3122,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPersonalSchedule</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPersonalSchedule</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPersonalSchedule</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2816,6 +3146,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingPlanPersonalScheduleList</Name>
       <ViewSelectedBy>
@@ -2825,6 +3156,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPersonalScheduleList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPersonalScheduleList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPersonalScheduleList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2844,6 +3180,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingPlanPersonalScheduleProperties</Name>
       <ViewSelectedBy>
@@ -2853,6 +3190,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPersonalScheduleProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPersonalScheduleProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPersonalScheduleProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -2998,6 +3340,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingPlanPooledSchedule</Name>
       <ViewSelectedBy>
@@ -3007,6 +3350,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPooledSchedule</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPooledSchedule</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPooledSchedule</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3026,6 +3374,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingPlanPooledScheduleList</Name>
       <ViewSelectedBy>
@@ -3035,6 +3384,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPooledScheduleList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPooledScheduleList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPooledScheduleList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3054,6 +3408,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingPlanPooledSchedulePatch</Name>
       <ViewSelectedBy>
@@ -3063,6 +3418,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPooledSchedulePatch</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPooledSchedulePatch</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPooledSchedulePatch</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3082,6 +3442,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingPlanPooledScheduleProperties</Name>
       <ViewSelectedBy>
@@ -3091,6 +3452,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPooledScheduleProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPooledScheduleProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanPooledScheduleProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3182,6 +3548,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingPlanProperties</Name>
       <ViewSelectedBy>
@@ -3191,6 +3558,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingPlanProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3240,6 +3612,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.ScalingSchedule</Name>
       <ViewSelectedBy>
@@ -3249,6 +3622,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingSchedule</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingSchedule</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.ScalingSchedule</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3346,6 +3724,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.SendMessage</Name>
       <ViewSelectedBy>
@@ -3355,6 +3734,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SendMessage</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SendMessage</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SendMessage</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3380,6 +3764,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.SessionHost</Name>
       <ViewSelectedBy>
@@ -3389,6 +3774,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHost</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHost</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHost</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3408,6 +3798,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.SessionHostHealthCheckFailureDetails</Name>
       <ViewSelectedBy>
@@ -3417,6 +3808,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostHealthCheckFailureDetails</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostHealthCheckFailureDetails</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostHealthCheckFailureDetails</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3448,6 +3844,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.SessionHostHealthCheckReport</Name>
       <ViewSelectedBy>
@@ -3457,6 +3854,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostHealthCheckReport</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostHealthCheckReport</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostHealthCheckReport</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3482,6 +3884,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.SessionHostList</Name>
       <ViewSelectedBy>
@@ -3491,6 +3894,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3510,6 +3918,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.SessionHostPatch</Name>
       <ViewSelectedBy>
@@ -3519,6 +3928,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostPatch</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostPatch</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostPatch</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3538,6 +3952,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.SessionHostPatchProperties</Name>
       <ViewSelectedBy>
@@ -3547,6 +3962,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostPatchProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostPatchProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostPatchProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3578,6 +3998,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.SessionHostProperties</Name>
       <ViewSelectedBy>
@@ -3587,6 +4008,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.SessionHostProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3696,6 +4122,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.StartMenuItem</Name>
       <ViewSelectedBy>
@@ -3705,6 +4132,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.StartMenuItem</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.StartMenuItem</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.StartMenuItem</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3724,6 +4156,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.StartMenuItemList</Name>
       <ViewSelectedBy>
@@ -3733,6 +4166,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.StartMenuItemList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.StartMenuItemList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.StartMenuItemList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3752,6 +4190,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.StartMenuItemProperties</Name>
       <ViewSelectedBy>
@@ -3761,6 +4200,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.StartMenuItemProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.StartMenuItemProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.StartMenuItemProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3804,6 +4248,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.Time</Name>
       <ViewSelectedBy>
@@ -3813,6 +4258,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.Time</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.Time</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.Time</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3838,6 +4288,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.UserSession</Name>
       <ViewSelectedBy>
@@ -3847,6 +4298,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.UserSession</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.UserSession</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.UserSession</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3866,6 +4322,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.UserSessionList</Name>
       <ViewSelectedBy>
@@ -3875,6 +4332,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.UserSessionList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.UserSessionList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.UserSessionList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3894,6 +4356,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.UserSessionProperties</Name>
       <ViewSelectedBy>
@@ -3903,6 +4366,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.UserSessionProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.UserSessionProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.UserSessionProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -3952,6 +4420,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.Workspace</Name>
       <ViewSelectedBy>
@@ -3961,6 +4430,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.Workspace</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.Workspace</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.Workspace</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -4082,6 +4556,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.WorkspaceList</Name>
       <ViewSelectedBy>
@@ -4091,6 +4566,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.WorkspaceList</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.WorkspaceList</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.WorkspaceList</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -4110,6 +4590,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.WorkspacePatchProperties</Name>
       <ViewSelectedBy>
@@ -4119,6 +4600,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.WorkspacePatchProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.WorkspacePatchProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.WorkspacePatchProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -4156,6 +4642,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.WorkspacePatchTags</Name>
       <ViewSelectedBy>
@@ -4165,6 +4652,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.WorkspacePatchTags</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.WorkspacePatchTags</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.WorkspacePatchTags</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -4184,6 +4676,7 @@
       </TableControl>
     </View>
     <View>
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/Az.DesktopVirtualization.format.ps1xml
       <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.WorkspaceProperties</Name>
       <ViewSelectedBy>
@@ -4193,6 +4686,11 @@
       <ViewSelectedBy>
         <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.WorkspaceProperties</TypeName>
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/Az.DesktopVirtualization.format.ps1xml
+=======
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.WorkspaceProperties</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.WorkspaceProperties</TypeName>
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>

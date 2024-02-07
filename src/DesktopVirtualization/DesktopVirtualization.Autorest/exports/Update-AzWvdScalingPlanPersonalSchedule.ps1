@@ -20,6 +20,7 @@ Update a ScalingPlanPersonalSchedule.
 .Description
 Update a ScalingPlanPersonalSchedule.
 .Example
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/exports/Update-AzWvdScalingPlanPersonalSchedule.ps1
 Update-AzWvdScalingPlanPooledSchedule -ResourceGroupName rgName `
                                         -ScalingPlanName spName `
@@ -46,6 +47,8 @@ Update-AzWvdScalingPlanPooledSchedule -ResourceGroupName rgName `
                                         -offPeakStartTimeMinute 45 `
                                         -offPeakLoadBalancingAlgorithm DepthFirst
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 Update-AzWvdScalingPlanPersonalSchedule -ResourceGroupName rgName `
                                         -ScalingPlanName spName `
                                         -ScalingPlanScheduleName scheduleName `
@@ -78,16 +81,23 @@ Update-AzWvdScalingPlanPersonalSchedule -ResourceGroupName rgName `
                                         -OffPeakMinutesToWaitOnDisconnect 10 `
                                         -OffPeakActionOnLogoff Deallocate `
                                         -OffPeakMinutesToWaitOnLogoff 10
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/exports/Update-AzWvdScalingPlanPersonalSchedule.ps1
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
 .Outputs
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/exports/Update-AzWvdScalingPlanPersonalSchedule.ps1
 Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IScalingPlanPersonalSchedule
 =======
 Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingPlanPersonalSchedule
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/exports/Update-AzWvdScalingPlanPersonalSchedule.ps1
+=======
+Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingPlanPersonalSchedule
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 .Notes
 COMPLEX PARAMETER PROPERTIES
 
@@ -112,11 +122,15 @@ INPUTOBJECT <IDesktopVirtualizationIdentity>: Identity Parameter
 https://learn.microsoft.com/powershell/module/az.desktopvirtualization/update-azwvdscalingplanpersonalschedule
 #>
 function Update-AzWvdScalingPlanPersonalSchedule {
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/exports/Update-AzWvdScalingPlanPersonalSchedule.ps1
 [OutputType([Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IScalingPlanPersonalSchedule])]
 =======
 [OutputType([Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingPlanPersonalSchedule])]
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/exports/Update-AzWvdScalingPlanPersonalSchedule.ps1
+=======
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingPlanPersonalSchedule])]
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 [CmdletBinding(DefaultParameterSetName='UpdateExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
     [Parameter(ParameterSetName='UpdateExpanded', Mandatory)]

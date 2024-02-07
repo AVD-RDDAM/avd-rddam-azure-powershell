@@ -28,6 +28,7 @@ using System;
 using System.Runtime.CompilerServices;
 using System.Security;
 using Microsoft.WindowsAzure.Commands.Common;
+using Microsoft.Rest.Azure;
 
 namespace Microsoft.Azure.Commands.NetAppFiles.BackupPolicy
 {
@@ -216,14 +217,14 @@ namespace Microsoft.Azure.Commands.NetAppFiles.BackupPolicy
                     OrganizationalUnit = OrganizationalUnit,
                     BackupOperators = BackupOperator,
                     KdcIP = KdcIP,
-                    ServerRootCACertificate = ServerRootCACertificate,
+                    ServerRootCaCertificate = ServerRootCACertificate,
                     SecurityOperators = SecurityOperator,
                     AesEncryption = AesEncryption,
                     LdapSigning = LdapSigning,
-                    LdapOverTLS = LdapOverTLS,
+                    LdapOverTls = LdapOverTLS,
                     AllowLocalNfsUsersWithLdap = AllowLocalNfsUsersWithLdap,
                     Administrators = Administrator,
-                    EncryptDCConnections = EncryptDCConnection,
+                    EncryptDcConnections = EncryptDCConnection,
                     LdapSearchScope = LdapSearchScope?.ConvertFromPs(),
                     PreferredServersForLdapClient = PreferredServersForLdapClient is null ? null : string.Join(",", PreferredServersForLdapClient),
                 };
@@ -236,9 +237,16 @@ namespace Microsoft.Azure.Commands.NetAppFiles.BackupPolicy
                 {                        
                     ActiveDirectories = anfAccount.ActiveDirectories                        
                 };
-                var updatedAnfAccount = AzureNetAppFilesManagementClient.Accounts.Update(netAppAccountBody, ResourceGroupName, AccountName);
-                var updatedActiveDirectory = updatedAnfAccount.ActiveDirectories.FirstOrDefault<Management.NetApp.Models.ActiveDirectory>(e => e.SmbServerName == SmbServerName);
-                WriteObject(updatedActiveDirectory.ConvertToPs(ResourceGroupName, AccountName));                
+                try
+                {
+                    var updatedAnfAccount = AzureNetAppFilesManagementClient.Accounts.Update(ResourceGroupName, AccountName, netAppAccountBody);
+                    var updatedActiveDirectory = updatedAnfAccount.ActiveDirectories.FirstOrDefault<Management.NetApp.Models.ActiveDirectory>(e => e.SmbServerName == SmbServerName);
+                    WriteObject(updatedActiveDirectory.ConvertToPs(ResourceGroupName, AccountName));                
+                }
+                catch(ErrorResponseException ex)
+                {
+                    throw new CloudException(ex.Body.Error.Message, ex);
+                }
             }
         }
     }

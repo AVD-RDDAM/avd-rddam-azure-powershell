@@ -111,11 +111,15 @@ Represents URI referring to MSIX Image
 To construct, see NOTES section for MSIXIMAGEURI properties and create a hash table.
 
 ```yaml
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/Expand-AzWvdMsixImage.md
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IMsixImageUri
 =======
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IMsixImageUri
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/Expand-AzWvdMsixImage.md
+=======
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IMsixImageUri
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 Parameter Sets: Expand, ExpandViaIdentity
 Aliases:
 
@@ -208,16 +212,21 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/Expand-AzWvdMsixImage.md
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IMsixImageUri
 =======
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IMsixImageUri
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/Expand-AzWvdMsixImage.md
+=======
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IMsixImageUri
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
 
 ## OUTPUTS
 
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/Expand-AzWvdMsixImage.md
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IExpandMsixImage
 
@@ -250,10 +259,15 @@ To create the parameters described below, construct a hash table containing the 
   - `[Uri <String>]`: URI to Image
 
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IExpandMsixImage
 
 ## NOTES
 
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/Expand-AzWvdMsixImage.md
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ## RELATED LINKS
 

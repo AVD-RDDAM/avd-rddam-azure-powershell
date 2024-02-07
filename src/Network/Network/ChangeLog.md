@@ -20,6 +20,45 @@
 
 ## Upcoming Release
 
+## Version 7.4.0
+* Fixed a few minor issues
+* Updated `New-AzApplicationGateway` to include `EnableRequestBuffering` and `EnableResponseBuffering` parameters
+* Changed the Default Rule Set from CRS3.0 to DRS2.1 in `NewAzureApplicationGatewayFirewallPolicy`
+* Added optional property 'Profile' to `New-AzFirewallPolicyIntrusionDetection` 
+* Added new cmdlet to update Connection child resource of Network Virtual Appliance. - `Update-AzNetworkVirtualApplianceConnection`
+* Added support of `InternetIngressIp` Property in New-AzNetworkVirtualAppliance
+* Added the new cmdlet for supporting `InternetIngressIp` Property with Network Virtual Appliances -`New-AzVirtualApplianceInternetIngressIpsProperty`
+* Added a new AuxiliaryMode value `AuxiliaryMode.Floating`
+* Added support for AzureFirewallPacketCapture
+
+## Version 7.3.0
+* Fixed a few minor issues
+* Onboarded `Microsoft.DBforPostgreSQL/flexibleServers` to private link cmdlets
+* Fixed missing properties in PSBackendAddressPool
+
+## Version 7.1.0
+* Added DefaultOutboundAccess parameter on subnet creation
+* Updated cmdlet `New-AzPublicIpPrefix` and `New-PublicIpAddress` to require Location parameter
+* Updated cmdlet `New-AzLoadBalancerBackendAddressPool` to support managed IP based backend
+* Added cmdlet `New-AzSaaSNetworkVirtualAppliance` for creating a NetworkVirtualAppliance of SaaS type.
+* Added control knobs to virtual network gateways and ExpressRoute gateways as well to cmdlets operating on those.
+* Updated cmdlets to add Hostnames property for Application gateway Listener Configuration
+	- `Set-AzApplicationGatewayListener`
+	- `Add-AzApplicationGatewayListener`
+	- `New-AzApplicationGatewayListener`
+* Added cmdlet 'Remove-AzApplicationGatewayFirewallCustomRule' to support removing custom rule in Firewall Policy.
+* Added support for new ErGWScale SKU - ErGwScale
+* Added property 'size' to firewallPolicy and firewallPolicyRuleCollectionGroup.
+* Updated cmdlet `New-AzBastion`, `Set-AzBastion` and `Get-AzBastion` to support Bastion features for CRUD operations
+
+## Version 7.0.0
+* [Breaking Change] Removed `Geo` as a valid input for parameter `VariableName` in `NewAzureApplicationGatewayFirewallCustomRuleGroupByVariable`.
+* Added AllowBranchToBranchTraffic property to New-AzRouteServer
+* Added AllowBranchToBranchTraffic property to Get-AzRouteServer
+* Changed Update-AzRouteServer functionality to fix bugs
+    - AllowBranchToBranchTraffic is now a bool
+    - Updating HubRoutingPreference property will not effect AllowBranchToBranchTraffic
+
 ## Version 6.2.0
 * Added support for new Application Gateway SKU type, Basic SKU
 * Onboarded `Microsoft.EventGrid/partnerNamespaces` to private link cmdlets

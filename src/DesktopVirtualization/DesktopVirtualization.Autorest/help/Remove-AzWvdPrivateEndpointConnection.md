@@ -238,6 +238,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## NOTES
 
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/Remove-AzWvdPrivateEndpointConnection.md
 ALIASES
 
@@ -264,5 +265,7 @@ To create the parameters described below, construct a hash table containing the 
 
 =======
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/Remove-AzWvdPrivateEndpointConnection.md
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ## RELATED LINKS
 

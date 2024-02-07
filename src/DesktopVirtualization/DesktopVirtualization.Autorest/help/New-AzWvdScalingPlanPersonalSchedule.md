@@ -42,6 +42,7 @@ Create or update a ScalingPlanPersonalSchedule.
 New-AzWvdScalingPlanPersonalSchedule -ResourceGroupName rgName `
                                         -ScalingPlanName spName `
                                         -ScalingPlanScheduleName scheduleName `
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/New-AzWvdScalingPlanPersonalSchedule.md
                                         -daysOfWeek @('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday') `
                                         -rampUpStartTimeHour 6 `
@@ -73,6 +74,8 @@ New-AzWvdScalingPlanPersonalSchedule -ResourceGroupName rgName `
                                         -offPeakActionOnLogoff Deallocate `
                                         -offPeakMinutesToWaitOnLogoff 10
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
                                         -DaysOfWeek @('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday') `
                                         -RampUpStartTimeHour 6 `
                                         -RampUpStartTimeMinute 30 `
@@ -102,7 +105,10 @@ New-AzWvdScalingPlanPersonalSchedule -ResourceGroupName rgName `
                                         -OffPeakMinutesToWaitOnDisconnect 10 `
                                         -OffPeakActionOnLogoff Deallocate `
                                         -OffPeakMinutesToWaitOnLogoff 10
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/New-AzWvdScalingPlanPersonalSchedule.md
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ```
 
 ```output
@@ -681,6 +687,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/New-AzWvdScalingPlanPersonalSchedule.md
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IScalingPlanPersonalSchedule
 
@@ -689,10 +696,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IScalingPlanPersonalSchedule
 
 ## NOTES
 
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/New-AzWvdScalingPlanPersonalSchedule.md
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ## RELATED LINKS
 

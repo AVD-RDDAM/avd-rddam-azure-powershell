@@ -19,10 +19,13 @@
 -->
 ## Upcoming Release
 
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/ChangeLog.md
 ## Version 5.1.0
 * Added cmdlet:
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 ## Version 4.3.0
 * Removed AppAttach Cmdlets and ResetIcon parameter to Update-AzWvdApplication
 
@@ -41,16 +44,22 @@
     - `Get-AzWvdPrivateLinkResource`
     - `Remove-AzWvdPrivateEndpointConnection`
 * Added Scaling Plan Personal Schedule cmdlets
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization/ChangeLog.md
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
     - `Get-AzWvdScalingPlanPersonalSchedule`
     - `New-AzWvdScalingPlanPersonalSchedule`
     - `Remove-AzWvdScalingPlanPersonalSchedule`
     - `Update-AzWvdScalingPlanPersonalSchedule`
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/ChangeLog.md
 * Added parameters `ShowInFeed` to:
     - `New-AzWvdApplicationGroup`
     - `Update-AzWvdApplicationGroup`
 =======
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 * Added Scaling Plan Pooled Schedule cmdlets
     - `Get-AzWvdScalingPlanPooledSchedule`
     - `New-AzWvdScalingPlanPooledSchedule`
@@ -58,7 +67,10 @@
     - `Update-AzWvdScalingPlanPooledSchedule`
 * Updated rampDownCapacityThresholdPct minimum value from 0 to 1 on ScalingPlanPooledSchedule cmdlets
 * Added showInFeed property to ApplicationGroups
+<<<<<<< HEAD
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization/ChangeLog.md
+=======
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 
 ## Version 4.0.0
 * Upgraded API version to 2022-09-09

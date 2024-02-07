@@ -219,11 +219,15 @@ List of package applications.
 To construct, see NOTES section for PACKAGEAPPLICATION properties and create a hash table.
 
 ```yaml
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/New-AzWvdMsixPackage.md
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IMsixPackageApplications[]
 =======
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IMsixPackageApplications[]
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/New-AzWvdMsixPackage.md
+=======
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IMsixPackageApplications[]
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -240,11 +244,15 @@ List of package dependencies.
 To construct, see NOTES section for PACKAGEDEPENDENCY properties and create a hash table.
 
 ```yaml
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/New-AzWvdMsixPackage.md
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IMsixPackageDependencies[]
 =======
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IMsixPackageDependencies[]
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/New-AzWvdMsixPackage.md
+=======
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IMsixPackageDependencies[]
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -385,11 +393,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/help/New-AzWvdMsixPackage.md
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IMsixPackage
 =======
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IMsixPackage
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/help/New-AzWvdMsixPackage.md
+=======
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IMsixPackage
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
 
 ## NOTES
 

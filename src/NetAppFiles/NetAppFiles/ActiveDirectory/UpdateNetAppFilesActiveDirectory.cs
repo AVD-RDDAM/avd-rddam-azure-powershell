@@ -27,6 +27,7 @@ using System.Collections.Generic;
 using Microsoft.Azure.Management.NetApp.Models;
 using System.Security;
 using Microsoft.WindowsAzure.Commands.Common;
+using Microsoft.Rest.Azure;
 
 namespace Microsoft.Azure.Commands.NetAppFiles.ActiveDirectory
 {
@@ -259,28 +260,28 @@ namespace Microsoft.Azure.Commands.NetAppFiles.ActiveDirectory
                 anfADConfig.OrganizationalUnit = OrganizationalUnit ?? anfADConfig.Site;
                 anfADConfig.BackupOperators = BackupOperator ?? anfADConfig.BackupOperators;
                 anfADConfig.KdcIP = KdcIP ?? anfADConfig.KdcIP;
-                anfADConfig.ServerRootCACertificate = ServerRootCACertificate ?? anfADConfig.ServerRootCACertificate;
+                anfADConfig.ServerRootCaCertificate = ServerRootCACertificate ?? anfADConfig.ServerRootCaCertificate;
                 anfADConfig.SecurityOperators = SecurityOperator ?? anfADConfig.SecurityOperators;
-                if (AesEncryption)
+                if (AesEncryption.IsPresent)
                 {
                     anfADConfig.AesEncryption = AesEncryption;
                 }
-                if (LdapSigning)
+                if (LdapSigning.IsPresent)
                 {
                     anfADConfig.LdapSigning = LdapSigning;
                 }
-                if (LdapOverTLS)
+                if (LdapOverTLS.IsPresent)
                 {
-                    anfADConfig.LdapOverTLS = LdapOverTLS;
+                    anfADConfig.LdapOverTls = LdapOverTLS;
                 }
-                if (AllowLocalNfsUsersWithLdap)
+                if (AllowLocalNfsUsersWithLdap.IsPresent)
                 {
                     anfADConfig.AllowLocalNfsUsersWithLdap = AllowLocalNfsUsersWithLdap;
                 }
                 anfADConfig.Administrators = Administrator ?? anfADConfig.Administrators;
-                if (EncryptDCConnection)
+                if (EncryptDCConnection.IsPresent)
                 {
-                    anfADConfig.EncryptDCConnections = EncryptDCConnection;
+                    anfADConfig.EncryptDcConnections = EncryptDCConnection;
                 }
                 anfADConfig.LdapSearchScope = LdapSearchScope?.ConvertFromPs();
                 anfADConfig.PreferredServersForLdapClient = PreferredServersForLdapClient is null ? null : string.Join(",", PreferredServersForLdapClient);
@@ -289,9 +290,16 @@ namespace Microsoft.Azure.Commands.NetAppFiles.ActiveDirectory
                 {
                     ActiveDirectories = anfAccount.ActiveDirectories                    
                 };
-                var updatedAnfAccount = AzureNetAppFilesManagementClient.Accounts.Update(netAppAccountBody, ResourceGroupName, AccountName);
-                var updatedActiveDirectory = updatedAnfAccount.ActiveDirectories.FirstOrDefault<Management.NetApp.Models.ActiveDirectory>(e => e.ActiveDirectoryId == ActiveDirectoryId);
-                WriteObject(updatedActiveDirectory.ConvertToPs(ResourceGroupName, AccountName));
+                try
+                { 
+                    var updatedAnfAccount = AzureNetAppFilesManagementClient.Accounts.Update(ResourceGroupName, AccountName, netAppAccountBody);
+                    var updatedActiveDirectory = updatedAnfAccount.ActiveDirectories.FirstOrDefault<Management.NetApp.Models.ActiveDirectory>(e => e.ActiveDirectoryId == ActiveDirectoryId);
+                    WriteObject(updatedActiveDirectory.ConvertToPs(ResourceGroupName, AccountName));
+                }
+                catch (ErrorResponseException ex)
+                {
+                    throw new CloudException(ex.Body.Error.Message, ex);
+                }
             }
         }
     }

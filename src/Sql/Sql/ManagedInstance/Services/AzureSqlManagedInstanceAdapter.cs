@@ -154,7 +154,7 @@ namespace Microsoft.Azure.Commands.Sql.ManagedInstance.Adapter
                 AdministratorLoginPassword = model.AdministratorPassword != null ? ConversionUtilities.SecureStringToString(model.AdministratorPassword) : null,
                 Sku = model.Sku != null ? new Management.Sql.Models.Sku(model.Sku.Name, model.Sku.Tier) : null,
                 LicenseType = model.LicenseType,
-                StorageSizeInGB = model.StorageSizeInGB,
+                StorageSizeInGb = model.StorageSizeInGB,
                 SubnetId = model.SubnetId,
                 VCores = model.VCores,
                 Identity = model.Identity,
@@ -173,7 +173,9 @@ namespace Microsoft.Azure.Commands.Sql.ManagedInstance.Adapter
                 PrimaryUserAssignedIdentityId = model.PrimaryUserAssignedIdentityId,
                 KeyId = model.KeyId,
                 ZoneRedundant = model.ZoneRedundant,
-                ServicePrincipal = ResourceServicePrincipalHelper.UnwrapServicePrincipalObject(model.ServicePrincipal)
+                ServicePrincipal = ResourceServicePrincipalHelper.UnwrapServicePrincipalObject(model.ServicePrincipal),
+                DatabaseFormat = model.DatabaseFormat,
+                PricingModel = model.PricingModel
             });
 
             return CreateManagedInstanceModelFromResponse(resp);
@@ -193,11 +195,11 @@ namespace Microsoft.Azure.Commands.Sql.ManagedInstance.Adapter
                 AdministratorLoginPassword = model.AdministratorPassword != null ? ConversionUtilities.SecureStringToString(model.AdministratorPassword) : null,
                 Sku = model.Sku != null ? new Management.Sql.Models.Sku(model.Sku.Name, model.Sku.Tier) : null,
                 LicenseType = model.LicenseType,
-                StorageSizeInGB = model.StorageSizeInGB,
+                StorageSizeInGb = model.StorageSizeInGB,
                 SubnetId = model.SubnetId,
                 VCores = model.VCores,
                 PublicDataEndpointEnabled = model.PublicDataEndpointEnabled,
-                ProxyOverride = model.ProxyOverride,
+                ProxyOverride = model.ProxyOverride
             });
 
             return CreateManagedInstanceModelFromResponse(resp);
@@ -213,12 +215,21 @@ namespace Microsoft.Azure.Commands.Sql.ManagedInstance.Adapter
             Communicator.Remove(resourceGroupName, managedInstanceName);
         }
 
-
+        /// <summary>
+        /// Starts a managed instance.
+        /// </summary>
+        /// <param name="resourceGroupName">The resource group name</param>
+        /// <param name="name">The name of the managed instance</param>
         public void StartManagedInstance(string resourceGroupName, string name)
         {
             Communicator.Start(resourceGroupName, name);
         }
 
+        /// <summary>
+        /// Stops a managed instance.
+        /// </summary>
+        /// <param name="resourceGroupName">The resource group name</param>
+        /// <param name="name">The name of the managed instance</param>
         public void StopManagedInstance(string resourceGroupName, string name)
         {
             Communicator.Stop(resourceGroupName, name);
@@ -250,7 +261,7 @@ namespace Microsoft.Azure.Commands.Sql.ManagedInstance.Adapter
             managedInstance.SubnetId = resp.SubnetId;
             managedInstance.LicenseType = resp.LicenseType;
             managedInstance.VCores = resp.VCores;
-            managedInstance.StorageSizeInGB = resp.StorageSizeInGB;
+            managedInstance.StorageSizeInGB = resp.StorageSizeInGb;
             managedInstance.Collation = resp.Collation;
             managedInstance.PublicDataEndpointEnabled = resp.PublicDataEndpointEnabled;
             managedInstance.ProxyOverride = resp.ProxyOverride;
@@ -280,6 +291,9 @@ namespace Microsoft.Azure.Commands.Sql.ManagedInstance.Adapter
             managedInstance.PrimaryUserAssignedIdentityId = resp.PrimaryUserAssignedIdentityId;
             managedInstance.KeyId = resp.KeyId;
             managedInstance.ZoneRedundant = resp.ZoneRedundant;
+            managedInstance.DatabaseFormat = resp.DatabaseFormat;
+            managedInstance.PricingModel = resp.PricingModel;
+            managedInstance.ExternalGovernanceStatus = resp.ExternalGovernanceStatus;
 
             return managedInstance;
         }
@@ -316,7 +330,7 @@ namespace Microsoft.Azure.Commands.Sql.ManagedInstance.Adapter
 
             Guid? objectId = input.Sid;
             string displayName = input.Login;
-            bool? adOnlyAuth = input.AzureADOnlyAuthentication;
+            bool? adOnlyAuth = input.AzureAdOnlyAuthentication;
 
             // Gets the default Tenant id for the subscriptions
             Guid tenantId = GetTenantId();
@@ -393,7 +407,7 @@ namespace Microsoft.Azure.Commands.Sql.ManagedInstance.Adapter
                     Sid = new Guid(app.AppId),
                     TenantId = tenantId,
                     PrincipalType = "Application",
-                    AzureADOnlyAuthentication = adOnlyAuth
+                    AzureAdOnlyAuthentication = adOnlyAuth
                 };
             }
 
@@ -405,7 +419,7 @@ namespace Microsoft.Azure.Commands.Sql.ManagedInstance.Adapter
                     Sid = new Guid(group.Id),
                     TenantId = tenantId,
                     PrincipalType = "Group",
-                    AzureADOnlyAuthentication = adOnlyAuth
+                    AzureAdOnlyAuthentication = adOnlyAuth
                 };
             }
 
@@ -434,7 +448,7 @@ namespace Microsoft.Azure.Commands.Sql.ManagedInstance.Adapter
                 userList = MicrosoftGraphClient.FilterUsers(filter).Where(gr => string.Equals(gr.UserPrincipalName, displayName, StringComparison.OrdinalIgnoreCase));
             }
 
-            // No user was found. Check if the display name is a guest user. 
+            // No user was found. Check if the display name is a guest user.
             if (userList == null || userList.Count() == 0)
             {
                 // Check if the display name is the UPN
@@ -469,7 +483,7 @@ namespace Microsoft.Azure.Commands.Sql.ManagedInstance.Adapter
                     Sid = new Guid(obj.Id),
                     TenantId = tenantId,
                     PrincipalType = "User",
-                    AzureADOnlyAuthentication = adOnlyAuth
+                    AzureAdOnlyAuthentication = adOnlyAuth
                 };
             }
         }

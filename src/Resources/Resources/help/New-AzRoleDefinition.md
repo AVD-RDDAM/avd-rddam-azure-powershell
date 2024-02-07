@@ -19,12 +19,14 @@ Finally, use this command to create a custom role using role definition.
 
 ### InputFileParameterSet
 ```
-New-AzRoleDefinition [-InputFile] <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+New-AzRoleDefinition [-InputFile] <String> [-SkipClientSideScopeValidation]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ### RoleDefinitionParameterSet
 ```
-New-AzRoleDefinition [-Role] <PSRoleDefinition> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+New-AzRoleDefinition [-Role] <PSRoleDefinition> [-SkipClientSideScopeValidation]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -82,26 +84,24 @@ Following is a sample json role definition that can be provided as input
 
 ### Example 1: Create using PSRoleDefinitionObject
 ```powershell
-$role = Get-AzRoleDefinition -Name "Virtual Machine Contributor"
-
-$role.Id = $null
-$role.Name = "Virtual Machine Operator"
-$role.Description = "Can monitor, start, and restart virtual machines."
-$role.IsCustom = $True
-$role.Actions.RemoveRange(0,$role.Actions.Count)
-$role.Actions.Add("Microsoft.Compute/*/read")
-$role.Actions.Add("Microsoft.Compute/virtualMachines/start/action")
-$role.Actions.Add("Microsoft.Compute/virtualMachines/restart/action")
-$role.Actions.Add("Microsoft.Compute/virtualMachines/downloadRemoteDesktopConnectionFile/action")
-$role.Actions.Add("Microsoft.Network/*/read")
-$role.Actions.Add("Microsoft.Storage/*/read")
-$role.Actions.Add("Microsoft.Authorization/*/read")
-$role.Actions.Add("Microsoft.Resources/subscriptions/resourceGroups/read")
-$role.Actions.Add("Microsoft.Resources/subscriptions/resourceGroups/resources/read")
-$role.Actions.Add("Microsoft.Insights/alertRules/*")
-$role.Actions.Add("Microsoft.Support/*")
-$role.AssignableScopes.Clear()
-$role.AssignableScopes.Add("/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx")
+$role = New-Object -TypeName Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleDefinition 
+$role.Name = 'Virtual Machine Operator'
+$role.Description = 'Can monitor, start, and restart virtual machines.'
+$role.IsCustom = $true
+$role.AssignableScopes = @("/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx")
+$role.Actions = @(
+    "Microsoft.Compute/*/read"
+    "Microsoft.Compute/virtualMachines/start/action"
+    "Microsoft.Compute/virtualMachines/restart/action"
+    "Microsoft.Compute/virtualMachines/downloadRemoteDesktopConnectionFile/action"
+    "Microsoft.Network/*/read"
+    "Microsoft.Storage/*/read"
+    "Microsoft.Authorization/*/read"
+    "Microsoft.Resources/subscriptions/resourceGroups/read"
+    "Microsoft.Resources/subscriptions/resourceGroups/resources/read"
+    "Microsoft.Insights/alertRules/*"
+    "Microsoft.Support/*"
+)
 
 New-AzRoleDefinition -Role $role
 ```
@@ -153,6 +153,21 @@ Aliases:
 
 Required: True
 Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SkipClientSideScopeValidation
+If specified, skip client side scope validation.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False

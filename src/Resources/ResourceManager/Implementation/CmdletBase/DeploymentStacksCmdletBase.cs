@@ -17,6 +17,7 @@ using Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkClient;
 using Microsoft.Azure.Commands.ResourceManager.Cmdlets.Utilities;
 using Microsoft.WindowsAzure.Commands.Utilities.Common;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
@@ -55,24 +56,23 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
             }
         }
 
-        protected string ResolveBicepFile(string TemplateFile)
-        {
-            if (BicepUtility.IsBicepFile(TemplateFile))
-            {
-                return BicepUtility.BuildFile(this.ResolvePath(TemplateFile), this.WriteVerbose, this.WriteWarning);
-            }
-            else
-                return TemplateFile;
-            
-        }
-
         protected BicepBuildParamsStdout ResolveBicepParameterFile(string TemplateParameterFile)
         {
             if (BicepUtility.IsBicepparamFile(TemplateParameterFile))
             {
-                return BicepUtility.BuildParams(this.ResolvePath(TemplateParameterFile), this.WriteVerbose, this.WriteWarning);
+                return BicepUtility.Create().BuildBicepParamFile(this.ResolvePath(TemplateParameterFile), new Dictionary<string, object>(), this.WriteVerbose, this.WriteWarning);
             }
 
+            return null;
+        }
+
+        protected string ResolveBicepFile(string filePath)
+        {
+            if (BicepUtility.IsBicepFile(filePath))
+            {
+                return BicepUtility.Create().BuildBicepFile(this.ResolvePath(filePath), this.WriteVerbose, this.WriteWarning);
+            }
+            
             return null;
         }
 

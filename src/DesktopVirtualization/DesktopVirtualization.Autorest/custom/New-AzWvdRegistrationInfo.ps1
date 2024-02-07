@@ -20,11 +20,15 @@ Create Windows virtual desktop registration info.
 Create Windows virtual desktop registration info.
 #>
 function New-AzWvdRegistrationInfo {
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/custom/New-AzWvdRegistrationInfo.ps1
     [OutputType('Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IRegistrationInfo')]
 =======
     [OutputType('Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IRegistrationInfo')]
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/custom/New-AzWvdRegistrationInfo.ps1
+=======
+    [OutputType('Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IRegistrationInfo')]
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
     [CmdletBinding(PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
     param(
         [Parameter()]
@@ -114,11 +118,15 @@ function New-AzWvdRegistrationInfo {
             -Ring $hostpool.Ring `
             -ValidationEnvironment:$hostpool.ValidationEnvironment `
             -PreferredAppGroupType $hostpool.PreferredAppGroupType
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/custom/New-AzWvdRegistrationInfo.ps1
         New-Object -TypeName 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.RegistrationInfo' `
 =======
         New-Object -TypeName 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.RegistrationInfo' `
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/custom/New-AzWvdRegistrationInfo.ps1
+=======
+        New-Object -TypeName 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.RegistrationInfo' `
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
             -Property @{ `
                 ExpirationTime = $hostpool.RegistrationInfoExpirationTime; `
                 RegistrationTokenOperation = $hostpool.RegistrationInfoRegistrationTokenOperation; `

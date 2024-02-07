@@ -1025,6 +1025,15 @@ Creates a Firewall Network Rule.
 ### [New-AzFirewallNetworkRuleCollection](New-AzFirewallNetworkRuleCollection.md)
 Creates a Azure Firewall Network Collection of Network rules.
 
+### [New-AzFirewallPacketCaptureParameter](New-AzFirewallPacketCaptureParameter.md)
+Creates a Azure Firewall Packet Capture Parameter.
+
+### [New-AzFirewallPacketCaptureRule](New-AzFirewallPacketCaptureRule.md)
+Creates a Azure Firewall Packet Capture Rule.
+
+### [Invoke-AzFirewallPacketCapture](Invoke-AzFirewallPacketCapture.md)
+Invoke a Packet Capture request on Azure Firewall.
+
 ### [New-AzFirewallPolicy](New-AzFirewallPolicy.md)
 Creates a new Azure Firewall Policy
 
@@ -1071,13 +1080,13 @@ Creates SNAT configuration of PrivateRange and AutoLearnPrivateRanges for the fi
 Creates a new SQL Setting for Azure Firewall Policy
 
 ### [New-AzFirewallPolicyThreatIntelWhitelist](New-AzFirewallPolicyThreatIntelWhitelist.md)
-Create a new threat intelligence whitelist for Azure Firewall Policy
+Create a new threat intelligence allowlist for Azure Firewall Policy
 
 ### [New-AzFirewallPublicIpAddress](New-AzFirewallPublicIpAddress.md)
 This is the placeholder for the Ip Address that can be used for multi pip on azure firewall.
 
 ### [New-AzFirewallThreatIntelWhitelist](New-AzFirewallThreatIntelWhitelist.md)
-Create a new threat intelligence whitelist for Azure Firewall
+Create a new threat intelligence allowlist for Azure Firewall
 
 ### [New-AzGatewayCustomBgpIpConfigurationObject](New-AzGatewayCustomBgpIpConfigurationObject.md)
 creates a new GatewayCustomBgpIpConfigurationObject.

@@ -47,11 +47,16 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
         public string ManagementGroupId { get; set; }
 
         [Parameter(Mandatory = false, ValueFromPipelineByPropertyName = true,
+            HelpMessage = "The subscription id at which the deployment should be created.")]
+        public string DeploymentSubscriptionId { get; set; }
+
+        [Parameter(Mandatory = false, ValueFromPipelineByPropertyName = true,
             HelpMessage = "Description for the stack")]
         public string Description { get; set; }
 
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true,
             HelpMessage = "Location of the stack")]
+        [ValidateNotNullOrEmpty]
         public string Location { get; set; }
 
         [Parameter(Mandatory = false, HelpMessage = "Signal to delete both unmanaged Resources and ResourceGroups after updating stack.")]
@@ -76,15 +81,10 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
         [Parameter(Mandatory = false, HelpMessage = "Apply to child scopes.")]
         public SwitchParameter DenySettingsApplyToChildScopes { get; set; }
 
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true,
-            HelpMessage = "The subscription id at which the deployment should be created.")]
-        public string DeploymentSubscriptionId { get; set; }
-
         [Parameter(Mandatory = false, HelpMessage = "The tags to put on the deployment.")]
         public Hashtable Tag { get; set; }
 
-        [Parameter(Mandatory = false,
-        HelpMessage = "Do not ask for confirmation when overwriting an existing stack.")]
+        [Parameter(Mandatory = false, HelpMessage = "Do not ask for confirmation when overwriting an existing stack.")]
         public SwitchParameter Force { get; set; }
 
         [Parameter(Mandatory = false, HelpMessage = "Run cmdlet in the background.")]
@@ -99,20 +99,12 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
             try
             {
                 Hashtable parameters = new Hashtable();
-                string filePath = "";
 
                 switch (ParameterSetName)
                 {
                     case ParameterlessTemplateFileParameterSetName:
                     case ParameterUriTemplateFileParameterSetName:
-                        filePath = this.TryResolvePath(TemplateFile);
-                        if (!File.Exists(filePath))
-                        {
-                            throw new PSInvalidOperationException(
-                                string.Format(ProjectResources.InvalidFilePath, TemplateFile));
-                        }
-                        filePath = ResolveBicepFile(filePath);
-                        TemplateUri = filePath;
+                        ResolveTemplate();
                         break;
                     case ParameterFileTemplateSpecParameterSetName:
                     case ParameterFileTemplateUriParameterSetName:
@@ -129,29 +121,13 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
                         break;
                     case ParameterFileTemplateFileParameterSetName:
                         parameters = ResolveParameters();
-
-                        filePath = this.TryResolvePath(TemplateFile);
-                        if (!File.Exists(filePath))
-                        {
-                            throw new PSInvalidOperationException(
-                                string.Format(ProjectResources.InvalidFilePath, TemplateFile));
-                        }
-                        filePath = ResolveBicepFile(filePath);
-
-                        TemplateUri = filePath;
+                        ResolveTemplate();
                         break;
                     case ByParameterFileWithNoTemplateParameterSetName:
                         parameters = ResolveParameters();
                         break;
                     case ParameterObjectTemplateFileParameterSetName:
-                        filePath = this.TryResolvePath(TemplateFile);
-                        if (!File.Exists(filePath))
-                        {
-                            throw new PSInvalidOperationException(
-                                string.Format(ProjectResources.InvalidFilePath, TemplateFile));
-                        }
-                        filePath = ResolveBicepFile(filePath);
-                        TemplateUri = filePath;
+                        ResolveTemplate();
                         parameters = GetTemplateParameterObject(TemplateParameterObject);
                         break;
                     case ParameterObjectTemplateSpecParameterSetName:
@@ -182,8 +158,11 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
                 var shouldDeleteResources = (DeleteAll.ToBool() || DeleteResources.ToBool()) ? true : false;
                 var shouldDeleteResourceGroups = (DeleteAll.ToBool() || DeleteResourceGroups.ToBool()) ? true : false;
 
-                // construct deploymentScope if ResourceGroup was provided
-                var deploymentScope = "/subscriptions/" + DeploymentSubscriptionId;
+                string deploymentScope = null;
+                if (DeploymentSubscriptionId != null)
+                {
+                    deploymentScope = "/subscriptions/" + DeploymentSubscriptionId;
+                }
 
                 var currentStack = DeploymentStacksSdkClient.GetManagementGroupDeploymentStack(ManagementGroupId, Name, throwIfNotExists: false);
                 if (currentStack != null && Tag == null)

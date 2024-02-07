@@ -84,7 +84,8 @@ namespace Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models
         TargetVNetName,
         TargetVNetResourceGroup,
         TargetSubnetName,
-        TargetSubscriptionId
+        TargetSubscriptionId,
+        RestoreToEdgeZone
     }
 
     public enum RestoreFSBackupItemParams
@@ -133,7 +134,9 @@ namespace Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models
         PolicySubType,
         ExistingPolicy,
         TieringPolicy,
-        IsSmartTieringEnabled
+        IsSmartTieringEnabled,
+        BackupSnapshotResourceGroup,
+        BackupSnapshotResourceGroupSuffix
     }
 
     public enum ItemParams

@@ -78,11 +78,14 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
         [Parameter(Mandatory = false, HelpMessage = "Run cmdlet in the background")]
         public SwitchParameter AsJob { get; set; }
 
+        [Parameter(Mandatory = false, HelpMessage = "Aux tenant ids for cross tenant references in deployments.")]
+        public string[] AuxTenant { get; set; }
+
         protected override ConfirmImpact ConfirmImpact => ((CmdletAttribute)Attribute.GetCustomAttribute(
             typeof(NewAzureResourceGroupDeploymentCmdlet),
             typeof(CmdletAttribute))).ConfirmImpact;
 
-        protected override PSDeploymentCmdletParameters DeploymentParameters => new PSDeploymentCmdletParameters
+        protected override PSDeploymentCmdletParameters BuildDeploymentParameters() => new PSDeploymentCmdletParameters
         {
             ScopeType = DeploymentScopeType.ResourceGroup,
             ResourceGroupName = ResourceGroupName,
@@ -92,7 +95,7 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
             TemplateObject = TemplateObject,
             TemplateSpecId = TemplateSpecId,
             QueryString = QueryString,
-            TemplateParameterObject = GetTemplateParameterObject(TemplateParameterObject),
+            TemplateParameterObject = GetTemplateParameterObject(),
             ParameterUri = TemplateParameterUri,
             DeploymentDebugLogLevel = GetDeploymentDebugLogLevel(DeploymentDebugLogLevel),
             Tags = TagsHelper.ConvertToTagsDictionary(Tag),
@@ -102,10 +105,11 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
                     Type = RollbackToLastDeployment ? OnErrorDeploymentType.LastSuccessful : OnErrorDeploymentType.SpecificDeployment,
                     DeploymentName = RollbackToLastDeployment ? null : RollBackDeploymentName
                 }
-                : null
+                : null,
+            AuxTenantHeaders = GetAuxiliaryAuthHeaderFromTenantIds(AuxTenant)
         };
 
-        protected override PSDeploymentWhatIfCmdletParameters WhatIfParameters => new PSDeploymentWhatIfCmdletParameters(
+        protected override PSDeploymentWhatIfCmdletParameters BuildWhatIfParameters() => new PSDeploymentWhatIfCmdletParameters(
             DeploymentScopeType.ResourceGroup,
             deploymentName: this.Name,
             mode: this.Mode,
@@ -115,9 +119,9 @@ namespace Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation
             templateObject: this.TemplateObject,
             templateSpecId: TemplateSpecId,
             templateParametersUri: this.TemplateParameterUri,
-            templateParametersObject: this.GetTemplateParameterObject(this.TemplateParameterObject),
+            templateParametersObject: this.GetTemplateParameterObject(),
             resultFormat: this.WhatIfResultFormat,
-            excludeChangeTypes: this.WhatIfExcludeChangeType); 
+            excludeChangeTypes: this.WhatIfExcludeChangeType);
 
         protected override void OnProcessRecord()
         {

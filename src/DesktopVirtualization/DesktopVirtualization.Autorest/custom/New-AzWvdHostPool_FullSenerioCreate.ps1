@@ -1,9 +1,13 @@
 function New-AzWvdHostPool_FullSenerioCreate {
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/custom/New-AzWvdHostPool_FullSenerioCreate.ps1
     [OutputType('Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api202307Preview.IHostPool')]
 =======
     [OutputType('Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IHostPool')]
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/custom/New-AzWvdHostPool_FullSenerioCreate.ps1
+=======
+    [OutputType('Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20230905.IHostPool')]
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
     [CmdletBinding(DefaultParameterSetName='CreateExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
     param(
         [Parameter()]

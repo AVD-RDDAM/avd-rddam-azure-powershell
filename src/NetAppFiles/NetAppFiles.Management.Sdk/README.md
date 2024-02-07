@@ -5,14 +5,14 @@ This directory contains management plane service clients of Az.NetAppFiles modul
 In this directory, run AutoRest:
 ```
 autorest --reset
-autorest --use:@microsoft.azure/autorest.csharp@2.3.90
-autorest.cmd README.md --version=v2
+autorest --use:@autorest/powershell@4.x
 ```
 
 ### AutoRest Configuration
 > see https://aka.ms/autorest
 ``` yaml
-csharp: true
+isSdkGenerator: true
+powershell: true
 clear-output-folder: true
 reflect-api-versions: true
 openapi-type: arm
@@ -25,16 +25,22 @@ description: Microsoft NetApp Files Azure Resource Provider specification
 
 ###
 ``` yaml
-commit: d71132a3e8bf8ad22ab77991805e033ed1b66dff
+commit: ee05b0049a20adc0e010bbbf17c50a0fdbf72a47
 input-file:
-   - https://github.com/Azure/azure-rest-api-specs/blob/$(commit)/specification/netapp/resource-manager/Microsoft.NetApp/stable/2022-11-01/netapp.json
+   - https://github.com/Azure/azure-rest-api-specs/blob/$(commit)/specification/netapp/resource-manager/Microsoft.NetApp/stable/2023-07-01/netapp.json
 output-folder: Generated
 namespace: Microsoft.Azure.Management.NetApp
 
 list-exception:
   - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetApp/netAppAccounts/{accountName}/volumeGroups/{volumeGroupName}
 
-# directive:
+directive:
   # remove this operation because the Snapshots_Update defines an empty object
   # - remove-operation: Snapshots_Update
+  # CodeGen don't support some definitions in v4 & v5 common types, in v4 and v5 subscriptionId has the format of uuid, but the generator is not correctly handling it right now
+  - from: types.json
+    where: $.parameters.SubscriptionIdParameter
+    transform: >
+      delete $.format;
+
 ```

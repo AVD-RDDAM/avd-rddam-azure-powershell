@@ -24,7 +24,7 @@ using System.Collections.Generic;
 using System;
 using Microsoft.Azure.Commands.Common.Exceptions;
 using Microsoft.Azure.Management.NetApp.Models;
-using System.Security.Cryptography;
+using Microsoft.Rest.Azure;
 
 namespace Microsoft.Azure.Commands.NetAppFiles.Volume
 {
@@ -68,6 +68,10 @@ namespace Microsoft.Azure.Commands.NetAppFiles.Volume
             Mandatory = true,
             ParameterSetName = FieldsParameterSet,
             HelpMessage = "The name of the ANF volume")]
+        [Parameter(
+            Mandatory = true,
+            ParameterSetName = ParentObjectParameterSet,
+            HelpMessage = "The name of the ANF pool")]
         [ValidateNotNullOrEmpty]
         [Alias("VolumeName")]
         [ResourceNameCompleter(
@@ -150,15 +154,15 @@ namespace Microsoft.Azure.Commands.NetAppFiles.Volume
             }
             if (Name != null)
             {
-                GetGroupIdListForLDAPUserRequest body = new GetGroupIdListForLDAPUserRequest(username: Username);
+                GetGroupIdListForLdapUserRequest body = new GetGroupIdListForLdapUserRequest(username: Username);
                 try
                 {
-                    GetGroupIdListForLDAPUserResponse anfGroupIdList = AzureNetAppFilesManagementClient.Volumes.ListGetGroupIdListForLdapUser(ResourceGroupName, AccountName, PoolName, Name, body);
+                    GetGroupIdListForLdapUserResponse anfGroupIdList = AzureNetAppFilesManagementClient.Volumes.ListGetGroupIdListForLdapUser(ResourceGroupName, AccountName, PoolName, Name, body);
                     WriteObject(anfGroupIdList.ConvertToPs());
                 }
                 catch (ErrorResponseException erx)
                 {                    
-                    throw new PSArgumentException(erx.Message + " : " + erx.Body.Error.Code + " : " + erx.Body.Error.Message);
+                    throw new CloudException(erx.Message + " : " + erx.Body.Error.Code + " : " + erx.Body.Error.Message, erx);
                 }
                 catch (Exception ex)
                 {                 

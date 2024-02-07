@@ -19,12 +19,12 @@ using Microsoft.Azure.Commands.NetAppFiles.Common;
 using Microsoft.Azure.Commands.NetAppFiles.Helpers;
 using Microsoft.Azure.Commands.NetAppFiles.Models;
 using Microsoft.Azure.Management.NetApp;
-using System.Linq;
 using System.Collections.Generic;
 using System.Collections;
 using Microsoft.Azure.Commands.Common.Exceptions;
 using Microsoft.Azure.Management.NetApp.Models;
 using System;
+using Microsoft.Rest.Azure;
 
 namespace Microsoft.Azure.Commands.NetAppFiles.VolumeGroup
 {   
@@ -353,9 +353,16 @@ namespace Microsoft.Azure.Commands.NetAppFiles.VolumeGroup
             var volumeGroup = CreateVolumeGroup(Name, ResourceGroupName, AccountName, poolResourceId, tagPairs);
             if (ShouldProcess(Name, string.Format(PowerShell.Cmdlets.NetAppFiles.Properties.Resources.CreateResourceMessage, ResourceGroupName)))
             {
-                var anfVolumeGroups = AzureNetAppFilesManagementClient.VolumeGroups.Create(volumeGroup, ResourceGroupName, AccountName, Name);
-                var ret = anfVolumeGroups.ConvertToPs();
-                WriteObject(ret);
+                try
+                {
+                    var anfVolumeGroups = AzureNetAppFilesManagementClient.VolumeGroups.Create(ResourceGroupName, AccountName, Name, volumeGroup);
+                    var ret = anfVolumeGroups.ConvertToPs();
+                    WriteObject(ret);
+                }
+                catch (ErrorResponseException ex)
+                {
+                    throw new CloudException(ex.Body.Error.Message, ex);
+                }
             }
         }
 
@@ -371,8 +378,8 @@ namespace Microsoft.Azure.Commands.NetAppFiles.VolumeGroup
                     Rules = new List<ExportPolicyRule>()
                     {
                         new ExportPolicyRule { Nfsv3 = false, Nfsv41 = true, RuleIndex = 1, AllowedClients = "0.0.0.0/0", UnixReadOnly = false, UnixReadWrite = true, 
-                            Kerberos5ReadOnly = false, Kerberos5iReadOnly = false, Kerberos5iReadWrite = false, Kerberos5pReadOnly = false, 
-                            Kerberos5pReadWrite = false, Kerberos5ReadWrite = false
+                            Kerberos5ReadOnly = false, Kerberos5IReadOnly = false, Kerberos5IReadWrite = false, Kerberos5PReadOnly = false, 
+                            Kerberos5PReadWrite = false, Kerberos5ReadWrite = false
                         }
                     }
                 };
@@ -497,7 +504,7 @@ namespace Microsoft.Azure.Commands.NetAppFiles.VolumeGroup
                     ApplicationType = ApplicationType,
                     ApplicationIdentifier = ApplicationIdentifier,
                     GlobalPlacementRules = GlobalPlacementRule,
-                    DeploymentSpecId = SAPHANAOnGENPOPDeploymentSpecID,
+                    //DeploymentSpecId = SAPHANAOnGENPOPDeploymentSpecID,
                     GroupDescription = GroupDescription                    
                 },
                 Volumes = volumesInGroup

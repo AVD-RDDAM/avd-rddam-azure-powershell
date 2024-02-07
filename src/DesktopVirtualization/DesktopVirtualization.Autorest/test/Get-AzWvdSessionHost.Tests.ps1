@@ -25,10 +25,14 @@ Describe 'Get-AzWvdSessionHost' {
         $sessionHosts = Get-AzWvdSessionHost -SubscriptionId $env.SubscriptionId `
                             -ResourceGroupName $env.ResourceGroupPersistent `
                             -HostPoolName $env.HostPoolPersistent
+<<<<<<< HEAD
 <<<<<<< HEAD:src/DesktopVirtualization/test/Get-AzWvdSessionHost.Tests.ps1
         $sessionHosts.Count | Should -Be 4
 =======
         $sessionHosts.Count | Should -Be 2
 >>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654:src/DesktopVirtualization/DesktopVirtualization.Autorest/test/Get-AzWvdSessionHost.Tests.ps1
+=======
+        $sessionHosts.Count | Should -Be 2
+>>>>>>> 7d31aeaa706c1b5ed7c3c3037cfdab6040ceb654
     }
 }
