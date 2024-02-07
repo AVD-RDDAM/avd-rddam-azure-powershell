@@ -579,7 +579,7 @@
           </TableColumnHeader>
           <TableColumnHeader>
             <Alignment>Left</Alignment>
-            <Label>snapshotTime</Label>
+            <Label>SnapshotTime</Label>
           </TableColumnHeader>
         </TableHeaders>
         <TableRowEntries>
@@ -615,7 +615,7 @@
               </TableColumnItem>
               <TableColumnItem>
                 <Alignment>Left</Alignment>
-                <ScriptBlock>$_.snapshotTime.ToUniversalTime().ToString("s")+"Z"</ScriptBlock>
+                <ScriptBlock>$_.SnapshotTime.ToUniversalTime().ToString("s")+"Z"</ScriptBlock>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -1007,6 +1007,10 @@
             <Alignment>Left</Alignment>
             <Label>SchemaFields</Label>
           </TableColumnHeader>
+          <TableColumnHeader>
+            <Alignment>Left</Alignment>
+            <Label>CreationTime</Label>
+          </TableColumnHeader>
         </TableHeaders>
         <TableRowEntries>
           <TableRowEntry>
@@ -1062,6 +1066,10 @@
               <TableColumnItem>
                 <Alignment>Left</Alignment>
                 <ScriptBlock>$_.Definition.SchemaFields</ScriptBlock>
+              </TableColumnItem>
+              <TableColumnItem>
+                <Alignment>Left</Alignment>
+                <ScriptBlock>if ($_.Definition.Filters.CreationTime.LastNDays -ne $null) {"LastNDays=$($_.Definition.Filters.CreationTime.LastNDays)"}</ScriptBlock>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>

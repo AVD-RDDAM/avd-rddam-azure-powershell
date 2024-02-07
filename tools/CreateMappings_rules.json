@@ -489,10 +489,6 @@
     "alias": "Blueprint"
   },
   {
-    "regex": "DeploymentManager",
-    "alias": "Deployment Manager"
-  },
-  {
     "regex": "Peering",
     "group": "Peering",
     "alias": "Peering"
@@ -851,5 +847,21 @@
   {
     "alias": "NetworkCloud",
     "module": "NetworkCloud"
+  },
+  {
+    "alias": "HdInsightOnAks",
+    "module": "HdInsightOnAks"
+  },
+  {
+    "module": "NetworkAnalytics",
+    "alias": "NetworkAnalytics"
+  },
+  {
+    "module": "Fleet",
+    "alias": "Fleet"
+  },
+  {
+    "module": "ManagedNetworkFabric",
+    "alias": "Managed Network Fabric"
   }
 ]

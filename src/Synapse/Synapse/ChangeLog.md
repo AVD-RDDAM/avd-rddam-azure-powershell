@@ -20,6 +20,13 @@
 
 ## Upcoming Release
 
+## Version 3.0.5
+* Updated Azure.Analytics.Synapse.Artifacts to 1.0.0-preview.19
+* Added ActionOnExistingTargetTable property for Synapse Link Connection
+
+## Version 3.0.4
+* Upgraded Azure.Core to 1.35.0.
+
 ## Version 3.0.3
 * Updated Azure.Core to 1.34.0.
 * Updated Azure.Analytics.Synapse.Artifacts to 1.0.0-preview.18
