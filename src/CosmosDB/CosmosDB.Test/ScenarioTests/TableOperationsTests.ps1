@@ -18,8 +18,8 @@ Test Table CRUD operations
 #>
 function Test-TableOperationsCmdlets
 {
-  $AccountName = "table-db2528"
-  $rgName = "CosmosDBResourceGroup38"
+  $AccountName = "table-db2501"
+  $rgName = "CosmosDBResourceGroup01"
   $TableName = "table1"
   $TableName2 = "table2"
   $apiKind = "Table"
@@ -88,8 +88,8 @@ Test Table CRUD operations using InputObject and ParentObject parameter set
 #>
 function Test-TableOperationsCmdletsUsingInputObject
 {
-  $AccountName = "table-db2527"
-  $rgName = "CosmosDBResourceGroup34"
+  $AccountName = "table-db2502"
+  $rgName = "CosmosDBResourceGroup02"
   $apiKind = "Table"
   $consistencyLevel = "Session"
   $location = "East US 2"
@@ -150,8 +150,8 @@ Test Table throughput cmdlets using all parameter sets
 #>
 function Test-TableThroughputCmdlets
 {
-  $AccountName = "table-db2527"
-  $rgName = "CosmosDBResourceGroup35"
+  $AccountName = "table-db2503"
+  $rgName = "CosmosDBResourceGroup03"
   $TableName = "tableName3"
   $apiKind = "Table"
   $consistencyLevel = "Session"
@@ -194,8 +194,8 @@ Test Cassandra migrate throughput cmdlets
 #>
 function Test-TableMigrateThroughputCmdlets
 {
-  $AccountName = "table-db2529"
-  $rgName = "CosmosDBResourceGroup34"
+  $AccountName = "table-db2504"
+  $rgName = "CosmosDBResourceGroup04"
   $TableName = "tableName4"
   $apiKind = "Table"
   $consistencyLevel = "Session"
@@ -228,6 +228,100 @@ function Test-TableMigrateThroughputCmdlets
       Remove-AzCosmosDBTable -InputObject $NewTable 
   }
   Finally{
+      Remove-AzCosmosDBTable -AccountName $AccountName -ResourceGroupName $rgName -Name $TableName
+  }
+}
+
+<#
+.SYNOPSIS
+Test Table InAccount Restore operations
+#>
+function Test-TableInAccountRestoreOperationsCmdlets
+{
+  $AccountName = "table-db2530"
+  $rgName = "CosmosDBResourceGroup40"
+  $TableName = "table1"
+  $apiKind = "Table"
+  $ThroughputValue = 500
+  $location = "East US"
+  $consistencyLevel = "Session"
+  $locations = @()
+  $locations += New-AzCosmosDBLocationObject -LocationName "East Us" -FailoverPriority 0 -IsZoneRedundant 0
+  $UpdatedThroughputValue = 600
+
+  Try{
+
+      $resourceGroup = New-AzResourceGroup -ResourceGroupName $rgName  -Location   $location
+      $cosmosDBAccount = New-AzCosmosDBAccount -ResourceGroupName $rgName -LocationObject $locations -Name $AccountName -ApiKind $apiKind -DefaultConsistencyLevel $consistencyLevel -EnableAutomaticFailover:$true -BackupPolicyType Continuous
+
+      # create a new table
+      $NewTable = New-AzCosmosDBTable -AccountName $AccountName -ResourceGroupName $rgName -Name $TableName -Throughput $ThroughputValue
+      Assert-AreEqual $NewTable.Name $TableName
+
+      $Throughput = Get-AzCosmosDBTableThroughput -AccountName $AccountName -ResourceGroupName $rgName -Name $TableName
+      Assert-AreEqual $Throughput.Throughput $ThroughputValue
+
+      # create an existing database
+      Try {
+          $NewDuplicateTable = New-AzCosmosDBTable -AccountName $AccountName -ResourceGroupName $rgName -Name $TableName 
+      }
+      Catch {
+          Assert-AreEqual $_.Exception.Message ("Resource with Name " + $TableName + " already exists.")
+      }
+
+      Start-TestSleep -s 50
+
+      # get an existing table
+      $Table = Get-AzCosmosDBTable -AccountName $AccountName -ResourceGroupName $rgName -Name $TableName
+      Assert-AreEqual $NewTable.Id $Table.Id
+      Assert-AreEqual $NewTable.Name $Table.Name
+      Assert-AreEqual $NewTable.Resource.Id $Table.Resource.Id
+
+      $restoreTimestampInUtc = [DateTime]::UtcNow.ToString('u')
+
+      # list tables 
+      $ListTables = Get-AzCosmosDBTable -AccountName $AccountName -ResourceGroupName $rgName
+      Assert-NotNull($ListTables)
+
+      Start-TestSleep -s 50
+
+      # delete table
+      $IsTableRemoved = Remove-AzCosmosDBTable -AccountName $AccountName -ResourceGroupName $rgName -Name $TableName -PassThru
+      Assert-AreEqual $IsTableRemoved true
+
+      Start-TestSleep -s 50
+
+      # restore the deleted table
+      Restore-AzCosmosDBTable -AccountName $AccountName -ResourceGroupName $rgName -Name $TableName -RestoreTimestampInUtc $restoreTimestampInUtc
+
+      Start-TestSleep -s 100
+
+      # list tables 
+      $ListTables = Get-AzCosmosDBTable -AccountName $AccountName -ResourceGroupName $rgName
+      Assert-NotNull($ListTables)
+
+      Start-TestSleep -s 100
+
+      # delete table
+      $IsTableRemoved = Remove-AzCosmosDBTable -AccountName $AccountName -ResourceGroupName $rgName -Name $TableName -PassThru
+      Assert-AreEqual $IsTableRemoved true
+
+      Start-TestSleep -s 50
+
+      # restore the deleted table
+      Restore-AzCosmosDBTable -AccountName $AccountName -ResourceGroupName $rgName -Name $TableName
+
+      Start-TestSleep -s 100
+
+      # list tables 
+      $ListTables = Get-AzCosmosDBTable -AccountName $AccountName -ResourceGroupName $rgName
+      Assert-NotNull($ListTables)
+
+      # delete table
+      $IsTableRemoved = Remove-AzCosmosDBTable -AccountName $AccountName -ResourceGroupName $rgName -Name $TableName -PassThru
+      Assert-AreEqual $IsTableRemoved true
+  }
+  Finally {
       Remove-AzCosmosDBTable -AccountName $AccountName -ResourceGroupName $rgName -Name $TableName
   }
 }

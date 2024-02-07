@@ -56,7 +56,7 @@ namespace Microsoft.Azure.Management.CosmosDB.Models
         /// </param>
 
         /// <param name="connectorOffer">The cassandra connector offer type for the Cosmos DB database C* account.
-        /// Possible values include: 'Small'</param>
+        /// Possible values include: &#39;Small&#39;</param>
 
         /// <param name="disableKeyBasedMetadataWriteAccess">Disable write operations on metadata resources (databases, containers,
         /// throughput) via account keys
@@ -71,7 +71,7 @@ namespace Microsoft.Azure.Management.CosmosDB.Models
         /// </param>
 
         /// <param name="publicNetworkAccess">Whether requests from Public Network are allowed
-        /// Possible values include: 'Enabled', 'Disabled', 'SecuredByPerimeter'</param>
+        /// Possible values include: &#39;Enabled&#39;, &#39;Disabled&#39;, &#39;SecuredByPerimeter&#39;</param>
 
         /// <param name="enableFreeTier">Flag to indicate whether Free Tier is enabled.
         /// </param>
@@ -86,7 +86,7 @@ namespace Microsoft.Azure.Management.CosmosDB.Models
         /// </param>
 
         /// <param name="createMode">Enum to indicate the mode of account creation.
-        /// Possible values include: 'Default', 'Restore'</param>
+        /// Possible values include: &#39;Default&#39;, &#39;Restore&#39;</param>
 
         /// <param name="backupPolicy">The object representing the policy for taking backups on an account.
         /// </param>
@@ -95,7 +95,7 @@ namespace Microsoft.Azure.Management.CosmosDB.Models
         /// </param>
 
         /// <param name="networkAclBypass">Indicates what services are allowed to bypass firewall checks.
-        /// Possible values include: 'None', 'AzureServices'</param>
+        /// Possible values include: &#39;None&#39;, &#39;AzureServices&#39;</param>
 
         /// <param name="networkAclBypassResourceIds">An array that contains the Resource Ids for Network Acl Bypass for the
         /// Cosmos DB account.
@@ -121,10 +121,18 @@ namespace Microsoft.Azure.Management.CosmosDB.Models
         /// account
         /// </param>
 
-        /// <param name="minimalTlsVersion">Indicates the minimum allowed Tls version. The default is Tls 1.0, except
-        /// for Cassandra and Mongo API&#39;s, which only work with Tls 1.2.
-        /// Possible values include: 'Tls', 'Tls11', 'Tls12'</param>
-        public DatabaseAccountCreateUpdateProperties(System.Collections.Generic.IList<Location> locations, ConsistencyPolicy consistencyPolicy = default(ConsistencyPolicy), System.Collections.Generic.IList<IpAddressOrRange> ipRules = default(System.Collections.Generic.IList<IpAddressOrRange>), bool? isVirtualNetworkFilterEnabled = default(bool?), bool? enableAutomaticFailover = default(bool?), System.Collections.Generic.IList<Capability> capabilities = default(System.Collections.Generic.IList<Capability>), System.Collections.Generic.IList<VirtualNetworkRule> virtualNetworkRules = default(System.Collections.Generic.IList<VirtualNetworkRule>), bool? enableMultipleWriteLocations = default(bool?), bool? enableCassandraConnector = default(bool?), string connectorOffer = default(string), bool? disableKeyBasedMetadataWriteAccess = default(bool?), string keyVaultKeyUri = default(string), string defaultIdentity = default(string), string publicNetworkAccess = default(string), bool? enableFreeTier = default(bool?), ApiProperties apiProperties = default(ApiProperties), bool? enableAnalyticalStorage = default(bool?), AnalyticalStorageConfiguration analyticalStorageConfiguration = default(AnalyticalStorageConfiguration), string createMode = default(string), BackupPolicy backupPolicy = default(BackupPolicy), System.Collections.Generic.IList<CorsPolicy> cors = default(System.Collections.Generic.IList<CorsPolicy>), NetworkAclBypass? networkAclBypass = default(NetworkAclBypass?), System.Collections.Generic.IList<string> networkAclBypassResourceIds = default(System.Collections.Generic.IList<string>), bool? disableLocalAuth = default(bool?), RestoreParameters restoreParameters = default(RestoreParameters), Capacity capacity = default(Capacity), DatabaseAccountKeysMetadata keysMetadata = default(DatabaseAccountKeysMetadata), bool? enablePartitionMerge = default(bool?), string minimalTlsVersion = default(string))
+        /// <param name="minimalTlsVersion">Indicates the minimum allowed Tls version. The default value is Tls 1.2.
+        /// Cassandra and Mongo APIs only work with Tls 1.2.
+        /// Possible values include: &#39;Tls&#39;, &#39;Tls11&#39;, &#39;Tls12&#39;</param>
+
+        /// <param name="enableBurstCapacity">Flag to indicate enabling/disabling of Burst Capacity Preview feature on
+        /// the account
+        /// </param>
+
+        /// <param name="customerManagedKeyStatus">Indicates the status of the Customer Managed Key feature on the account. In
+        /// case there are errors, the property provides troubleshooting guidance.
+        /// </param>
+        public DatabaseAccountCreateUpdateProperties(System.Collections.Generic.IList<Location> locations, ConsistencyPolicy consistencyPolicy = default(ConsistencyPolicy), System.Collections.Generic.IList<IpAddressOrRange> ipRules = default(System.Collections.Generic.IList<IpAddressOrRange>), bool? isVirtualNetworkFilterEnabled = default(bool?), bool? enableAutomaticFailover = default(bool?), System.Collections.Generic.IList<Capability> capabilities = default(System.Collections.Generic.IList<Capability>), System.Collections.Generic.IList<VirtualNetworkRule> virtualNetworkRules = default(System.Collections.Generic.IList<VirtualNetworkRule>), bool? enableMultipleWriteLocations = default(bool?), bool? enableCassandraConnector = default(bool?), string connectorOffer = default(string), bool? disableKeyBasedMetadataWriteAccess = default(bool?), string keyVaultKeyUri = default(string), string defaultIdentity = default(string), string publicNetworkAccess = default(string), bool? enableFreeTier = default(bool?), ApiProperties apiProperties = default(ApiProperties), bool? enableAnalyticalStorage = default(bool?), AnalyticalStorageConfiguration analyticalStorageConfiguration = default(AnalyticalStorageConfiguration), string createMode = default(string), BackupPolicy backupPolicy = default(BackupPolicy), System.Collections.Generic.IList<CorsPolicy> cors = default(System.Collections.Generic.IList<CorsPolicy>), NetworkAclBypass? networkAclBypass = default(NetworkAclBypass?), System.Collections.Generic.IList<string> networkAclBypassResourceIds = default(System.Collections.Generic.IList<string>), bool? disableLocalAuth = default(bool?), RestoreParameters restoreParameters = default(RestoreParameters), Capacity capacity = default(Capacity), DatabaseAccountKeysMetadata keysMetadata = default(DatabaseAccountKeysMetadata), bool? enablePartitionMerge = default(bool?), string minimalTlsVersion = default(string), bool? enableBurstCapacity = default(bool?), string customerManagedKeyStatus = default(string))
 
         {
             this.ConsistencyPolicy = consistencyPolicy;
@@ -156,6 +164,8 @@ namespace Microsoft.Azure.Management.CosmosDB.Models
             this.KeysMetadata = keysMetadata;
             this.EnablePartitionMerge = enablePartitionMerge;
             this.MinimalTlsVersion = minimalTlsVersion;
+            this.EnableBurstCapacity = enableBurstCapacity;
+            this.CustomerManagedKeyStatus = customerManagedKeyStatus;
             CustomInit();
         }
         /// <summary>
@@ -360,11 +370,26 @@ namespace Microsoft.Azure.Management.CosmosDB.Models
         public bool? EnablePartitionMerge {get; set; }
 
         /// <summary>
-        /// Gets or sets indicates the minimum allowed Tls version. The default is Tls
-        /// 1.0, except for Cassandra and Mongo API&#39;s, which only work with Tls 1.2. Possible values include: &#39;Tls&#39;, &#39;Tls11&#39;, &#39;Tls12&#39;
+        /// Gets or sets indicates the minimum allowed Tls version. The default value
+        /// is Tls 1.2. Cassandra and Mongo APIs only work with Tls 1.2. Possible values include: &#39;Tls&#39;, &#39;Tls11&#39;, &#39;Tls12&#39;
         /// </summary>
         [Newtonsoft.Json.JsonProperty(PropertyName = "minimalTlsVersion")]
         public string MinimalTlsVersion {get; set; }
+
+        /// <summary>
+        /// Gets or sets flag to indicate enabling/disabling of Burst Capacity Preview
+        /// feature on the account
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty(PropertyName = "enableBurstCapacity")]
+        public bool? EnableBurstCapacity {get; set; }
+
+        /// <summary>
+        /// Gets or sets indicates the status of the Customer Managed Key feature on
+        /// the account. In case there are errors, the property provides
+        /// troubleshooting guidance.
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty(PropertyName = "customerManagedKeyStatus")]
+        public string CustomerManagedKeyStatus {get; set; }
         /// <summary>
         /// Gets or sets the offer type for the database
         /// </summary>
@@ -425,6 +450,7 @@ namespace Microsoft.Azure.Management.CosmosDB.Models
             {
                 this.Capacity.Validate();
             }
+
 
 
         }

@@ -19,6 +19,32 @@
 -->
 ## Upcoming Release
 
+## Version 5.2.0
+* Supported authentication via User Managed Identity by adding parameter `UseUserManagedIdentity` and making `SasToken` optional.
+
+## Version 5.1.0
+* Added parameter `ByteArrayValue` in `Invoke-AzKeyVaultKeyOperation` to support operating byte array without conversion to secure string.
+* Added Property `RawResult` in the output type `PSKeyOperationResult` of `Invoke-AzKeyVaultKeyOperation`. 
+* [Upcoming Breaking Change] Added breaking change warning message for parameter `Value` in `Invoke-AzKeyVaultKeyOperation`. 
+    - Parameter `Value` is expected to be removed in Az.KeyVault 6.0.0
+    - `ByteArrayValue` is the alternative of parameter `Value` in byte array format
+* [Upcoming Breaking Change] Added breaking change warning message for the output type `PSKeyOperationResult` of `Invoke-AzKeyVaultKeyOperation`. 
+    - Property `Result` is expected to be removed in Az.KeyVault 6.0.0
+    - Property `RawResult` is the alternative of parameter `Result` in byte array format
+
+## Version 5.0.1
+* Removed redundant Microsoft Graph API calls for access policy in `Get-AzKeyVault`.
+
+## Version 5.0.0
+* Removed non-core types creation in PowerShell scripts to be compatible in constrained language mode.
+* Supported user assigned identity for Managed HSM in `New/Update-AzKeyVaultManagedHsm` 
+* [Breaking Change] Changed parameter `SoftDeleteRetentionInDays` in `New-AzKeyVaultManagedHsm` to mandatory.
+* Upgraded Azure.Core to 1.35.0.
+
+## Version 4.12.0
+* Supported splitting `Import-AzKeyVaultSecurityDomain` process into three steps to allow keys to be hidden offline.
+    - Added `DownloadExchangeKey`, `RestoreBlob` and `ImportRestoredBlob` in `Import-AzKeyVaultSecurityDomain`.
+
 ## Version 4.11.0
 * Fixed certificate policy bugs if DnsName is null. [#22642]
 * Supported multi-regions for Managed Hsm: Added `Add/Get/Remove-AzAzKeyVaultManagedHsmRegion`.
@@ -37,7 +63,7 @@
 
 ## Version 4.10.0
 * Added breaking change announcement for parameter `SoftDeleteRetentionInDays` in `New-AzKeyVaultManagedHsm`. The parameter `SoftDeleteRetentionInDays` is becoming mandatory
-    - This change will take effect on version 6.0.0
+    - This change will take effect on version 5.0.0
 * Changed the encoding way from a string into byte array in `Invoke-AzKeyVaultKeyOperation` from ASCII to UTF8. UTF8 is backward-compatible with ASCII. [#21269]
 * Bug fix: Changed the decoding way from byte array into a string from system default encoding to UTF8 to match encoding way. [#21269]
 * Added parameter `PolicyPath` and `PolicyObject` in `Import-AzKeyVaultCertificate` to support custom policy [#20780]

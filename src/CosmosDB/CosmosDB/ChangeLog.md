@@ -19,9 +19,22 @@
 -->
 
 ## Upcoming Release
+* Added breaking change message for ListConnectionStrings changes
+
+## Version 1.14.0
+* Introduced Restore-AzCosmosDBSqlDatabase, Restore-AzCosmosDBSqlContainer to restore deleted database and containers in the same account for SQL.
+* Introduced Restore-AzCosmosDBMongoDBDatabase, Restore-AzCosmosDBMongoDBCollection to restore deleted database and collections in the same account for MongoDB.
+* Introduced Restore-AzCosmosDBGremlinDatabase, Restore-AzCosmosDBGremlinGraph to restore deleted database and graph in the same account for Gremlin.
+* Introduced Restore-AzCosmosDBTable to restore deleted table in the same account.
+
+## Version 1.13.0
+* Added new parameter `EnableBurstCapacity` to `Update-AzCosmosDBAccount` and `New-AzCosmosDBAccount`.
+* Added new paramater `MinimalTlsVersion` to `Update-AzCosmosDBAccount` and `New-AzCosmosDBAccount`.
+* Added new property `CustomerManagedKeyStatus` to `Get-AzCosmosDBAccount`.
 
 ## Version 1.12.0
 * Added PublicNetworkAccess parameter to `Restore-AzCosmosDBAccount`.
+* Upgraded Azure.Core to 1.35.0.
 
 ## Version 1.11.3
 * Updated Azure.Core to 1.34.0.
