@@ -2,7 +2,38 @@
 ```powershell
 Update-AzWvdSessionHostConfiguration -ResourceGroupName ResourceGroupName `
                             -HostPoolName HostPoolName `
-                            -DiskInfoType "Standard_LRS" `
+                            -ManagedDiskType "Standard_LRS" `
+                            -ImageInfoType "Marketplace" `
+                            -NetworkInfoSubnetId "/subscriptions/{subscriptionId}/resourceGroups/resourceGrouName/providers/Microsoft.Network/virtualNetworks/{vNetName}/subnets/default" `
+                            -VMAdminCredentialsPasswordKeyvaultSecretUri "PasswordSecretUri" `
+                            -VMAdminCredentialsUserNameKeyvaultSecretUri "PasswordUsernameUri" `
+                            -VMNamePrefix "createTest" `
+                            -VMSizeId "Standard_D2s_v3" `
+                            -MarketplaceInfoExactVersion "22631.2715.231114" `
+                            -MarketplaceInfoOffer "office-365" `
+                            -MarketplaceInfoPublisher "microsoftwindowsdesktop" `
+                            -MarketplaceInfoSku "win11-23h2-avd-m365" `
+                            -SecurityInfoSecureBootEnabled `
+                            -SecurityInfoType "TrustedLaunch" `
+                            -SecurityInfoVTpmEnabled `
+                            -VmLocation westus2 `
+                            -VmResourceGroup ResourceGroupName
+```
+
+```output
+Location   Name                 Type
+--------   ----                 ----
+eastus     default Microsoft.DesktopVirtualization/hostpools/sessionhostconfigurations
+```
+
+This command uodates a Azure Virtual Desktop SessionHostConfiguration on a HostPool.
+
+### Example 2: Update a Azure Virtual Desktop SessionHostConfiguration by HostPool Name with Ephemeral Disks
+```powershell
+Update-AzWvdSessionHostConfiguration -ResourceGroupName ResourceGroupName `
+                            -HostPoolName HostPoolName `
+                            -DiffDiskOption "Local" `
+                            -DiffDiskPlacement "CachedDisk" `
                             -ImageInfoType "Marketplace" `
                             -NetworkInfoSubnetId "/subscriptions/{subscriptionId}/resourceGroups/resourceGrouName/providers/Microsoft.Network/virtualNetworks/{vNetName}/subnets/default" `
                             -VMAdminCredentialsPasswordKeyvaultSecretUri "PasswordSecretUri" `
