@@ -1,79 +1,56 @@
 ---
 external help file:
 Module Name: Az.DesktopVirtualization
-online version: https://learn.microsoft.com/powershell/module/az.desktopvirtualization/new-azwvdmsixpackage
+online version: https://learn.microsoft.com/powershell/module/az.desktopvirtualization/new-azwvdappattachpackage
 schema: 2.0.0
 ---
 
-# New-AzWvdMsixPackage
+# New-AzWvdAppAttachPackage
 
 ## SYNOPSIS
-Create or update a MSIX package.
+Create or update an App Attach package.
 
 ## SYNTAX
 
-### CreateExpanded (Default)
 ```
-New-AzWvdMsixPackage -FullName <String> -HostPoolName <String> -ResourceGroupName <String>
- [-DisplayName <String>] [-ImagePath <String>] [-IsActive] [-IsRegularRegistration] [-SubscriptionId <String>]
- [-LastUpdated <DateTime>] [-PackageApplication <IMsixPackageApplications[]>]
- [-PackageDependency <IMsixPackageDependencies[]>] [-PackageFamilyName <String>] [-PackageName <String>]
- [-PackageRelativePath <String>] [-Version <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### PackageAlias
-```
-New-AzWvdMsixPackage -HostPoolName <String> -PackageAlias <String> -ResourceGroupName <String>
- [-DisplayName <String>] [-ImagePath <String>] [-IsActive] [-IsRegularRegistration] [-SubscriptionId <String>]
- [-DefaultProfile <PSObject>] [<CommonParameters>]
+New-AzWvdAppAttachPackage -Name <String> -ResourceGroupName <String> -Location <String>
+ [-SubscriptionId <String>] [-FailHealthCheckOnStagingFailure <FailHealthCheckOnStagingFailure>]
+ [-HostPoolReference <String[]>] [-ImageCertificateExpiry <DateTime>] [-ImageCertificateName <String>]
+ [-ImageDisplayName <String>] [-ImageIsActive] [-ImageIsPackageTimestamped <PackageTimestamped>]
+ [-ImageIsRegularRegistration] [-ImageLastUpdated <DateTime>] [-ImagePackageAlias <String>]
+ [-ImagePackageApplication <IMsixPackageApplications[]>]
+ [-ImagePackageDependency <IMsixPackageDependencies[]>] [-ImagePackageFamilyName <String>]
+ [-ImagePackageFullName <String>] [-ImagePackageName <String>] [-ImagePackageRelativePath <String>]
+ [-ImagePath <String>] [-ImageVersion <String>] [-KeyVaultUrl <String>] [-Tag <Hashtable>]
+ [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create or update a MSIX package.
+Create or update an App Attach package.
 
 ## EXAMPLES
 
-### Example 1: Creates New MSIX Package in the HostPool via Package Alias
+### Example 1: {{ Add title here }}
 ```powershell
-New-AzWvdMsixPackage -HostPoolName HostPoolName `
-                     -ResourceGroupName resourceGroupName `
-                     -SubscriptionId SubscriptionId `
-                     -PackageAlias packagealias `
-                     -ImagePath ImagePathURI
-```
-
-This command adds MSIX package from specified image path to HostPool
-
-### Example 2: Creates New MSIX Package in the HostPool
-```powershell
-$apps = "<PackagedApplication>"
-$deps = "<PackageDependencies>"
-New-AzWvdMsixPackage -FullName PackageFullName `
-                     -HostPoolName HostPoolName `
-                     -ResourceGroupName ResourceGroupName `
-                     -SubscriptionId SubscriptionId `
-                     -DisplayName displayname `
-                     -ImagePath imageURI `
-                     -IsActive:$false `
-                     -IsRegularRegistration:$false `
-                     -LastUpdated datelastupdated `
-                     -PackageApplication $apps `
-                     -PackageDependency $deps `
-                     -PackageFamilyName packagefamilyname `
-                     -PackageName packagename `
-                     -PackageRelativePath packagerelativepath `
-                     -Version packageversion
+{{ Add code here }}
 ```
 
 ```output
-Name                              Type
-----                              ----
-HotPoolName/PackageFullName       Microsoft.DesktopVirtualization/hostpools/msixpackages
-
+{{ Add output here }}
 ```
 
-This command adds MSIX Package in the specified HostPool
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+{{ Add code here }}
+```
+
+```output
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -93,7 +70,67 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DisplayName
+### -FailHealthCheckOnStagingFailure
+Parameter indicating how the health check should behave if this package fails staging
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.FailHealthCheckOnStagingFailure
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -HostPoolReference
+List of Hostpool resource Ids.
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImageCertificateExpiry
+Date certificate expires, found in the appxmanifest.xml.
+
+```yaml
+Type: System.DateTime
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImageCertificateName
+Certificate name found in the appxmanifest.xml.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImageDisplayName
 User friendly Name to be displayed in the portal.
 
 ```yaml
@@ -108,30 +145,171 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -FullName
-The version specific package full name of the MSIX package within specified hostpool
+### -ImageIsActive
+Make this version of the package the active one across the hostpool.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases: MsixPackageFullName
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -HostPoolName
-The name of the host pool within the specified resource group
+### -ImageIsPackageTimestamped
+Is package timestamped so it can ignore the certificate expiry date
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.PackageTimestamped
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImageIsRegularRegistration
+Specifies how to register Package in feed.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImageLastUpdated
+Date Package was last updated, found in the appxmanifest.xml.
+
+```yaml
+Type: System.DateTime
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImagePackageAlias
+Alias of App Attach Package.
+Assigned at import time
 
 ```yaml
 Type: System.String
 Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImagePackageApplication
+List of package applications.
+
+To construct, see NOTES section for IMAGEPACKAGEAPPLICATION properties and create a hash table.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240403.IMsixPackageApplications[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImagePackageDependency
+List of package dependencies.
+
+To construct, see NOTES section for IMAGEPACKAGEDEPENDENCY properties and create a hash table.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240403.IMsixPackageDependencies[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImagePackageFamilyName
+Package Family Name from appxmanifest.xml.
+Contains Package Name and Publisher name.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImagePackageFullName
+Package Full Name from appxmanifest.xml.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImagePackageName
+Package Name from appxmanifest.xml.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImagePackageRelativePath
+Relative Path to the package inside the image.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -153,57 +331,42 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IsActive
-Make this version of the package the active one across the hostpool.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IsRegularRegistration
-Specifies how to register Package in feed.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LastUpdated
-Date Package was last updated, found in the appxmanifest.xml.
-
-```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PackageAlias
-Package Alias from extract MSIX Image
+### -ImageVersion
+Package version found in the appxmanifest.xml.
 
 ```yaml
 Type: System.String
-Parameter Sets: PackageAlias
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -KeyVaultUrl
+URL path to certificate name located in keyVault
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Location
+The geo-location where the resource lives
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -213,80 +376,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PackageApplication
-List of package applications.
-
-To construct, see NOTES section for PACKAGEAPPLICATION properties and create a hash table.
-
-```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240403.IMsixPackageApplications[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PackageDependency
-List of package dependencies.
-
-To construct, see NOTES section for PACKAGEDEPENDENCY properties and create a hash table.
-
-```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240403.IMsixPackageDependencies[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PackageFamilyName
-Package Family Name from appxmanifest.xml.
-Contains Package Name and Publisher name.
+### -Name
+The name of the App Attach package
 
 ```yaml
 Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
+Parameter Sets: (All)
+Aliases: AppAttachPackageName
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PackageName
-Package Name from appxmanifest.xml.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PackageRelativePath
-Relative Path to the package inside the image.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -325,12 +423,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Version
-Package version found in the appxmanifest.xml.
+### -Tag
+Resource tags.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -378,7 +476,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240403.IMsixPackage
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240403.IAppAttachPackage
 
 ## NOTES
 

@@ -1,22 +1,21 @@
 {
-  "resourceType": "applicationGroups/applications",
+  "resourceType": "appAttachPackages",
   "apiVersion": "2024-04-03",
   "learnMore": {
     "url": "https://learn.microsoft.com/powershell/module/az.desktopvirtualization"
   },
   "commands": [
     {
-      "name": "Get-AzWvdApplication",
-      "description": "Get an application.",
-      "path": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DesktopVirtualization/applicationGroups/{applicationGroupName}/applications/{applicationName}",
+      "name": "Get-AzWvdAppAttachPackage",
+      "description": "Get an app attach package.",
+      "path": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DesktopVirtualization/appAttachPackages/{appAttachPackageName}",
       "help": {
         "learnMore": {
-          "url": "https://learn.microsoft.com/powershell/module/az.desktopvirtualization/get-azwvdapplication"
+          "url": "https://learn.microsoft.com/powershell/module/az.desktopvirtualization/get-azwvdappattachpackage"
         },
         "parameterSets": [
           {
             "parameters": [
-              "-GroupName <String>",
               "-Name <String>",
               "-ResourceGroupName <String>",
               "[-SubscriptionId <String[]>]"
@@ -26,15 +25,11 @@
       },
       "examples": [
         {
-          "description": "Get an application.",
+          "description": "Get an app attach package.",
           "parameters": [
             {
-              "name": "-GroupName",
-              "value": "[Path.applicationGroupName]"
-            },
-            {
               "name": "-Name",
-              "value": "[Path.applicationName]"
+              "value": "[Path.appAttachPackageName]"
             },
             {
               "name": "-ResourceGroupName",
@@ -49,17 +44,16 @@
       ]
     },
     {
-      "name": "Remove-AzWvdApplication",
-      "description": "Remove an application.",
-      "path": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DesktopVirtualization/applicationGroups/{applicationGroupName}/applications/{applicationName}",
+      "name": "Remove-AzWvdAppAttachPackage",
+      "description": "Remove an App Attach Package.",
+      "path": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DesktopVirtualization/appAttachPackages/{appAttachPackageName}",
       "help": {
         "learnMore": {
-          "url": "https://learn.microsoft.com/powershell/module/az.desktopvirtualization/remove-azwvdapplication"
+          "url": "https://learn.microsoft.com/powershell/module/az.desktopvirtualization/remove-azwvdappattachpackage"
         },
         "parameterSets": [
           {
             "parameters": [
-              "-GroupName <String>",
               "-Name <String>",
               "-ResourceGroupName <String>",
               "[-SubscriptionId <String>]"
@@ -69,15 +63,11 @@
       },
       "examples": [
         {
-          "description": "Remove an application.",
+          "description": "Remove an App Attach Package.",
           "parameters": [
             {
-              "name": "-GroupName",
-              "value": "[Path.applicationGroupName]"
-            },
-            {
               "name": "-Name",
-              "value": "[Path.applicationName]"
+              "value": "[Path.appAttachPackageName]"
             },
             {
               "name": "-ResourceGroupName",

@@ -1,71 +1,67 @@
 ---
 external help file:
 Module Name: Az.DesktopVirtualization
-online version: https://learn.microsoft.com/powershell/module/az.desktopvirtualization/get-azwvdworkspace
+online version: https://learn.microsoft.com/powershell/module/az.desktopvirtualization/get-azwvdappattachpackage
 schema: 2.0.0
 ---
 
-# Get-AzWvdWorkspace
+# Get-AzWvdAppAttachPackage
 
 ## SYNOPSIS
-Get a workspace.
+Get an app attach package.
 
 ## SYNTAX
 
 ### List1 (Default)
 ```
-Get-AzWvdWorkspace [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
+Get-AzWvdAppAttachPackage [-SubscriptionId <String[]>] [-Filter <String>] [-DefaultProfile <PSObject>]
+ [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-AzWvdWorkspace -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
+Get-AzWvdAppAttachPackage -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-AzWvdWorkspace -InputObject <IDesktopVirtualizationIdentity> [-DefaultProfile <PSObject>]
+Get-AzWvdAppAttachPackage -InputObject <IDesktopVirtualizationIdentity> [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
 ### List
 ```
-Get-AzWvdWorkspace -ResourceGroupName <String> [-SubscriptionId <String[]>] [-InitialSkip <Int32>]
- [-IsDescending] [-PageSize <Int32>] [-DefaultProfile <PSObject>] [<CommonParameters>]
+Get-AzWvdAppAttachPackage -ResourceGroupName <String> [-SubscriptionId <String[]>] [-Filter <String>]
+ [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get a workspace.
+Get an app attach package.
 
 ## EXAMPLES
 
-### Example 1: Get a Windows Virtual Desktop Workspace by name
+### Example 1: {{ Add title here }}
 ```powershell
-Get-AzWvdWorkspace -ResourceGroupName ResourceGroupName -Name WorkspaceName
+{{ Add code here }}
 ```
 
 ```output
-Location   Name                 Type
---------   ----                 ----
-eastus     WorkspaceName Microsoft.DesktopVirtualization/workspaces
+{{ Add output here }}
 ```
 
-This command gets a Windows Virtual Desktop Workspace in a Resource Group.
+{{ Add description here }}
 
-### Example 2: List Windows Virtual Desktop Workspaces
+### Example 2: {{ Add title here }}
 ```powershell
-Get-AzWvdWorkspace -ResourceGroupName ResourceGroupName
+{{ Add code here }}
 ```
 
 ```output
-Location   Name           Type
---------   ----           ----
-eastus     WorkspaceName1 Microsoft.DesktopVirtualization/workspaces
-eastus     WorkspaceName2 Microsoft.DesktopVirtualization/workspaces
+{{ Add output here }}
 ```
 
-This command lists a Windows Virtual Desktop Workspaces in a Resource Group.
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -85,12 +81,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InitialSkip
-Initial number of items to skip.
+### -Filter
+OData filter expression.
+Valid properties for filtering are package name and host pool.
 
 ```yaml
-Type: System.Int32
-Parameter Sets: List
+Type: System.String
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -116,45 +113,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -IsDescending
-Indicates whether the collection is descending.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Name
-The name of the workspace
+The name of the App Attach package
 
 ```yaml
 Type: System.String
 Parameter Sets: Get
-Aliases: WorkspaceName
+Aliases: AppAttachPackageName
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PageSize
-Number of items per page.
-
-```yaml
-Type: System.Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -202,7 +169,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240403.IWorkspace
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240403.IAppAttachPackage
 
 ## NOTES
 
