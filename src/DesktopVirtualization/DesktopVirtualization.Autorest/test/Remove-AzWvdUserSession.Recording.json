@@ -6,8 +6,8 @@
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "309" ],
-        "x-ms-client-request-id": [ "8cf72450-b8ad-4410-8034-9ad422c252a6" ],
+        "x-ms-unique-id": [ "329" ],
+        "x-ms-client-request-id": [ "4ed46c1e-9165-4d3d-90ed-63b4acbca87a" ],
         "CommandName": [ "Remove-AzWvdUserSession" ],
         "FullCommandName": [ "Remove-AzWvdUserSession_Delete" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -22,24 +22,24 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "Set-Cookie": [ "ARRAffinity=bcbcd66544f5ddaf4cbead41410626b9ca9d605ee7d3a04c141d9e19b964fb41;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvdselfhost.microsoft.com", "ARRAffinitySameSite=bcbcd66544f5ddaf4cbead41410626b9ca9d605ee7d3a04c141d9e19b964fb41;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvdselfhost.microsoft.com" ],
+        "Set-Cookie": [ "ARRAffinity=39d91f16fdd59b39d7a07780844d80b88a73a7f54a8a5e7eeddb8cc0cb631057;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvdselfhost.microsoft.com", "ARRAffinitySameSite=39d91f16fdd59b39d7a07780844d80b88a73a7f54a8a5e7eeddb8cc0cb631057;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvdselfhost.microsoft.com" ],
         "X-Rate-Limit-Limit": [ "0" ],
         "X-Rate-Limit-Remaining": [ "9223372036854775807" ],
         "X-Rate-Limit-Reset": [ "0" ],
         "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvZGJlZGVmMjUtMTg0Yy00MzBmLWIzODMtMGVlYjg3YzMyMDVkL3Jlc291cmNlR3JvdXBzL2FsZWNiVXNlclNlc3Npb25UZXN0cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9ob3N0UG9vbHMvYWxlY2JVc2VyU2Vzc2lvbkhQL3Nlc3Npb25Ib3N0cy91c2VyU2Vzcy1zaC0wL3VzZXJTZXNzaW9ucy80" ],
-        "x-ms-lamport-ts": [ "173945147" ],
-        "x-ms-correlation-id": [ "345bab66-e177-43eb-86ea-bbabc889b83b" ],
-        "x-ms-request-id": [ "8cf72450-b8ad-4410-8034-9ad422c252a6" ],
+        "x-ms-lamport-ts": [ "173948786" ],
+        "x-ms-correlation-id": [ "1b055599-81d0-4ef1-a356-f314075e507f" ],
+        "x-ms-request-id": [ "4ed46c1e-9165-4d3d-90ed-63b4acbca87a" ],
         "X-Powered-By": [ "ASP.NET" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "x-ms-ratelimit-remaining-subscription-deletes": [ "199" ],
         "x-ms-ratelimit-remaining-subscription-global-deletes": [ "2999" ],
-        "x-ms-correlation-request-id": [ "1719403c-5ad1-4e80-8aca-3103c95a6b79" ],
-        "x-ms-routing-request-id": [ "WESTUS:20240808T220909Z:1719403c-5ad1-4e80-8aca-3103c95a6b79" ],
+        "x-ms-correlation-request-id": [ "adfac074-4c75-4839-a066-1e0e6b5a8b43" ],
+        "x-ms-routing-request-id": [ "WESTUS:20240808T230056Z:adfac074-4c75-4839-a066-1e0e6b5a8b43" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Cache": [ "CONFIG_NOCACHE" ],
-        "X-MSEdge-Ref": [ "Ref A: B97B226B9EC64A7396BAC6D260699C87 Ref B: SJC211051205053 Ref C: 2024-08-08T22:09:08Z" ],
-        "Date": [ "Thu, 08 Aug 2024 22:09:08 GMT" ]
+        "X-MSEdge-Ref": [ "Ref A: BCBB0D5AA6A64772820D5E9A1A279A00 Ref B: SJC211051201029 Ref C: 2024-08-08T23:00:54Z" ],
+        "Date": [ "Thu, 08 Aug 2024 23:00:55 GMT" ]
       },
       "ContentHeaders": {
         "Expires": [ "-1" ]
@@ -55,8 +55,8 @@
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "310" ],
-        "x-ms-client-request-id": [ "3871ee4d-0aa6-4daa-b39f-f0c045cd64aa" ],
+        "x-ms-unique-id": [ "330" ],
+        "x-ms-client-request-id": [ "8843fd4f-98de-49cc-9589-67b838cb3912" ],
         "CommandName": [ "Get-AzWvdUserSession" ],
         "FullCommandName": [ "Get-AzWvdUserSession_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -76,26 +76,26 @@
         "X-Rate-Limit-Remaining": [ "9223372036854775807" ],
         "X-Rate-Limit-Reset": [ "0" ],
         "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvZGJlZGVmMjUtMTg0Yy00MzBmLWIzODMtMGVlYjg3YzMyMDVkL3Jlc291cmNlR3JvdXBzL2FsZWNiVXNlclNlc3Npb25UZXN0cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9ob3N0UG9vbHMvYWxlY2JVc2VyU2Vzc2lvbkhQL3Nlc3Npb25Ib3N0cy91c2VyU2Vzcy1zaC0wL3VzZXJTZXNzaW9ucy80" ],
-        "x-ms-lamport-ts": [ "173945149" ],
-        "x-ms-correlation-id": [ "669d85de-02e3-454a-a457-e9d3fff9ba09" ],
-        "x-ms-request-id": [ "3871ee4d-0aa6-4daa-b39f-f0c045cd64aa" ],
+        "x-ms-lamport-ts": [ "173948794" ],
+        "x-ms-correlation-id": [ "eee8ae3c-d2fd-485b-b108-bd37884ff7ed" ],
+        "x-ms-request-id": [ "8843fd4f-98de-49cc-9589-67b838cb3912" ],
         "X-Powered-By": [ "ASP.NET" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "x-ms-ratelimit-remaining-subscription-reads": [ "249" ],
         "x-ms-ratelimit-remaining-subscription-global-reads": [ "3749" ],
-        "x-ms-correlation-request-id": [ "0b92ccd7-ad0b-48b9-82d6-6e68e38f1fed" ],
-        "x-ms-routing-request-id": [ "WESTUS:20240808T220911Z:0b92ccd7-ad0b-48b9-82d6-6e68e38f1fed" ],
+        "x-ms-correlation-request-id": [ "c08901f1-e32e-48f0-8d3a-1f68794f7e82" ],
+        "x-ms-routing-request-id": [ "WESTUS:20240808T230058Z:c08901f1-e32e-48f0-8d3a-1f68794f7e82" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Cache": [ "CONFIG_NOCACHE" ],
-        "X-MSEdge-Ref": [ "Ref A: C90F0B4C17074604B0891451D6789956 Ref B: SJC211051205053 Ref C: 2024-08-08T22:09:09Z" ],
-        "Date": [ "Thu, 08 Aug 2024 22:09:10 GMT" ]
+        "X-MSEdge-Ref": [ "Ref A: B597359A700C414E9EFE6CD713A25665 Ref B: SJC211051201029 Ref C: 2024-08-08T23:00:56Z" ],
+        "Date": [ "Thu, 08 Aug 2024 23:00:57 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "120" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"error\":{\"code\":\"404\",\"message\":\"ActivityId: 669d85de-02e3-454a-a457-e9d3fff9ba09 Error: User session does not exist\"}}",
+      "Content": "{\"error\":{\"code\":\"404\",\"message\":\"ActivityId: eee8ae3c-d2fd-485b-b108-bd37884ff7ed Error: User session does not exist\"}}",
       "isContentBase64": false
     }
   }

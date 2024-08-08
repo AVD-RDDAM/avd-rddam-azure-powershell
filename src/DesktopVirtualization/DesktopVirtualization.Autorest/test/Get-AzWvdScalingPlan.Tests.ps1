@@ -89,7 +89,7 @@ Describe 'Get-AzWvdScalingPlan' {
                 | Where-Object -Property Name -Match 'ScalingPlanPowershellContained*' `
                 | Sort-Object -Property Name
 
-            $scalingPlans.Count | Should -Be 4
+            $scalingPlans.Count | Should -Be 2
         }
         finally {
             $scalingPlan = Remove-AzWvdScalingPlan `
@@ -139,7 +139,7 @@ Describe 'Get-AzWvdScalingPlan' {
                 | Where-Object -Property Name -Match 'ScalingPlanPowershellContained*' `
                 | Sort-Object -Property Name
 
-            $scalingPlans.Count | Should -Be 2
+            $scalingPlans.Count | Should -Be 4
         }
         finally {
             $scalingPlan = Remove-AzWvdScalingPlan `
