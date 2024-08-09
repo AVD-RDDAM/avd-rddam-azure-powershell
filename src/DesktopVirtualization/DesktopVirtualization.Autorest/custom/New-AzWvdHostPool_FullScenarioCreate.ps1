@@ -93,12 +93,7 @@ function New-AzWvdHostPool_FullScenarioCreate {
         [Parameter(Mandatory, HelpMessage='Location')]
         [Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Category('Path')]
         [System.String]
-        ${Location},
-
-        [Parameter(HelpMessage='ManagementType')]
-        [Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Category('Path')]
-        [Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.ManagementType]
-        ${ManagementType}
+        ${Location}
     )
 
     process {
@@ -112,7 +107,6 @@ function New-AzWvdHostPool_FullScenarioCreate {
         }
         $null = $PSBoundParameters.Remove("DesktopAppGroupName")
         $null = $PSBoundParameters.Remove("WorkspaceName")
-        $null = $PSBoundParameters.Remove("ManagementType")
         
         $hostpool = Az.DesktopVirtualization\New-AzWvdHostPool @PSBoundParameters
 
