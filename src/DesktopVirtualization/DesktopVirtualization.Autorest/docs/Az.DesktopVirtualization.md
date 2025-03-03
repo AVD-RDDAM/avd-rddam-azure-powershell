@@ -18,7 +18,7 @@ Disconnect a userSession.
 Expands and Lists MSIX packages in an Image, given the Image Path.
 
 ### [Get-AzWvdActiveSessionHostConfiguration](Get-AzWvdActiveSessionHostConfiguration.md)
-Get the ActiveSessionHostConfiguration for the hostPool that is currently being used for update operations.
+Get the ActiveSessionHostConfiguration for the hostPool that is currently being used for get operations.
 
 ### [Get-AzWvdAppAttachPackage](Get-AzWvdAppAttachPackage.md)
 Get an app attach package.
@@ -69,7 +69,7 @@ Get a SessionHostConfiguration.
 Get a SessionHostManagement.
 
 ### [Get-AzWvdSessionHostManagementsUpdateStatus](Get-AzWvdSessionHostManagementsUpdateStatus.md)
-Get the session host update status for a given hostpool.
+Get the session host get status for a given hostpool.
 
 ### [Get-AzWvdStartMenuItem](Get-AzWvdStartMenuItem.md)
 List start menu items in the given application group.
@@ -84,55 +84,52 @@ Get a workspace.
 Gets information from a package given the path to the package.
 
 ### [Invoke-AzWvdControlSessionHostUpdate](Invoke-AzWvdControlSessionHostUpdate.md)
-Control update of a hostpool.
+Control post of a hostpool.
 
 ### [Invoke-AzWvdInitiateSessionHostUpdate](Invoke-AzWvdInitiateSessionHostUpdate.md)
-Initiates a hostpool update or schedule an update for the future.
+Initiates a hostpool post or schedule an post for the future.
 
 ### [Invoke-AzWvdRetrySessionHostProvisioning](Invoke-AzWvdRetrySessionHostProvisioning.md)
 Retry provisioning on a SessionHost.
 
 ### [New-AzWvdAppAttachPackage](New-AzWvdAppAttachPackage.md)
-Create or update an App Attach package.
+create an App Attach package.
 
 ### [New-AzWvdApplication](New-AzWvdApplication.md)
-Create an application.
+create an application.
 
 ### [New-AzWvdApplicationGroup](New-AzWvdApplicationGroup.md)
-Create an applicationGroup.
+create an applicationGroup.
 
 ### [New-AzWvdHostPool](New-AzWvdHostPool.md)
-Create a host pool.
+create a host pool.
 
 ### [New-AzWvdMsixPackage](New-AzWvdMsixPackage.md)
-Create a MSIX package.
+create a MSIX package.
 
 ### [New-AzWvdRegistrationInfo](New-AzWvdRegistrationInfo.md)
 Create Azure Virtual Desktop registration info.
 
 ### [New-AzWvdScalingPlan](New-AzWvdScalingPlan.md)
-Create a scaling plan.
+create a scaling plan.
 
 ### [New-AzWvdScalingPlanPersonalSchedule](New-AzWvdScalingPlanPersonalSchedule.md)
-Create a ScalingPlanPersonalSchedule.
+create a ScalingPlanPersonalSchedule.
 
 ### [New-AzWvdScalingPlanPooledSchedule](New-AzWvdScalingPlanPooledSchedule.md)
-Create a ScalingPlanPooledSchedule.
+create a ScalingPlanPooledSchedule.
 
 ### [New-AzWvdSessionHostConfiguration](New-AzWvdSessionHostConfiguration.md)
-Create or update a SessionHostConfiguration.
+create a SessionHostConfiguration.
 
 ### [New-AzWvdSessionHostManagement](New-AzWvdSessionHostManagement.md)
-Create or update a SessionHostManagement.
+create a SessionHostManagement.
 
 ### [New-AzWvdWorkspace](New-AzWvdWorkspace.md)
-Create a workspace.
+create a workspace.
 
 ### [Register-AzWvdApplicationGroup](Register-AzWvdApplicationGroup.md)
 Register a Azure Virtual Desktop application group.
-
-### [Remove-AzWvdAppAttachPackage](Remove-AzWvdAppAttachPackage.md)
-Remove an App Attach Package.
 
 ### [Remove-AzWvdAppAttachPackage](Remove-AzWvdAppAttachPackage.md)
 Remove an App Attach Package.
@@ -180,44 +177,41 @@ Send a message to a user.
 Unregister the Azure Virtual Desktop application group.
 
 ### [Update-AzWvdAppAttachPackage](Update-AzWvdAppAttachPackage.md)
-Update an App Attach Package
-
-### [Update-AzWvdAppAttachPackage](Update-AzWvdAppAttachPackage.md)
-Update an App Attach Package
+update an App Attach Package
 
 ### [Update-AzWvdApplication](Update-AzWvdApplication.md)
-Update an application.
+update an application.
 
 ### [Update-AzWvdApplicationGroup](Update-AzWvdApplicationGroup.md)
-Update an applicationGroup.
+update an applicationGroup.
 
 ### [Update-AzWvdDesktop](Update-AzWvdDesktop.md)
-Update a desktop.
+update a desktop.
 
 ### [Update-AzWvdHostPool](Update-AzWvdHostPool.md)
-Update a host pool.
+update a host pool.
 
 ### [Update-AzWvdMsixPackage](Update-AzWvdMsixPackage.md)
-Update an  MSIX Package.
+update an  MSIX Package.
 
 ### [Update-AzWvdScalingPlan](Update-AzWvdScalingPlan.md)
-Update a scaling plan.
+update a scaling plan.
 
 ### [Update-AzWvdScalingPlanPersonalSchedule](Update-AzWvdScalingPlanPersonalSchedule.md)
-Update a ScalingPlanPersonalSchedule.
+update a ScalingPlanPersonalSchedule.
 
 ### [Update-AzWvdScalingPlanPooledSchedule](Update-AzWvdScalingPlanPooledSchedule.md)
-Update a ScalingPlanPooledSchedule.
+update a ScalingPlanPooledSchedule.
 
 ### [Update-AzWvdSessionHost](Update-AzWvdSessionHost.md)
-Update a session host.
+update a session host.
 
 ### [Update-AzWvdSessionHostConfiguration](Update-AzWvdSessionHostConfiguration.md)
-Update a SessionHostConfiguration.
+update a SessionHostConfiguration.
 
 ### [Update-AzWvdSessionHostManagement](Update-AzWvdSessionHostManagement.md)
-Update a SessionHostManagement.
+update a SessionHostManagement.
 
 ### [Update-AzWvdWorkspace](Update-AzWvdWorkspace.md)
-Update a workspace.
+update a workspace.
 

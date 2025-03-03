@@ -8,10 +8,11 @@ schema: 2.0.0
 # New-AzWvdSessionHostManagement
 
 ## SYNOPSIS
-Create or update a SessionHostManagement.
+create a SessionHostManagement.
 
 ## SYNTAX
 
+### CreateExpanded (Default)
 ```
 New-AzWvdSessionHostManagement -HostPoolName <String> -ResourceGroupName <String>
  -ScheduledDateTimeZone <String> -UpdateLogOffDelayMinute <Int32> -UpdateMaxVmsRemoved <Int32>
@@ -19,8 +20,20 @@ New-AzWvdSessionHostManagement -HostPoolName <String> -ResourceGroupName <String
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
+### CreateViaJsonFilePath
+```
+New-AzWvdSessionHostManagement -HostPoolName <String> -ResourceGroupName <String> -JsonFilePath <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaJsonString
+```
+New-AzWvdSessionHostManagement -HostPoolName <String> -ResourceGroupName <String> -JsonString <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Create or update a SessionHostManagement.
+create a SessionHostManagement.
 
 ## EXAMPLES
 
@@ -76,6 +89,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -JsonFilePath
+Path of Json file supplied to the Create operation
+
+```yaml
+Type: System.String
+Parameter Sets: CreateViaJsonFilePath
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -JsonString
+Json string supplied to the Create operation
+
+```yaml
+Type: System.String
+Parameter Sets: CreateViaJsonString
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResourceGroupName
 The name of the resource group.
 The name is case insensitive.
@@ -98,7 +141,7 @@ Must be set if useLocalTime is true.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: True
@@ -130,7 +173,7 @@ False by default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -145,7 +188,7 @@ Grace period before logging off users in minutes.
 
 ```yaml
 Type: System.Int32
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: True
@@ -161,7 +204,7 @@ Default value is an empty string.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -176,7 +219,7 @@ The maximum number of virtual machines to be removed during hostpool update.
 
 ```yaml
 Type: System.Int32
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: True
@@ -224,7 +267,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.ISessionHostManagement
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.ISessionHostManagement
 
 ## NOTES
 

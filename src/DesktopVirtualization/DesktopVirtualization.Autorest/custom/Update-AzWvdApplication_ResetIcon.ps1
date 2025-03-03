@@ -1,5 +1,5 @@
 function Update-AzWvdApplication_ResetIcon {
-    [OutputType([Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IApplication])]
+    [OutputType([Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IApplication])]
     [CmdletBinding(PositionalBinding=$false, ConfirmImpact='Medium')]
     param(
         [Parameter(Mandatory)]

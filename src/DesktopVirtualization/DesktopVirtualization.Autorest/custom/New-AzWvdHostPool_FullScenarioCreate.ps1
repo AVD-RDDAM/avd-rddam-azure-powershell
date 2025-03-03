@@ -100,7 +100,7 @@ function New-AzWvdHostPool_FullScenarioCreate {
 
         [Parameter(HelpMessage='ManagementType')]
         [Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Category('Path')]
-        [Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.ManagementType]
+        [System.String]
         ${ManagementType}
     )
 

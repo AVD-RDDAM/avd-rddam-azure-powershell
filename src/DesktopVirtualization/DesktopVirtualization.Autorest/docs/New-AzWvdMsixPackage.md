@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-AzWvdMsixPackage
 
 ## SYNOPSIS
-Create a MSIX package.
+create a MSIX package.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ New-AzWvdMsixPackage -HostPoolName <String> -PackageAlias <String> -ResourceGrou
 ```
 
 ## DESCRIPTION
-Create a MSIX package.
+create a MSIX package.
 
 ## EXAMPLES
 
@@ -366,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### -Version
-Package version found in the appxmanifest.xml.
+Package Version found in the appxmanifest.xml.
 
 ```yaml
 Type: System.String

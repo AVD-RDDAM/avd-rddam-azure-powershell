@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-AzWvdApplicationGroup
 
 ## SYNOPSIS
-Update an applicationGroup.
+update an applicationGroup.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-AzWvdApplicationGroup -Name <String> -ResourceGroupName <String> -JsonStr
 ```
 
 ## DESCRIPTION
-Update an applicationGroup.
+update an applicationGroup.
 
 ## EXAMPLES
 

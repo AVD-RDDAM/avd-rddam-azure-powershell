@@ -132,7 +132,6 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -147,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-The name of the App Attach package
+The name of the App Attach package arm object
 
 ```yaml
 Type: System.String

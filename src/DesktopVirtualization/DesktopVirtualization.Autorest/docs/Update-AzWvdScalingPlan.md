@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-AzWvdScalingPlan
 
 ## SYNOPSIS
-Update a scaling plan.
+update a scaling plan.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-AzWvdScalingPlan -Name <String> -ResourceGroupName <String> -JsonString <
 ```
 
 ## DESCRIPTION
-Update a scaling plan.
+update a scaling plan.
 
 ## EXAMPLES
 

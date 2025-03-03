@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-AzWvdInitiateSessionHostUpdate
 
 ## SYNOPSIS
-Initiates a hostpool update or schedule an update for the future.
+Initiates a hostpool post or schedule an post for the future.
 
 ## SYNTAX
 
@@ -43,8 +43,21 @@ Invoke-AzWvdInitiateSessionHostUpdate -InputObject <IDesktopVirtualizationIdenti
  [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
+### PostViaJsonFilePath
+```
+Invoke-AzWvdInitiateSessionHostUpdate -HostPoolName <String> -ResourceGroupName <String>
+ -JsonFilePath <String> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### PostViaJsonString
+```
+Invoke-AzWvdInitiateSessionHostUpdate -HostPoolName <String> -ResourceGroupName <String> -JsonString <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Initiates a hostpool update or schedule an update for the future.
+Initiates a hostpool post or schedule an post for the future.
 
 ## EXAMPLES
 
@@ -83,7 +96,7 @@ The name of the host pool within the specified resource group
 
 ```yaml
 Type: System.String
-Parameter Sets: Post, PostExpanded
+Parameter Sets: Post, PostExpanded, PostViaJsonFilePath, PostViaJsonString
 Aliases:
 
 Required: True
@@ -95,7 +108,6 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -106,6 +118,36 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -JsonFilePath
+Path of Json file supplied to the Post operation
+
+```yaml
+Type: System.String
+Parameter Sets: PostViaJsonFilePath
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -JsonString
+Json string supplied to the Post operation
+
+```yaml
+Type: System.String
+Parameter Sets: PostViaJsonString
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -130,7 +172,7 @@ The name is case insensitive.
 
 ```yaml
 Type: System.String
-Parameter Sets: Post, PostExpanded
+Parameter Sets: Post, PostExpanded, PostViaJsonFilePath, PostViaJsonString
 Aliases:
 
 Required: True
@@ -177,7 +219,7 @@ The value must be an UUID.
 
 ```yaml
 Type: System.String
-Parameter Sets: Post, PostExpanded
+Parameter Sets: Post, PostExpanded, PostViaJsonFilePath, PostViaJsonString
 Aliases:
 
 Required: False
@@ -250,10 +292,9 @@ Accept wildcard characters: False
 
 ### -UpdateSessionHostsRequestBody
 Object containing the definition for properties to be used for a sessionHostUpdate operation.
-To construct, see NOTES section for UPDATESESSIONHOSTSREQUESTBODY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IUpdateSessionHostsRequestBody
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IUpdateSessionHostsRequestBody
 Parameter Sets: Post, PostViaIdentity
 Aliases:
 
@@ -300,9 +341,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IUpdateSessionHostsRequestBody
-
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
+
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IUpdateSessionHostsRequestBody
 
 ## OUTPUTS
 

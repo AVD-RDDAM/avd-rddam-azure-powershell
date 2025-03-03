@@ -8,18 +8,17 @@ schema: 2.0.0
 # New-AzWvdAppAttachPackage
 
 ## SYNOPSIS
-Create or update an App Attach package.
+create an App Attach package.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-AzWvdAppAttachPackage -Name <String> -ResourceGroupName <String> -Location <String>
- [-SubscriptionId <String>] [-CustomData <String>]
- [-FailHealthCheckOnStagingFailure <String>] [-HostPoolReference <String[]>]
- [-ImageCertificateExpiry <DateTime>] [-ImageCertificateName <String>] [-ImageDisplayName <String>]
- [-ImageIsActive] [-ImageIsPackageTimestamped <String>] [-ImageIsRegularRegistration]
- [-ImageLastUpdated <DateTime>] [-ImagePackageAlias <String>]
+ [-SubscriptionId <String>] [-CustomData <String>] [-FailHealthCheckOnStagingFailure <String>]
+ [-HostPoolReference <String[]>] [-ImageCertificateExpiry <DateTime>] [-ImageCertificateName <String>]
+ [-ImageDisplayName <String>] [-ImageIsActive] [-ImageIsPackageTimestamped <String>]
+ [-ImageIsRegularRegistration] [-ImageLastUpdated <DateTime>] [-ImagePackageAlias <String>]
  [-ImagePackageApplication <IMsixPackageApplications[]>]
  [-ImagePackageDependency <IMsixPackageDependencies[]>] [-ImagePackageFamilyName <String>]
  [-ImagePackageFullName <String>] [-ImagePackageName <String>] [-ImagePackageRelativePath <String>]
@@ -43,14 +42,13 @@ New-AzWvdAppAttachPackage -Name <String> -ResourceGroupName <String> -JsonString
 ### ImageObject
 ```
 New-AzWvdAppAttachPackage [-AppAttachPackage] <AppAttachPackage> -Name <String> -ResourceGroupName <String>
- -Location <String> [-SubscriptionId <String>]
- [-FailHealthCheckOnStagingFailure <String>] [-HostPoolReference <String[]>]
- [-ImageDisplayName <String>] [-ImageIsActive] [-ImageIsRegularRegistration] [-PassThru]
- [-DefaultProfile <PSObject>] [<CommonParameters>]
+ -Location <String> [-SubscriptionId <String>] [-FailHealthCheckOnStagingFailure <String>]
+ [-HostPoolReference <String[]>] [-ImageDisplayName <String>] [-ImageIsActive] [-ImageIsRegularRegistration]
+ [-PassThru] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create or update an App Attach package.
+create an App Attach package.
 
 ## EXAMPLES
 
@@ -90,6 +88,13 @@ This command creates or updates an Azure Virtual Desktop App attach package in a
 
 ### Example 2: Create or update an Azure Virtual Desktop app attach package from an appAttachPackage object
 ```powershell
+
+```
+
+
+
+### Example 2: Create or update an Azure Virtual Desktop app attach package from an appAttachPackage object
+```powershell
 New-AzWvdAppAttachPackage -Name PackageArmObjectName `
                          -ResourceGroupName ResourceGroupName `
                          -SubscriptionId SubscriptionId `
@@ -117,7 +122,6 @@ This command creates or updates an Azure Virtual Desktop App Attach Package in a
 ## PARAMETERS
 
 ### -AppAttachPackage
-To construct, see NOTES section for APPATTACHPACKAGE properties and create a hash table.
 
 
 ```yaml
@@ -317,8 +321,6 @@ Accept wildcard characters: False
 ### -ImagePackageApplication
 List of package applications.
 
-To construct, see NOTES section for IMAGEPACKAGEAPPLICATION properties and create a hash table.
-
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IMsixPackageApplications[]
 Parameter Sets: CreateExpanded
@@ -333,8 +335,6 @@ Accept wildcard characters: False
 
 ### -ImagePackageDependency
 List of package dependencies.
-
-To construct, see NOTES section for IMAGEPACKAGEDEPENDENCY properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IMsixPackageDependencies[]
@@ -438,12 +438,42 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -JsonFilePath
+Path of Json file supplied to the Create operation
+
+```yaml
+Type: System.String
+Parameter Sets: CreateViaJsonFilePath
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -JsonString
+Json string supplied to the Create operation
+
+```yaml
+Type: System.String
+Parameter Sets: CreateViaJsonString
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -KeyVaultUrl
 URL of keyvault location to store certificate
 
 ```yaml
 Type: System.String
-Parameter Sets: CreateViaJsonFilePath
+Parameter Sets: CreateExpanded, ImageObject
 Aliases:
 
 Required: False
@@ -458,7 +488,7 @@ The geo-location where the resource lives
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded, ImageObject
 Aliases:
 
 Required: True

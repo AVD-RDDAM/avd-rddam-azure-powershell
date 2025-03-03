@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzWvdSessionHostManagementsUpdateStatus
 
 ## SYNOPSIS
-Get the session host update status for a given hostpool.
+Get the session host get status for a given hostpool.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-AzWvdSessionHostManagementsUpdateStatus -InputObject <IDesktopVirtualization
 ```
 
 ## DESCRIPTION
-Get the session host update status for a given hostpool.
+Get the session host get status for a given hostpool.
 
 ## EXAMPLES
 
@@ -77,7 +77,6 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -132,7 +131,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.ISessionHostManagementUpdateStatus
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.ISessionHostManagementUpdateStatus
 
 ## NOTES
 

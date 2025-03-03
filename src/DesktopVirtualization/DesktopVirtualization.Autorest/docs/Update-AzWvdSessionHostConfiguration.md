@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-AzWvdSessionHostConfiguration
 
 ## SYNOPSIS
-Update a SessionHostConfiguration.
+update a SessionHostConfiguration.
 
 ## SYNTAX
 
@@ -17,12 +17,12 @@ Update a SessionHostConfiguration.
 Update-AzWvdSessionHostConfiguration -HostPoolName <String> -ResourceGroupName <String>
  [-SubscriptionId <String>] [-AvailabilityZone <Int32[]>] [-BootDiagnosticInfoEnabled]
  [-BootDiagnosticInfoStorageUri <String>] [-CustomConfigurationScriptUrl <String>]
- [-CustomInfoResourceId <String>] [-DiskInfoType <VirtualMachineDiskType>]
+ [-CustomInfoResourceId <String>] [-DiskInfoType <String>]
  [-DomainCredentialsPasswordKeyVaultSecretUri <String>] [-DomainCredentialsUsernameKeyVaultSecretUri <String>]
- [-FriendlyName <String>] [-ImageInfoImageType <Type>] [-MarketplaceInfoExactVersion <String>]
+ [-FriendlyName <String>] [-ImageInfoImageType <String>] [-MarketplaceInfoExactVersion <String>]
  [-MarketplaceInfoOffer <String>] [-MarketplaceInfoPublisher <String>] [-MarketplaceInfoSku <String>]
  [-NetworkInfoSecurityGroupId <String>] [-NetworkInfoSubnetId <String>] [-SecurityInfoSecureBootEnabled]
- [-SecurityInfoType <VirtualMachineSecurityType>] [-SecurityInfoVTpmEnabled]
+ [-SecurityInfoType <String>] [-SecurityInfoVTpmEnabled]
  [-VMAdminCredentialsPasswordKeyVaultSecretUri <String>]
  [-VMAdminCredentialsUsernameKeyVaultSecretUri <String>] [-VMLocation <String>] [-VMNamePrefix <String>]
  [-VMResourceGroup <String>] [-VMSizeId <String>] [-VMTag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob]
@@ -33,20 +33,34 @@ Update-AzWvdSessionHostConfiguration -HostPoolName <String> -ResourceGroupName <
 ```
 Update-AzWvdSessionHostConfiguration -InputObject <IDesktopVirtualizationIdentity>
  [-AvailabilityZone <Int32[]>] [-BootDiagnosticInfoEnabled] [-BootDiagnosticInfoStorageUri <String>]
- [-CustomConfigurationScriptUrl <String>] [-CustomInfoResourceId <String>]
- [-DiskInfoType <VirtualMachineDiskType>] [-DomainCredentialsPasswordKeyVaultSecretUri <String>]
- [-DomainCredentialsUsernameKeyVaultSecretUri <String>] [-FriendlyName <String>] [-ImageInfoImageType <Type>]
- [-MarketplaceInfoExactVersion <String>] [-MarketplaceInfoOffer <String>] [-MarketplaceInfoPublisher <String>]
- [-MarketplaceInfoSku <String>] [-NetworkInfoSecurityGroupId <String>] [-NetworkInfoSubnetId <String>]
- [-SecurityInfoSecureBootEnabled] [-SecurityInfoType <VirtualMachineSecurityType>] [-SecurityInfoVTpmEnabled]
+ [-CustomConfigurationScriptUrl <String>] [-CustomInfoResourceId <String>] [-DiskInfoType <String>]
+ [-DomainCredentialsPasswordKeyVaultSecretUri <String>] [-DomainCredentialsUsernameKeyVaultSecretUri <String>]
+ [-FriendlyName <String>] [-ImageInfoImageType <String>] [-MarketplaceInfoExactVersion <String>]
+ [-MarketplaceInfoOffer <String>] [-MarketplaceInfoPublisher <String>] [-MarketplaceInfoSku <String>]
+ [-NetworkInfoSecurityGroupId <String>] [-NetworkInfoSubnetId <String>] [-SecurityInfoSecureBootEnabled]
+ [-SecurityInfoType <String>] [-SecurityInfoVTpmEnabled]
  [-VMAdminCredentialsPasswordKeyVaultSecretUri <String>]
  [-VMAdminCredentialsUsernameKeyVaultSecretUri <String>] [-VMLocation <String>] [-VMNamePrefix <String>]
  [-VMResourceGroup <String>] [-VMSizeId <String>] [-VMTag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob]
  [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
+### UpdateViaJsonFilePath
+```
+Update-AzWvdSessionHostConfiguration -HostPoolName <String> -ResourceGroupName <String> -JsonFilePath <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaJsonString
+```
+Update-AzWvdSessionHostConfiguration -HostPoolName <String> -ResourceGroupName <String> -JsonString <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Update a SessionHostConfiguration.
+update a SessionHostConfiguration.
 
 ## EXAMPLES
 
@@ -103,7 +117,7 @@ Should be from [1,2,3].
 
 ```yaml
 Type: System.Int32[]
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -118,7 +132,7 @@ Whether boot diagnostics should be enabled on the Virtual Machine.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -136,7 +150,7 @@ If storageUri is not specified while enabling boot diagnostics, managed storage 
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -151,7 +165,7 @@ The uri to the storage blob containing the arm template to be run on the virtual
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -166,7 +180,7 @@ The resource id of the custom image.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -196,8 +210,8 @@ Accept wildcard characters: False
 The disk type used by virtual machine in hostpool session host.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.VirtualMachineDiskType
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -212,7 +226,7 @@ The uri to access the secret that the password is stored in.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -227,7 +241,7 @@ The uri to access the secret that the username is stored in.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -242,7 +256,7 @@ Friendly name to describe this version of the SessionHostConfiguration.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -257,7 +271,7 @@ The name of the host pool within the specified resource group
 
 ```yaml
 Type: System.String
-Parameter Sets: UpdateExpanded
+Parameter Sets: UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
 Aliases:
 
 Required: True
@@ -271,8 +285,8 @@ Accept wildcard characters: False
 The type of image session hosts use in the hostpool.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.Type
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -284,7 +298,6 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -298,12 +311,42 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -JsonFilePath
+Path of Json file supplied to the Update operation
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateViaJsonFilePath
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -JsonString
+Json string supplied to the Update operation
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateViaJsonString
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -MarketplaceInfoExactVersion
 The exact version of the image.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -318,7 +361,7 @@ The offer of the image.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -333,7 +376,7 @@ The publisher of the image.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -348,7 +391,7 @@ The sku of the image.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -364,7 +407,7 @@ Any allowable/open ports should be specified in the Network Security Group(NSG).
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -379,7 +422,7 @@ The resource ID of the subnet.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -410,7 +453,7 @@ The name is case insensitive.
 
 ```yaml
 Type: System.String
-Parameter Sets: UpdateExpanded
+Parameter Sets: UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
 Aliases:
 
 Required: True
@@ -425,7 +468,7 @@ Whether to use secureBoot on the virtual machine.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -439,8 +482,8 @@ Accept wildcard characters: False
 The security type used by virtual machine in hostpool session host.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.VirtualMachineSecurityType
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -455,7 +498,7 @@ Whether to use vTPM on the virtual machine.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -471,7 +514,7 @@ The value must be an UUID.
 
 ```yaml
 Type: System.String
-Parameter Sets: UpdateExpanded
+Parameter Sets: UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
 Aliases:
 
 Required: False
@@ -486,7 +529,7 @@ The uri to access the secret that the password is stored in.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -501,7 +544,7 @@ The uri to access the secret that the username is stored in.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -516,7 +559,7 @@ The Location for the session host to be created in
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -531,7 +574,7 @@ The prefix that should be associated with session host names
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -547,7 +590,7 @@ It will default to the ResourceGroup of the hostpool if not provided.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -563,7 +606,7 @@ Example: Standard_D2as_v6
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -578,7 +621,7 @@ Hashtable that lists key/value pair tags to apply to the VMs
 
 ```yaml
 Type: System.Collections.Hashtable
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -628,7 +671,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.ISessionHostConfiguration
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.ISessionHostConfiguration
 
 ## NOTES
 

@@ -8,38 +8,33 @@ schema: 2.0.0
 # New-AzWvdHostPool
 
 ## SYNOPSIS
-Create a host pool.
+create a host pool.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-AzWvdHostPool -HostPoolType <HostPoolType> -LoadBalancerType <LoadBalancerType> -Location <String>
- -Name <String> -PreferredAppGroupType <PreferredAppGroupType> -ResourceGroupName <String>
- [-ManagementType <ManagementType>] [-SubscriptionId <String>]
- [-AgentUpdateMaintenanceWindow <IMaintenanceWindowProperties[]>]
- [-AgentUpdateMaintenanceWindowTimeZone <String>] [-AgentUpdateType <SessionHostComponentUpdateType>]
+New-AzWvdHostPool -HostPoolType <String> -LoadBalancerType <String> -Location <String> -Name <String>
+ -PreferredAppGroupType <String> -ResourceGroupName <String> [-ManagementType <String>]
+ [-SubscriptionId <String>] [-AgentUpdateMaintenanceWindow <IMaintenanceWindowProperties[]>]
+ [-AgentUpdateMaintenanceWindowTimeZone <String>] [-AgentUpdateType <String>]
  [-AgentUpdateUseSessionHostLocalTime] [-CustomRdpProperty <String>] [-Description <String>]
- [-DirectUdp <DirectUdp>] [-ExpirationTime <DateTime>] [-FriendlyName <String>]
- [-IdentityType <ManagedServiceIdentityType>] [-IdentityUserAssignedIdentity <Hashtable>] [-Kind <String>]
- [-ManagedBy <String>] [-ManagedPrivateUdp <ManagedPrivateUdp>] [-MaxSessionLimit <Int32>]
- [-PersonalDesktopAssignmentType <PersonalDesktopAssignmentType>] [-PlanName <String>] [-PlanProduct <String>]
- [-PlanPromotionCode <String>] [-PlanPublisher <String>] [-PlanVersion <String>]
- [-PublicNetworkAccess <HostpoolPublicNetworkAccess>] [-PublicUdp <PublicUdp>]
- [-RegistrationInfoToken <String>] [-RegistrationTokenOperation <RegistrationTokenOperation>]
- [-RelayUdp <RelayUdp>] [-Ring <Int32>] [-SkuCapacity <Int32>] [-SkuFamily <String>] [-SkuName <String>]
- [-SkuSize <String>] [-SkuTier <SkuTier>] [-SsoadfsAuthority <String>] [-SsoClientId <String>]
- [-SsoClientSecretKeyVaultPath <String>] [-SsoSecretType <SsoSecretType>] [-StartVMOnConnect]
- [-Tag <Hashtable>] [-ValidationEnvironment] [-VMTemplate <String>] [-DefaultProfile <PSObject>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-DirectUdp <String>] [-ExpirationTime <DateTime>] [-FriendlyName <String>] [-IdentityType <String>]
+ [-IdentityUserAssignedIdentity <Hashtable>] [-Kind <String>] [-ManagedBy <String>]
+ [-ManagedPrivateUdp <String>] [-MaxSessionLimit <Int32>] [-PersonalDesktopAssignmentType <String>]
+ [-PlanName <String>] [-PlanProduct <String>] [-PlanPromotionCode <String>] [-PlanPublisher <String>]
+ [-PlanVersion <String>] [-PublicNetworkAccess <String>] [-PublicUdp <String>]
+ [-RegistrationInfoToken <String>] [-RegistrationTokenOperation <String>] [-RelayUdp <String>] [-Ring <Int32>]
+ [-SkuCapacity <Int32>] [-SkuFamily <String>] [-SkuName <String>] [-SkuSize <String>] [-SkuTier <String>]
+ [-SsoadfsAuthority <String>] [-SsoClientId <String>] [-SsoClientSecretKeyVaultPath <String>]
+ [-SsoSecretType <String>] [-StartVMOnConnect] [-Tag <Hashtable>] [-ValidationEnvironment]
+ [-VMTemplate <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaJsonFilePath
 ```
-New-AzWvdHostPool -HostPoolType <HostPoolType> -LoadBalancerType <LoadBalancerType> -Location <String>
- -Name <String> -PreferredAppGroupType <PreferredAppGroupType> -ResourceGroupName <String>
- [-DesktopAppGroupName <String>] [-ManagementType <ManagementType>] [-SubscriptionId <String>]
- [-WorkspaceName <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-AzWvdHostPool -Name <String> -ResourceGroupName <String> -JsonFilePath <String> [-SubscriptionId <String>]
+ [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaJsonString
@@ -52,12 +47,12 @@ New-AzWvdHostPool -Name <String> -ResourceGroupName <String> -JsonString <String
 ```
 New-AzWvdHostPool -HostPoolType <String> -LoadBalancerType <String> -Location <String> -Name <String>
  -PreferredAppGroupType <String> -ResourceGroupName <String> [-DesktopAppGroupName <String>]
- [-SubscriptionId <String>] [-WorkspaceName <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-ManagementType <String>] [-SubscriptionId <String>] [-WorkspaceName <String>] [-DefaultProfile <PSObject>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create a host pool.
+create a host pool.
 
 ## EXAMPLES
 
@@ -251,7 +246,7 @@ Default: AVD-wide settings are used to determine connection availability, Enable
 This means that this connection is possible, but is not guaranteed, as there are other factors that may prevent this connection type, Disabled: UDP will not attempt this connection type when making connections
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.DirectUdp
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -311,7 +306,7 @@ Accept wildcard characters: False
 Type of managed service identity (where both SystemAssigned and UserAssigned types are allowed).
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.ManagedServiceIdentityType
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -439,7 +434,7 @@ Default: AVD-wide settings are used to determine connection availability, Enable
 This means that this connection is possible, but is not guaranteed, as there are other factors that may prevent this connection type, Disabled: UDP will not attempt this connection type when making connections
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.ManagedPrivateUdp
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -455,8 +450,8 @@ The type of management for this hostpool, Automated or Standard.
 The default value is Automated.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.ManagementType
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: CreateExpanded, FullScenarioCreate
 Aliases:
 
 Required: False
@@ -626,7 +621,7 @@ Default: AVD-wide settings are used to determine connection availability, Enable
 This means that this connection is possible, but is not guaranteed, as there are other factors that may prevent this connection type, Disabled: UDP will not attempt this connection type when making connections
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.PublicUdp
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -672,7 +667,7 @@ Default: AVD-wide settings are used to determine connection availability, Enable
 This means that this connection is possible, but is not guaranteed, as there are other factors that may prevent this connection type, Disabled: UDP will not attempt this connection type when making connections
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.RelayUdp
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 

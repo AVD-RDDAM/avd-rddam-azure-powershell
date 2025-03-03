@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-AzWvdDesktop
 
 ## SYNOPSIS
-Update a desktop.
+update a desktop.
 
 ## SYNTAX
 
@@ -54,7 +54,7 @@ Update-AzWvdDesktop -ApplicationGroupName <String> -Name <String> -ResourceGroup
 ```
 
 ## DESCRIPTION
-Update a desktop.
+update a desktop.
 
 ## EXAMPLES
 

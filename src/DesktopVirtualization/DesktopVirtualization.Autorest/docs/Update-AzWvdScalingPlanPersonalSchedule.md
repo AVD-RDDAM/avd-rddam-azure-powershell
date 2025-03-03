@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-AzWvdScalingPlanPersonalSchedule
 
 ## SYNOPSIS
-Update a ScalingPlanPersonalSchedule.
+update a ScalingPlanPersonalSchedule.
 
 ## SYNTAX
 
@@ -86,7 +86,7 @@ Update-AzWvdScalingPlanPersonalSchedule -ResourceGroupName <String> -ScalingPlan
 ```
 
 ## DESCRIPTION
-Update a ScalingPlanPersonalSchedule.
+update a ScalingPlanPersonalSchedule.
 
 ## EXAMPLES
 

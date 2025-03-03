@@ -8,29 +8,44 @@ schema: 2.0.0
 # New-AzWvdSessionHostConfiguration
 
 ## SYNOPSIS
-Create or update a SessionHostConfiguration.
+create a SessionHostConfiguration.
 
 ## SYNTAX
 
+### CreateExpanded (Default)
 ```
-New-AzWvdSessionHostConfiguration -HostPoolName <String> -ResourceGroupName <String>
- -DiskInfoType <VirtualMachineDiskType> -DomainInfoJoinType <DomainJoinType> -ImageInfoImageType <Type>
- -NetworkInfoSubnetId <String> -VMAdminCredentialsPasswordKeyVaultSecretUri <String>
- -VMAdminCredentialsUsernameKeyVaultSecretUri <String> -VMNamePrefix <String> -VMSizeId <String>
- [-SubscriptionId <String>] [-ActiveDirectoryInfoDomainName <String>] [-ActiveDirectoryInfoOuPath <String>]
- [-AvailabilityZone <Int32[]>] [-AzureActiveDirectoryInfoMdmProviderGuid <String>]
- [-BootDiagnosticInfoEnabled] [-BootDiagnosticInfoStorageUri <String>]
- [-CustomConfigurationScriptUrl <String>] [-CustomInfoResourceId <String>]
- [-DomainCredentialsPasswordKeyVaultSecretUri <String>] [-DomainCredentialsUsernameKeyVaultSecretUri <String>]
- [-FriendlyName <String>] [-MarketplaceInfoExactVersion <String>] [-MarketplaceInfoOffer <String>]
- [-MarketplaceInfoPublisher <String>] [-MarketplaceInfoSku <String>] [-NetworkInfoSecurityGroupId <String>]
- [-SecurityInfoSecureBootEnabled] [-SecurityInfoType <VirtualMachineSecurityType>] [-SecurityInfoVTpmEnabled]
- [-VMLocation <String>] [-VMResourceGroup <String>] [-VMTag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob]
- [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-AzWvdSessionHostConfiguration -HostPoolName <String> -ResourceGroupName <String> -DiskInfoType <String>
+ -DomainInfoJoinType <String> -ImageInfoImageType <String> -NetworkInfoSubnetId <String>
+ -VMAdminCredentialsPasswordKeyVaultSecretUri <String> -VMAdminCredentialsUsernameKeyVaultSecretUri <String>
+ -VMNamePrefix <String> -VMSizeId <String> [-SubscriptionId <String>]
+ [-ActiveDirectoryInfoDomainName <String>] [-ActiveDirectoryInfoOuPath <String>] [-AvailabilityZone <Int32[]>]
+ [-AzureActiveDirectoryInfoMdmProviderGuid <String>] [-BootDiagnosticInfoEnabled]
+ [-BootDiagnosticInfoStorageUri <String>] [-CustomConfigurationScriptUrl <String>]
+ [-CustomInfoResourceId <String>] [-DomainCredentialsPasswordKeyVaultSecretUri <String>]
+ [-DomainCredentialsUsernameKeyVaultSecretUri <String>] [-FriendlyName <String>]
+ [-MarketplaceInfoExactVersion <String>] [-MarketplaceInfoOffer <String>] [-MarketplaceInfoPublisher <String>]
+ [-MarketplaceInfoSku <String>] [-NetworkInfoSecurityGroupId <String>] [-SecurityInfoSecureBootEnabled]
+ [-SecurityInfoType <String>] [-SecurityInfoVTpmEnabled] [-VMLocation <String>] [-VMResourceGroup <String>]
+ [-VMTag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaJsonFilePath
+```
+New-AzWvdSessionHostConfiguration -HostPoolName <String> -ResourceGroupName <String> -JsonFilePath <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaJsonString
+```
+New-AzWvdSessionHostConfiguration -HostPoolName <String> -ResourceGroupName <String> -JsonString <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create or update a SessionHostConfiguration.
+create a SessionHostConfiguration.
 
 ## EXAMPLES
 
@@ -72,7 +87,7 @@ The domain a virtual machine connected to a hostpool will join.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -87,7 +102,7 @@ The organizational unit(OU) path.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -118,7 +133,7 @@ Should be from [1,2,3].
 
 ```yaml
 Type: System.Int32[]
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -133,7 +148,7 @@ The Mobile Device Management(MDM) guid.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -148,7 +163,7 @@ Whether boot diagnostics should be enabled on the Virtual Machine.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -166,7 +181,7 @@ If storageUri is not specified while enabling boot diagnostics, managed storage 
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -181,7 +196,7 @@ The uri to the storage blob containing the arm template to be run on the virtual
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -196,7 +211,7 @@ The resource id of the custom image.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -226,8 +241,8 @@ Accept wildcard characters: False
 The disk type used by virtual machine in hostpool session host.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.VirtualMachineDiskType
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: True
@@ -242,7 +257,7 @@ The uri to access the secret that the password is stored in.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -257,7 +272,7 @@ The uri to access the secret that the username is stored in.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -271,8 +286,8 @@ Accept wildcard characters: False
 The type of domain join done by the virtual machine.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.DomainJoinType
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: True
@@ -287,7 +302,7 @@ Friendly name to describe this version of the SessionHostConfiguration.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -316,8 +331,38 @@ Accept wildcard characters: False
 The type of image session hosts use in the hostpool.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.Type
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -JsonFilePath
+Path of Json file supplied to the Create operation
+
+```yaml
+Type: System.String
+Parameter Sets: CreateViaJsonFilePath
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -JsonString
+Json string supplied to the Create operation
+
+```yaml
+Type: System.String
+Parameter Sets: CreateViaJsonString
 Aliases:
 
 Required: True
@@ -332,7 +377,7 @@ The exact version of the image.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -347,7 +392,7 @@ The offer of the image.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -362,7 +407,7 @@ The publisher of the image.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -377,7 +422,7 @@ The sku of the image.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -393,7 +438,7 @@ Any allowable/open ports should be specified in the Network Security Group(NSG).
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -408,7 +453,7 @@ The resource ID of the subnet.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: True
@@ -454,7 +499,7 @@ Whether to use secureBoot on the virtual machine.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -469,8 +514,8 @@ The security type used by virtual machine in hostpool session host.
 Default is Standard.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.VirtualMachineSecurityType
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -485,7 +530,7 @@ Whether to use vTPM on the virtual machine.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -516,7 +561,7 @@ The uri to access the secret that the password is stored in.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: True
@@ -531,7 +576,7 @@ The uri to access the secret that the username is stored in.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: True
@@ -547,7 +592,7 @@ It will default to the location of the hostpool if not provided.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -562,7 +607,7 @@ The prefix that should be associated with session host names
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: True
@@ -578,7 +623,7 @@ It will default to the ResourceGroup of the hostpool if not provided.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -594,7 +639,7 @@ Example: Standard_D2as_v6
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: True
@@ -609,7 +654,7 @@ Hashtable that lists key/value pair tags to apply to the VMs
 
 ```yaml
 Type: System.Collections.Hashtable
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -657,7 +702,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.ISessionHostConfiguration
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.ISessionHostConfiguration
 
 ## NOTES
 

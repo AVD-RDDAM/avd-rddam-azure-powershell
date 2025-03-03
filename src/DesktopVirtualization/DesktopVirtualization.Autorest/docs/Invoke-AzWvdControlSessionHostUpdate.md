@@ -8,15 +8,15 @@ schema: 2.0.0
 # Invoke-AzWvdControlSessionHostUpdate
 
 ## SYNOPSIS
-Control update of a hostpool.
+Control post of a hostpool.
 
 ## SYNTAX
 
 ### PostExpanded (Default)
 ```
-Invoke-AzWvdControlSessionHostUpdate -HostPoolName <String> -ResourceGroupName <String>
- -Action <HostPoolUpdateAction> [-SubscriptionId <String>] [-CancelMessage <String>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-AzWvdControlSessionHostUpdate -HostPoolName <String> -ResourceGroupName <String> -Action <String>
+ [-SubscriptionId <String>] [-CancelMessage <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Post
@@ -35,13 +35,27 @@ Invoke-AzWvdControlSessionHostUpdate -InputObject <IDesktopVirtualizationIdentit
 
 ### PostViaIdentityExpanded
 ```
-Invoke-AzWvdControlSessionHostUpdate -InputObject <IDesktopVirtualizationIdentity>
- -Action <HostPoolUpdateAction> [-CancelMessage <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-AzWvdControlSessionHostUpdate -InputObject <IDesktopVirtualizationIdentity> -Action <String>
+ [-CancelMessage <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### PostViaJsonFilePath
+```
+Invoke-AzWvdControlSessionHostUpdate -HostPoolName <String> -ResourceGroupName <String> -JsonFilePath <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### PostViaJsonString
+```
+Invoke-AzWvdControlSessionHostUpdate -HostPoolName <String> -ResourceGroupName <String> -JsonString <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Control update of a hostpool.
+Control post of a hostpool.
 
 ## EXAMPLES
 
@@ -62,7 +76,7 @@ This command controls an ongoing sessionHostUpdate operation on the given hostpo
 Action types for controlling hostpool update.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.HostPoolUpdateAction
+Type: System.String
 Parameter Sets: PostExpanded, PostViaIdentityExpanded
 Aliases:
 
@@ -125,7 +139,7 @@ The name of the host pool within the specified resource group
 
 ```yaml
 Type: System.String
-Parameter Sets: Post, PostExpanded
+Parameter Sets: Post, PostExpanded, PostViaJsonFilePath, PostViaJsonString
 Aliases:
 
 Required: True
@@ -137,10 +151,9 @@ Accept wildcard characters: False
 
 ### -HostPoolUpdateControlParameter
 Represents properties for a hostpool update control request.
-To construct, see NOTES section for HOSTPOOLUPDATECONTROLPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IHostPoolUpdateControlParameter
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IHostPoolUpdateControlParameter
 Parameter Sets: Post, PostViaIdentity
 Aliases:
 
@@ -153,7 +166,6 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -164,6 +176,36 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -JsonFilePath
+Path of Json file supplied to the Post operation
+
+```yaml
+Type: System.String
+Parameter Sets: PostViaJsonFilePath
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -JsonString
+Json string supplied to the Post operation
+
+```yaml
+Type: System.String
+Parameter Sets: PostViaJsonString
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -188,7 +230,7 @@ The name is case insensitive.
 
 ```yaml
 Type: System.String
-Parameter Sets: Post, PostExpanded
+Parameter Sets: Post, PostExpanded, PostViaJsonFilePath, PostViaJsonString
 Aliases:
 
 Required: True
@@ -204,7 +246,7 @@ The value must be an UUID.
 
 ```yaml
 Type: System.String
-Parameter Sets: Post, PostExpanded
+Parameter Sets: Post, PostExpanded, PostViaJsonFilePath, PostViaJsonString
 Aliases:
 
 Required: False
@@ -250,9 +292,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IHostPoolUpdateControlParameter
-
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
+
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IHostPoolUpdateControlParameter
 
 ## OUTPUTS
 

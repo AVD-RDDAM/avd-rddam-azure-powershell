@@ -25,6 +25,12 @@ Invoke-AzWvdRetrySessionHostProvisioning -InputObject <IDesktopVirtualizationIde
  [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
+### RetryViaIdentityHostPool
+```
+Invoke-AzWvdRetrySessionHostProvisioning -HostPoolInputObject <IDesktopVirtualizationIdentity>
+ -SessionHostName <String> [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Retry provisioning on a SessionHost.
 
@@ -57,6 +63,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -HostPoolInputObject
+Identity Parameter
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
+Parameter Sets: RetryViaIdentityHostPool
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -HostPoolName
 The name of the host pool within the specified resource group
 
@@ -74,7 +95,6 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -124,7 +144,7 @@ The name of the session host within the specified host pool
 
 ```yaml
 Type: System.String
-Parameter Sets: Retry
+Parameter Sets: Retry, RetryViaIdentityHostPool
 Aliases:
 
 Required: True

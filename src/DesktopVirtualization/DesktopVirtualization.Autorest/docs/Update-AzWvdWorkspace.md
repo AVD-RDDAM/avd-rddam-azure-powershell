@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-AzWvdWorkspace
 
 ## SYNOPSIS
-Update a workspace.
+update a workspace.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Update-AzWvdWorkspace -Name <String> -ResourceGroupName <String> -JsonString <St
 ```
 
 ## DESCRIPTION
-Update a workspace.
+update a workspace.
 
 ## EXAMPLES
 

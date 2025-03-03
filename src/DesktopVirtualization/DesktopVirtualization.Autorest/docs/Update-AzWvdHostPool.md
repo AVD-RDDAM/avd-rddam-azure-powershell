@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-AzWvdHostPool
 
 ## SYNOPSIS
-Update a host pool.
+update a host pool.
 
 ## SYNTAX
 
@@ -18,14 +18,12 @@ Update-AzWvdHostPool -Name <String> -ResourceGroupName <String> [-SubscriptionId
  [-AgentUpdateMaintenanceWindow <IMaintenanceWindowPatchProperties[]>]
  [-AgentUpdateMaintenanceWindowTimeZone <String>] [-AgentUpdateType <String>]
  [-AgentUpdateUseSessionHostLocalTime] [-CustomRdpProperty <String>] [-Description <String>]
- [-DirectUdp <DirectUdp>] [-FriendlyName <String>] [-LoadBalancerType <LoadBalancerType>]
- [-ManagedPrivateUdp <ManagedPrivateUdp>] [-MaxSessionLimit <Int32>]
- [-PersonalDesktopAssignmentType <PersonalDesktopAssignmentType>]
- [-PreferredAppGroupType <PreferredAppGroupType>] [-PublicNetworkAccess <HostpoolPublicNetworkAccess>]
- [-PublicUdp <PublicUdp>] [-RegistrationInfoExpirationTime <DateTime>]
- [-RegistrationInfoRegistrationTokenOperation <RegistrationTokenOperation>] [-RelayUdp <RelayUdp>]
- [-Ring <Int32>] [-SsoadfsAuthority <String>] [-SsoClientId <String>] [-SsoClientSecretKeyVaultPath <String>]
- [-SsoSecretType <SsoSecretType>] [-StartVMOnConnect] [-Tag <Hashtable>] [-ValidationEnvironment]
+ [-DirectUdp <String>] [-FriendlyName <String>] [-LoadBalancerType <String>] [-ManagedPrivateUdp <String>]
+ [-MaxSessionLimit <Int32>] [-PersonalDesktopAssignmentType <String>] [-PreferredAppGroupType <String>]
+ [-PublicNetworkAccess <String>] [-PublicUdp <String>] [-RegistrationInfoExpirationTime <DateTime>]
+ [-RegistrationInfoRegistrationTokenOperation <String>] [-RelayUdp <String>] [-Ring <Int32>]
+ [-SsoadfsAuthority <String>] [-SsoClientId <String>] [-SsoClientSecretKeyVaultPath <String>]
+ [-SsoSecretType <String>] [-StartVMOnConnect] [-Tag <Hashtable>] [-ValidationEnvironment]
  [-VMTemplate <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -35,14 +33,12 @@ Update-AzWvdHostPool -InputObject <IDesktopVirtualizationIdentity>
  [-AgentUpdateMaintenanceWindow <IMaintenanceWindowPatchProperties[]>]
  [-AgentUpdateMaintenanceWindowTimeZone <String>] [-AgentUpdateType <String>]
  [-AgentUpdateUseSessionHostLocalTime] [-CustomRdpProperty <String>] [-Description <String>]
- [-DirectUdp <DirectUdp>] [-FriendlyName <String>] [-LoadBalancerType <LoadBalancerType>]
- [-ManagedPrivateUdp <ManagedPrivateUdp>] [-MaxSessionLimit <Int32>]
- [-PersonalDesktopAssignmentType <PersonalDesktopAssignmentType>]
- [-PreferredAppGroupType <PreferredAppGroupType>] [-PublicNetworkAccess <HostpoolPublicNetworkAccess>]
- [-PublicUdp <PublicUdp>] [-RegistrationInfoExpirationTime <DateTime>]
- [-RegistrationInfoRegistrationTokenOperation <RegistrationTokenOperation>] [-RelayUdp <RelayUdp>]
- [-Ring <Int32>] [-SsoadfsAuthority <String>] [-SsoClientId <String>] [-SsoClientSecretKeyVaultPath <String>]
- [-SsoSecretType <SsoSecretType>] [-StartVMOnConnect] [-Tag <Hashtable>] [-ValidationEnvironment]
+ [-DirectUdp <String>] [-FriendlyName <String>] [-LoadBalancerType <String>] [-ManagedPrivateUdp <String>]
+ [-MaxSessionLimit <Int32>] [-PersonalDesktopAssignmentType <String>] [-PreferredAppGroupType <String>]
+ [-PublicNetworkAccess <String>] [-PublicUdp <String>] [-RegistrationInfoExpirationTime <DateTime>]
+ [-RegistrationInfoRegistrationTokenOperation <String>] [-RelayUdp <String>] [-Ring <Int32>]
+ [-SsoadfsAuthority <String>] [-SsoClientId <String>] [-SsoClientSecretKeyVaultPath <String>]
+ [-SsoSecretType <String>] [-StartVMOnConnect] [-Tag <Hashtable>] [-ValidationEnvironment]
  [-VMTemplate <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -59,7 +55,7 @@ Update-AzWvdHostPool -Name <String> -ResourceGroupName <String> -JsonString <Str
 ```
 
 ## DESCRIPTION
-Update a host pool.
+update a host pool.
 
 ## EXAMPLES
 
@@ -199,8 +195,8 @@ Default: AVD-wide settings are used to determine connection availability, Enable
 This means that this connection is possible, but is not guaranteed, as there are other factors that may prevent this connection type, Disabled: UDP will not attempt this connection type when making connections
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.DirectUdp
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -290,8 +286,8 @@ Default: AVD-wide settings are used to determine connection availability, Enable
 This means that this connection is possible, but is not guaranteed, as there are other factors that may prevent this connection type, Disabled: UDP will not attempt this connection type when making connections
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.ManagedPrivateUdp
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -381,8 +377,8 @@ Default: AVD-wide settings are used to determine connection availability, Enable
 This means that this connection is possible, but is not guaranteed, as there are other factors that may prevent this connection type, Disabled: UDP will not attempt this connection type when making connections
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.PublicUdp
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -427,8 +423,8 @@ Default: AVD-wide settings are used to determine connection availability, Enable
 This means that this connection is possible, but is not guaranteed, as there are other factors that may prevent this connection type, Disabled: UDP will not attempt this connection type when making connections
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.RelayUdp
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False

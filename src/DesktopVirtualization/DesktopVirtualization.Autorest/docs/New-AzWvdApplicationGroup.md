@@ -8,20 +8,19 @@ schema: 2.0.0
 # New-AzWvdApplicationGroup
 
 ## SYNOPSIS
-Create an applicationGroup.
+create an applicationGroup.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-AzWvdApplicationGroup -Name <String> -ResourceGroupName <String>
- -ApplicationGroupType <ApplicationGroupType> -HostPoolArmPath <String> -Location <String>
- [-SubscriptionId <String>] [-Description <String>] [-FriendlyName <String>]
- [-IdentityType <ManagedServiceIdentityType>] [-IdentityUserAssignedIdentity <Hashtable>] [-Kind <String>]
- [-ManagedBy <String>] [-PlanName <String>] [-PlanProduct <String>] [-PlanPromotionCode <String>]
- [-PlanPublisher <String>] [-PlanVersion <String>] [-ShowInFeed] [-SkuCapacity <Int32>] [-SkuFamily <String>]
- [-SkuName <String>] [-SkuSize <String>] [-SkuTier <SkuTier>] [-Tag <Hashtable>] [-DefaultProfile <PSObject>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-AzWvdApplicationGroup -Name <String> -ResourceGroupName <String> -ApplicationGroupType <String>
+ -HostPoolArmPath <String> -Location <String> [-SubscriptionId <String>] [-Description <String>]
+ [-FriendlyName <String>] [-IdentityType <String>] [-IdentityUserAssignedIdentity <Hashtable>]
+ [-Kind <String>] [-ManagedBy <String>] [-PlanName <String>] [-PlanProduct <String>]
+ [-PlanPromotionCode <String>] [-PlanPublisher <String>] [-PlanVersion <String>] [-ShowInFeed]
+ [-SkuCapacity <Int32>] [-SkuFamily <String>] [-SkuName <String>] [-SkuSize <String>] [-SkuTier <String>]
+ [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaJsonFilePath
@@ -37,7 +36,7 @@ New-AzWvdApplicationGroup -Name <String> -ResourceGroupName <String> -JsonString
 ```
 
 ## DESCRIPTION
-Create an applicationGroup.
+create an applicationGroup.
 
 ## EXAMPLES
 
@@ -163,8 +162,8 @@ Accept wildcard characters: False
 Type of managed service identity (where both SystemAssigned and UserAssigned types are allowed).
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.ManagedServiceIdentityType
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -181,7 +180,7 @@ The dictionary values can be empty objects ({}) in requests.
 
 ```yaml
 Type: System.Collections.Hashtable
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False

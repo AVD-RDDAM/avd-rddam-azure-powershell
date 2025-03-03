@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-AzWvdScalingPlan
 
 ## SYNOPSIS
-Create a scaling plan.
+create a scaling plan.
 
 ## SYNTAX
 
@@ -16,12 +16,12 @@ Create a scaling plan.
 ```
 New-AzWvdScalingPlan -Name <String> -ResourceGroupName <String> -Location <String> -TimeZone <String>
  [-SubscriptionId <String>] [-Description <String>] [-ExclusionTag <String>] [-FriendlyName <String>]
- [-HostPoolReference <IScalingHostPoolReference[]>] [-HostPoolType <ScalingHostPoolType>]
- [-IdentityType <ManagedServiceIdentityType>] [-IdentityUserAssignedIdentity <Hashtable>] [-Kind <String>]
- [-ManagedBy <String>] [-PlanName <String>] [-PlanProduct <String>] [-PlanPromotionCode <String>]
- [-PlanPublisher <String>] [-PlanVersion <String>] [-Schedule <IScalingSchedule[]>] [-SkuCapacity <Int32>]
- [-SkuFamily <String>] [-SkuName <String>] [-SkuSize <String>] [-SkuTier <SkuTier>] [-Tag <Hashtable>]
- [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-HostPoolReference <IScalingHostPoolReference[]>] [-HostPoolType <String>] [-IdentityType <String>]
+ [-IdentityUserAssignedIdentity <Hashtable>] [-Kind <String>] [-ManagedBy <String>] [-PlanName <String>]
+ [-PlanProduct <String>] [-PlanPromotionCode <String>] [-PlanPublisher <String>] [-PlanVersion <String>]
+ [-Schedule <IScalingSchedule[]>] [-SkuCapacity <Int32>] [-SkuFamily <String>] [-SkuName <String>]
+ [-SkuSize <String>] [-SkuTier <String>] [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### CreateViaJsonFilePath
@@ -37,7 +37,7 @@ New-AzWvdScalingPlan -Name <String> -ResourceGroupName <String> -JsonString <Str
 ```
 
 ## DESCRIPTION
-Create a scaling plan.
+create a scaling plan.
 
 ## EXAMPLES
 
@@ -230,8 +230,8 @@ Accept wildcard characters: False
 Type of managed service identity (where both SystemAssigned and UserAssigned types are allowed).
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.ManagedServiceIdentityType
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -247,7 +247,7 @@ The userAssignedIdentities dictionary keys will be ARM resource ids in the form:
 The dictionary values can be empty objects ({}) in requests.
 
 ```yaml
-Type: System.String
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-AzWvdScalingPlanPooledSchedule
 
 ## SYNOPSIS
-Create a ScalingPlanPooledSchedule.
+create a ScalingPlanPooledSchedule.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-AzWvdScalingPlanPooledSchedule -ResourceGroupName <String> -ScalingPlanName 
 ```
 
 ## DESCRIPTION
-Create a ScalingPlanPooledSchedule.
+create a ScalingPlanPooledSchedule.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-AzWvdScalingPlanPooledSchedule
 
 ## SYNOPSIS
-Update a ScalingPlanPooledSchedule.
+update a ScalingPlanPooledSchedule.
 
 ## SYNTAX
 
@@ -74,7 +74,7 @@ Update-AzWvdScalingPlanPooledSchedule -ResourceGroupName <String> -ScalingPlanNa
 ```
 
 ## DESCRIPTION
-Update a ScalingPlanPooledSchedule.
+update a ScalingPlanPooledSchedule.
 
 ## EXAMPLES
 

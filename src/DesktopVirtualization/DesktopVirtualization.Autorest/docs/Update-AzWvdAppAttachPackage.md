@@ -8,17 +8,17 @@ schema: 2.0.0
 # Update-AzWvdAppAttachPackage
 
 ## SYNOPSIS
-Update an App Attach Package
+update an App Attach Package
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-AzWvdAppAttachPackage -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
- [-CustomData <String>] [-FailHealthCheckOnStagingFailure <FailHealthCheckOnStagingFailure>]
- [-HostPoolReference <String[]>] [-ImageCertificateExpiry <DateTime>] [-ImageCertificateName <String>]
- [-ImageDisplayName <String>] [-ImageIsActive] [-ImageIsPackageTimestamped <PackageTimestamped>]
- [-ImageIsRegularRegistration] [-ImageLastUpdated <DateTime>] [-ImagePackageAlias <String>]
+ [-CustomData <String>] [-FailHealthCheckOnStagingFailure <String>] [-HostPoolReference <String[]>]
+ [-ImageCertificateExpiry <DateTime>] [-ImageCertificateName <String>] [-ImageDisplayName <String>]
+ [-ImageIsActive] [-ImageIsPackageTimestamped <String>] [-ImageIsRegularRegistration]
+ [-ImageLastUpdated <DateTime>] [-ImagePackageAlias <String>]
  [-ImagePackageApplication <IMsixPackageApplications[]>]
  [-ImagePackageDependency <IMsixPackageDependencies[]>] [-ImagePackageFamilyName <String>]
  [-ImagePackageFullName <String>] [-ImagePackageName <String>] [-ImagePackageRelativePath <String>]
@@ -29,17 +29,17 @@ Update-AzWvdAppAttachPackage -Name <String> -ResourceGroupName <String> [-Subscr
 ### ImageObject
 ```
 Update-AzWvdAppAttachPackage [-AppAttachPackage] <AppAttachPackage> -Name <String> -ResourceGroupName <String>
- [-SubscriptionId <String>] [-FailHealthCheckOnStagingFailure <FailHealthCheckOnStagingFailure>]
- [-HostPoolReference <String[]>] [-ImageDisplayName <String>] [-ImageIsActive] [-ImageIsRegularRegistration]
- [-PassThru] [-DefaultProfile <PSObject>] [<CommonParameters>]
+ [-SubscriptionId <String>] [-FailHealthCheckOnStagingFailure <String>] [-HostPoolReference <String[]>]
+ [-ImageDisplayName <String>] [-ImageIsActive] [-ImageIsRegularRegistration] [-PassThru]
+ [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-AzWvdAppAttachPackage -InputObject <IDesktopVirtualizationIdentity> [-CustomData <String>]
- [-FailHealthCheckOnStagingFailure <FailHealthCheckOnStagingFailure>] [-HostPoolReference <String[]>]
+ [-FailHealthCheckOnStagingFailure <String>] [-HostPoolReference <String[]>]
  [-ImageCertificateExpiry <DateTime>] [-ImageCertificateName <String>] [-ImageDisplayName <String>]
- [-ImageIsActive] [-ImageIsPackageTimestamped <PackageTimestamped>] [-ImageIsRegularRegistration]
+ [-ImageIsActive] [-ImageIsPackageTimestamped <String>] [-ImageIsRegularRegistration]
  [-ImageLastUpdated <DateTime>] [-ImagePackageAlias <String>]
  [-ImagePackageApplication <IMsixPackageApplications[]>]
  [-ImagePackageDependency <IMsixPackageDependencies[]>] [-ImagePackageFamilyName <String>]
@@ -61,7 +61,7 @@ Update-AzWvdAppAttachPackage -Name <String> -ResourceGroupName <String> -JsonStr
 ```
 
 ## DESCRIPTION
-Update an App Attach Package
+update an App Attach Package
 
 ## EXAMPLES
 
@@ -124,7 +124,6 @@ This command updates an Azure Virtual Desktop App Attach Package in a resource g
 ## PARAMETERS
 
 ### -AppAttachPackage
-To construct, see NOTES section for APPATTACHPACKAGE properties and create a hash table.
 
 
 ```yaml
@@ -324,8 +323,6 @@ Accept wildcard characters: False
 ### -ImagePackageApplication
 List of package applications.
 
-To construct, see NOTES section for IMAGEPACKAGEAPPLICATION properties and create a hash table.
-
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IMsixPackageApplications[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
@@ -340,8 +337,6 @@ Accept wildcard characters: False
 
 ### -ImagePackageDependency
 List of package dependencies.
-
-To construct, see NOTES section for IMAGEPACKAGEDEPENDENCY properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IMsixPackageDependencies[]
@@ -447,7 +442,6 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -461,12 +455,42 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -JsonFilePath
+Path of Json file supplied to the Update operation
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateViaJsonFilePath
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -JsonString
+Json string supplied to the Update operation
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateViaJsonString
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -KeyVaultUrl
 URL of keyvault location to store certificate
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: ImageObject, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -481,7 +505,7 @@ The name of the App Attach package arm object
 
 ```yaml
 Type: System.String
-Parameter Sets: ImageObject, UpdateExpanded
+Parameter Sets: ImageObject, UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
 Aliases: AppAttachPackageName
 
 Required: True
@@ -500,21 +524,6 @@ Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Name
-The name of the App Attach package
-
-```yaml
-Type: System.String
-Parameter Sets: ImageObject, UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
-Aliases: AppAttachPackageName
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

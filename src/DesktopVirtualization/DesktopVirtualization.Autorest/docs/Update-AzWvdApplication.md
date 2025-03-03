@@ -8,18 +8,17 @@ schema: 2.0.0
 # Update-AzWvdApplication
 
 ## SYNOPSIS
-Update an application.
+update an application.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-AzWvdApplication -GroupName <String> -Name <String> -ResourceGroupName <String> [-Description <String>]
- [-FriendlyName <String>] [-ShowInPortal] [-SubscriptionId <String>]
- [-ApplicationType <RemoteApplicationType>] [-CommandLineArgument <String>]
- [-CommandLineSetting <CommandLineSetting>] [-FilePath <String>] [-IconIndex <Int32>] [-IconPath <String>]
- [-MsixPackageApplicationId <String>] [-MsixPackageFamilyName <String>] [-Tag <Hashtable>]
- [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-FriendlyName <String>] [-ShowInPortal] [-SubscriptionId <String>] [-ApplicationType <String>]
+ [-CommandLineArgument <String>] [-CommandLineSetting <String>] [-FilePath <String>] [-IconIndex <Int32>]
+ [-IconPath <String>] [-MsixPackageApplicationId <String>] [-MsixPackageFamilyName <String>]
+ [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ResetIcon
@@ -29,14 +28,28 @@ Update-AzWvdApplication -GroupName <String> -Name <String> -ResourceGroupName <S
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
+### UpdateViaIdentityApplicationGroup
+```
+Update-AzWvdApplication -ApplicationGroupInputObject <IDesktopVirtualizationIdentity> -Name <String>
+ -Application <IApplicationPatch> [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityApplicationGroupExpanded
+```
+Update-AzWvdApplication -ApplicationGroupInputObject <IDesktopVirtualizationIdentity> -Name <String>
+ [-Description <String>] [-FriendlyName <String>] [-ShowInPortal] [-ApplicationType <String>]
+ [-CommandLineArgument <String>] [-CommandLineSetting <String>] [-FilePath <String>] [-IconIndex <Int32>]
+ [-IconPath <String>] [-MsixPackageApplicationId <String>] [-MsixPackageFamilyName <String>]
+ [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
 ### UpdateViaIdentityExpanded
 ```
 Update-AzWvdApplication -InputObject <IDesktopVirtualizationIdentity> [-Description <String>]
- [-FriendlyName <String>] [-ShowInPortal] [-ApplicationType <RemoteApplicationType>]
- [-CommandLineArgument <String>] [-CommandLineSetting <CommandLineSetting>] [-FilePath <String>]
- [-IconIndex <Int32>] [-IconPath <String>] [-MsixPackageApplicationId <String>]
- [-MsixPackageFamilyName <String>] [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-FriendlyName <String>] [-ShowInPortal] [-ApplicationType <String>] [-CommandLineArgument <String>]
+ [-CommandLineSetting <String>] [-FilePath <String>] [-IconIndex <Int32>] [-IconPath <String>]
+ [-MsixPackageApplicationId <String>] [-MsixPackageFamilyName <String>] [-Tag <Hashtable>]
+ [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaJsonFilePath
@@ -52,7 +65,7 @@ Update-AzWvdApplication -GroupName <String> -Name <String> -ResourceGroupName <S
 ```
 
 ## DESCRIPTION
-Update an application.
+update an application.
 
 ## EXAMPLES
 
@@ -176,7 +189,7 @@ Description of Application.
 
 ```yaml
 Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityApplicationGroupExpanded, UpdateViaIdentityExpanded
+Parameter Sets: ResetIcon, UpdateExpanded, UpdateViaIdentityApplicationGroupExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -206,7 +219,7 @@ Friendly name of Application.
 
 ```yaml
 Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityApplicationGroupExpanded, UpdateViaIdentityExpanded
+Parameter Sets: ResetIcon, UpdateExpanded, UpdateViaIdentityApplicationGroupExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -221,7 +234,7 @@ The name of the application group
 
 ```yaml
 Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
+Parameter Sets: ResetIcon, UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
 Aliases: ApplicationGroupName
 
 Required: True
@@ -341,7 +354,7 @@ The name of the application within the specified application group
 
 ```yaml
 Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityApplicationGroup, UpdateViaIdentityApplicationGroupExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
+Parameter Sets: ResetIcon, UpdateExpanded, UpdateViaIdentityApplicationGroup, UpdateViaIdentityApplicationGroupExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
 Aliases: ApplicationName
 
 Required: True
@@ -357,7 +370,7 @@ The name is case insensitive.
 
 ```yaml
 Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
+Parameter Sets: ResetIcon, UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
 Aliases:
 
 Required: True
@@ -387,7 +400,7 @@ Specifies whether to show the RemoteApp program in the RD Web Access server.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityApplicationGroupExpanded, UpdateViaIdentityExpanded
+Parameter Sets: ResetIcon, UpdateExpanded, UpdateViaIdentityApplicationGroupExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -403,7 +416,7 @@ The value must be an UUID.
 
 ```yaml
 Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
+Parameter Sets: ResetIcon, UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
 Aliases:
 
 Required: False

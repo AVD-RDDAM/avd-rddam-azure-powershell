@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-AzWvdMsixPackage
 
 ## SYNOPSIS
-Update an  MSIX Package.
+update an  MSIX Package.
 
 ## SYNTAX
 
@@ -53,7 +53,7 @@ Update-AzWvdMsixPackage -FullName <String> -HostPoolName <String> -ResourceGroup
 ```
 
 ## DESCRIPTION
-Update an  MSIX Package.
+update an  MSIX Package.
 
 ## EXAMPLES
 
