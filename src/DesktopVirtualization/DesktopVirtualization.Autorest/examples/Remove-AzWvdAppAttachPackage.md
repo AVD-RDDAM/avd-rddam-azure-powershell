@@ -1,4 +1,5 @@
 ### Example 1: Delete an Azure Virtual Desktop App Attach Package by name
+
 ```powershell
 Remove-AzWvdAppAttachPackage -ResourceGroupName ResourceGroupName -Name HostPoolName
 ```

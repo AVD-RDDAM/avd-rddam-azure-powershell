@@ -48,6 +48,18 @@ Update-AzWvdAppAttachPackage -InputObject <IDesktopVirtualizationIdentity> [-Cus
  [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
+### UpdateViaJsonFilePath
+```
+Update-AzWvdAppAttachPackage -Name <String> -ResourceGroupName <String> -JsonFilePath <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaJsonString
+```
+Update-AzWvdAppAttachPackage -Name <String> -ResourceGroupName <String> -JsonString <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Update an App Attach Package
 
@@ -84,7 +96,7 @@ Location   Name                 Type
 eastus     PackageArmObjectName Microsoft.DesktopVirtualization/appattachpackages
 ```
 
-This command updates an Azure Virtual Desktop App attach package in a resource group
+This command updates an Azure Virtual Desktop App attach package in a resource group.
 
 ### Example 2: Create an Azure Virtual Desktop app attach package from an appAttachPackage object
 ```powershell
@@ -107,15 +119,16 @@ Location   Name                 Type
 eastus     PackageArmObjectName Microsoft.DesktopVirtualization/appattachpackages
 ```
 
-This command updates an Azure Virtual Desktop App Attach Package in a resource group using the output of the Import-AzWvdAppAttachPackageInfo command
+This command updates an Azure Virtual Desktop App Attach Package in a resource group using the output of the Import-AzWvdAppAttachPackageInfo command.
 
 ## PARAMETERS
 
 ### -AppAttachPackage
 To construct, see NOTES section for APPATTACHPACKAGE properties and create a hash table.
 
+
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.AppAttachPackage
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.AppAttachPackage
 Parameter Sets: ImageObject
 Aliases:
 
@@ -161,8 +174,8 @@ Accept wildcard characters: False
 Parameter indicating how the health check should behave if this package fails staging
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.FailHealthCheckOnStagingFailure
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: ImageObject, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -177,7 +190,7 @@ List of Hostpool resource Ids.
 
 ```yaml
 Type: System.String[]
-Parameter Sets: (All)
+Parameter Sets: ImageObject, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -222,7 +235,7 @@ User friendly Name to be displayed in the portal.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: ImageObject, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases: DisplayName
 
 Required: False
@@ -237,7 +250,7 @@ Make this version of the package the active one across the hostpool.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: ImageObject, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases: IsActive
 
 Required: False
@@ -251,7 +264,7 @@ Accept wildcard characters: False
 Is package timestamped so it can ignore the certificate expiry date
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.PackageTimestamped
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -267,7 +280,7 @@ Specifies how to register Package in feed.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: ImageObject, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases: IsRegularRegistration, IsLogonBlocking
 
 Required: False
@@ -314,7 +327,7 @@ List of package applications.
 To construct, see NOTES section for IMAGEPACKAGEAPPLICATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IMsixPackageApplications[]
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IMsixPackageApplications[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -331,7 +344,7 @@ List of package dependencies.
 To construct, see NOTES section for IMAGEPACKAGEDEPENDENCY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IMsixPackageDependencies[]
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IMsixPackageDependencies[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -493,6 +506,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Name
+The name of the App Attach package
+
+```yaml
+Type: System.String
+Parameter Sets: ImageObject, UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
+Aliases: AppAttachPackageName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PassThru
 
 
@@ -514,7 +542,7 @@ The name is case insensitive.
 
 ```yaml
 Type: System.String
-Parameter Sets: ImageObject, UpdateExpanded
+Parameter Sets: ImageObject, UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
 Aliases:
 
 Required: True
@@ -530,7 +558,7 @@ The value must be an UUID.
 
 ```yaml
 Type: System.String
-Parameter Sets: ImageObject, UpdateExpanded
+Parameter Sets: ImageObject, UpdateExpanded, UpdateViaJsonFilePath, UpdateViaJsonString
 Aliases:
 
 Required: False
@@ -591,13 +619,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.AppAttachPackage
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.AppAttachPackage
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IAppAttachPackage
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IAppAttachPackage
 
 ## NOTES
 

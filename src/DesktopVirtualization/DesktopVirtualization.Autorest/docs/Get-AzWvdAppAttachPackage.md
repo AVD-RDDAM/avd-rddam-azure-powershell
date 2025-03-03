@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-The name of the App Attach package arm object
+The name of the App Attach package
 
 ```yaml
 Type: System.String
@@ -202,7 +202,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IAppAttachPackage
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IAppAttachPackage
 
 ## NOTES
 

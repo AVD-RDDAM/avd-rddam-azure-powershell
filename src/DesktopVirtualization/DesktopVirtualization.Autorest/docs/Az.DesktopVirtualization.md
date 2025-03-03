@@ -96,28 +96,28 @@ Retry provisioning on a SessionHost.
 Create or update an App Attach package.
 
 ### [New-AzWvdApplication](New-AzWvdApplication.md)
-Create or update an application.
+Create an application.
 
 ### [New-AzWvdApplicationGroup](New-AzWvdApplicationGroup.md)
-Create or update an applicationGroup.
+Create an applicationGroup.
 
 ### [New-AzWvdHostPool](New-AzWvdHostPool.md)
-Create or update a host pool.
+Create a host pool.
 
 ### [New-AzWvdMsixPackage](New-AzWvdMsixPackage.md)
-Create or update a MSIX package.
+Create a MSIX package.
 
 ### [New-AzWvdRegistrationInfo](New-AzWvdRegistrationInfo.md)
 Create Azure Virtual Desktop registration info.
 
 ### [New-AzWvdScalingPlan](New-AzWvdScalingPlan.md)
-Create or update a scaling plan.
+Create a scaling plan.
 
 ### [New-AzWvdScalingPlanPersonalSchedule](New-AzWvdScalingPlanPersonalSchedule.md)
-Create or update a ScalingPlanPersonalSchedule.
+Create a ScalingPlanPersonalSchedule.
 
 ### [New-AzWvdScalingPlanPooledSchedule](New-AzWvdScalingPlanPooledSchedule.md)
-Create or update a ScalingPlanPooledSchedule.
+Create a ScalingPlanPooledSchedule.
 
 ### [New-AzWvdSessionHostConfiguration](New-AzWvdSessionHostConfiguration.md)
 Create or update a SessionHostConfiguration.
@@ -126,10 +126,13 @@ Create or update a SessionHostConfiguration.
 Create or update a SessionHostManagement.
 
 ### [New-AzWvdWorkspace](New-AzWvdWorkspace.md)
-Create or update a workspace.
+Create a workspace.
 
 ### [Register-AzWvdApplicationGroup](Register-AzWvdApplicationGroup.md)
 Register a Azure Virtual Desktop application group.
+
+### [Remove-AzWvdAppAttachPackage](Remove-AzWvdAppAttachPackage.md)
+Remove an App Attach Package.
 
 ### [Remove-AzWvdAppAttachPackage](Remove-AzWvdAppAttachPackage.md)
 Remove an App Attach Package.
@@ -175,6 +178,9 @@ Send a message to a user.
 
 ### [Unregister-AzWvdApplicationGroup](Unregister-AzWvdApplicationGroup.md)
 Unregister the Azure Virtual Desktop application group.
+
+### [Update-AzWvdAppAttachPackage](Update-AzWvdAppAttachPackage.md)
+Update an App Attach Package
 
 ### [Update-AzWvdAppAttachPackage](Update-AzWvdAppAttachPackage.md)
 Update an App Attach Package

@@ -16,9 +16,9 @@ Create or update an App Attach package.
 ```
 New-AzWvdAppAttachPackage -Name <String> -ResourceGroupName <String> -Location <String>
  [-SubscriptionId <String>] [-CustomData <String>]
- [-FailHealthCheckOnStagingFailure <FailHealthCheckOnStagingFailure>] [-HostPoolReference <String[]>]
+ [-FailHealthCheckOnStagingFailure <String>] [-HostPoolReference <String[]>]
  [-ImageCertificateExpiry <DateTime>] [-ImageCertificateName <String>] [-ImageDisplayName <String>]
- [-ImageIsActive] [-ImageIsPackageTimestamped <PackageTimestamped>] [-ImageIsRegularRegistration]
+ [-ImageIsActive] [-ImageIsPackageTimestamped <String>] [-ImageIsRegularRegistration]
  [-ImageLastUpdated <DateTime>] [-ImagePackageAlias <String>]
  [-ImagePackageApplication <IMsixPackageApplications[]>]
  [-ImagePackageDependency <IMsixPackageDependencies[]>] [-ImagePackageFamilyName <String>]
@@ -28,11 +28,23 @@ New-AzWvdAppAttachPackage -Name <String> -ResourceGroupName <String> -Location <
  [<CommonParameters>]
 ```
 
+### CreateViaJsonFilePath
+```
+New-AzWvdAppAttachPackage -Name <String> -ResourceGroupName <String> -JsonFilePath <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaJsonString
+```
+New-AzWvdAppAttachPackage -Name <String> -ResourceGroupName <String> -JsonString <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
 ### ImageObject
 ```
 New-AzWvdAppAttachPackage [-AppAttachPackage] <AppAttachPackage> -Name <String> -ResourceGroupName <String>
  -Location <String> [-SubscriptionId <String>]
- [-FailHealthCheckOnStagingFailure <FailHealthCheckOnStagingFailure>] [-HostPoolReference <String[]>]
+ [-FailHealthCheckOnStagingFailure <String>] [-HostPoolReference <String[]>]
  [-ImageDisplayName <String>] [-ImageIsActive] [-ImageIsRegularRegistration] [-PassThru]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
@@ -74,7 +86,7 @@ Location   Name                 Type
 eastus     PackageArmObjectName Microsoft.DesktopVirtualization/appattachpackages
 ```
 
-This command creates or updates an Azure Virtual Desktop App attach package in a resource group
+This command creates or updates an Azure Virtual Desktop App attach package in a resource group.
 
 ### Example 2: Create or update an Azure Virtual Desktop app attach package from an appAttachPackage object
 ```powershell
@@ -90,23 +102,26 @@ New-AzWvdAppAttachPackage -Name PackageArmObjectName `
                          -FailHealthCheckOnStagingFailure 'Unhealthy' `
                          -HostpoolReference hostpoolReference `
                          -PassThru
+
 ```
 
 ```output
 Location   Name                 Type
 --------   ----                 ----
 eastus     PackageArmObjectName Microsoft.DesktopVirtualization/appattachpackages
+
 ```
 
-This command creates or updates an Azure Virtual Desktop App Attach Package in a resource group using the output of the Import-AzWvdAppAttachPackageInfo command
+This command creates or updates an Azure Virtual Desktop App Attach Package in a resource group using the output of the Import-AzWvdAppAttachPackageInfo command.
 
 ## PARAMETERS
 
 ### -AppAttachPackage
 To construct, see NOTES section for APPATTACHPACKAGE properties and create a hash table.
 
+
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.AppAttachPackage
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.AppAttachPackage
 Parameter Sets: ImageObject
 Aliases:
 
@@ -152,8 +167,8 @@ Accept wildcard characters: False
 Parameter indicating how the health check should behave if this package fails staging
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.FailHealthCheckOnStagingFailure
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: CreateExpanded, ImageObject
 Aliases:
 
 Required: False
@@ -168,7 +183,7 @@ List of Hostpool resource Ids.
 
 ```yaml
 Type: System.String[]
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded, ImageObject
 Aliases:
 
 Required: False
@@ -213,7 +228,7 @@ User friendly Name to be displayed in the portal.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded, ImageObject
 Aliases: DisplayName
 
 Required: False
@@ -228,7 +243,7 @@ Make this version of the package the active one across the hostpool.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded, ImageObject
 Aliases: IsActive
 
 Required: False
@@ -242,7 +257,7 @@ Accept wildcard characters: False
 Is package timestamped so it can ignore the certificate expiry date
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.PackageTimestamped
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -258,7 +273,7 @@ Specifies how to register Package in feed.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded, ImageObject
 Aliases: IsRegularRegistration, IsLogonBlocking
 
 Required: False
@@ -305,7 +320,7 @@ List of package applications.
 To construct, see NOTES section for IMAGEPACKAGEAPPLICATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IMsixPackageApplications[]
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IMsixPackageApplications[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -322,7 +337,7 @@ List of package dependencies.
 To construct, see NOTES section for IMAGEPACKAGEDEPENDENCY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IMsixPackageDependencies[]
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IMsixPackageDependencies[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -428,7 +443,7 @@ URL of keyvault location to store certificate
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: CreateViaJsonFilePath
 Aliases:
 
 Required: False
@@ -596,11 +611,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.AppAttachPackage
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.AppAttachPackage
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IAppAttachPackage
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IAppAttachPackage
 
 ## NOTES
 

@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-The name of the App Attach package arm object
+The name of the App Attach package
 
 ```yaml
 Type: System.String

@@ -15,8 +15,6 @@ Gets information from a package given the path to the package.
 ### ImportExpanded (Default)
 ```
 Import-AzWvdAppAttachPackageInfo -HostPoolName <String> -ResourceGroupName <String> [-SubscriptionId <String>]
- [-PackageArchitecture <AppAttachPackageArchitectures>] [-Path <String>] [-DefaultProfile <PSObject>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Import
@@ -35,9 +33,20 @@ Import-AzWvdAppAttachPackageInfo -InputObject <IDesktopVirtualizationIdentity>
 
 ### ImportViaIdentityExpanded
 ```
-Import-AzWvdAppAttachPackageInfo -InputObject <IDesktopVirtualizationIdentity>
- [-PackageArchitecture <AppAttachPackageArchitectures>] [-Path <String>] [-DefaultProfile <PSObject>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Import-AzWvdAppAttachPackageInfo -InputObject <IDesktopVirtualizationIdentity> [-PackageArchitecture <String>]
+ [-Path <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ImportViaJsonFilePath
+```
+Import-AzWvdAppAttachPackageInfo -HostPoolName <String> -ResourceGroupName <String> -JsonFilePath <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ImportViaJsonString
+```
+Import-AzWvdAppAttachPackageInfo -HostPoolName <String> -ResourceGroupName <String> -JsonString <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -84,7 +93,7 @@ The name of the host pool within the specified resource group
 
 ```yaml
 Type: System.String
-Parameter Sets: Import, ImportExpanded
+Parameter Sets: Import, ImportExpanded, ImportViaJsonFilePath, ImportViaJsonString
 Aliases:
 
 Required: True
@@ -99,7 +108,7 @@ Information to import app attach package
 To construct, see NOTES section for IMPORTPACKAGEINFOREQUEST properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IImportPackageInfoRequest
+Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IImportPackageInfoRequest
 Parameter Sets: Import, ImportViaIdentity
 Aliases:
 
@@ -126,11 +135,41 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -JsonFilePath
+Path of Json file supplied to the Import operation
+
+```yaml
+Type: System.String
+Parameter Sets: ImportViaJsonFilePath
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -JsonString
+Json string supplied to the Import operation
+
+```yaml
+Type: System.String
+Parameter Sets: ImportViaJsonString
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PackageArchitecture
 Possible device architectures that an app attach package can be configured for
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.AppAttachPackageArchitectures
+Type: System.String
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
 
@@ -162,7 +201,7 @@ The name is case insensitive.
 
 ```yaml
 Type: System.String
-Parameter Sets: Import, ImportExpanded
+Parameter Sets: Import, ImportExpanded, ImportViaJsonFilePath, ImportViaJsonString
 Aliases:
 
 Required: True
@@ -178,7 +217,7 @@ The value must be an UUID.
 
 ```yaml
 Type: System.String
-Parameter Sets: Import, ImportExpanded
+Parameter Sets: Import, ImportExpanded, ImportViaJsonFilePath, ImportViaJsonString
 Aliases:
 
 Required: False
@@ -228,9 +267,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
 
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IImportPackageInfoRequest
+
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IAppAttachPackage
+### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IAppAttachPackage
 
 ## NOTES
 

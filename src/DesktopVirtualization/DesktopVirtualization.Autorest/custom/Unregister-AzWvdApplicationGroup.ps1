@@ -20,7 +20,7 @@ Unregister the Azure Virtual Desktop application group.
 Unregister the Azure Virtual Desktop application group.
 #>
 function Unregister-AzWvdApplicationGroup {
-    [OutputType('Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20240408Preview.IWorkspace')]
+    [OutputType('Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IWorkspace')]
     [CmdletBinding(PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
     param(
         [Parameter()]
@@ -86,9 +86,9 @@ function Unregister-AzWvdApplicationGroup {
         [System.String]
         ${WorkspaceName},
 
-        [Parameter(Mandatory, HelpMessage='ResourceGroupName Path')]
-        [System.String]
+        [Parameter(Mandatory, HelpMessage='AppGroup Path')]
         [Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Category('Path')]
+        [System.String]
         ${ApplicationGroupPath}
     )
 

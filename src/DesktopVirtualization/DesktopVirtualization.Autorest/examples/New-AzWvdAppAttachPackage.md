@@ -1,4 +1,5 @@
 ### Example 1: Create or update an Azure Virtual Desktop app attach package by name
+
 ```powershell
 $apps = "<PackagedApplication>"
 $deps = "<PackageDependencies>"
@@ -30,8 +31,9 @@ Location   Name                 Type
 eastus     PackageArmObjectName Microsoft.DesktopVirtualization/appattachpackages
 ```
 
-This command creates or updates an Azure Virtual Desktop App attach package in a resource group
+This command creates or updates an Azure Virtual Desktop App attach package in a resource group.
 
+### Example 2: Create or update an Azure Virtual Desktop app attach package from an appAttachPackage object
 
 ### Example 2: Create or update an Azure Virtual Desktop app attach package from an appAttachPackage object
 ```powershell
@@ -47,12 +49,14 @@ New-AzWvdAppAttachPackage -Name PackageArmObjectName `
                          -FailHealthCheckOnStagingFailure 'Unhealthy' `
                          -HostpoolReference hostpoolReference `
                          -PassThru
+
 ```
 
 ```output
 Location   Name                 Type
 --------   ----                 ----
 eastus     PackageArmObjectName Microsoft.DesktopVirtualization/appattachpackages
+
 ```
 
-This command creates or updates an Azure Virtual Desktop App Attach Package in a resource group using the output of the Import-AzWvdAppAttachPackageInfo command
+This command creates or updates an Azure Virtual Desktop App Attach Package in a resource group using the output of the Import-AzWvdAppAttachPackageInfo command.
