@@ -1,0 +1,224 @@
+{
+  "Expand-AzWvdAppAttachMsixFile+[NoContext]+ExpandExpanded+$POST+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview+1": {
+    "Request": {
+      "Method": "POST",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview",
+      "Content": "{\r\n  \"properties\": {\r\n    \"msixFileShare\": \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\MSIX\",\r\n    \"msixUncPath\": [ \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\" ],\r\n    \"outputFileSharePath\": [ \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad-expanded.vhdx\" ],\r\n    \"msixPackageSource\": \"CustomerInput\",\r\n    \"outputFileType\": \"VHDX\",\r\n    \"hostpoolArmPath\": \"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/hostpools/zhongjie-automated\"\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "628" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 404,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-failure-cause": [ "gateway" ],
+        "x-ms-request-id": [ "f877df5a-03be-45e5-8475-c54012aac7cf" ],
+        "x-ms-correlation-request-id": [ "f877df5a-03be-45e5-8475-c54012aac7cf" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260506T094847Z:f877df5a-03be-45e5-8475-c54012aac7cf" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: 795FFF6A5195488E8B8BF6665EF70A3B Ref B: TYO201100115017 Ref C: 2026-05-06T09:48:47Z" ],
+        "Date": [ "Wed, 06 May 2026 09:48:47 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "246" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource \u0027Microsoft.DesktopVirtualization/appattachpackages/aatestpkg\u0027 under resource group \u0027zhongjie-rg-wus\u0027 was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix\"}}",
+      "isContentBase64": false
+    }
+  },
+  "Expand-AzWvdAppAttachMsixFile+[NoContext]+ExpandViaJsonString+$POST+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview+1": {
+    "Request": {
+      "Method": "POST",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview",
+      "Content": "{\r\n  \"properties\": {\r\n    \"msixUncPath\": [\r\n      \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\"\r\n    ],\r\n    \"outputFileType\": \"VHDX\",\r\n    \"hostpoolArmPath\": \"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/hostpools/zhongjie-automated\",\r\n    \"msixFileShare\": \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\MSIX\",\r\n    \"outputFileSharePath\": [\r\n      \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad-expanded.vhdx\"\r\n    ],\r\n    \"msixPackageSource\": \"CustomerInput\"\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "652" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 404,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-failure-cause": [ "gateway" ],
+        "x-ms-request-id": [ "ef4f4f2a-f4c7-491a-89a9-153bf051ee64" ],
+        "x-ms-correlation-request-id": [ "ef4f4f2a-f4c7-491a-89a9-153bf051ee64" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260506T094848Z:ef4f4f2a-f4c7-491a-89a9-153bf051ee64" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: 00417C93B84D45FA81BE9D73BF23FB3F Ref B: TYO201100115017 Ref C: 2026-05-06T09:48:48Z" ],
+        "Date": [ "Wed, 06 May 2026 09:48:48 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "246" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource \u0027Microsoft.DesktopVirtualization/appattachpackages/aatestpkg\u0027 under resource group \u0027zhongjie-rg-wus\u0027 was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix\"}}",
+      "isContentBase64": false
+    }
+  },
+  "Expand-AzWvdAppAttachMsixFile+[NoContext]+ExpandViaJsonFilePath+$POST+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview+1": {
+    "Request": {
+      "Method": "POST",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview",
+      "Content": "ew0KICAicHJvcGVydGllcyI6IHsNCiAgICAibXNpeFVuY1BhdGgiOiBbDQogICAgICAiXFxcXGxpd2VpYXZkdGVzdHNhLmZpbGUuY29yZS53aW5kb3dzLm5ldFxcYXZkdGVzdGZzXFxBcHBzXFxWSERYXFxYbWxOb3RlcGFkXFxYbWxOb3RlcGFkLnZoZHgiDQogICAgXSwNCiAgICAib3V0cHV0RmlsZVR5cGUiOiAiVkhEWCIsDQogICAgImhvc3Rwb29sQXJtUGF0aCI6ICIvc3Vic2NyaXB0aW9ucy82NzM4NTA5ZC04NGVkLTRhZDYtOTc0YS03ZGM0ZTNjMzQxNDYvcmVzb3VyY2Vncm91cHMvemhvbmdqaWUtcmctd3VzL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGVza3RvcFZpcnR1YWxpemF0aW9uL2hvc3Rwb29scy96aG9uZ2ppZS1hdXRvbWF0ZWQiLA0KICAgICJtc2l4RmlsZVNoYXJlIjogIlxcXFxsaXdlaWF2ZHRlc3RzYS5maWxlLmNvcmUud2luZG93cy5uZXRcXGF2ZHRlc3Rmc1xcQXBwc1xcTVNJWCIsDQogICAgIm91dHB1dEZpbGVTaGFyZVBhdGgiOiBbDQogICAgICAiXFxcXGxpd2VpYXZkdGVzdHNhLmZpbGUuY29yZS53aW5kb3dzLm5ldFxcYXZkdGVzdGZzXFxBcHBzXFxWSERYXFxYbWxOb3RlcGFkXFxYbWxOb3RlcGFkLWV4cGFuZGVkLnZoZHgiDQogICAgXSwNCiAgICAibXNpeFBhY2thZ2VTb3VyY2UiOiAiQ3VzdG9tZXJJbnB1dCINCiAgfQ0KfQ0K",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "654" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 404,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-failure-cause": [ "gateway" ],
+        "x-ms-request-id": [ "10e39584-da02-4780-afd4-906e1e4f5958" ],
+        "x-ms-correlation-request-id": [ "10e39584-da02-4780-afd4-906e1e4f5958" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260506T094848Z:10e39584-da02-4780-afd4-906e1e4f5958" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: C5F51939DBFC4E1E9674AAF8178E8F67 Ref B: TYO201100115017 Ref C: 2026-05-06T09:48:48Z" ],
+        "Date": [ "Wed, 06 May 2026 09:48:48 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "246" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource \u0027Microsoft.DesktopVirtualization/appattachpackages/aatestpkg\u0027 under resource group \u0027zhongjie-rg-wus\u0027 was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix\"}}",
+      "isContentBase64": false
+    }
+  },
+  "Expand-AzWvdAppAttachMsixFile+[NoContext]+Expand+$POST+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview+1": {
+    "Request": {
+      "Method": "POST",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview",
+      "Content": "{\r\n  \"properties\": {\r\n    \"msixFileShare\": \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\MSIX\",\r\n    \"msixUncPath\": [ \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\" ],\r\n    \"outputFileSharePath\": [ \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad-expanded.vhdx\" ],\r\n    \"msixPackageSource\": \"CustomerInput\",\r\n    \"outputFileType\": \"VHDX\",\r\n    \"hostpoolArmPath\": \"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/hostpools/zhongjie-automated\"\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "628" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 404,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-failure-cause": [ "gateway" ],
+        "x-ms-request-id": [ "8855559e-bba4-44a8-a06a-f8bc85a23165" ],
+        "x-ms-correlation-request-id": [ "8855559e-bba4-44a8-a06a-f8bc85a23165" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260506T094849Z:8855559e-bba4-44a8-a06a-f8bc85a23165" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: 076BB778FC4F43F6AC70BF4D3C4F6158 Ref B: TYO201100115017 Ref C: 2026-05-06T09:48:48Z" ],
+        "Date": [ "Wed, 06 May 2026 09:48:49 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "246" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource \u0027Microsoft.DesktopVirtualization/appattachpackages/aatestpkg\u0027 under resource group \u0027zhongjie-rg-wus\u0027 was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix\"}}",
+      "isContentBase64": false
+    }
+  },
+  "Expand-AzWvdAppAttachMsixFile+[NoContext]+ExpandViaIdentityExpanded+$POST+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview+1": {
+    "Request": {
+      "Method": "POST",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview",
+      "Content": "{\r\n  \"properties\": {\r\n    \"msixFileShare\": \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\MSIX\",\r\n    \"msixUncPath\": [ \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\" ],\r\n    \"outputFileSharePath\": [ \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad-expanded.vhdx\" ],\r\n    \"msixPackageSource\": \"CustomerInput\",\r\n    \"outputFileType\": \"VHDX\",\r\n    \"hostpoolArmPath\": \"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/hostpools/zhongjie-automated\"\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "628" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 404,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-failure-cause": [ "gateway" ],
+        "x-ms-request-id": [ "ed8baeeb-be47-40b4-a9a1-3158a4824e2b" ],
+        "x-ms-correlation-request-id": [ "ed8baeeb-be47-40b4-a9a1-3158a4824e2b" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260506T094849Z:ed8baeeb-be47-40b4-a9a1-3158a4824e2b" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: B2DA6610EE5F441C92FCE800EB6801DB Ref B: TYO201100115017 Ref C: 2026-05-06T09:48:49Z" ],
+        "Date": [ "Wed, 06 May 2026 09:48:49 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "246" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource \u0027Microsoft.DesktopVirtualization/appattachpackages/aatestpkg\u0027 under resource group \u0027zhongjie-rg-wus\u0027 was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix\"}}",
+      "isContentBase64": false
+    }
+  },
+  "Expand-AzWvdAppAttachMsixFile+[NoContext]+ExpandViaIdentity+$POST+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview+1": {
+    "Request": {
+      "Method": "POST",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview",
+      "Content": "{\r\n  \"properties\": {\r\n    \"msixFileShare\": \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\MSIX\",\r\n    \"msixUncPath\": [ \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\" ],\r\n    \"outputFileSharePath\": [ \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad-expanded.vhdx\" ],\r\n    \"msixPackageSource\": \"CustomerInput\",\r\n    \"outputFileType\": \"VHDX\",\r\n    \"hostpoolArmPath\": \"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/hostpools/zhongjie-automated\"\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "628" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 404,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-failure-cause": [ "gateway" ],
+        "x-ms-request-id": [ "98471351-1c47-4750-89ed-c98f42947de4" ],
+        "x-ms-correlation-request-id": [ "98471351-1c47-4750-89ed-c98f42947de4" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260506T094849Z:98471351-1c47-4750-89ed-c98f42947de4" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: B11F4FFA0C2A46139EE69781C6FB3F46 Ref B: TYO201100115017 Ref C: 2026-05-06T09:48:49Z" ],
+        "Date": [ "Wed, 06 May 2026 09:48:49 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "246" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource \u0027Microsoft.DesktopVirtualization/appattachpackages/aatestpkg\u0027 under resource group \u0027zhongjie-rg-wus\u0027 was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix\"}}",
+      "isContentBase64": false
+    }
+  }
+}
