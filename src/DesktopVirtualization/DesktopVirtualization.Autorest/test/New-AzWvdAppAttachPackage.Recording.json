@@ -1,0 +1,557 @@
+{
+  "New-AzWvdAppAttachPackage+[NoContext]+CreateExpanded+$PUT+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview",
+      "Content": "{\r\n  \"location\": \"westus2\",\r\n  \"properties\": {\r\n    \"image\": {\r\n      \"imagePath\": \"C:\\\\\\\\msix\\\\SingleMsix.vhd\",\r\n      \"packageName\": \"MsixUnitTest_Name\",\r\n      \"packageFamilyName\": \"MsixUnitTest_FamilyName\",\r\n      \"packageFullName\": \"AATest_FullName_UnitTest\",\r\n      \"displayName\": \"UnitTest-MSIXPackage\",\r\n      \"packageRelativePath\": \"MsixUnitTest_RelativePackageRoot\",\r\n      \"isRegularRegistration\": true,\r\n      \"isActive\": true,\r\n      \"packageDependencies\": [\r\n        {\r\n          \"dependencyName\": \"MsixTest_Dependency_Name\",\r\n          \"publisher\": \"MsixTest_Dependency_Publisher\",\r\n          \"minVersion\": \"0.0.0.42\"\r\n        }\r\n      ],\r\n      \"version\": \"0.0.18838.722\",\r\n      \"lastUpdated\": \"0001-01-01T00:00:00.0000000\",\r\n      \"packageApplications\": [\r\n        {\r\n          \"appId\": \"MsixTest_Application_Id\",\r\n          \"description\": \"testing from ps\",\r\n          \"appUserModelID\": \"MsixTest_Application_ModelID\",\r\n          \"friendlyName\": \"some name\",\r\n          \"iconImageName\": \"Apptile\",\r\n          \"rawIcon\": \"c29tZSBpbWFnZQ==\",\r\n          \"rawPng\": \"c29tZSBpbWFnZQ==\"\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "1133" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 201,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Location": [ "/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/TestPackage" ],
+        "Set-Cookie": [ "ARRAffinity=fd2157af18a7c94eb2eb2dcc89d40079b4b7806eaf7a0b75073f67d47b0ffe7f;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com", "ARRAffinitySameSite=fd2157af18a7c94eb2eb2dcc89d40079b4b7806eaf7a0b75073f67d47b0ffe7f;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com" ],
+        "X-Rate-Limit-Limit": [ "5m" ],
+        "X-Rate-Limit-Remaining": [ "9790" ],
+        "X-Rate-Limit-Reset": [ "2026-05-07T06:27:43.8328861Z" ],
+        "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvNjczODUwOWQtODRlZC00YWQ2LTk3NGEtN2RjNGUzYzM0MTQ2L3Jlc291cmNlR3JvdXBzL3pob25namllLXJnLXd1cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9hcHBBdHRhY2hQYWNrYWdlcy9UZXN0UGFja2FnZQ==" ],
+        "x-ms-lamport-ts": [ "-9223372036854736842" ],
+        "x-ms-correlation-id": [ "cc474a83-7cf3-4adf-a4c4-8a2a9e0117e6" ],
+        "x-ms-request-id": [ "7242961b-05f4-40dd-86b9-ec1738dcfc85" ],
+        "X-Powered-By": [ "ASP.NET" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "x-ms-operation-identifier": [ "tenantId=715492f1-ef6e-4eea-9176-7c81e765c3c8,objectId=1db230a9-e046-46ab-912b-9cea769323a2/westus2/8129c67d-f857-4feb-956e-1e020672900f" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "199" ],
+        "x-ms-ratelimit-remaining-subscription-global-writes": [ "2999" ],
+        "x-ms-correlation-request-id": [ "8744747f-63fa-404a-a015-0f0758ad1c97" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062544Z:8744747f-63fa-404a-a015-0f0758ad1c97" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: C01EEE13A4524E728F49E9DB88A8ADC6 Ref B: TYO201100114047 Ref C: 2026-05-07T06:25:44Z" ],
+        "Date": [ "Thu, 07 May 2026 06:25:44 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "1729" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"name\":\"TestPackage\",\"id\":\"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/TestPackage\",\"type\":\"Microsoft.DesktopVirtualization/appattachpackages\",\"location\":\"westus2\",\"tags\":{},\"kind\":null,\"systemData\":{\"createdBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2026-05-07T06:25:44.25Z\",\"lastModifiedBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"lastModifiedByType\":\"User\",\"lastModifiedAt\":\"2026-05-07T06:25:44.25Z\"},\"properties\":{\"deploymentScope\":\"Geographical\",\"repositoryResourceId\":null,\"repositoryApplicationId\":null,\"customData\":null,\"packageOwnerName\":\"AppAttach\",\"packageLookbackUrl\":null,\"image\":{\"packageAlias\":null,\"imagePath\":\"C:\\\\\\\\msix\\\\SingleMsix.vhd\",\"packageName\":\"MsixUnitTest_Name\",\"packageFamilyName\":\"MsixUnitTest_FamilyName\",\"packageFullName\":\"AATest_FullName_UnitTest\",\"displayName\":\"UnitTest-MSIXPackage\",\"packageRelativePath\":\"MsixUnitTest_RelativePackageRoot\",\"isRegularRegistration\":true,\"isActive\":true,\"packageDependencies\":[{\"dependencyName\":\"MsixTest_Dependency_Name\",\"publisher\":\"MsixTest_Dependency_Publisher\",\"minVersion\":\"0.0.0.42\"}],\"version\":\"0.0.18838.722\",\"lastUpdated\":\"0001-01-01T00:00:00\",\"packageApplications\":[{\"appUserModelID\":\"MsixTest_Application_ModelID\",\"appId\":\"MsixTest_Application_Id\",\"description\":\"testing from ps\",\"friendlyName\":\"some name\",\"iconImageName\":\"Apptile\",\"rawIcon\":\"c29tZSBpbWFnZQ==\",\"rawPng\":\"c29tZSBpbWFnZQ==\"}],\"certificateExpiry\":\"0001-01-01T00:00:00\",\"certificateName\":null,\"isPackageTimestamped\":\"NotTimestamped\"},\"hostPoolReferences\":[],\"failHealthCheckOnStagingFailure\":\"NeedsAssistance\",\"keyVaultURL\":null}}",
+      "isContentBase64": false
+    }
+  },
+  "New-AzWvdAppAttachPackage+[NoContext]+CreateExpanded+$GET+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "195" ],
+        "x-ms-client-request-id": [ "6beb0c91-3efc-4397-bb7e-91def3f2c199" ],
+        "CommandName": [ "Get-AzWvdAppAttachPackage" ],
+        "FullCommandName": [ "Get-AzWvdAppAttachPackage_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/v8.2.0", "PSVersion/v7.5.5", "Az.DesktopVirtualization/0.1.0" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Vary": [ "Accept-Encoding" ],
+        "Set-Cookie": [ "ARRAffinity=fd2157af18a7c94eb2eb2dcc89d40079b4b7806eaf7a0b75073f67d47b0ffe7f;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com", "ARRAffinitySameSite=fd2157af18a7c94eb2eb2dcc89d40079b4b7806eaf7a0b75073f67d47b0ffe7f;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "249" ],
+        "X-Rate-Limit-Limit": [ "5m" ],
+        "X-Rate-Limit-Remaining": [ "9790" ],
+        "X-Rate-Limit-Reset": [ "2026-05-07T06:27:43.8328861Z" ],
+        "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvNjczODUwOWQtODRlZC00YWQ2LTk3NGEtN2RjNGUzYzM0MTQ2L3Jlc291cmNlR3JvdXBzL3pob25namllLXJnLXd1cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9hcHBBdHRhY2hQYWNrYWdlcy9UZXN0UGFja2FnZQ==" ],
+        "x-ms-lamport-ts": [ "-9223372036854775715" ],
+        "x-ms-correlation-id": [ "9d09c4f3-6058-40c8-8681-de1557ae1288" ],
+        "x-ms-request-id": [ "6beb0c91-3efc-4397-bb7e-91def3f2c199" ],
+        "X-Powered-By": [ "ASP.NET" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "x-ms-ratelimit-remaining-subscription-global-reads": [ "3749" ],
+        "x-ms-correlation-request-id": [ "a4c55b69-687c-4038-b75d-6e931351e784" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062545Z:a4c55b69-687c-4038-b75d-6e931351e784" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: 32802C4495BD43B9B4D864ECFF232FF4 Ref B: TYO201100114047 Ref C: 2026-05-07T06:25:45Z" ],
+        "Date": [ "Thu, 07 May 2026 06:25:45 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "1729" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"name\":\"TestPackage\",\"id\":\"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/TestPackage\",\"type\":\"Microsoft.DesktopVirtualization/appattachpackages\",\"location\":\"westus2\",\"tags\":{},\"kind\":null,\"systemData\":{\"createdBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2026-05-07T06:25:44.25Z\",\"lastModifiedBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"lastModifiedByType\":\"User\",\"lastModifiedAt\":\"2026-05-07T06:25:44.25Z\"},\"properties\":{\"deploymentScope\":\"Geographical\",\"repositoryResourceId\":null,\"repositoryApplicationId\":null,\"customData\":null,\"packageOwnerName\":\"AppAttach\",\"packageLookbackUrl\":null,\"image\":{\"packageAlias\":null,\"imagePath\":\"C:\\\\\\\\msix\\\\SingleMsix.vhd\",\"packageName\":\"MsixUnitTest_Name\",\"packageFamilyName\":\"MsixUnitTest_FamilyName\",\"packageFullName\":\"AATest_FullName_UnitTest\",\"displayName\":\"UnitTest-MSIXPackage\",\"packageRelativePath\":\"MsixUnitTest_RelativePackageRoot\",\"isRegularRegistration\":true,\"isActive\":true,\"packageDependencies\":[{\"dependencyName\":\"MsixTest_Dependency_Name\",\"publisher\":\"MsixTest_Dependency_Publisher\",\"minVersion\":\"0.0.0.42\"}],\"version\":\"0.0.18838.722\",\"lastUpdated\":\"0001-01-01T00:00:00\",\"packageApplications\":[{\"appUserModelID\":\"MsixTest_Application_ModelID\",\"appId\":\"MsixTest_Application_Id\",\"description\":\"testing from ps\",\"friendlyName\":\"some name\",\"iconImageName\":\"Apptile\",\"rawIcon\":\"c29tZSBpbWFnZQ==\",\"rawPng\":\"c29tZSBpbWFnZQ==\"}],\"certificateExpiry\":\"0001-01-01T00:00:00\",\"certificateName\":null,\"isPackageTimestamped\":\"NotTimestamped\"},\"hostPoolReferences\":[],\"failHealthCheckOnStagingFailure\":\"NeedsAssistance\",\"keyVaultURL\":null}}",
+      "isContentBase64": false
+    }
+  },
+  "New-AzWvdAppAttachPackage+[NoContext]+CreateExpanded+$DELETE+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview+3": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "196" ],
+        "x-ms-client-request-id": [ "69969a4e-74b0-4ac3-9acb-b944c3552bdd" ],
+        "CommandName": [ "Remove-AzWvdAppAttachPackage" ],
+        "FullCommandName": [ "Remove-AzWvdAppAttachPackage_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/v8.2.0", "PSVersion/v7.5.5", "Az.DesktopVirtualization/0.1.0" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Vary": [ "Accept-Encoding" ],
+        "Set-Cookie": [ "ARRAffinity=9362d262488165e67ba764e3038a0872f73864fc65a953b463f17e37ca23f7ff;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com", "ARRAffinitySameSite=9362d262488165e67ba764e3038a0872f73864fc65a953b463f17e37ca23f7ff;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com" ],
+        "x-ms-operation-identifier": [ "tenantId=715492f1-ef6e-4eea-9176-7c81e765c3c8,objectId=1db230a9-e046-46ab-912b-9cea769323a2/westus2/4dc74cb6-aec3-48a8-836f-87580002faff" ],
+        "X-Rate-Limit-Limit": [ "5m" ],
+        "X-Rate-Limit-Remaining": [ "9787" ],
+        "X-Rate-Limit-Reset": [ "2026-05-07T06:27:43.8328861Z" ],
+        "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvNjczODUwOWQtODRlZC00YWQ2LTk3NGEtN2RjNGUzYzM0MTQ2L3Jlc291cmNlR3JvdXBzL3pob25namllLXJnLXd1cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9hcHBBdHRhY2hQYWNrYWdlcy9UZXN0UGFja2FnZQ==" ],
+        "x-ms-lamport-ts": [ "-9223372036854775708" ],
+        "x-ms-correlation-id": [ "dfd9266b-e822-418b-976c-d56282a1e590" ],
+        "x-ms-request-id": [ "69969a4e-74b0-4ac3-9acb-b944c3552bdd" ],
+        "X-Powered-By": [ "ASP.NET" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "199" ],
+        "x-ms-ratelimit-remaining-subscription-global-deletes": [ "2999" ],
+        "x-ms-correlation-request-id": [ "c9ed8018-ae88-4897-b682-ec6ee9ea99d7" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062546Z:c9ed8018-ae88-4897-b682-ec6ee9ea99d7" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: C10D988C284D48DE9B5433CFFB478984 Ref B: TYO201100114047 Ref C: 2026-05-07T06:25:45Z" ],
+        "Date": [ "Thu, 07 May 2026 06:25:46 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "1729" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"name\":\"TestPackage\",\"id\":\"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/TestPackage\",\"type\":\"Microsoft.DesktopVirtualization/appattachpackages\",\"location\":\"westus2\",\"tags\":{},\"kind\":null,\"systemData\":{\"createdBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2026-05-07T06:25:44.25Z\",\"lastModifiedBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"lastModifiedByType\":\"User\",\"lastModifiedAt\":\"2026-05-07T06:25:44.25Z\"},\"properties\":{\"deploymentScope\":\"Geographical\",\"repositoryResourceId\":null,\"repositoryApplicationId\":null,\"customData\":null,\"packageOwnerName\":\"AppAttach\",\"packageLookbackUrl\":null,\"image\":{\"packageAlias\":null,\"imagePath\":\"C:\\\\\\\\msix\\\\SingleMsix.vhd\",\"packageName\":\"MsixUnitTest_Name\",\"packageFamilyName\":\"MsixUnitTest_FamilyName\",\"packageFullName\":\"AATest_FullName_UnitTest\",\"displayName\":\"UnitTest-MSIXPackage\",\"packageRelativePath\":\"MsixUnitTest_RelativePackageRoot\",\"isRegularRegistration\":true,\"isActive\":true,\"packageDependencies\":[{\"dependencyName\":\"MsixTest_Dependency_Name\",\"publisher\":\"MsixTest_Dependency_Publisher\",\"minVersion\":\"0.0.0.42\"}],\"version\":\"0.0.18838.722\",\"lastUpdated\":\"0001-01-01T00:00:00\",\"packageApplications\":[{\"appUserModelID\":\"MsixTest_Application_ModelID\",\"appId\":\"MsixTest_Application_Id\",\"description\":\"testing from ps\",\"friendlyName\":\"some name\",\"iconImageName\":\"Apptile\",\"rawIcon\":\"c29tZSBpbWFnZQ==\",\"rawPng\":\"c29tZSBpbWFnZQ==\"}],\"certificateExpiry\":\"0001-01-01T00:00:00\",\"certificateName\":null,\"isPackageTimestamped\":\"NotTimestamped\"},\"hostPoolReferences\":[],\"failHealthCheckOnStagingFailure\":\"NeedsAssistance\",\"keyVaultURL\":null}}",
+      "isContentBase64": false
+    }
+  },
+  "New-AzWvdAppAttachPackage+[NoContext]+ImageObject+$POST+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/hostPools/zhongjie-automated/importAppAttachPackageInfo?api-version=2026-02-01-preview+1": {
+    "Request": {
+      "Method": "POST",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/hostPools/zhongjie-automated/importAppAttachPackageInfo?api-version=2026-02-01-preview",
+      "Content": "{\r\n  \"path\": \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\"\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "110" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Vary": [ "Accept-Encoding" ],
+        "Set-Cookie": [ "ARRAffinity=78cc7ed2e16cd9d0de735360d27b2d80c6dbba9425ecf0dbe0884f7517a0ca11;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com", "ARRAffinitySameSite=78cc7ed2e16cd9d0de735360d27b2d80c6dbba9425ecf0dbe0884f7517a0ca11;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com" ],
+        "x-ms-operation-identifier": [ "tenantId=715492f1-ef6e-4eea-9176-7c81e765c3c8,objectId=1db230a9-e046-46ab-912b-9cea769323a2/westus2/3d99d8e4-808c-44c0-84e9-dc856eff2c6a" ],
+        "X-Rate-Limit-Limit": [ "5m" ],
+        "X-Rate-Limit-Remaining": [ "9786" ],
+        "X-Rate-Limit-Reset": [ "2026-05-07T06:27:43.8328861Z" ],
+        "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvNjczODUwOWQtODRlZC00YWQ2LTk3NGEtN2RjNGUzYzM0MTQ2L3Jlc291cmNlR3JvdXBzL3pob25namllLXJnLXd1cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9ob3N0UG9vbHMvemhvbmdqaWUtYXV0b21hdGVk" ],
+        "x-ms-lamport-ts": [ "-9223372036854775807" ],
+        "x-ms-correlation-id": [ "498a5d67-5848-417b-b44e-ce1ebbbd04d0" ],
+        "x-ms-request-id": [ "1eade17a-2789-453d-8d84-09492e30ae16" ],
+        "X-Powered-By": [ "ASP.NET" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "199" ],
+        "x-ms-ratelimit-remaining-subscription-global-writes": [ "2999" ],
+        "x-ms-correlation-request-id": [ "4dd59402-944f-4f3c-b998-8e219e184b9c" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062556Z:4dd59402-944f-4f3c-b998-8e219e184b9c" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: 8431A2DF194B43F29D803FD86A17C9D8 Ref B: TYO201100114047 Ref C: 2026-05-07T06:25:46Z" ],
+        "Date": [ "Thu, 07 May 2026 06:25:56 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "4865" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"name\":\"importappattachpackageinfo\",\"id\":\"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/importappattachpackageinfo\",\"type\":\"Microsoft.DesktopVirtualization/appattachpackages\",\"properties\":{\"image\":{\"packageAlias\":\"43906chrislovettxmlnotepad-1\",\"imagePath\":\"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\",\"packageName\":\"43906ChrisLovett.XmlNotepad\",\"packageFamilyName\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj\",\"packageFullName\":\"43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"displayName\":null,\"packageRelativePath\":\"\\\\apps\\\\43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"isRegularRegistration\":false,\"isActive\":false,\"packageDependencies\":[],\"version\":\"2.9.0.16\",\"lastUpdated\":\"2025-06-23T02:31:04.2415625+00:00\",\"packageApplications\":[{\"appUserModelID\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj!App\",\"appId\":\"App\",\"description\":\"XML Notepad is a lightweight and fast tool for editing XML documents. XML has proliferated across the planet and XML Notepad has been downloaded over 3 million times!\",\"friendlyName\":\"XmlNotepad\",\"iconImageName\":\"Square44x44Logo.scale-200.png\",\"rawIcon\":\"AAABAAEAICAAAAAAIADOBAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEY0lEQVRYR+2USUxbVxSGn1o1VFGUoCpEkbLopos2UtWBFjsMVYAQEkDMs8HMYAanjCFQaHfdBEyhBBoMboBgxmCICSSUkk274CktDZBaDDGjARMwJAXD5vmv3jU2xpEi+uiSIx1Zx36+//efd86lqKM4ioNEGO8jSuikMtdC/jlK6PjcXIfyP6diHMfMtfXzh45Yl2dU1AVQkQ6upBY6DZM64kI4qeNdJkgdwrPfrY3Ph/Eu7jvnv0bx9mBr0dYvhrPZPqAi+UidaDIUbj4yvF8UAkrAR/hQpSFLd99wOsMTVCQPQlWdQaRtN5zO9CK/Bz6pMMQuNBmiJqUfWJ99oCjS99MFG31M8dYAkzYpZ/LXe5nctR4mb6OXiRuTMde0CiZ96R4jfqFgBKM1TNJ8M5Mw18QkapqZoD8qmWh1PRM5JWNCx+s+sT77QFGkH6ALXz0Emzde9uH6+gPk6JTIWu3G1y+6IF7pRNpyB0RLbUhebEXiQjPi55sQM9sI4UwDBNN3EPFchkMD3NjoRd4+ccV+cU2LlXi9WTxsshah49XcAL7RD9Cs8zeKWziPtXIeNlWLkEkpArgCFGw+oveLW7Vdsys+Z+Fc/bPZechEDYLGb3MHuP7PQzpnTQlPxbfIXlfi2konvqxKhWi5HW6KYiQvtiBu7i4RD3hSDt+hMkSoZbBvzCTOg8Z/gr+qCgGjFdwA8l49oDNXu3GxrRD2NRkQjNTgTI4P0tc68XYkH3ZZV4l47MJd2MQ44VSqOwTz9aDCHRA8JSXivn/fgjdXgOyXPTTb9kxdN2yEjjgW4wyxrguilQ68G+uM4wlfIUHbAj+6DJ/KxAQgYvYOqHAeAiduE3GfZz/iMleAzHUlLdZ2ImPlHk4kueItAR8ibTuStW04Fu0I799ugifPha3IDaETNTgpckPYjIwA+I9XE3Gv0XJc/rOUG4BY10WzA+fV/z0+rkyGu/I7fCiJQ+JyCwEQzjWCCvwMZ/J9EaSqxkmRO4LVUlDB9giclsJHVQnPkR+4A6SvKmh22u1SLyFluQ0JGjmOhzsgflEOuywvMnDnbyXDd7iCDNzZAj/S9i/ac2ET54ITKa7weCrhDpC20kGzl0ySxmLVZhvIqkWqd1fNYtr9VFXmtl9hWz8iwaXhErhyBUjRttHsnptWzbjnezecac/9VdXmgWPFPUfK4PGXBO7DJSQ5AyQut9JG5w37Lxn2hiPirHNWvHJXvAJXiHgpcX5ogPilZpp1Hj1tEq9DqNm5se3E+ZhRnB04VtwkfGiAOI2cZu/2qF1xY9ulCDQ732u70fle2/8fgPkm2vzOp2oRbOXc2/KdP33duSm9uQLMT83Qit/70fq4B62DPWgZVBrzVzbvo9ki5QPdryX7fd/QY8yr1dwA9Nt6ent7G1tbW9Dr9eTzTWn9DFvv7OxAp9vkBlDkfIqWJFxFSbwn5yyNcUO+wzvcAMo9bAfKPGwhOUSy/7/p9t5567OP4ihM8S/0O24eq08REAAAAABJRU5ErkJggg==\",\"rawPng\":\"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABGNJREFUWEftlElMW1cUhp9aNVRRlKAqRJGy6KaLNlLVgRY7DFWAEBJAzLPBzGAGp4whUGh33QRMoQQaDG6AYMZgiAkklJJNu+ApLQ2QWgwxowETMCQFw+b5r941NsaRIvrokiMdWcd+vv/3n3fOpaijOIqDRBjvI0ropDLXQv45Suj43FyH8j+nYhzHzLX184eOWJdnVNQFUJEOrqQWOg2TOuJCOKnjXSZIHcKz362Nz4fxLu47579G8fZga9HWL4az2T6gIvlInWgyFG4+MrxfFAJKwEf4UKUhS3ffcDrDE1QkD0JVnUGkbTeczvQivwc+qTDELjQZoialH1iffaAo0vfTBRt9TPHWAJM2KWfy13uZ3LUeJm+jl4kbkzHXtAomfekeI36hYASjNUzSfDOTMNfEJGqamaA/KplodT0TOSVjQsfrPrE++0BRpB+gC189BJs3Xvbh+voD5OiUyFrtxtcvuiBe6UTacgdES21IXmxF4kIz4uebEDPbCOFMAwTTdxDxXIZDA9zY6EXePnHFfnFNi5V4vVk8bLIWoePV3AC+0Q/QrPM3ils4j7VyHjZVi5BJKQK4AhRsPqL3i1u1XbMrPmfhXP2z2XnIRA2Cxm9zB7j+z0M6Z00JT8W3yF5X4tpKJ76sSoVouR1uimIkL7Ygbu4uEQ94Ug7foTJEqGWwb8wkzoPGf4K/qgoBoxXcAPJePaAzV7txsa0Q9jUZEIzU4EyOD9LXOvF2JB92WVeJeOzCXdjEOOFUqjsE8/Wgwh0QPCUl4r5/34I3V4Dslz002/ZMXTdshI44FuMMsa4LopUOvBvrjOMJXyFB2wI/ugyfysQEIGL2DqhwHgInbhNxn2c/4jJXgMx1JS3WdiJj5R5OJLniLQEfIm07krVtOBbtCO/fboInz4WtyA2hEzU4KXJD2IyMAPiPVxNxr9FyXP6zlBuAWNdFswPn1f89Pq5MhrvyO3woiUPicgsBEM41ggr8DGfyfRGkqsZJkTuC1VJQwfYInJbCR1UJz5EfuAOkrypodtrtUi8hZbkNCRo5joc7IH5RDrssLzJw528lw3e4ggzc2QI/0vYv2nNhE+eCEymu8Hgq4Q6QttJBs5dMksZi1WYbyKpFqndXzWLa/VRV5rZfYVs/IsGl4RK4cgVI0bbR7J6bVs2453s3nGnP/VXV5oFjxT1HyuDxlwTuwyUkOQMkLrfSRucN+y8Z9oYj4qxzVrxyV7wCV4h4KXF+aID4pWaadR49bRKvQ6jZubHtxPmYUZwdOFbcJHxogDiNnGbv9qhdcWPbpQg0O99ru9H5Xtv/H4D5Jtr8zqdqEWzl3NvynT993bkpvbkCzE/N0Irf+9H6uAetgz1oGVQa81c276PZIuUD3a8l+33f0GPMq9XcAPTbenp7extbW1vQ6/Xk801p/Qxb7+zsQKfb5AZQ5HyKliRcRUm8J+csjXFDvsM73ADKPWwHyjxsITlEsv+/6fbeeeuzj+IoTPEv9DtuHqtPERAAAAAASUVORK5CYII=\"}],\"certificateExpiry\":\"2025-03-27T23:59:59+00:00\",\"certificateName\":\"CN=Chris Lovett, O=Chris Lovett, S=Washington, C=US\",\"isPackageTimestamped\":\"Timestamped\"},\"hostPoolReferences\":null,\"failHealthCheckOnStagingFailure\":null,\"keyVaultURL\":null},\"systemData\":null}],\"nextLink\":null}",
+      "isContentBase64": false
+    }
+  },
+  "New-AzWvdAppAttachPackage+[NoContext]+ImageObject+$PUT+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview+2": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview",
+      "Content": "{\r\n  \"tags\": {\r\n    \"Values\": \"\",\r\n    \"Keys\": \"\",\r\n    \"Count\": \"0\",\r\n    \"AdditionalProperties\": \"System.Collections.Generic.Dictionary`2[System.String,System.String]\"\r\n  },\r\n  \"location\": \"westus2\",\r\n  \"properties\": {\r\n    \"image\": {\r\n      \"packageAlias\": \"43906chrislovettxmlnotepad-1\",\r\n      \"imagePath\": \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\",\r\n      \"packageName\": \"43906ChrisLovett.XmlNotepad\",\r\n      \"packageFamilyName\": \"43906ChrisLovett.XmlNotepad_hndwmj480pefj\",\r\n      \"packageFullName\": \"43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\r\n      \"packageRelativePath\": \"\\\\apps\\\\43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\r\n      \"isRegularRegistration\": false,\r\n      \"isActive\": false,\r\n      \"packageDependencies\": [ ],\r\n      \"version\": \"2.9.0.16\",\r\n      \"lastUpdated\": \"2025-06-23T02:31:04.2415625Z\",\r\n      \"packageApplications\": [\r\n        {\r\n          \"appId\": \"App\",\r\n          \"description\": \"XML Notepad is a lightweight and fast tool for editing XML documents. XML has proliferated across the planet and XML Notepad has been downloaded over 3 million times!\",\r\n          \"appUserModelID\": \"43906ChrisLovett.XmlNotepad_hndwmj480pefj!App\",\r\n          \"friendlyName\": \"XmlNotepad\",\r\n          \"iconImageName\": \"Square44x44Logo.scale-200.png\",\r\n          \"rawIcon\": \"AAABAAEAICAAAAAAIADOBAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEY0lEQVRYR+2USUxbVxSGn1o1VFGUoCpEkbLopos2UtWBFjsMVYAQEkDMs8HMYAanjCFQaHfdBEyhBBoMboBgxmCICSSUkk274CktDZBaDDGjARMwJAXD5vmv3jU2xpEi+uiSIx1Zx36+//efd86lqKM4ioNEGO8jSuikMtdC/jlK6PjcXIfyP6diHMfMtfXzh45Yl2dU1AVQkQ6upBY6DZM64kI4qeNdJkgdwrPfrY3Ph/Eu7jvnv0bx9mBr0dYvhrPZPqAi+UidaDIUbj4yvF8UAkrAR/hQpSFLd99wOsMTVCQPQlWdQaRtN5zO9CK/Bz6pMMQuNBmiJqUfWJ99oCjS99MFG31M8dYAkzYpZ/LXe5nctR4mb6OXiRuTMde0CiZ96R4jfqFgBKM1TNJ8M5Mw18QkapqZoD8qmWh1PRM5JWNCx+s+sT77QFGkH6ALXz0Emzde9uH6+gPk6JTIWu3G1y+6IF7pRNpyB0RLbUhebEXiQjPi55sQM9sI4UwDBNN3EPFchkMD3NjoRd4+ccV+cU2LlXi9WTxsshah49XcAL7RD9Cs8zeKWziPtXIeNlWLkEkpArgCFGw+oveLW7Vdsys+Z+Fc/bPZechEDYLGb3MHuP7PQzpnTQlPxbfIXlfi2konvqxKhWi5HW6KYiQvtiBu7i4RD3hSDt+hMkSoZbBvzCTOg8Z/gr+qCgGjFdwA8l49oDNXu3GxrRD2NRkQjNTgTI4P0tc68XYkH3ZZV4l47MJd2MQ44VSqOwTz9aDCHRA8JSXivn/fgjdXgOyXPTTb9kxdN2yEjjgW4wyxrguilQ68G+uM4wlfIUHbAj+6DJ/KxAQgYvYOqHAeAiduE3GfZz/iMleAzHUlLdZ2ImPlHk4kueItAR8ibTuStW04Fu0I799ugifPha3IDaETNTgpckPYjIwA+I9XE3Gv0XJc/rOUG4BY10WzA+fV/z0+rkyGu/I7fCiJQ+JyCwEQzjWCCvwMZ/J9EaSqxkmRO4LVUlDB9giclsJHVQnPkR+4A6SvKmh22u1SLyFluQ0JGjmOhzsgflEOuywvMnDnbyXDd7iCDNzZAj/S9i/ac2ET54ITKa7weCrhDpC20kGzl0ySxmLVZhvIqkWqd1fNYtr9VFXmtl9hWz8iwaXhErhyBUjRttHsnptWzbjnezecac/9VdXmgWPFPUfK4PGXBO7DJSQ5AyQut9JG5w37Lxn2hiPirHNWvHJXvAJXiHgpcX5ogPilZpp1Hj1tEq9DqNm5se3E+ZhRnB04VtwkfGiAOI2cZu/2qF1xY9ulCDQ732u70fle2/8fgPkm2vzOp2oRbOXc2/KdP33duSm9uQLMT83Qit/70fq4B62DPWgZVBrzVzbvo9ki5QPdryX7fd/QY8yr1dwA9Nt6ent7G1tbW9Dr9eTzTWn9DFvv7OxAp9vkBlDkfIqWJFxFSbwn5yyNcUO+wzvcAMo9bAfKPGwhOUSy/7/p9t5567OP4ihM8S/0O24eq08REAAAAABJRU5ErkJggg==\",\r\n          \"rawPng\": \"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABGNJREFUWEftlElMW1cUhp9aNVRRlKAqRJGy6KaLNlLVgRY7DFWAEBJAzLPBzGAGp4whUGh33QRMoQQaDG6AYMZgiAkklJJNu+ApLQ2QWgwxowETMCQFw+b5r941NsaRIvrokiMdWcd+vv/3n3fOpaijOIqDRBjvI0ropDLXQv45Suj43FyH8j+nYhzHzLX184eOWJdnVNQFUJEOrqQWOg2TOuJCOKnjXSZIHcKz362Nz4fxLu47579G8fZga9HWL4az2T6gIvlInWgyFG4+MrxfFAJKwEf4UKUhS3ffcDrDE1QkD0JVnUGkbTeczvQivwc+qTDELjQZoialH1iffaAo0vfTBRt9TPHWAJM2KWfy13uZ3LUeJm+jl4kbkzHXtAomfekeI36hYASjNUzSfDOTMNfEJGqamaA/KplodT0TOSVjQsfrPrE++0BRpB+gC189BJs3Xvbh+voD5OiUyFrtxtcvuiBe6UTacgdES21IXmxF4kIz4uebEDPbCOFMAwTTdxDxXIZDA9zY6EXePnHFfnFNi5V4vVk8bLIWoePV3AC+0Q/QrPM3ils4j7VyHjZVi5BJKQK4AhRsPqL3i1u1XbMrPmfhXP2z2XnIRA2Cxm9zB7j+z0M6Z00JT8W3yF5X4tpKJ76sSoVouR1uimIkL7Ygbu4uEQ94Ug7foTJEqGWwb8wkzoPGf4K/qgoBoxXcAPJePaAzV7txsa0Q9jUZEIzU4EyOD9LXOvF2JB92WVeJeOzCXdjEOOFUqjsE8/Wgwh0QPCUl4r5/34I3V4Dslz002/ZMXTdshI44FuMMsa4LopUOvBvrjOMJXyFB2wI/ugyfysQEIGL2DqhwHgInbhNxn2c/4jJXgMx1JS3WdiJj5R5OJLniLQEfIm07krVtOBbtCO/fboInz4WtyA2hEzU4KXJD2IyMAPiPVxNxr9FyXP6zlBuAWNdFswPn1f89Pq5MhrvyO3woiUPicgsBEM41ggr8DGfyfRGkqsZJkTuC1VJQwfYInJbCR1UJz5EfuAOkrypodtrtUi8hZbkNCRo5joc7IH5RDrssLzJw528lw3e4ggzc2QI/0vYv2nNhE+eCEymu8Hgq4Q6QttJBs5dMksZi1WYbyKpFqndXzWLa/VRV5rZfYVs/IsGl4RK4cgVI0bbR7J6bVs2453s3nGnP/VXV5oFjxT1HyuDxlwTuwyUkOQMkLrfSRucN+y8Z9oYj4qxzVrxyV7wCV4h4KXF+aID4pWaadR49bRKvQ6jZubHtxPmYUZwdOFbcJHxogDiNnGbv9qhdcWPbpQg0O99ru9H5Xtv/H4D5Jtr8zqdqEWzl3NvynT993bkpvbkCzE/N0Irf+9H6uAetgz1oGVQa81c276PZIuUD3a8l+33f0GPMq9XcAPTbenp7extbW1vQ6/Xk801p/Qxb7+zsQKfb5AZQ5HyKliRcRUm8J+csjXFDvsM73ADKPWwHyjxsITlEsv+/6fbeeeuzj+IoTPEv9DtuHqtPERAAAAAASUVORK5CYII=\"\r\n        }\r\n      ],\r\n      \"certificateName\": \"CN=Chris Lovett, O=Chris Lovett, S=Washington, C=US\",\r\n      \"certificateExpiry\": \"2025-03-27T23:59:59.0000000Z\",\r\n      \"isPackageTimestamped\": \"Timestamped\"\r\n    },\r\n    \"failHealthCheckOnStagingFailure\": \"Unhealthy\"\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "4974" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 201,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Location": [ "/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/TestPackage" ],
+        "Set-Cookie": [ "ARRAffinity=95a27ef93de81bbac0473b1fe2b7581db807c74935479a255a1e9ea107eb3b9a;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com", "ARRAffinitySameSite=95a27ef93de81bbac0473b1fe2b7581db807c74935479a255a1e9ea107eb3b9a;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com" ],
+        "x-ms-operation-identifier": [ "tenantId=715492f1-ef6e-4eea-9176-7c81e765c3c8,objectId=1db230a9-e046-46ab-912b-9cea769323a2/westus2/61a1f2b0-ca9c-4b9b-82a7-c5dfffaf322a" ],
+        "X-Rate-Limit-Limit": [ "5m" ],
+        "X-Rate-Limit-Remaining": [ "9783" ],
+        "X-Rate-Limit-Reset": [ "2026-05-07T06:27:43.8328861Z" ],
+        "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvNjczODUwOWQtODRlZC00YWQ2LTk3NGEtN2RjNGUzYzM0MTQ2L3Jlc291cmNlR3JvdXBzL3pob25namllLXJnLXd1cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9hcHBBdHRhY2hQYWNrYWdlcy9UZXN0UGFja2FnZQ==" ],
+        "x-ms-lamport-ts": [ "-9223372036854775631" ],
+        "x-ms-correlation-id": [ "e723db29-53cb-40cc-843e-95c257bb3b8b" ],
+        "x-ms-request-id": [ "ef97ee64-6dbe-4315-a86e-d699b396a761" ],
+        "X-Powered-By": [ "ASP.NET" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "198" ],
+        "x-ms-ratelimit-remaining-subscription-global-writes": [ "2998" ],
+        "x-ms-correlation-request-id": [ "ef36f35d-8ba5-4dfe-9f48-09e2443d0084" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062557Z:ef36f35d-8ba5-4dfe-9f48-09e2443d0084" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: F1F66AD3D2274EA0B4161E0AD9C89C8F Ref B: TYO201100114047 Ref C: 2026-05-07T06:25:56Z" ],
+        "Date": [ "Thu, 07 May 2026 06:25:57 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "5369" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"name\":\"TestPackage\",\"id\":\"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/TestPackage\",\"type\":\"Microsoft.DesktopVirtualization/appattachpackages\",\"location\":\"westus2\",\"tags\":{\"Values\":\"\",\"Keys\":\"\",\"Count\":\"0\",\"AdditionalProperties\":\"System.Collections.Generic.Dictionary`2[System.String,System.String]\"},\"kind\":null,\"systemData\":{\"createdBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2026-05-07T06:25:56.73Z\",\"lastModifiedBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"lastModifiedByType\":\"User\",\"lastModifiedAt\":\"2026-05-07T06:25:56.73Z\"},\"properties\":{\"deploymentScope\":\"Geographical\",\"repositoryResourceId\":null,\"repositoryApplicationId\":null,\"customData\":null,\"packageOwnerName\":\"AppAttach\",\"packageLookbackUrl\":null,\"image\":{\"packageAlias\":null,\"imagePath\":\"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\",\"packageName\":\"43906ChrisLovett.XmlNotepad\",\"packageFamilyName\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj\",\"packageFullName\":\"43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"displayName\":null,\"packageRelativePath\":\"\\\\apps\\\\43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"isRegularRegistration\":false,\"isActive\":false,\"packageDependencies\":[],\"version\":\"2.9.0.16\",\"lastUpdated\":\"2025-06-23T02:31:04.2415625\",\"packageApplications\":[{\"appUserModelID\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj!App\",\"appId\":\"App\",\"description\":\"XML Notepad is a lightweight and fast tool for editing XML documents. XML has proliferated across the planet and XML Notepad has been downloaded over 3 million times!\",\"friendlyName\":\"XmlNotepad\",\"iconImageName\":\"Square44x44Logo.scale-200.png\",\"rawIcon\":\"AAABAAEAICAAAAAAIADOBAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEY0lEQVRYR+2USUxbVxSGn1o1VFGUoCpEkbLopos2UtWBFjsMVYAQEkDMs8HMYAanjCFQaHfdBEyhBBoMboBgxmCICSSUkk274CktDZBaDDGjARMwJAXD5vmv3jU2xpEi+uiSIx1Zx36+//efd86lqKM4ioNEGO8jSuikMtdC/jlK6PjcXIfyP6diHMfMtfXzh45Yl2dU1AVQkQ6upBY6DZM64kI4qeNdJkgdwrPfrY3Ph/Eu7jvnv0bx9mBr0dYvhrPZPqAi+UidaDIUbj4yvF8UAkrAR/hQpSFLd99wOsMTVCQPQlWdQaRtN5zO9CK/Bz6pMMQuNBmiJqUfWJ99oCjS99MFG31M8dYAkzYpZ/LXe5nctR4mb6OXiRuTMde0CiZ96R4jfqFgBKM1TNJ8M5Mw18QkapqZoD8qmWh1PRM5JWNCx+s+sT77QFGkH6ALXz0Emzde9uH6+gPk6JTIWu3G1y+6IF7pRNpyB0RLbUhebEXiQjPi55sQM9sI4UwDBNN3EPFchkMD3NjoRd4+ccV+cU2LlXi9WTxsshah49XcAL7RD9Cs8zeKWziPtXIeNlWLkEkpArgCFGw+oveLW7Vdsys+Z+Fc/bPZechEDYLGb3MHuP7PQzpnTQlPxbfIXlfi2konvqxKhWi5HW6KYiQvtiBu7i4RD3hSDt+hMkSoZbBvzCTOg8Z/gr+qCgGjFdwA8l49oDNXu3GxrRD2NRkQjNTgTI4P0tc68XYkH3ZZV4l47MJd2MQ44VSqOwTz9aDCHRA8JSXivn/fgjdXgOyXPTTb9kxdN2yEjjgW4wyxrguilQ68G+uM4wlfIUHbAj+6DJ/KxAQgYvYOqHAeAiduE3GfZz/iMleAzHUlLdZ2ImPlHk4kueItAR8ibTuStW04Fu0I799ugifPha3IDaETNTgpckPYjIwA+I9XE3Gv0XJc/rOUG4BY10WzA+fV/z0+rkyGu/I7fCiJQ+JyCwEQzjWCCvwMZ/J9EaSqxkmRO4LVUlDB9giclsJHVQnPkR+4A6SvKmh22u1SLyFluQ0JGjmOhzsgflEOuywvMnDnbyXDd7iCDNzZAj/S9i/ac2ET54ITKa7weCrhDpC20kGzl0ySxmLVZhvIqkWqd1fNYtr9VFXmtl9hWz8iwaXhErhyBUjRttHsnptWzbjnezecac/9VdXmgWPFPUfK4PGXBO7DJSQ5AyQut9JG5w37Lxn2hiPirHNWvHJXvAJXiHgpcX5ogPilZpp1Hj1tEq9DqNm5se3E+ZhRnB04VtwkfGiAOI2cZu/2qF1xY9ulCDQ732u70fle2/8fgPkm2vzOp2oRbOXc2/KdP33duSm9uQLMT83Qit/70fq4B62DPWgZVBrzVzbvo9ki5QPdryX7fd/QY8yr1dwA9Nt6ent7G1tbW9Dr9eTzTWn9DFvv7OxAp9vkBlDkfIqWJFxFSbwn5yyNcUO+wzvcAMo9bAfKPGwhOUSy/7/p9t5567OP4ihM8S/0O24eq08REAAAAABJRU5ErkJggg==\",\"rawPng\":\"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABGNJREFUWEftlElMW1cUhp9aNVRRlKAqRJGy6KaLNlLVgRY7DFWAEBJAzLPBzGAGp4whUGh33QRMoQQaDG6AYMZgiAkklJJNu+ApLQ2QWgwxowETMCQFw+b5r941NsaRIvrokiMdWcd+vv/3n3fOpaijOIqDRBjvI0ropDLXQv45Suj43FyH8j+nYhzHzLX184eOWJdnVNQFUJEOrqQWOg2TOuJCOKnjXSZIHcKz362Nz4fxLu47579G8fZga9HWL4az2T6gIvlInWgyFG4+MrxfFAJKwEf4UKUhS3ffcDrDE1QkD0JVnUGkbTeczvQivwc+qTDELjQZoialH1iffaAo0vfTBRt9TPHWAJM2KWfy13uZ3LUeJm+jl4kbkzHXtAomfekeI36hYASjNUzSfDOTMNfEJGqamaA/KplodT0TOSVjQsfrPrE++0BRpB+gC189BJs3Xvbh+voD5OiUyFrtxtcvuiBe6UTacgdES21IXmxF4kIz4uebEDPbCOFMAwTTdxDxXIZDA9zY6EXePnHFfnFNi5V4vVk8bLIWoePV3AC+0Q/QrPM3ils4j7VyHjZVi5BJKQK4AhRsPqL3i1u1XbMrPmfhXP2z2XnIRA2Cxm9zB7j+z0M6Z00JT8W3yF5X4tpKJ76sSoVouR1uimIkL7Ygbu4uEQ94Ug7foTJEqGWwb8wkzoPGf4K/qgoBoxXcAPJePaAzV7txsa0Q9jUZEIzU4EyOD9LXOvF2JB92WVeJeOzCXdjEOOFUqjsE8/Wgwh0QPCUl4r5/34I3V4Dslz002/ZMXTdshI44FuMMsa4LopUOvBvrjOMJXyFB2wI/ugyfysQEIGL2DqhwHgInbhNxn2c/4jJXgMx1JS3WdiJj5R5OJLniLQEfIm07krVtOBbtCO/fboInz4WtyA2hEzU4KXJD2IyMAPiPVxNxr9FyXP6zlBuAWNdFswPn1f89Pq5MhrvyO3woiUPicgsBEM41ggr8DGfyfRGkqsZJkTuC1VJQwfYInJbCR1UJz5EfuAOkrypodtrtUi8hZbkNCRo5joc7IH5RDrssLzJw528lw3e4ggzc2QI/0vYv2nNhE+eCEymu8Hgq4Q6QttJBs5dMksZi1WYbyKpFqndXzWLa/VRV5rZfYVs/IsGl4RK4cgVI0bbR7J6bVs2453s3nGnP/VXV5oFjxT1HyuDxlwTuwyUkOQMkLrfSRucN+y8Z9oYj4qxzVrxyV7wCV4h4KXF+aID4pWaadR49bRKvQ6jZubHtxPmYUZwdOFbcJHxogDiNnGbv9qhdcWPbpQg0O99ru9H5Xtv/H4D5Jtr8zqdqEWzl3NvynT993bkpvbkCzE/N0Irf+9H6uAetgz1oGVQa81c276PZIuUD3a8l+33f0GPMq9XcAPTbenp7extbW1vQ6/Xk801p/Qxb7+zsQKfb5AZQ5HyKliRcRUm8J+csjXFDvsM73ADKPWwHyjxsITlEsv+/6fbeeeuzj+IoTPEv9DtuHqtPERAAAAAASUVORK5CYII=\"}],\"certificateExpiry\":\"2025-03-27T23:59:59\",\"certificateName\":\"CN=Chris Lovett, O=Chris Lovett, S=Washington, C=US\",\"isPackageTimestamped\":\"Timestamped\"},\"hostPoolReferences\":[],\"failHealthCheckOnStagingFailure\":\"Unhealthy\",\"keyVaultURL\":null}}",
+      "isContentBase64": false
+    }
+  },
+  "New-AzWvdAppAttachPackage+[NoContext]+ImageObject+$GET+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "199" ],
+        "x-ms-client-request-id": [ "46e84d97-e6e4-4449-a611-17cdf3f7fd9a" ],
+        "CommandName": [ "Get-AzWvdAppAttachPackage" ],
+        "FullCommandName": [ "Get-AzWvdAppAttachPackage_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/v8.2.0", "PSVersion/v7.5.5", "Az.DesktopVirtualization/0.1.0" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Vary": [ "Accept-Encoding" ],
+        "Set-Cookie": [ "ARRAffinity=fd2157af18a7c94eb2eb2dcc89d40079b4b7806eaf7a0b75073f67d47b0ffe7f;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com", "ARRAffinitySameSite=fd2157af18a7c94eb2eb2dcc89d40079b4b7806eaf7a0b75073f67d47b0ffe7f;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "249" ],
+        "X-Rate-Limit-Limit": [ "5m" ],
+        "X-Rate-Limit-Remaining": [ "9782" ],
+        "X-Rate-Limit-Reset": [ "2026-05-07T06:27:43.8328861Z" ],
+        "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvNjczODUwOWQtODRlZC00YWQ2LTk3NGEtN2RjNGUzYzM0MTQ2L3Jlc291cmNlR3JvdXBzL3pob25namllLXJnLXd1cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9hcHBBdHRhY2hQYWNrYWdlcy9UZXN0UGFja2FnZQ==" ],
+        "x-ms-lamport-ts": [ "-9223372036854775663" ],
+        "x-ms-correlation-id": [ "d904558c-55be-4679-8e64-753090dc627e" ],
+        "x-ms-request-id": [ "46e84d97-e6e4-4449-a611-17cdf3f7fd9a" ],
+        "X-Powered-By": [ "ASP.NET" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "x-ms-ratelimit-remaining-subscription-global-reads": [ "3749" ],
+        "x-ms-correlation-request-id": [ "8af52389-25e5-483f-88aa-10c2ed9a5d3f" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062558Z:8af52389-25e5-483f-88aa-10c2ed9a5d3f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: FB4BF9B1C463417AAAA47EF037521821 Ref B: TYO201100114047 Ref C: 2026-05-07T06:25:57Z" ],
+        "Date": [ "Thu, 07 May 2026 06:25:57 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "5369" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"name\":\"TestPackage\",\"id\":\"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/TestPackage\",\"type\":\"Microsoft.DesktopVirtualization/appattachpackages\",\"location\":\"westus2\",\"tags\":{\"Values\":\"\",\"Keys\":\"\",\"Count\":\"0\",\"AdditionalProperties\":\"System.Collections.Generic.Dictionary`2[System.String,System.String]\"},\"kind\":null,\"systemData\":{\"createdBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2026-05-07T06:25:56.73Z\",\"lastModifiedBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"lastModifiedByType\":\"User\",\"lastModifiedAt\":\"2026-05-07T06:25:56.73Z\"},\"properties\":{\"deploymentScope\":\"Geographical\",\"repositoryResourceId\":null,\"repositoryApplicationId\":null,\"customData\":null,\"packageOwnerName\":\"AppAttach\",\"packageLookbackUrl\":null,\"image\":{\"packageAlias\":null,\"imagePath\":\"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\",\"packageName\":\"43906ChrisLovett.XmlNotepad\",\"packageFamilyName\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj\",\"packageFullName\":\"43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"displayName\":null,\"packageRelativePath\":\"\\\\apps\\\\43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"isRegularRegistration\":false,\"isActive\":false,\"packageDependencies\":[],\"version\":\"2.9.0.16\",\"lastUpdated\":\"2025-06-23T02:31:04.2415625\",\"packageApplications\":[{\"appUserModelID\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj!App\",\"appId\":\"App\",\"description\":\"XML Notepad is a lightweight and fast tool for editing XML documents. XML has proliferated across the planet and XML Notepad has been downloaded over 3 million times!\",\"friendlyName\":\"XmlNotepad\",\"iconImageName\":\"Square44x44Logo.scale-200.png\",\"rawIcon\":\"AAABAAEAICAAAAAAIADOBAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEY0lEQVRYR+2USUxbVxSGn1o1VFGUoCpEkbLopos2UtWBFjsMVYAQEkDMs8HMYAanjCFQaHfdBEyhBBoMboBgxmCICSSUkk274CktDZBaDDGjARMwJAXD5vmv3jU2xpEi+uiSIx1Zx36+//efd86lqKM4ioNEGO8jSuikMtdC/jlK6PjcXIfyP6diHMfMtfXzh45Yl2dU1AVQkQ6upBY6DZM64kI4qeNdJkgdwrPfrY3Ph/Eu7jvnv0bx9mBr0dYvhrPZPqAi+UidaDIUbj4yvF8UAkrAR/hQpSFLd99wOsMTVCQPQlWdQaRtN5zO9CK/Bz6pMMQuNBmiJqUfWJ99oCjS99MFG31M8dYAkzYpZ/LXe5nctR4mb6OXiRuTMde0CiZ96R4jfqFgBKM1TNJ8M5Mw18QkapqZoD8qmWh1PRM5JWNCx+s+sT77QFGkH6ALXz0Emzde9uH6+gPk6JTIWu3G1y+6IF7pRNpyB0RLbUhebEXiQjPi55sQM9sI4UwDBNN3EPFchkMD3NjoRd4+ccV+cU2LlXi9WTxsshah49XcAL7RD9Cs8zeKWziPtXIeNlWLkEkpArgCFGw+oveLW7Vdsys+Z+Fc/bPZechEDYLGb3MHuP7PQzpnTQlPxbfIXlfi2konvqxKhWi5HW6KYiQvtiBu7i4RD3hSDt+hMkSoZbBvzCTOg8Z/gr+qCgGjFdwA8l49oDNXu3GxrRD2NRkQjNTgTI4P0tc68XYkH3ZZV4l47MJd2MQ44VSqOwTz9aDCHRA8JSXivn/fgjdXgOyXPTTb9kxdN2yEjjgW4wyxrguilQ68G+uM4wlfIUHbAj+6DJ/KxAQgYvYOqHAeAiduE3GfZz/iMleAzHUlLdZ2ImPlHk4kueItAR8ibTuStW04Fu0I799ugifPha3IDaETNTgpckPYjIwA+I9XE3Gv0XJc/rOUG4BY10WzA+fV/z0+rkyGu/I7fCiJQ+JyCwEQzjWCCvwMZ/J9EaSqxkmRO4LVUlDB9giclsJHVQnPkR+4A6SvKmh22u1SLyFluQ0JGjmOhzsgflEOuywvMnDnbyXDd7iCDNzZAj/S9i/ac2ET54ITKa7weCrhDpC20kGzl0ySxmLVZhvIqkWqd1fNYtr9VFXmtl9hWz8iwaXhErhyBUjRttHsnptWzbjnezecac/9VdXmgWPFPUfK4PGXBO7DJSQ5AyQut9JG5w37Lxn2hiPirHNWvHJXvAJXiHgpcX5ogPilZpp1Hj1tEq9DqNm5se3E+ZhRnB04VtwkfGiAOI2cZu/2qF1xY9ulCDQ732u70fle2/8fgPkm2vzOp2oRbOXc2/KdP33duSm9uQLMT83Qit/70fq4B62DPWgZVBrzVzbvo9ki5QPdryX7fd/QY8yr1dwA9Nt6ent7G1tbW9Dr9eTzTWn9DFvv7OxAp9vkBlDkfIqWJFxFSbwn5yyNcUO+wzvcAMo9bAfKPGwhOUSy/7/p9t5567OP4ihM8S/0O24eq08REAAAAABJRU5ErkJggg==\",\"rawPng\":\"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABGNJREFUWEftlElMW1cUhp9aNVRRlKAqRJGy6KaLNlLVgRY7DFWAEBJAzLPBzGAGp4whUGh33QRMoQQaDG6AYMZgiAkklJJNu+ApLQ2QWgwxowETMCQFw+b5r941NsaRIvrokiMdWcd+vv/3n3fOpaijOIqDRBjvI0ropDLXQv45Suj43FyH8j+nYhzHzLX184eOWJdnVNQFUJEOrqQWOg2TOuJCOKnjXSZIHcKz362Nz4fxLu47579G8fZga9HWL4az2T6gIvlInWgyFG4+MrxfFAJKwEf4UKUhS3ffcDrDE1QkD0JVnUGkbTeczvQivwc+qTDELjQZoialH1iffaAo0vfTBRt9TPHWAJM2KWfy13uZ3LUeJm+jl4kbkzHXtAomfekeI36hYASjNUzSfDOTMNfEJGqamaA/KplodT0TOSVjQsfrPrE++0BRpB+gC189BJs3Xvbh+voD5OiUyFrtxtcvuiBe6UTacgdES21IXmxF4kIz4uebEDPbCOFMAwTTdxDxXIZDA9zY6EXePnHFfnFNi5V4vVk8bLIWoePV3AC+0Q/QrPM3ils4j7VyHjZVi5BJKQK4AhRsPqL3i1u1XbMrPmfhXP2z2XnIRA2Cxm9zB7j+z0M6Z00JT8W3yF5X4tpKJ76sSoVouR1uimIkL7Ygbu4uEQ94Ug7foTJEqGWwb8wkzoPGf4K/qgoBoxXcAPJePaAzV7txsa0Q9jUZEIzU4EyOD9LXOvF2JB92WVeJeOzCXdjEOOFUqjsE8/Wgwh0QPCUl4r5/34I3V4Dslz002/ZMXTdshI44FuMMsa4LopUOvBvrjOMJXyFB2wI/ugyfysQEIGL2DqhwHgInbhNxn2c/4jJXgMx1JS3WdiJj5R5OJLniLQEfIm07krVtOBbtCO/fboInz4WtyA2hEzU4KXJD2IyMAPiPVxNxr9FyXP6zlBuAWNdFswPn1f89Pq5MhrvyO3woiUPicgsBEM41ggr8DGfyfRGkqsZJkTuC1VJQwfYInJbCR1UJz5EfuAOkrypodtrtUi8hZbkNCRo5joc7IH5RDrssLzJw528lw3e4ggzc2QI/0vYv2nNhE+eCEymu8Hgq4Q6QttJBs5dMksZi1WYbyKpFqndXzWLa/VRV5rZfYVs/IsGl4RK4cgVI0bbR7J6bVs2453s3nGnP/VXV5oFjxT1HyuDxlwTuwyUkOQMkLrfSRucN+y8Z9oYj4qxzVrxyV7wCV4h4KXF+aID4pWaadR49bRKvQ6jZubHtxPmYUZwdOFbcJHxogDiNnGbv9qhdcWPbpQg0O99ru9H5Xtv/H4D5Jtr8zqdqEWzl3NvynT993bkpvbkCzE/N0Irf+9H6uAetgz1oGVQa81c276PZIuUD3a8l+33f0GPMq9XcAPTbenp7extbW1vQ6/Xk801p/Qxb7+zsQKfb5AZQ5HyKliRcRUm8J+csjXFDvsM73ADKPWwHyjxsITlEsv+/6fbeeeuzj+IoTPEv9DtuHqtPERAAAAAASUVORK5CYII=\"}],\"certificateExpiry\":\"2025-03-27T23:59:59\",\"certificateName\":\"CN=Chris Lovett, O=Chris Lovett, S=Washington, C=US\",\"isPackageTimestamped\":\"Timestamped\"},\"hostPoolReferences\":[],\"failHealthCheckOnStagingFailure\":\"Unhealthy\",\"keyVaultURL\":null}}",
+      "isContentBase64": false
+    }
+  },
+  "New-AzWvdAppAttachPackage+[NoContext]+ImageObject+$DELETE+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview+4": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "200" ],
+        "x-ms-client-request-id": [ "fd647c18-29a0-4ff1-b0dd-6d6d836a98e8" ],
+        "CommandName": [ "Remove-AzWvdAppAttachPackage" ],
+        "FullCommandName": [ "Remove-AzWvdAppAttachPackage_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/v8.2.0", "PSVersion/v7.5.5", "Az.DesktopVirtualization/0.1.0" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Vary": [ "Accept-Encoding" ],
+        "Set-Cookie": [ "ARRAffinity=c3e56c5cc8f2059e9ca5b31ea6306f0b4d439389925f19007ee442dc2004e749;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com", "ARRAffinitySameSite=c3e56c5cc8f2059e9ca5b31ea6306f0b4d439389925f19007ee442dc2004e749;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com" ],
+        "x-ms-operation-identifier": [ "tenantId=715492f1-ef6e-4eea-9176-7c81e765c3c8,objectId=1db230a9-e046-46ab-912b-9cea769323a2/westus2/33859fb6-0c5d-4bd0-87da-b6fef9f7a4d4" ],
+        "X-Rate-Limit-Limit": [ "5m" ],
+        "X-Rate-Limit-Remaining": [ "9780" ],
+        "X-Rate-Limit-Reset": [ "2026-05-07T06:27:43.8328861Z" ],
+        "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvNjczODUwOWQtODRlZC00YWQ2LTk3NGEtN2RjNGUzYzM0MTQ2L3Jlc291cmNlR3JvdXBzL3pob25namllLXJnLXd1cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9hcHBBdHRhY2hQYWNrYWdlcy9UZXN0UGFja2FnZQ==" ],
+        "x-ms-lamport-ts": [ "-9223372036854775750" ],
+        "x-ms-correlation-id": [ "71612291-3bcb-483c-935d-ceba8bea9cda" ],
+        "x-ms-request-id": [ "fd647c18-29a0-4ff1-b0dd-6d6d836a98e8" ],
+        "X-Powered-By": [ "ASP.NET" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "198" ],
+        "x-ms-ratelimit-remaining-subscription-global-deletes": [ "2998" ],
+        "x-ms-correlation-request-id": [ "0ee43b35-c95a-4700-b71d-76719b0125a0" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062558Z:0ee43b35-c95a-4700-b71d-76719b0125a0" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: F4A0DCFC07D24CE1B3FCFBC338C2B8F1 Ref B: TYO201100114047 Ref C: 2026-05-07T06:25:58Z" ],
+        "Date": [ "Thu, 07 May 2026 06:25:58 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "5369" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"name\":\"TestPackage\",\"id\":\"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/TestPackage\",\"type\":\"Microsoft.DesktopVirtualization/appattachpackages\",\"location\":\"westus2\",\"tags\":{\"Values\":\"\",\"Keys\":\"\",\"Count\":\"0\",\"AdditionalProperties\":\"System.Collections.Generic.Dictionary`2[System.String,System.String]\"},\"kind\":null,\"systemData\":{\"createdBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2026-05-07T06:25:56.73Z\",\"lastModifiedBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"lastModifiedByType\":\"User\",\"lastModifiedAt\":\"2026-05-07T06:25:56.73Z\"},\"properties\":{\"deploymentScope\":\"Geographical\",\"repositoryResourceId\":null,\"repositoryApplicationId\":null,\"customData\":null,\"packageOwnerName\":\"AppAttach\",\"packageLookbackUrl\":null,\"image\":{\"packageAlias\":null,\"imagePath\":\"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\",\"packageName\":\"43906ChrisLovett.XmlNotepad\",\"packageFamilyName\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj\",\"packageFullName\":\"43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"displayName\":null,\"packageRelativePath\":\"\\\\apps\\\\43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"isRegularRegistration\":false,\"isActive\":false,\"packageDependencies\":[],\"version\":\"2.9.0.16\",\"lastUpdated\":\"2025-06-23T02:31:04.2415625\",\"packageApplications\":[{\"appUserModelID\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj!App\",\"appId\":\"App\",\"description\":\"XML Notepad is a lightweight and fast tool for editing XML documents. XML has proliferated across the planet and XML Notepad has been downloaded over 3 million times!\",\"friendlyName\":\"XmlNotepad\",\"iconImageName\":\"Square44x44Logo.scale-200.png\",\"rawIcon\":\"AAABAAEAICAAAAAAIADOBAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEY0lEQVRYR+2USUxbVxSGn1o1VFGUoCpEkbLopos2UtWBFjsMVYAQEkDMs8HMYAanjCFQaHfdBEyhBBoMboBgxmCICSSUkk274CktDZBaDDGjARMwJAXD5vmv3jU2xpEi+uiSIx1Zx36+//efd86lqKM4ioNEGO8jSuikMtdC/jlK6PjcXIfyP6diHMfMtfXzh45Yl2dU1AVQkQ6upBY6DZM64kI4qeNdJkgdwrPfrY3Ph/Eu7jvnv0bx9mBr0dYvhrPZPqAi+UidaDIUbj4yvF8UAkrAR/hQpSFLd99wOsMTVCQPQlWdQaRtN5zO9CK/Bz6pMMQuNBmiJqUfWJ99oCjS99MFG31M8dYAkzYpZ/LXe5nctR4mb6OXiRuTMde0CiZ96R4jfqFgBKM1TNJ8M5Mw18QkapqZoD8qmWh1PRM5JWNCx+s+sT77QFGkH6ALXz0Emzde9uH6+gPk6JTIWu3G1y+6IF7pRNpyB0RLbUhebEXiQjPi55sQM9sI4UwDBNN3EPFchkMD3NjoRd4+ccV+cU2LlXi9WTxsshah49XcAL7RD9Cs8zeKWziPtXIeNlWLkEkpArgCFGw+oveLW7Vdsys+Z+Fc/bPZechEDYLGb3MHuP7PQzpnTQlPxbfIXlfi2konvqxKhWi5HW6KYiQvtiBu7i4RD3hSDt+hMkSoZbBvzCTOg8Z/gr+qCgGjFdwA8l49oDNXu3GxrRD2NRkQjNTgTI4P0tc68XYkH3ZZV4l47MJd2MQ44VSqOwTz9aDCHRA8JSXivn/fgjdXgOyXPTTb9kxdN2yEjjgW4wyxrguilQ68G+uM4wlfIUHbAj+6DJ/KxAQgYvYOqHAeAiduE3GfZz/iMleAzHUlLdZ2ImPlHk4kueItAR8ibTuStW04Fu0I799ugifPha3IDaETNTgpckPYjIwA+I9XE3Gv0XJc/rOUG4BY10WzA+fV/z0+rkyGu/I7fCiJQ+JyCwEQzjWCCvwMZ/J9EaSqxkmRO4LVUlDB9giclsJHVQnPkR+4A6SvKmh22u1SLyFluQ0JGjmOhzsgflEOuywvMnDnbyXDd7iCDNzZAj/S9i/ac2ET54ITKa7weCrhDpC20kGzl0ySxmLVZhvIqkWqd1fNYtr9VFXmtl9hWz8iwaXhErhyBUjRttHsnptWzbjnezecac/9VdXmgWPFPUfK4PGXBO7DJSQ5AyQut9JG5w37Lxn2hiPirHNWvHJXvAJXiHgpcX5ogPilZpp1Hj1tEq9DqNm5se3E+ZhRnB04VtwkfGiAOI2cZu/2qF1xY9ulCDQ732u70fle2/8fgPkm2vzOp2oRbOXc2/KdP33duSm9uQLMT83Qit/70fq4B62DPWgZVBrzVzbvo9ki5QPdryX7fd/QY8yr1dwA9Nt6ent7G1tbW9Dr9eTzTWn9DFvv7OxAp9vkBlDkfIqWJFxFSbwn5yyNcUO+wzvcAMo9bAfKPGwhOUSy/7/p9t5567OP4ihM8S/0O24eq08REAAAAABJRU5ErkJggg==\",\"rawPng\":\"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABGNJREFUWEftlElMW1cUhp9aNVRRlKAqRJGy6KaLNlLVgRY7DFWAEBJAzLPBzGAGp4whUGh33QRMoQQaDG6AYMZgiAkklJJNu+ApLQ2QWgwxowETMCQFw+b5r941NsaRIvrokiMdWcd+vv/3n3fOpaijOIqDRBjvI0ropDLXQv45Suj43FyH8j+nYhzHzLX184eOWJdnVNQFUJEOrqQWOg2TOuJCOKnjXSZIHcKz362Nz4fxLu47579G8fZga9HWL4az2T6gIvlInWgyFG4+MrxfFAJKwEf4UKUhS3ffcDrDE1QkD0JVnUGkbTeczvQivwc+qTDELjQZoialH1iffaAo0vfTBRt9TPHWAJM2KWfy13uZ3LUeJm+jl4kbkzHXtAomfekeI36hYASjNUzSfDOTMNfEJGqamaA/KplodT0TOSVjQsfrPrE++0BRpB+gC189BJs3Xvbh+voD5OiUyFrtxtcvuiBe6UTacgdES21IXmxF4kIz4uebEDPbCOFMAwTTdxDxXIZDA9zY6EXePnHFfnFNi5V4vVk8bLIWoePV3AC+0Q/QrPM3ils4j7VyHjZVi5BJKQK4AhRsPqL3i1u1XbMrPmfhXP2z2XnIRA2Cxm9zB7j+z0M6Z00JT8W3yF5X4tpKJ76sSoVouR1uimIkL7Ygbu4uEQ94Ug7foTJEqGWwb8wkzoPGf4K/qgoBoxXcAPJePaAzV7txsa0Q9jUZEIzU4EyOD9LXOvF2JB92WVeJeOzCXdjEOOFUqjsE8/Wgwh0QPCUl4r5/34I3V4Dslz002/ZMXTdshI44FuMMsa4LopUOvBvrjOMJXyFB2wI/ugyfysQEIGL2DqhwHgInbhNxn2c/4jJXgMx1JS3WdiJj5R5OJLniLQEfIm07krVtOBbtCO/fboInz4WtyA2hEzU4KXJD2IyMAPiPVxNxr9FyXP6zlBuAWNdFswPn1f89Pq5MhrvyO3woiUPicgsBEM41ggr8DGfyfRGkqsZJkTuC1VJQwfYInJbCR1UJz5EfuAOkrypodtrtUi8hZbkNCRo5joc7IH5RDrssLzJw528lw3e4ggzc2QI/0vYv2nNhE+eCEymu8Hgq4Q6QttJBs5dMksZi1WYbyKpFqndXzWLa/VRV5rZfYVs/IsGl4RK4cgVI0bbR7J6bVs2453s3nGnP/VXV5oFjxT1HyuDxlwTuwyUkOQMkLrfSRucN+y8Z9oYj4qxzVrxyV7wCV4h4KXF+aID4pWaadR49bRKvQ6jZubHtxPmYUZwdOFbcJHxogDiNnGbv9qhdcWPbpQg0O99ru9H5Xtv/H4D5Jtr8zqdqEWzl3NvynT993bkpvbkCzE/N0Irf+9H6uAetgz1oGVQa81c276PZIuUD3a8l+33f0GPMq9XcAPTbenp7extbW1vQ6/Xk801p/Qxb7+zsQKfb5AZQ5HyKliRcRUm8J+csjXFDvsM73ADKPWwHyjxsITlEsv+/6fbeeeuzj+IoTPEv9DtuHqtPERAAAAAASUVORK5CYII=\"}],\"certificateExpiry\":\"2025-03-27T23:59:59\",\"certificateName\":\"CN=Chris Lovett, O=Chris Lovett, S=Washington, C=US\",\"isPackageTimestamped\":\"Timestamped\"},\"hostPoolReferences\":[],\"failHealthCheckOnStagingFailure\":\"Unhealthy\",\"keyVaultURL\":null}}",
+      "isContentBase64": false
+    }
+  },
+  "New-AzWvdAppAttachPackage+[NoContext]+ImageObjectByPipeline+$POST+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/hostPools/zhongjie-automated/importAppAttachPackageInfo?api-version=2026-02-01-preview+1": {
+    "Request": {
+      "Method": "POST",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/hostPools/zhongjie-automated/importAppAttachPackageInfo?api-version=2026-02-01-preview",
+      "Content": "{\r\n  \"path\": \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\"\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "110" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Vary": [ "Accept-Encoding" ],
+        "Set-Cookie": [ "ARRAffinity=6ed70d129f929e9c0dc1324370ea99cd733e8f3cb78772a9b8793f4f636e0cf7;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com", "ARRAffinitySameSite=6ed70d129f929e9c0dc1324370ea99cd733e8f3cb78772a9b8793f4f636e0cf7;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com" ],
+        "x-ms-operation-identifier": [ "tenantId=715492f1-ef6e-4eea-9176-7c81e765c3c8,objectId=1db230a9-e046-46ab-912b-9cea769323a2/westus2/605edc00-2c97-48fa-857a-e7dfce64fe86" ],
+        "X-Rate-Limit-Limit": [ "5m" ],
+        "X-Rate-Limit-Remaining": [ "9780" ],
+        "X-Rate-Limit-Reset": [ "2026-05-07T06:27:43.8328861Z" ],
+        "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvNjczODUwOWQtODRlZC00YWQ2LTk3NGEtN2RjNGUzYzM0MTQ2L3Jlc291cmNlR3JvdXBzL3pob25namllLXJnLXd1cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9ob3N0UG9vbHMvemhvbmdqaWUtYXV0b21hdGVk" ],
+        "x-ms-lamport-ts": [ "-9223372036854775808" ],
+        "x-ms-correlation-id": [ "56e63c83-e577-4714-9572-1443a36e0610" ],
+        "x-ms-request-id": [ "eb6613e8-ecbe-45f0-b479-3c15f3c08012" ],
+        "X-Powered-By": [ "ASP.NET" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "199" ],
+        "x-ms-ratelimit-remaining-subscription-global-writes": [ "2999" ],
+        "x-ms-correlation-request-id": [ "1c33dfec-aaec-4b3d-b730-96a629234daf" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062607Z:1c33dfec-aaec-4b3d-b730-96a629234daf" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: D77B943990E54470AA8F33A52A13DBE5 Ref B: TYO201100114047 Ref C: 2026-05-07T06:25:59Z" ],
+        "Date": [ "Thu, 07 May 2026 06:26:07 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "4865" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"name\":\"importappattachpackageinfo\",\"id\":\"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/importappattachpackageinfo\",\"type\":\"Microsoft.DesktopVirtualization/appattachpackages\",\"properties\":{\"image\":{\"packageAlias\":\"43906chrislovettxmlnotepad-1\",\"imagePath\":\"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\",\"packageName\":\"43906ChrisLovett.XmlNotepad\",\"packageFamilyName\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj\",\"packageFullName\":\"43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"displayName\":null,\"packageRelativePath\":\"\\\\apps\\\\43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"isRegularRegistration\":false,\"isActive\":false,\"packageDependencies\":[],\"version\":\"2.9.0.16\",\"lastUpdated\":\"2025-06-23T02:31:04.2415625+00:00\",\"packageApplications\":[{\"appUserModelID\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj!App\",\"appId\":\"App\",\"description\":\"XML Notepad is a lightweight and fast tool for editing XML documents. XML has proliferated across the planet and XML Notepad has been downloaded over 3 million times!\",\"friendlyName\":\"XmlNotepad\",\"iconImageName\":\"Square44x44Logo.scale-200.png\",\"rawIcon\":\"AAABAAEAICAAAAAAIADOBAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEY0lEQVRYR+2USUxbVxSGn1o1VFGUoCpEkbLopos2UtWBFjsMVYAQEkDMs8HMYAanjCFQaHfdBEyhBBoMboBgxmCICSSUkk274CktDZBaDDGjARMwJAXD5vmv3jU2xpEi+uiSIx1Zx36+//efd86lqKM4ioNEGO8jSuikMtdC/jlK6PjcXIfyP6diHMfMtfXzh45Yl2dU1AVQkQ6upBY6DZM64kI4qeNdJkgdwrPfrY3Ph/Eu7jvnv0bx9mBr0dYvhrPZPqAi+UidaDIUbj4yvF8UAkrAR/hQpSFLd99wOsMTVCQPQlWdQaRtN5zO9CK/Bz6pMMQuNBmiJqUfWJ99oCjS99MFG31M8dYAkzYpZ/LXe5nctR4mb6OXiRuTMde0CiZ96R4jfqFgBKM1TNJ8M5Mw18QkapqZoD8qmWh1PRM5JWNCx+s+sT77QFGkH6ALXz0Emzde9uH6+gPk6JTIWu3G1y+6IF7pRNpyB0RLbUhebEXiQjPi55sQM9sI4UwDBNN3EPFchkMD3NjoRd4+ccV+cU2LlXi9WTxsshah49XcAL7RD9Cs8zeKWziPtXIeNlWLkEkpArgCFGw+oveLW7Vdsys+Z+Fc/bPZechEDYLGb3MHuP7PQzpnTQlPxbfIXlfi2konvqxKhWi5HW6KYiQvtiBu7i4RD3hSDt+hMkSoZbBvzCTOg8Z/gr+qCgGjFdwA8l49oDNXu3GxrRD2NRkQjNTgTI4P0tc68XYkH3ZZV4l47MJd2MQ44VSqOwTz9aDCHRA8JSXivn/fgjdXgOyXPTTb9kxdN2yEjjgW4wyxrguilQ68G+uM4wlfIUHbAj+6DJ/KxAQgYvYOqHAeAiduE3GfZz/iMleAzHUlLdZ2ImPlHk4kueItAR8ibTuStW04Fu0I799ugifPha3IDaETNTgpckPYjIwA+I9XE3Gv0XJc/rOUG4BY10WzA+fV/z0+rkyGu/I7fCiJQ+JyCwEQzjWCCvwMZ/J9EaSqxkmRO4LVUlDB9giclsJHVQnPkR+4A6SvKmh22u1SLyFluQ0JGjmOhzsgflEOuywvMnDnbyXDd7iCDNzZAj/S9i/ac2ET54ITKa7weCrhDpC20kGzl0ySxmLVZhvIqkWqd1fNYtr9VFXmtl9hWz8iwaXhErhyBUjRttHsnptWzbjnezecac/9VdXmgWPFPUfK4PGXBO7DJSQ5AyQut9JG5w37Lxn2hiPirHNWvHJXvAJXiHgpcX5ogPilZpp1Hj1tEq9DqNm5se3E+ZhRnB04VtwkfGiAOI2cZu/2qF1xY9ulCDQ732u70fle2/8fgPkm2vzOp2oRbOXc2/KdP33duSm9uQLMT83Qit/70fq4B62DPWgZVBrzVzbvo9ki5QPdryX7fd/QY8yr1dwA9Nt6ent7G1tbW9Dr9eTzTWn9DFvv7OxAp9vkBlDkfIqWJFxFSbwn5yyNcUO+wzvcAMo9bAfKPGwhOUSy/7/p9t5567OP4ihM8S/0O24eq08REAAAAABJRU5ErkJggg==\",\"rawPng\":\"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABGNJREFUWEftlElMW1cUhp9aNVRRlKAqRJGy6KaLNlLVgRY7DFWAEBJAzLPBzGAGp4whUGh33QRMoQQaDG6AYMZgiAkklJJNu+ApLQ2QWgwxowETMCQFw+b5r941NsaRIvrokiMdWcd+vv/3n3fOpaijOIqDRBjvI0ropDLXQv45Suj43FyH8j+nYhzHzLX184eOWJdnVNQFUJEOrqQWOg2TOuJCOKnjXSZIHcKz362Nz4fxLu47579G8fZga9HWL4az2T6gIvlInWgyFG4+MrxfFAJKwEf4UKUhS3ffcDrDE1QkD0JVnUGkbTeczvQivwc+qTDELjQZoialH1iffaAo0vfTBRt9TPHWAJM2KWfy13uZ3LUeJm+jl4kbkzHXtAomfekeI36hYASjNUzSfDOTMNfEJGqamaA/KplodT0TOSVjQsfrPrE++0BRpB+gC189BJs3Xvbh+voD5OiUyFrtxtcvuiBe6UTacgdES21IXmxF4kIz4uebEDPbCOFMAwTTdxDxXIZDA9zY6EXePnHFfnFNi5V4vVk8bLIWoePV3AC+0Q/QrPM3ils4j7VyHjZVi5BJKQK4AhRsPqL3i1u1XbMrPmfhXP2z2XnIRA2Cxm9zB7j+z0M6Z00JT8W3yF5X4tpKJ76sSoVouR1uimIkL7Ygbu4uEQ94Ug7foTJEqGWwb8wkzoPGf4K/qgoBoxXcAPJePaAzV7txsa0Q9jUZEIzU4EyOD9LXOvF2JB92WVeJeOzCXdjEOOFUqjsE8/Wgwh0QPCUl4r5/34I3V4Dslz002/ZMXTdshI44FuMMsa4LopUOvBvrjOMJXyFB2wI/ugyfysQEIGL2DqhwHgInbhNxn2c/4jJXgMx1JS3WdiJj5R5OJLniLQEfIm07krVtOBbtCO/fboInz4WtyA2hEzU4KXJD2IyMAPiPVxNxr9FyXP6zlBuAWNdFswPn1f89Pq5MhrvyO3woiUPicgsBEM41ggr8DGfyfRGkqsZJkTuC1VJQwfYInJbCR1UJz5EfuAOkrypodtrtUi8hZbkNCRo5joc7IH5RDrssLzJw528lw3e4ggzc2QI/0vYv2nNhE+eCEymu8Hgq4Q6QttJBs5dMksZi1WYbyKpFqndXzWLa/VRV5rZfYVs/IsGl4RK4cgVI0bbR7J6bVs2453s3nGnP/VXV5oFjxT1HyuDxlwTuwyUkOQMkLrfSRucN+y8Z9oYj4qxzVrxyV7wCV4h4KXF+aID4pWaadR49bRKvQ6jZubHtxPmYUZwdOFbcJHxogDiNnGbv9qhdcWPbpQg0O99ru9H5Xtv/H4D5Jtr8zqdqEWzl3NvynT993bkpvbkCzE/N0Irf+9H6uAetgz1oGVQa81c276PZIuUD3a8l+33f0GPMq9XcAPTbenp7extbW1vQ6/Xk801p/Qxb7+zsQKfb5AZQ5HyKliRcRUm8J+csjXFDvsM73ADKPWwHyjxsITlEsv+/6fbeeeuzj+IoTPEv9DtuHqtPERAAAAAASUVORK5CYII=\"}],\"certificateExpiry\":\"2025-03-27T23:59:59+00:00\",\"certificateName\":\"CN=Chris Lovett, O=Chris Lovett, S=Washington, C=US\",\"isPackageTimestamped\":\"Timestamped\"},\"hostPoolReferences\":null,\"failHealthCheckOnStagingFailure\":null,\"keyVaultURL\":null},\"systemData\":null}],\"nextLink\":null}",
+      "isContentBase64": false
+    }
+  },
+  "New-AzWvdAppAttachPackage+[NoContext]+ImageObjectByPipeline+$PUT+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview+2": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview",
+      "Content": "{\r\n  \"tags\": {\r\n    \"Values\": \"\",\r\n    \"Keys\": \"\",\r\n    \"Count\": \"0\",\r\n    \"AdditionalProperties\": \"System.Collections.Generic.Dictionary`2[System.String,System.String]\"\r\n  },\r\n  \"location\": \"westus2\",\r\n  \"properties\": {\r\n    \"image\": {\r\n      \"packageAlias\": \"43906chrislovettxmlnotepad-1\",\r\n      \"imagePath\": \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\",\r\n      \"packageName\": \"43906ChrisLovett.XmlNotepad\",\r\n      \"packageFamilyName\": \"43906ChrisLovett.XmlNotepad_hndwmj480pefj\",\r\n      \"packageFullName\": \"43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\r\n      \"packageRelativePath\": \"\\\\apps\\\\43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\r\n      \"isRegularRegistration\": false,\r\n      \"isActive\": false,\r\n      \"packageDependencies\": [ ],\r\n      \"version\": \"2.9.0.16\",\r\n      \"lastUpdated\": \"2025-06-23T02:31:04.2415625Z\",\r\n      \"packageApplications\": [\r\n        {\r\n          \"appId\": \"App\",\r\n          \"description\": \"XML Notepad is a lightweight and fast tool for editing XML documents. XML has proliferated across the planet and XML Notepad has been downloaded over 3 million times!\",\r\n          \"appUserModelID\": \"43906ChrisLovett.XmlNotepad_hndwmj480pefj!App\",\r\n          \"friendlyName\": \"XmlNotepad\",\r\n          \"iconImageName\": \"Square44x44Logo.scale-200.png\",\r\n          \"rawIcon\": \"AAABAAEAICAAAAAAIADOBAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEY0lEQVRYR+2USUxbVxSGn1o1VFGUoCpEkbLopos2UtWBFjsMVYAQEkDMs8HMYAanjCFQaHfdBEyhBBoMboBgxmCICSSUkk274CktDZBaDDGjARMwJAXD5vmv3jU2xpEi+uiSIx1Zx36+//efd86lqKM4ioNEGO8jSuikMtdC/jlK6PjcXIfyP6diHMfMtfXzh45Yl2dU1AVQkQ6upBY6DZM64kI4qeNdJkgdwrPfrY3Ph/Eu7jvnv0bx9mBr0dYvhrPZPqAi+UidaDIUbj4yvF8UAkrAR/hQpSFLd99wOsMTVCQPQlWdQaRtN5zO9CK/Bz6pMMQuNBmiJqUfWJ99oCjS99MFG31M8dYAkzYpZ/LXe5nctR4mb6OXiRuTMde0CiZ96R4jfqFgBKM1TNJ8M5Mw18QkapqZoD8qmWh1PRM5JWNCx+s+sT77QFGkH6ALXz0Emzde9uH6+gPk6JTIWu3G1y+6IF7pRNpyB0RLbUhebEXiQjPi55sQM9sI4UwDBNN3EPFchkMD3NjoRd4+ccV+cU2LlXi9WTxsshah49XcAL7RD9Cs8zeKWziPtXIeNlWLkEkpArgCFGw+oveLW7Vdsys+Z+Fc/bPZechEDYLGb3MHuP7PQzpnTQlPxbfIXlfi2konvqxKhWi5HW6KYiQvtiBu7i4RD3hSDt+hMkSoZbBvzCTOg8Z/gr+qCgGjFdwA8l49oDNXu3GxrRD2NRkQjNTgTI4P0tc68XYkH3ZZV4l47MJd2MQ44VSqOwTz9aDCHRA8JSXivn/fgjdXgOyXPTTb9kxdN2yEjjgW4wyxrguilQ68G+uM4wlfIUHbAj+6DJ/KxAQgYvYOqHAeAiduE3GfZz/iMleAzHUlLdZ2ImPlHk4kueItAR8ibTuStW04Fu0I799ugifPha3IDaETNTgpckPYjIwA+I9XE3Gv0XJc/rOUG4BY10WzA+fV/z0+rkyGu/I7fCiJQ+JyCwEQzjWCCvwMZ/J9EaSqxkmRO4LVUlDB9giclsJHVQnPkR+4A6SvKmh22u1SLyFluQ0JGjmOhzsgflEOuywvMnDnbyXDd7iCDNzZAj/S9i/ac2ET54ITKa7weCrhDpC20kGzl0ySxmLVZhvIqkWqd1fNYtr9VFXmtl9hWz8iwaXhErhyBUjRttHsnptWzbjnezecac/9VdXmgWPFPUfK4PGXBO7DJSQ5AyQut9JG5w37Lxn2hiPirHNWvHJXvAJXiHgpcX5ogPilZpp1Hj1tEq9DqNm5se3E+ZhRnB04VtwkfGiAOI2cZu/2qF1xY9ulCDQ732u70fle2/8fgPkm2vzOp2oRbOXc2/KdP33duSm9uQLMT83Qit/70fq4B62DPWgZVBrzVzbvo9ki5QPdryX7fd/QY8yr1dwA9Nt6ent7G1tbW9Dr9eTzTWn9DFvv7OxAp9vkBlDkfIqWJFxFSbwn5yyNcUO+wzvcAMo9bAfKPGwhOUSy/7/p9t5567OP4ihM8S/0O24eq08REAAAAABJRU5ErkJggg==\",\r\n          \"rawPng\": \"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABGNJREFUWEftlElMW1cUhp9aNVRRlKAqRJGy6KaLNlLVgRY7DFWAEBJAzLPBzGAGp4whUGh33QRMoQQaDG6AYMZgiAkklJJNu+ApLQ2QWgwxowETMCQFw+b5r941NsaRIvrokiMdWcd+vv/3n3fOpaijOIqDRBjvI0ropDLXQv45Suj43FyH8j+nYhzHzLX184eOWJdnVNQFUJEOrqQWOg2TOuJCOKnjXSZIHcKz362Nz4fxLu47579G8fZga9HWL4az2T6gIvlInWgyFG4+MrxfFAJKwEf4UKUhS3ffcDrDE1QkD0JVnUGkbTeczvQivwc+qTDELjQZoialH1iffaAo0vfTBRt9TPHWAJM2KWfy13uZ3LUeJm+jl4kbkzHXtAomfekeI36hYASjNUzSfDOTMNfEJGqamaA/KplodT0TOSVjQsfrPrE++0BRpB+gC189BJs3Xvbh+voD5OiUyFrtxtcvuiBe6UTacgdES21IXmxF4kIz4uebEDPbCOFMAwTTdxDxXIZDA9zY6EXePnHFfnFNi5V4vVk8bLIWoePV3AC+0Q/QrPM3ils4j7VyHjZVi5BJKQK4AhRsPqL3i1u1XbMrPmfhXP2z2XnIRA2Cxm9zB7j+z0M6Z00JT8W3yF5X4tpKJ76sSoVouR1uimIkL7Ygbu4uEQ94Ug7foTJEqGWwb8wkzoPGf4K/qgoBoxXcAPJePaAzV7txsa0Q9jUZEIzU4EyOD9LXOvF2JB92WVeJeOzCXdjEOOFUqjsE8/Wgwh0QPCUl4r5/34I3V4Dslz002/ZMXTdshI44FuMMsa4LopUOvBvrjOMJXyFB2wI/ugyfysQEIGL2DqhwHgInbhNxn2c/4jJXgMx1JS3WdiJj5R5OJLniLQEfIm07krVtOBbtCO/fboInz4WtyA2hEzU4KXJD2IyMAPiPVxNxr9FyXP6zlBuAWNdFswPn1f89Pq5MhrvyO3woiUPicgsBEM41ggr8DGfyfRGkqsZJkTuC1VJQwfYInJbCR1UJz5EfuAOkrypodtrtUi8hZbkNCRo5joc7IH5RDrssLzJw528lw3e4ggzc2QI/0vYv2nNhE+eCEymu8Hgq4Q6QttJBs5dMksZi1WYbyKpFqndXzWLa/VRV5rZfYVs/IsGl4RK4cgVI0bbR7J6bVs2453s3nGnP/VXV5oFjxT1HyuDxlwTuwyUkOQMkLrfSRucN+y8Z9oYj4qxzVrxyV7wCV4h4KXF+aID4pWaadR49bRKvQ6jZubHtxPmYUZwdOFbcJHxogDiNnGbv9qhdcWPbpQg0O99ru9H5Xtv/H4D5Jtr8zqdqEWzl3NvynT993bkpvbkCzE/N0Irf+9H6uAetgz1oGVQa81c276PZIuUD3a8l+33f0GPMq9XcAPTbenp7extbW1vQ6/Xk801p/Qxb7+zsQKfb5AZQ5HyKliRcRUm8J+csjXFDvsM73ADKPWwHyjxsITlEsv+/6fbeeeuzj+IoTPEv9DtuHqtPERAAAAAASUVORK5CYII=\"\r\n        }\r\n      ],\r\n      \"certificateName\": \"CN=Chris Lovett, O=Chris Lovett, S=Washington, C=US\",\r\n      \"certificateExpiry\": \"2025-03-27T23:59:59.0000000Z\",\r\n      \"isPackageTimestamped\": \"Timestamped\"\r\n    },\r\n    \"failHealthCheckOnStagingFailure\": \"Unhealthy\"\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "4974" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 201,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Location": [ "/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/TestPackage" ],
+        "Set-Cookie": [ "ARRAffinity=f2b03ea959f8416bc6b71d28a36cf8c0479d848b33638ccc3ef4c51389285d81;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com", "ARRAffinitySameSite=f2b03ea959f8416bc6b71d28a36cf8c0479d848b33638ccc3ef4c51389285d81;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com" ],
+        "X-Rate-Limit-Limit": [ "5m" ],
+        "X-Rate-Limit-Remaining": [ "9777" ],
+        "X-Rate-Limit-Reset": [ "2026-05-07T06:27:43.8328861Z" ],
+        "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvNjczODUwOWQtODRlZC00YWQ2LTk3NGEtN2RjNGUzYzM0MTQ2L3Jlc291cmNlR3JvdXBzL3pob25namllLXJnLXd1cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9hcHBBdHRhY2hQYWNrYWdlcy9UZXN0UGFja2FnZQ==" ],
+        "x-ms-lamport-ts": [ "-9223372036854775803" ],
+        "x-ms-correlation-id": [ "20873ca6-12ef-428c-99c8-352867eec914" ],
+        "x-ms-request-id": [ "b1bb9f5a-47ae-4361-b215-4ec11b052b5f" ],
+        "X-Powered-By": [ "ASP.NET" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "x-ms-operation-identifier": [ "tenantId=715492f1-ef6e-4eea-9176-7c81e765c3c8,objectId=1db230a9-e046-46ab-912b-9cea769323a2/westus2/2c3fc49f-f5bb-4ef0-ad59-dd989e7e22b9" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "199" ],
+        "x-ms-ratelimit-remaining-subscription-global-writes": [ "2999" ],
+        "x-ms-correlation-request-id": [ "26ee2e01-62ed-4a9e-8335-d89ef155882c" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062608Z:26ee2e01-62ed-4a9e-8335-d89ef155882c" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: 9EA93A542842403DBE72D283E20F2C2B Ref B: TYO201100114047 Ref C: 2026-05-07T06:26:08Z" ],
+        "Date": [ "Thu, 07 May 2026 06:26:08 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "5369" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"name\":\"TestPackage\",\"id\":\"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/TestPackage\",\"type\":\"Microsoft.DesktopVirtualization/appattachpackages\",\"location\":\"westus2\",\"tags\":{\"Values\":\"\",\"Keys\":\"\",\"Count\":\"0\",\"AdditionalProperties\":\"System.Collections.Generic.Dictionary`2[System.String,System.String]\"},\"kind\":null,\"systemData\":{\"createdBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2026-05-07T06:26:08.23Z\",\"lastModifiedBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"lastModifiedByType\":\"User\",\"lastModifiedAt\":\"2026-05-07T06:26:08.23Z\"},\"properties\":{\"deploymentScope\":\"Geographical\",\"repositoryResourceId\":null,\"repositoryApplicationId\":null,\"customData\":null,\"packageOwnerName\":\"AppAttach\",\"packageLookbackUrl\":null,\"image\":{\"packageAlias\":null,\"imagePath\":\"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\",\"packageName\":\"43906ChrisLovett.XmlNotepad\",\"packageFamilyName\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj\",\"packageFullName\":\"43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"displayName\":null,\"packageRelativePath\":\"\\\\apps\\\\43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"isRegularRegistration\":false,\"isActive\":false,\"packageDependencies\":[],\"version\":\"2.9.0.16\",\"lastUpdated\":\"2025-06-23T02:31:04.2415625\",\"packageApplications\":[{\"appUserModelID\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj!App\",\"appId\":\"App\",\"description\":\"XML Notepad is a lightweight and fast tool for editing XML documents. XML has proliferated across the planet and XML Notepad has been downloaded over 3 million times!\",\"friendlyName\":\"XmlNotepad\",\"iconImageName\":\"Square44x44Logo.scale-200.png\",\"rawIcon\":\"AAABAAEAICAAAAAAIADOBAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEY0lEQVRYR+2USUxbVxSGn1o1VFGUoCpEkbLopos2UtWBFjsMVYAQEkDMs8HMYAanjCFQaHfdBEyhBBoMboBgxmCICSSUkk274CktDZBaDDGjARMwJAXD5vmv3jU2xpEi+uiSIx1Zx36+//efd86lqKM4ioNEGO8jSuikMtdC/jlK6PjcXIfyP6diHMfMtfXzh45Yl2dU1AVQkQ6upBY6DZM64kI4qeNdJkgdwrPfrY3Ph/Eu7jvnv0bx9mBr0dYvhrPZPqAi+UidaDIUbj4yvF8UAkrAR/hQpSFLd99wOsMTVCQPQlWdQaRtN5zO9CK/Bz6pMMQuNBmiJqUfWJ99oCjS99MFG31M8dYAkzYpZ/LXe5nctR4mb6OXiRuTMde0CiZ96R4jfqFgBKM1TNJ8M5Mw18QkapqZoD8qmWh1PRM5JWNCx+s+sT77QFGkH6ALXz0Emzde9uH6+gPk6JTIWu3G1y+6IF7pRNpyB0RLbUhebEXiQjPi55sQM9sI4UwDBNN3EPFchkMD3NjoRd4+ccV+cU2LlXi9WTxsshah49XcAL7RD9Cs8zeKWziPtXIeNlWLkEkpArgCFGw+oveLW7Vdsys+Z+Fc/bPZechEDYLGb3MHuP7PQzpnTQlPxbfIXlfi2konvqxKhWi5HW6KYiQvtiBu7i4RD3hSDt+hMkSoZbBvzCTOg8Z/gr+qCgGjFdwA8l49oDNXu3GxrRD2NRkQjNTgTI4P0tc68XYkH3ZZV4l47MJd2MQ44VSqOwTz9aDCHRA8JSXivn/fgjdXgOyXPTTb9kxdN2yEjjgW4wyxrguilQ68G+uM4wlfIUHbAj+6DJ/KxAQgYvYOqHAeAiduE3GfZz/iMleAzHUlLdZ2ImPlHk4kueItAR8ibTuStW04Fu0I799ugifPha3IDaETNTgpckPYjIwA+I9XE3Gv0XJc/rOUG4BY10WzA+fV/z0+rkyGu/I7fCiJQ+JyCwEQzjWCCvwMZ/J9EaSqxkmRO4LVUlDB9giclsJHVQnPkR+4A6SvKmh22u1SLyFluQ0JGjmOhzsgflEOuywvMnDnbyXDd7iCDNzZAj/S9i/ac2ET54ITKa7weCrhDpC20kGzl0ySxmLVZhvIqkWqd1fNYtr9VFXmtl9hWz8iwaXhErhyBUjRttHsnptWzbjnezecac/9VdXmgWPFPUfK4PGXBO7DJSQ5AyQut9JG5w37Lxn2hiPirHNWvHJXvAJXiHgpcX5ogPilZpp1Hj1tEq9DqNm5se3E+ZhRnB04VtwkfGiAOI2cZu/2qF1xY9ulCDQ732u70fle2/8fgPkm2vzOp2oRbOXc2/KdP33duSm9uQLMT83Qit/70fq4B62DPWgZVBrzVzbvo9ki5QPdryX7fd/QY8yr1dwA9Nt6ent7G1tbW9Dr9eTzTWn9DFvv7OxAp9vkBlDkfIqWJFxFSbwn5yyNcUO+wzvcAMo9bAfKPGwhOUSy/7/p9t5567OP4ihM8S/0O24eq08REAAAAABJRU5ErkJggg==\",\"rawPng\":\"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABGNJREFUWEftlElMW1cUhp9aNVRRlKAqRJGy6KaLNlLVgRY7DFWAEBJAzLPBzGAGp4whUGh33QRMoQQaDG6AYMZgiAkklJJNu+ApLQ2QWgwxowETMCQFw+b5r941NsaRIvrokiMdWcd+vv/3n3fOpaijOIqDRBjvI0ropDLXQv45Suj43FyH8j+nYhzHzLX184eOWJdnVNQFUJEOrqQWOg2TOuJCOKnjXSZIHcKz362Nz4fxLu47579G8fZga9HWL4az2T6gIvlInWgyFG4+MrxfFAJKwEf4UKUhS3ffcDrDE1QkD0JVnUGkbTeczvQivwc+qTDELjQZoialH1iffaAo0vfTBRt9TPHWAJM2KWfy13uZ3LUeJm+jl4kbkzHXtAomfekeI36hYASjNUzSfDOTMNfEJGqamaA/KplodT0TOSVjQsfrPrE++0BRpB+gC189BJs3Xvbh+voD5OiUyFrtxtcvuiBe6UTacgdES21IXmxF4kIz4uebEDPbCOFMAwTTdxDxXIZDA9zY6EXePnHFfnFNi5V4vVk8bLIWoePV3AC+0Q/QrPM3ils4j7VyHjZVi5BJKQK4AhRsPqL3i1u1XbMrPmfhXP2z2XnIRA2Cxm9zB7j+z0M6Z00JT8W3yF5X4tpKJ76sSoVouR1uimIkL7Ygbu4uEQ94Ug7foTJEqGWwb8wkzoPGf4K/qgoBoxXcAPJePaAzV7txsa0Q9jUZEIzU4EyOD9LXOvF2JB92WVeJeOzCXdjEOOFUqjsE8/Wgwh0QPCUl4r5/34I3V4Dslz002/ZMXTdshI44FuMMsa4LopUOvBvrjOMJXyFB2wI/ugyfysQEIGL2DqhwHgInbhNxn2c/4jJXgMx1JS3WdiJj5R5OJLniLQEfIm07krVtOBbtCO/fboInz4WtyA2hEzU4KXJD2IyMAPiPVxNxr9FyXP6zlBuAWNdFswPn1f89Pq5MhrvyO3woiUPicgsBEM41ggr8DGfyfRGkqsZJkTuC1VJQwfYInJbCR1UJz5EfuAOkrypodtrtUi8hZbkNCRo5joc7IH5RDrssLzJw528lw3e4ggzc2QI/0vYv2nNhE+eCEymu8Hgq4Q6QttJBs5dMksZi1WYbyKpFqndXzWLa/VRV5rZfYVs/IsGl4RK4cgVI0bbR7J6bVs2453s3nGnP/VXV5oFjxT1HyuDxlwTuwyUkOQMkLrfSRucN+y8Z9oYj4qxzVrxyV7wCV4h4KXF+aID4pWaadR49bRKvQ6jZubHtxPmYUZwdOFbcJHxogDiNnGbv9qhdcWPbpQg0O99ru9H5Xtv/H4D5Jtr8zqdqEWzl3NvynT993bkpvbkCzE/N0Irf+9H6uAetgz1oGVQa81c276PZIuUD3a8l+33f0GPMq9XcAPTbenp7extbW1vQ6/Xk801p/Qxb7+zsQKfb5AZQ5HyKliRcRUm8J+csjXFDvsM73ADKPWwHyjxsITlEsv+/6fbeeeuzj+IoTPEv9DtuHqtPERAAAAAASUVORK5CYII=\"}],\"certificateExpiry\":\"2025-03-27T23:59:59\",\"certificateName\":\"CN=Chris Lovett, O=Chris Lovett, S=Washington, C=US\",\"isPackageTimestamped\":\"Timestamped\"},\"hostPoolReferences\":[],\"failHealthCheckOnStagingFailure\":\"Unhealthy\",\"keyVaultURL\":null}}",
+      "isContentBase64": false
+    }
+  },
+  "New-AzWvdAppAttachPackage+[NoContext]+ImageObjectByPipeline+$GET+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "203" ],
+        "x-ms-client-request-id": [ "aceedabe-93ed-42c4-b3ef-08e060688385" ],
+        "CommandName": [ "Get-AzWvdAppAttachPackage" ],
+        "FullCommandName": [ "Get-AzWvdAppAttachPackage_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/v8.2.0", "PSVersion/v7.5.5", "Az.DesktopVirtualization/0.1.0" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Vary": [ "Accept-Encoding" ],
+        "Set-Cookie": [ "ARRAffinity=24bf22833b6e70d68d5ab96c5bc0d11d4febf8a285a1ec2cb41fad5b4f23b605;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com", "ARRAffinitySameSite=24bf22833b6e70d68d5ab96c5bc0d11d4febf8a285a1ec2cb41fad5b4f23b605;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "248" ],
+        "X-Rate-Limit-Limit": [ "5m" ],
+        "X-Rate-Limit-Remaining": [ "9775" ],
+        "X-Rate-Limit-Reset": [ "2026-05-07T06:27:43.8328861Z" ],
+        "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvNjczODUwOWQtODRlZC00YWQ2LTk3NGEtN2RjNGUzYzM0MTQ2L3Jlc291cmNlR3JvdXBzL3pob25namllLXJnLXd1cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9hcHBBdHRhY2hQYWNrYWdlcy9UZXN0UGFja2FnZQ==" ],
+        "x-ms-lamport-ts": [ "-9223372036854736574" ],
+        "x-ms-correlation-id": [ "c6f478fa-e29c-4dee-832b-d47bf639976d" ],
+        "x-ms-request-id": [ "aceedabe-93ed-42c4-b3ef-08e060688385" ],
+        "X-Powered-By": [ "ASP.NET" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "x-ms-ratelimit-remaining-subscription-global-reads": [ "3748" ],
+        "x-ms-correlation-request-id": [ "7f89c897-efef-4f8e-bdf1-cd5e3e429d52" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062609Z:7f89c897-efef-4f8e-bdf1-cd5e3e429d52" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: DC7762C80C294165B6010DB51524127E Ref B: TYO201100114047 Ref C: 2026-05-07T06:26:09Z" ],
+        "Date": [ "Thu, 07 May 2026 06:26:09 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "5369" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"name\":\"TestPackage\",\"id\":\"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/TestPackage\",\"type\":\"Microsoft.DesktopVirtualization/appattachpackages\",\"location\":\"westus2\",\"tags\":{\"Values\":\"\",\"Keys\":\"\",\"Count\":\"0\",\"AdditionalProperties\":\"System.Collections.Generic.Dictionary`2[System.String,System.String]\"},\"kind\":null,\"systemData\":{\"createdBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2026-05-07T06:26:08.23Z\",\"lastModifiedBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"lastModifiedByType\":\"User\",\"lastModifiedAt\":\"2026-05-07T06:26:08.23Z\"},\"properties\":{\"deploymentScope\":\"Geographical\",\"repositoryResourceId\":null,\"repositoryApplicationId\":null,\"customData\":null,\"packageOwnerName\":\"AppAttach\",\"packageLookbackUrl\":null,\"image\":{\"packageAlias\":null,\"imagePath\":\"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\",\"packageName\":\"43906ChrisLovett.XmlNotepad\",\"packageFamilyName\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj\",\"packageFullName\":\"43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"displayName\":null,\"packageRelativePath\":\"\\\\apps\\\\43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"isRegularRegistration\":false,\"isActive\":false,\"packageDependencies\":[],\"version\":\"2.9.0.16\",\"lastUpdated\":\"2025-06-23T02:31:04.2415625\",\"packageApplications\":[{\"appUserModelID\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj!App\",\"appId\":\"App\",\"description\":\"XML Notepad is a lightweight and fast tool for editing XML documents. XML has proliferated across the planet and XML Notepad has been downloaded over 3 million times!\",\"friendlyName\":\"XmlNotepad\",\"iconImageName\":\"Square44x44Logo.scale-200.png\",\"rawIcon\":\"AAABAAEAICAAAAAAIADOBAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEY0lEQVRYR+2USUxbVxSGn1o1VFGUoCpEkbLopos2UtWBFjsMVYAQEkDMs8HMYAanjCFQaHfdBEyhBBoMboBgxmCICSSUkk274CktDZBaDDGjARMwJAXD5vmv3jU2xpEi+uiSIx1Zx36+//efd86lqKM4ioNEGO8jSuikMtdC/jlK6PjcXIfyP6diHMfMtfXzh45Yl2dU1AVQkQ6upBY6DZM64kI4qeNdJkgdwrPfrY3Ph/Eu7jvnv0bx9mBr0dYvhrPZPqAi+UidaDIUbj4yvF8UAkrAR/hQpSFLd99wOsMTVCQPQlWdQaRtN5zO9CK/Bz6pMMQuNBmiJqUfWJ99oCjS99MFG31M8dYAkzYpZ/LXe5nctR4mb6OXiRuTMde0CiZ96R4jfqFgBKM1TNJ8M5Mw18QkapqZoD8qmWh1PRM5JWNCx+s+sT77QFGkH6ALXz0Emzde9uH6+gPk6JTIWu3G1y+6IF7pRNpyB0RLbUhebEXiQjPi55sQM9sI4UwDBNN3EPFchkMD3NjoRd4+ccV+cU2LlXi9WTxsshah49XcAL7RD9Cs8zeKWziPtXIeNlWLkEkpArgCFGw+oveLW7Vdsys+Z+Fc/bPZechEDYLGb3MHuP7PQzpnTQlPxbfIXlfi2konvqxKhWi5HW6KYiQvtiBu7i4RD3hSDt+hMkSoZbBvzCTOg8Z/gr+qCgGjFdwA8l49oDNXu3GxrRD2NRkQjNTgTI4P0tc68XYkH3ZZV4l47MJd2MQ44VSqOwTz9aDCHRA8JSXivn/fgjdXgOyXPTTb9kxdN2yEjjgW4wyxrguilQ68G+uM4wlfIUHbAj+6DJ/KxAQgYvYOqHAeAiduE3GfZz/iMleAzHUlLdZ2ImPlHk4kueItAR8ibTuStW04Fu0I799ugifPha3IDaETNTgpckPYjIwA+I9XE3Gv0XJc/rOUG4BY10WzA+fV/z0+rkyGu/I7fCiJQ+JyCwEQzjWCCvwMZ/J9EaSqxkmRO4LVUlDB9giclsJHVQnPkR+4A6SvKmh22u1SLyFluQ0JGjmOhzsgflEOuywvMnDnbyXDd7iCDNzZAj/S9i/ac2ET54ITKa7weCrhDpC20kGzl0ySxmLVZhvIqkWqd1fNYtr9VFXmtl9hWz8iwaXhErhyBUjRttHsnptWzbjnezecac/9VdXmgWPFPUfK4PGXBO7DJSQ5AyQut9JG5w37Lxn2hiPirHNWvHJXvAJXiHgpcX5ogPilZpp1Hj1tEq9DqNm5se3E+ZhRnB04VtwkfGiAOI2cZu/2qF1xY9ulCDQ732u70fle2/8fgPkm2vzOp2oRbOXc2/KdP33duSm9uQLMT83Qit/70fq4B62DPWgZVBrzVzbvo9ki5QPdryX7fd/QY8yr1dwA9Nt6ent7G1tbW9Dr9eTzTWn9DFvv7OxAp9vkBlDkfIqWJFxFSbwn5yyNcUO+wzvcAMo9bAfKPGwhOUSy/7/p9t5567OP4ihM8S/0O24eq08REAAAAABJRU5ErkJggg==\",\"rawPng\":\"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABGNJREFUWEftlElMW1cUhp9aNVRRlKAqRJGy6KaLNlLVgRY7DFWAEBJAzLPBzGAGp4whUGh33QRMoQQaDG6AYMZgiAkklJJNu+ApLQ2QWgwxowETMCQFw+b5r941NsaRIvrokiMdWcd+vv/3n3fOpaijOIqDRBjvI0ropDLXQv45Suj43FyH8j+nYhzHzLX184eOWJdnVNQFUJEOrqQWOg2TOuJCOKnjXSZIHcKz362Nz4fxLu47579G8fZga9HWL4az2T6gIvlInWgyFG4+MrxfFAJKwEf4UKUhS3ffcDrDE1QkD0JVnUGkbTeczvQivwc+qTDELjQZoialH1iffaAo0vfTBRt9TPHWAJM2KWfy13uZ3LUeJm+jl4kbkzHXtAomfekeI36hYASjNUzSfDOTMNfEJGqamaA/KplodT0TOSVjQsfrPrE++0BRpB+gC189BJs3Xvbh+voD5OiUyFrtxtcvuiBe6UTacgdES21IXmxF4kIz4uebEDPbCOFMAwTTdxDxXIZDA9zY6EXePnHFfnFNi5V4vVk8bLIWoePV3AC+0Q/QrPM3ils4j7VyHjZVi5BJKQK4AhRsPqL3i1u1XbMrPmfhXP2z2XnIRA2Cxm9zB7j+z0M6Z00JT8W3yF5X4tpKJ76sSoVouR1uimIkL7Ygbu4uEQ94Ug7foTJEqGWwb8wkzoPGf4K/qgoBoxXcAPJePaAzV7txsa0Q9jUZEIzU4EyOD9LXOvF2JB92WVeJeOzCXdjEOOFUqjsE8/Wgwh0QPCUl4r5/34I3V4Dslz002/ZMXTdshI44FuMMsa4LopUOvBvrjOMJXyFB2wI/ugyfysQEIGL2DqhwHgInbhNxn2c/4jJXgMx1JS3WdiJj5R5OJLniLQEfIm07krVtOBbtCO/fboInz4WtyA2hEzU4KXJD2IyMAPiPVxNxr9FyXP6zlBuAWNdFswPn1f89Pq5MhrvyO3woiUPicgsBEM41ggr8DGfyfRGkqsZJkTuC1VJQwfYInJbCR1UJz5EfuAOkrypodtrtUi8hZbkNCRo5joc7IH5RDrssLzJw528lw3e4ggzc2QI/0vYv2nNhE+eCEymu8Hgq4Q6QttJBs5dMksZi1WYbyKpFqndXzWLa/VRV5rZfYVs/IsGl4RK4cgVI0bbR7J6bVs2453s3nGnP/VXV5oFjxT1HyuDxlwTuwyUkOQMkLrfSRucN+y8Z9oYj4qxzVrxyV7wCV4h4KXF+aID4pWaadR49bRKvQ6jZubHtxPmYUZwdOFbcJHxogDiNnGbv9qhdcWPbpQg0O99ru9H5Xtv/H4D5Jtr8zqdqEWzl3NvynT993bkpvbkCzE/N0Irf+9H6uAetgz1oGVQa81c276PZIuUD3a8l+33f0GPMq9XcAPTbenp7extbW1vQ6/Xk801p/Qxb7+zsQKfb5AZQ5HyKliRcRUm8J+csjXFDvsM73ADKPWwHyjxsITlEsv+/6fbeeeuzj+IoTPEv9DtuHqtPERAAAAAASUVORK5CYII=\"}],\"certificateExpiry\":\"2025-03-27T23:59:59\",\"certificateName\":\"CN=Chris Lovett, O=Chris Lovett, S=Washington, C=US\",\"isPackageTimestamped\":\"Timestamped\"},\"hostPoolReferences\":[],\"failHealthCheckOnStagingFailure\":\"Unhealthy\",\"keyVaultURL\":null}}",
+      "isContentBase64": false
+    }
+  },
+  "New-AzWvdAppAttachPackage+[NoContext]+ImageObjectByPipeline+$DELETE+https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview+4": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/TestPackage?api-version=2026-02-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "204" ],
+        "x-ms-client-request-id": [ "1ed2f7d5-f99f-4e37-a48b-df1f0d5dbde8" ],
+        "CommandName": [ "Remove-AzWvdAppAttachPackage" ],
+        "FullCommandName": [ "Remove-AzWvdAppAttachPackage_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/v8.2.0", "PSVersion/v7.5.5", "Az.DesktopVirtualization/0.1.0" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Vary": [ "Accept-Encoding" ],
+        "Set-Cookie": [ "ARRAffinity=ad3439a4f2c0c907d7a080410bccadc37aa1399bf79fb2f0fe7dbd9e0b8b9d8b;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com", "ARRAffinitySameSite=ad3439a4f2c0c907d7a080410bccadc37aa1399bf79fb2f0fe7dbd9e0b8b9d8b;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com" ],
+        "x-ms-operation-identifier": [ "tenantId=715492f1-ef6e-4eea-9176-7c81e765c3c8,objectId=1db230a9-e046-46ab-912b-9cea769323a2/westus2/24cf62b9-6290-475f-96eb-20862fb55946" ],
+        "X-Rate-Limit-Limit": [ "5m" ],
+        "X-Rate-Limit-Remaining": [ "9773" ],
+        "X-Rate-Limit-Reset": [ "2026-05-07T06:27:43.8328861Z" ],
+        "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvNjczODUwOWQtODRlZC00YWQ2LTk3NGEtN2RjNGUzYzM0MTQ2L3Jlc291cmNlR3JvdXBzL3pob25namllLXJnLXd1cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9hcHBBdHRhY2hQYWNrYWdlcy9UZXN0UGFja2FnZQ==" ],
+        "x-ms-lamport-ts": [ "-9223372036854775778" ],
+        "x-ms-correlation-id": [ "791bfd41-6cf8-4f26-b8f9-5f4a23d119da" ],
+        "x-ms-request-id": [ "1ed2f7d5-f99f-4e37-a48b-df1f0d5dbde8" ],
+        "X-Powered-By": [ "ASP.NET" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "198" ],
+        "x-ms-ratelimit-remaining-subscription-global-deletes": [ "2998" ],
+        "x-ms-correlation-request-id": [ "e46edcf1-4878-4771-866f-6777430ccdf8" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062610Z:e46edcf1-4878-4771-866f-6777430ccdf8" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: 80272F10BDB1422CA91B8D61AE4D330E Ref B: TYO201100114047 Ref C: 2026-05-07T06:26:09Z" ],
+        "Date": [ "Thu, 07 May 2026 06:26:10 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "5369" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"name\":\"TestPackage\",\"id\":\"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appattachpackages/TestPackage\",\"type\":\"Microsoft.DesktopVirtualization/appattachpackages\",\"location\":\"westus2\",\"tags\":{\"Values\":\"\",\"Keys\":\"\",\"Count\":\"0\",\"AdditionalProperties\":\"System.Collections.Generic.Dictionary`2[System.String,System.String]\"},\"kind\":null,\"systemData\":{\"createdBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2026-05-07T06:26:08.23Z\",\"lastModifiedBy\":\"zhongjieli@w365runner250520sh01.onmicrosoft.com\",\"lastModifiedByType\":\"User\",\"lastModifiedAt\":\"2026-05-07T06:26:08.23Z\"},\"properties\":{\"deploymentScope\":\"Geographical\",\"repositoryResourceId\":null,\"repositoryApplicationId\":null,\"customData\":null,\"packageOwnerName\":\"AppAttach\",\"packageLookbackUrl\":null,\"image\":{\"packageAlias\":null,\"imagePath\":\"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\",\"packageName\":\"43906ChrisLovett.XmlNotepad\",\"packageFamilyName\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj\",\"packageFullName\":\"43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"displayName\":null,\"packageRelativePath\":\"\\\\apps\\\\43906ChrisLovett.XmlNotepad_2.9.0.16_neutral__hndwmj480pefj\",\"isRegularRegistration\":false,\"isActive\":false,\"packageDependencies\":[],\"version\":\"2.9.0.16\",\"lastUpdated\":\"2025-06-23T02:31:04.2415625\",\"packageApplications\":[{\"appUserModelID\":\"43906ChrisLovett.XmlNotepad_hndwmj480pefj!App\",\"appId\":\"App\",\"description\":\"XML Notepad is a lightweight and fast tool for editing XML documents. XML has proliferated across the planet and XML Notepad has been downloaded over 3 million times!\",\"friendlyName\":\"XmlNotepad\",\"iconImageName\":\"Square44x44Logo.scale-200.png\",\"rawIcon\":\"AAABAAEAICAAAAAAIADOBAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEY0lEQVRYR+2USUxbVxSGn1o1VFGUoCpEkbLopos2UtWBFjsMVYAQEkDMs8HMYAanjCFQaHfdBEyhBBoMboBgxmCICSSUkk274CktDZBaDDGjARMwJAXD5vmv3jU2xpEi+uiSIx1Zx36+//efd86lqKM4ioNEGO8jSuikMtdC/jlK6PjcXIfyP6diHMfMtfXzh45Yl2dU1AVQkQ6upBY6DZM64kI4qeNdJkgdwrPfrY3Ph/Eu7jvnv0bx9mBr0dYvhrPZPqAi+UidaDIUbj4yvF8UAkrAR/hQpSFLd99wOsMTVCQPQlWdQaRtN5zO9CK/Bz6pMMQuNBmiJqUfWJ99oCjS99MFG31M8dYAkzYpZ/LXe5nctR4mb6OXiRuTMde0CiZ96R4jfqFgBKM1TNJ8M5Mw18QkapqZoD8qmWh1PRM5JWNCx+s+sT77QFGkH6ALXz0Emzde9uH6+gPk6JTIWu3G1y+6IF7pRNpyB0RLbUhebEXiQjPi55sQM9sI4UwDBNN3EPFchkMD3NjoRd4+ccV+cU2LlXi9WTxsshah49XcAL7RD9Cs8zeKWziPtXIeNlWLkEkpArgCFGw+oveLW7Vdsys+Z+Fc/bPZechEDYLGb3MHuP7PQzpnTQlPxbfIXlfi2konvqxKhWi5HW6KYiQvtiBu7i4RD3hSDt+hMkSoZbBvzCTOg8Z/gr+qCgGjFdwA8l49oDNXu3GxrRD2NRkQjNTgTI4P0tc68XYkH3ZZV4l47MJd2MQ44VSqOwTz9aDCHRA8JSXivn/fgjdXgOyXPTTb9kxdN2yEjjgW4wyxrguilQ68G+uM4wlfIUHbAj+6DJ/KxAQgYvYOqHAeAiduE3GfZz/iMleAzHUlLdZ2ImPlHk4kueItAR8ibTuStW04Fu0I799ugifPha3IDaETNTgpckPYjIwA+I9XE3Gv0XJc/rOUG4BY10WzA+fV/z0+rkyGu/I7fCiJQ+JyCwEQzjWCCvwMZ/J9EaSqxkmRO4LVUlDB9giclsJHVQnPkR+4A6SvKmh22u1SLyFluQ0JGjmOhzsgflEOuywvMnDnbyXDd7iCDNzZAj/S9i/ac2ET54ITKa7weCrhDpC20kGzl0ySxmLVZhvIqkWqd1fNYtr9VFXmtl9hWz8iwaXhErhyBUjRttHsnptWzbjnezecac/9VdXmgWPFPUfK4PGXBO7DJSQ5AyQut9JG5w37Lxn2hiPirHNWvHJXvAJXiHgpcX5ogPilZpp1Hj1tEq9DqNm5se3E+ZhRnB04VtwkfGiAOI2cZu/2qF1xY9ulCDQ732u70fle2/8fgPkm2vzOp2oRbOXc2/KdP33duSm9uQLMT83Qit/70fq4B62DPWgZVBrzVzbvo9ki5QPdryX7fd/QY8yr1dwA9Nt6ent7G1tbW9Dr9eTzTWn9DFvv7OxAp9vkBlDkfIqWJFxFSbwn5yyNcUO+wzvcAMo9bAfKPGwhOUSy/7/p9t5567OP4ihM8S/0O24eq08REAAAAABJRU5ErkJggg==\",\"rawPng\":\"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABGNJREFUWEftlElMW1cUhp9aNVRRlKAqRJGy6KaLNlLVgRY7DFWAEBJAzLPBzGAGp4whUGh33QRMoQQaDG6AYMZgiAkklJJNu+ApLQ2QWgwxowETMCQFw+b5r941NsaRIvrokiMdWcd+vv/3n3fOpaijOIqDRBjvI0ropDLXQv45Suj43FyH8j+nYhzHzLX184eOWJdnVNQFUJEOrqQWOg2TOuJCOKnjXSZIHcKz362Nz4fxLu47579G8fZga9HWL4az2T6gIvlInWgyFG4+MrxfFAJKwEf4UKUhS3ffcDrDE1QkD0JVnUGkbTeczvQivwc+qTDELjQZoialH1iffaAo0vfTBRt9TPHWAJM2KWfy13uZ3LUeJm+jl4kbkzHXtAomfekeI36hYASjNUzSfDOTMNfEJGqamaA/KplodT0TOSVjQsfrPrE++0BRpB+gC189BJs3Xvbh+voD5OiUyFrtxtcvuiBe6UTacgdES21IXmxF4kIz4uebEDPbCOFMAwTTdxDxXIZDA9zY6EXePnHFfnFNi5V4vVk8bLIWoePV3AC+0Q/QrPM3ils4j7VyHjZVi5BJKQK4AhRsPqL3i1u1XbMrPmfhXP2z2XnIRA2Cxm9zB7j+z0M6Z00JT8W3yF5X4tpKJ76sSoVouR1uimIkL7Ygbu4uEQ94Ug7foTJEqGWwb8wkzoPGf4K/qgoBoxXcAPJePaAzV7txsa0Q9jUZEIzU4EyOD9LXOvF2JB92WVeJeOzCXdjEOOFUqjsE8/Wgwh0QPCUl4r5/34I3V4Dslz002/ZMXTdshI44FuMMsa4LopUOvBvrjOMJXyFB2wI/ugyfysQEIGL2DqhwHgInbhNxn2c/4jJXgMx1JS3WdiJj5R5OJLniLQEfIm07krVtOBbtCO/fboInz4WtyA2hEzU4KXJD2IyMAPiPVxNxr9FyXP6zlBuAWNdFswPn1f89Pq5MhrvyO3woiUPicgsBEM41ggr8DGfyfRGkqsZJkTuC1VJQwfYInJbCR1UJz5EfuAOkrypodtrtUi8hZbkNCRo5joc7IH5RDrssLzJw528lw3e4ggzc2QI/0vYv2nNhE+eCEymu8Hgq4Q6QttJBs5dMksZi1WYbyKpFqndXzWLa/VRV5rZfYVs/IsGl4RK4cgVI0bbR7J6bVs2453s3nGnP/VXV5oFjxT1HyuDxlwTuwyUkOQMkLrfSRucN+y8Z9oYj4qxzVrxyV7wCV4h4KXF+aID4pWaadR49bRKvQ6jZubHtxPmYUZwdOFbcJHxogDiNnGbv9qhdcWPbpQg0O99ru9H5Xtv/H4D5Jtr8zqdqEWzl3NvynT993bkpvbkCzE/N0Irf+9H6uAetgz1oGVQa81c276PZIuUD3a8l+33f0GPMq9XcAPTbenp7extbW1vQ6/Xk801p/Qxb7+zsQKfb5AZQ5HyKliRcRUm8J+csjXFDvsM73ADKPWwHyjxsITlEsv+/6fbeeeuzj+IoTPEv9DtuHqtPERAAAAAASUVORK5CYII=\"}],\"certificateExpiry\":\"2025-03-27T23:59:59\",\"certificateName\":\"CN=Chris Lovett, O=Chris Lovett, S=Washington, C=US\",\"isPackageTimestamped\":\"Timestamped\"},\"hostPoolReferences\":[],\"failHealthCheckOnStagingFailure\":\"Unhealthy\",\"keyVaultURL\":null}}",
+      "isContentBase64": false
+    }
+  }
+}

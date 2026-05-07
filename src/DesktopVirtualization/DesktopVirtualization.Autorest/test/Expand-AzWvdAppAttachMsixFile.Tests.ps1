@@ -15,7 +15,10 @@ if(($null -eq $TestName) -or ($TestName -contains 'Expand-AzWvdAppAttachMsixFile
 }
 
 Describe 'Expand-AzWvdAppAttachMsixFile' {
-    $appAttachPackageName = 'aatestpkg'
+    if ([string]::IsNullOrEmpty($env.AppAttachPackageNamePersistent)) {
+        throw "Missing test environment variable 'AppAttachPackageNamePersistent'. Please set it in env.json or localEnv.json to an existing App Attach Package name."
+    }
+    $appAttachPackageName = $env.AppAttachPackageNamePersistent
     $outputFileSharePath = '\\liweiavdtestsa.file.core.windows.net\avdtestfs\Apps\VHDX\XmlNotepad\XmlNotepad-expanded.vhdx'
 
     function New-ExpandMsixFileRequestBody {

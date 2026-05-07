@@ -6,8 +6,8 @@
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "157" ],
-        "x-ms-client-request-id": [ "221c9af7-5d3f-4907-a5f5-9e580749fb52" ],
+        "x-ms-unique-id": [ "3" ],
+        "x-ms-client-request-id": [ "f0775d5e-bd84-4683-ae43-284b9fbb7cae" ],
         "CommandName": [ "Get-AzWvdSessionHostProvisioningStatus" ],
         "FullCommandName": [ "Get-AzWvdSessionHostProvisioningStatus_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -18,36 +18,37 @@
       }
     },
     "Response": {
-      "StatusCode": 404,
+      "StatusCode": 200,
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "Set-Cookie": [ "ARRAffinity=6f29885a04e4ffc3ab9fc3393a2a3f026f57cb752757f37909c7f303a67377c1;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com", "ARRAffinitySameSite=6f29885a04e4ffc3ab9fc3393a2a3f026f57cb752757f37909c7f303a67377c1;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com" ],
+        "Vary": [ "Accept-Encoding" ],
+        "Set-Cookie": [ "ARRAffinity=06c56b8471ef26f13c61783eeb00d8e15bf74407238d9c8d8936521d5d5d2dd0;Path=/;HttpOnly;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com", "ARRAffinitySameSite=06c56b8471ef26f13c61783eeb00d8e15bf74407238d9c8d8936521d5d5d2dd0;Path=/;HttpOnly;SameSite=None;Secure;Domain=rdarmprovider-g-us-r0.wvd.microsoft.com" ],
+        "x-ms-operation-identifier": [ "tenantId=715492f1-ef6e-4eea-9176-7c81e765c3c8,objectId=1db230a9-e046-46ab-912b-9cea769323a2/westus2/ff61e1b0-8de0-4838-acd2-e66902a2c442" ],
         "X-Rate-Limit-Limit": [ "5m" ],
-        "X-Rate-Limit-Remaining": [ "9859" ],
-        "X-Rate-Limit-Reset": [ "2026-05-06T06:42:51.0474305Z" ],
+        "X-Rate-Limit-Remaining": [ "9917" ],
+        "X-Rate-Limit-Reset": [ "2026-05-07T08:19:11.8895177Z" ],
         "x-ms-opsarmpath64": [ "L3N1YnNjcmlwdGlvbnMvNjczODUwOWQtODRlZC00YWQ2LTk3NGEtN2RjNGUzYzM0MTQ2L3Jlc291cmNlR3JvdXBzL3pob25namllLXJnLXd1cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9ob3N0UG9vbHMvemhvbmdqaWUtYXV0b21hdGVkL3Nlc3Npb25Ib3N0TWFuYWdlbWVudHMvZGVmYXVsdC9zZXNzaW9uSG9zdFByb3Zpc2lvbmluZ1N0YXR1c2VzL2RlZmF1bHQ=" ],
-        "x-ms-lamport-ts": [ "-9223372036854775767" ],
-        "x-ms-correlation-id": [ "b014cf4a-4920-4324-bda0-0ff356ca8bb7" ],
-        "x-ms-request-id": [ "221c9af7-5d3f-4907-a5f5-9e580749fb52" ],
+        "x-ms-lamport-ts": [ "-9223372036854775708" ],
+        "x-ms-correlation-id": [ "b2d01265-9dc6-46f4-9ef1-469e59251ca7" ],
+        "x-ms-request-id": [ "f0775d5e-bd84-4683-ae43-284b9fbb7cae" ],
         "X-Powered-By": [ "ASP.NET" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "x-ms-operation-identifier": [ "tenantId=715492f1-ef6e-4eea-9176-7c81e765c3c8,objectId=1db230a9-e046-46ab-912b-9cea769323a2/westus2/5eaa9352-fd55-4e07-9243-d5843b375037" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "248" ],
-        "x-ms-ratelimit-remaining-subscription-global-reads": [ "3748" ],
-        "x-ms-correlation-request-id": [ "842d2281-a4c2-4534-b44c-1adaedb2836d" ],
-        "x-ms-routing-request-id": [ "WESTUS2:20260506T063948Z:842d2281-a4c2-4534-b44c-1adaedb2836d" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "249" ],
+        "x-ms-ratelimit-remaining-subscription-global-reads": [ "3749" ],
+        "x-ms-correlation-request-id": [ "766ed9ec-9d63-4403-857b-93a2efd88a91" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T081848Z:766ed9ec-9d63-4403-857b-93a2efd88a91" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Cache": [ "CONFIG_NOCACHE" ],
-        "X-MSEdge-Ref": [ "Ref A: 48F210D041B5488FB852BE908F49BA03 Ref B: TYO201100113049 Ref C: 2026-05-06T06:39:48Z" ],
-        "Date": [ "Wed, 06 May 2026 06:39:48 GMT" ]
+        "X-MSEdge-Ref": [ "Ref A: 0C631171B7A341D6B0D85706E873287E Ref B: TYO201151005062 Ref C: 2026-05-07T08:18:48Z" ],
+        "Date": [ "Thu, 07 May 2026 08:18:47 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "505" ],
+        "Content-Length": [ "6386" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"error\":{\"code\":\"NotFound\",\"message\":\"ActivityId: b014cf4a-4920-4324-bda0-0ff356ca8bb7 Error: {\\\"error\\\":{\\\"code\\\":\\\"NotFound\\\",\\\"message\\\":\\\"The object of type hostpools/sessionhostmanagements/sessionhostprovisioningstatuses and name /subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/hostPools/zhongjie-automated/sessionHostManagements/default/sessionHostProvisioningStatuses/default was not found in this Azure location.\\\"}}\"}}",
+      "Content": "{\"id\":\"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/hostPools/zhongjie-automated/sessionHostProvisioningStatuses/default\",\"status\":\"Failed\",\"startTime\":\"2026-05-07T08:14:42Z\",\"endTime\":\"2026-05-07T08:14:49Z\",\"percentComplete\":100.0,\"error\":{\"code\":\"ProvisioningFailure\",\"message\":\"[{\\\"faultCode\\\":\\\"UnableToAccessKeyVaultSecret_1024\\\",\\\"faultText\\\":\\\"Key Vault request failed with \u0027≤Caller is not authorized to perform action on resource.\\\\r\\\\nIf role assignments, deny assignments or role definitions were changed recently, please observe propagation time.\\\\r\\\\nCaller: appid=9cdead84-a844-4324-93f2-b2e6bb768d07;oid=3f8a7ca8-a42d-4183-8b3d-593b42b5714a;iss=https://sts.windows.net/715492f1-ef6e-4eea-9176-7c81e765c3c8/\\\\r\\\\nAction: \u0027Microsoft.KeyVault/vaults/secrets/getSecret/action\u0027\\\\r\\\\nResource: \u0027/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/microsoft.keyvault/vaults/zhongjie-kv/secrets/password\u0027\\\\r\\\\nAssignment: (not found)\\\\r\\\\nDenyAssignmentId: null\\\\r\\\\nDecisionReason: null \\\\r\\\\nVault: zhongjie-kv;location=westus2\\\\r\\\\n\\\\r\\\\nStatus: 403 (Forbidden)\\\\r\\\\nErrorCode: Forbidden\\\\r\\\\n\\\\r\\\\nContent:\\\\r\\\\n{\\\\\\\"error\\\\\\\":{\\\\\\\"code\\\\\\\":\\\\\\\"Forbidden\\\\\\\",\\\\\\\"message\\\\\\\":\\\\\\\"Caller is not authorized to perform action on resource.\\\\\\\\r\\\\\\\\nIf role assignments, deny assignments or role definitions were changed recently, please observe propagation time.\\\\\\\\r\\\\\\\\nCaller: appid=9cdead84-a844-4324-93f2-b2e6bb768d07;oid=3f8a7ca8-a42d-4183-8b3d-593b42b5714a;iss=https://sts.windows.net/715492f1-ef6e-4eea-9176-7c81e765c3c8/\\\\\\\\r\\\\\\\\nAction: \u0027Microsoft.KeyVault/vaults/secrets/getSecret/action\u0027\\\\\\\\r\\\\\\\\nResource: \u0027/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/microsoft.keyvault/vaults/zhongjie-kv/secrets/password\u0027\\\\\\\\r\\\\\\\\nAssignment: (not found)\\\\\\\\r\\\\\\\\nDenyAssignmentId: null\\\\\\\\r\\\\\\\\nDecisionReason: null \\\\\\\\r\\\\\\\\nVault: zhongjie-kv;location=westus2\\\\\\\\r\\\\\\\\n\\\\\\\",\\\\\\\"innererror\\\\\\\":{\\\\\\\"code\\\\\\\":\\\\\\\"ForbiddenByRbac\\\\\\\"}}}\\\\r\\\\n\\\\r\\\\nHeaders:\\\\r\\\\nCache-Control: no-cache\\\\r\\\\nPragma: no-cache\\\\r\\\\nx-ms-keyvault-region: westus2\\\\r\\\\nx-ms-client-request-id: 1cdb6d69-b1d1-4132-b5f3-9e151b2db5c3\\\\r\\\\nx-ms-request-id: a41efb88-6bcf-48f9-bdba-ec084bd389b8\\\\r\\\\nx-ms-keyvault-service-version: 1.9.3070.2\\\\r\\\\nx-ms-keyvault-network-info: conn_type=Ipv4;addr=20.72.194.100;act_addr_fam=InterNetwork;\\\\r\\\\nX-Content-Type-Options: REDACTED\\\\r\\\\nStrict-Transport-Security: REDACTED\\\\r\\\\nDate: Thu, 07 May 2026 08:14:47 GMT\\\\r\\\\nContent-Type: application/json; charset=utf-8\\\\r\\\\nExpires: -1\\\\r\\\\nContent-Length: 764\\\\r\\\\n≥\u0027. Unable to access Key Vault Secret for secret \u0027≤https://zhongjie-kv.vault.azure.net/secrets/password≥\u0027.  Key Vault request failed with \u0027≤Caller is not authorized to perform action on resource.\\\\r\\\\nIf role assignments, deny assignments or role definitions were changed recently, please observe propagation time.\\\\r\\\\nCaller: appid=9cdead84-a844-4324-93f2-b2e6bb768d07;oid=3f8a7ca8-a42d-4183-8b3d-593b42b5714a;iss=https://sts.windows.net/715492f1-ef6e-4eea-9176-7c81e765c3c8/\\\\r\\\\nAction: \u0027Microsoft.KeyVault/vaults/secrets/getSecret/action\u0027\\\\r\\\\nResource: \u0027/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/microsoft.keyvault/vaults/zhongjie-kv/secrets/password\u0027\\\\r\\\\nAssignment: (not found)\\\\r\\\\nDenyAssignmentId: null\\\\r\\\\nDecisionReason: null \\\\r\\\\nVault: zhongjie-kv;location=westus2\\\\r\\\\n\\\\r\\\\nStatus: 403 (Forbidden)\\\\r\\\\nErrorCode: Forbidden\\\\r\\\\n\\\\r\\\\nContent:\\\\r\\\\n{\\\\\\\"error\\\\\\\":{\\\\\\\"code\\\\\\\":\\\\\\\"Forbidden\\\\\\\",\\\\\\\"message\\\\\\\":\\\\\\\"Caller is not authorized to perform action on resource.\\\\\\\\r\\\\\\\\nIf role assignments, deny assignments or role definitions were changed recently, please observe propagation time.\\\\\\\\r\\\\\\\\nCaller: appid=9cdead84-a844-4324-93f2-b2e6bb768d07;oid=3f8a7ca8-a42d-4183-8b3d-593b42b5714a;iss=https://sts.windows.net/715492f1-ef6e-4eea-9176-7c81e765c3c8/\\\\\\\\r\\\\\\\\nAction: \u0027Microsoft.KeyVault/vaults/secrets/getSecret/action\u0027\\\\\\\\r\\\\\\\\nResource: \u0027/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/microsoft.keyvault/vaults/zhongjie-kv/secrets/password\u0027\\\\\\\\r\\\\\\\\nAssignment: (not found)\\\\\\\\r\\\\\\\\nDenyAssignmentId: null\\\\\\\\r\\\\\\\\nDecisionReason: null \\\\\\\\r\\\\\\\\nVault: zhongjie-kv;location=westus2\\\\\\\\r\\\\\\\\n\\\\\\\",\\\\\\\"innererror\\\\\\\":{\\\\\\\"code\\\\\\\":\\\\\\\"ForbiddenByRbac\\\\\\\"}}}\\\\r\\\\n\\\\r\\\\nHeaders:\\\\r\\\\nCache-Control: no-cache\\\\r\\\\nPragma: no-cache\\\\r\\\\nx-ms-keyvault-region: westus2\\\\r\\\\nx-ms-client-request-id: 1cdb6d69-b1d1-4132-b5f3-9e151b2db5c3\\\\r\\\\nx-ms-request-id: a41efb88-6bcf-48f9-bdba-ec084bd389b8\\\\r\\\\nx-ms-keyvault-service-version: 1.9.3070.2\\\\r\\\\nx-ms-keyvault-network-info: conn_type=Ipv4;addr=20.72.194.100;act_addr_fam=InterNetwork;\\\\r\\\\nX-Content-Type-Options: REDACTED\\\\r\\\\nStrict-Transport-Security: REDACTED\\\\r\\\\nDate: Thu, 07 May 2026 08:14:47 GMT\\\\r\\\\nContent-Type: application/json; charset=utf-8\\\\r\\\\nExpires: -1\\\\r\\\\nContent-Length: 764\\\\r\\\\n≥\u0027.\\\",\\\"faultContext\\\":\\\"KeyvaultRule\\\",\\\"faultType\\\":0}]\"},\"correlationId\":\"ef7f30e8-297c-4123-99df-fde2affd48af\",\"progress\":{\"initialSessionHostCount\":2,\"finalSessionHostCount\":3,\"sessionHostsCreationFailed\":0,\"executionStartTime\":\"2026-05-07T08:14:43.5473091Z\",\"sessionHostsInProgress\":0,\"sessionHostsCompleted\":0},\"scheduledDateTime\":\"2026-05-07T08:14:42Z\",\"sessionHostManagement\":{\"properties\":{\"failedSessionHostCleanupPolicy\":\"KeepNone\",\"scheduledDateTimeZone\":\"UTC\",\"update\":{\"deleteOriginalVm\":true,\"maxVmsRemoved\":1,\"logOffDelayMinutes\":2,\"logOffMessage\":\"You will be signed out\"},\"provisioning\":{\"instanceCount\":3,\"canaryPolicy\":\"Auto\",\"setDrainMode\":false}}},\"properties\":{\"correlationId\":\"ef7f30e8-297c-4123-99df-fde2affd48af\",\"progress\":{\"initialSessionHostCount\":2,\"finalSessionHostCount\":3,\"sessionHostsCreationFailed\":0,\"executionStartTime\":\"2026-05-07T08:14:43.5473091Z\",\"sessionHostsInProgress\":0,\"sessionHostsCompleted\":0},\"scheduledDateTime\":\"2026-05-07T08:14:42Z\",\"sessionHostManagement\":{\"properties\":{\"failedSessionHostCleanupPolicy\":\"KeepNone\",\"scheduledDateTimeZone\":\"UTC\",\"update\":{\"deleteOriginalVm\":true,\"maxVmsRemoved\":1,\"logOffDelayMinutes\":2,\"logOffMessage\":\"You will be signed out\"},\"provisioning\":{\"instanceCount\":3,\"canaryPolicy\":\"Auto\",\"setDrainMode\":false}}}}}",
       "isContentBase64": false
     }
   }

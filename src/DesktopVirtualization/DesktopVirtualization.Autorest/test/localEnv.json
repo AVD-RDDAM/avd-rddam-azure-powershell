@@ -1,4 +1,5 @@
 {
+  "AppAttachPackageNamePersistent": "aatestpkg",
   "HostPool2": "HostPoolPowershellContained2",
   "ResourceGroup": "alecbUserSessionTests",
   "SubscriptionId": "dbedef25-184c-430f-b383-0eeb87c3205d",

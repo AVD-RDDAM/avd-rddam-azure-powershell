@@ -18,14 +18,14 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "x-ms-failure-cause": [ "gateway" ],
-        "x-ms-request-id": [ "f877df5a-03be-45e5-8475-c54012aac7cf" ],
-        "x-ms-correlation-request-id": [ "f877df5a-03be-45e5-8475-c54012aac7cf" ],
-        "x-ms-routing-request-id": [ "WESTUS2:20260506T094847Z:f877df5a-03be-45e5-8475-c54012aac7cf" ],
+        "x-ms-request-id": [ "6927b818-9efa-4c4d-92ce-8b9f9985b85b" ],
+        "x-ms-correlation-request-id": [ "6927b818-9efa-4c4d-92ce-8b9f9985b85b" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062053Z:6927b818-9efa-4c4d-92ce-8b9f9985b85b" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "X-Cache": [ "CONFIG_NOCACHE" ],
-        "X-MSEdge-Ref": [ "Ref A: 795FFF6A5195488E8B8BF6665EF70A3B Ref B: TYO201100115017 Ref C: 2026-05-06T09:48:47Z" ],
-        "Date": [ "Wed, 06 May 2026 09:48:47 GMT" ]
+        "X-MSEdge-Ref": [ "Ref A: 0F865101A5A84D239C7681762E56CF17 Ref B: TYO201100114047 Ref C: 2026-05-07T06:20:53Z" ],
+        "Date": [ "Thu, 07 May 2026 06:20:52 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "246" ],
@@ -40,7 +40,7 @@
     "Request": {
       "Method": "POST",
       "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview",
-      "Content": "{\r\n  \"properties\": {\r\n    \"msixUncPath\": [\r\n      \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\"\r\n    ],\r\n    \"outputFileType\": \"VHDX\",\r\n    \"hostpoolArmPath\": \"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/hostpools/zhongjie-automated\",\r\n    \"msixFileShare\": \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\MSIX\",\r\n    \"outputFileSharePath\": [\r\n      \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad-expanded.vhdx\"\r\n    ],\r\n    \"msixPackageSource\": \"CustomerInput\"\r\n  }\r\n}",
+      "Content": "{\r\n  \"properties\": {\r\n    \"outputFileSharePath\": [\r\n      \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad-expanded.vhdx\"\r\n    ],\r\n    \"hostpoolArmPath\": \"/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourcegroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/hostpools/zhongjie-automated\",\r\n    \"outputFileType\": \"VHDX\",\r\n    \"msixPackageSource\": \"CustomerInput\",\r\n    \"msixUncPath\": [\r\n      \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\VHDX\\\\XmlNotepad\\\\XmlNotepad.vhdx\"\r\n    ],\r\n    \"msixFileShare\": \"\\\\\\\\liweiavdtestsa.file.core.windows.net\\\\avdtestfs\\\\Apps\\\\MSIX\"\r\n  }\r\n}",
       "isContentBase64": false,
       "Headers": {
       },
@@ -55,14 +55,14 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "x-ms-failure-cause": [ "gateway" ],
-        "x-ms-request-id": [ "ef4f4f2a-f4c7-491a-89a9-153bf051ee64" ],
-        "x-ms-correlation-request-id": [ "ef4f4f2a-f4c7-491a-89a9-153bf051ee64" ],
-        "x-ms-routing-request-id": [ "WESTUS2:20260506T094848Z:ef4f4f2a-f4c7-491a-89a9-153bf051ee64" ],
+        "x-ms-request-id": [ "f8181e6a-4b36-451b-b266-12512dd8026f" ],
+        "x-ms-correlation-request-id": [ "f8181e6a-4b36-451b-b266-12512dd8026f" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062054Z:f8181e6a-4b36-451b-b266-12512dd8026f" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "X-Cache": [ "CONFIG_NOCACHE" ],
-        "X-MSEdge-Ref": [ "Ref A: 00417C93B84D45FA81BE9D73BF23FB3F Ref B: TYO201100115017 Ref C: 2026-05-06T09:48:48Z" ],
-        "Date": [ "Wed, 06 May 2026 09:48:48 GMT" ]
+        "X-MSEdge-Ref": [ "Ref A: 3754A60813744553BBE1CC842336F9F4 Ref B: TYO201100114047 Ref C: 2026-05-07T06:20:53Z" ],
+        "Date": [ "Thu, 07 May 2026 06:20:53 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "246" ],
@@ -77,7 +77,7 @@
     "Request": {
       "Method": "POST",
       "RequestUri": "https://management.azure.com/subscriptions/6738509d-84ed-4ad6-974a-7dc4e3c34146/resourceGroups/zhongjie-rg-wus/providers/Microsoft.DesktopVirtualization/appAttachPackages/aatestpkg/expandMsixFile?api-version=2026-02-01-preview",
-      "Content": "ew0KICAicHJvcGVydGllcyI6IHsNCiAgICAibXNpeFVuY1BhdGgiOiBbDQogICAgICAiXFxcXGxpd2VpYXZkdGVzdHNhLmZpbGUuY29yZS53aW5kb3dzLm5ldFxcYXZkdGVzdGZzXFxBcHBzXFxWSERYXFxYbWxOb3RlcGFkXFxYbWxOb3RlcGFkLnZoZHgiDQogICAgXSwNCiAgICAib3V0cHV0RmlsZVR5cGUiOiAiVkhEWCIsDQogICAgImhvc3Rwb29sQXJtUGF0aCI6ICIvc3Vic2NyaXB0aW9ucy82NzM4NTA5ZC04NGVkLTRhZDYtOTc0YS03ZGM0ZTNjMzQxNDYvcmVzb3VyY2Vncm91cHMvemhvbmdqaWUtcmctd3VzL3Byb3ZpZGVycy9NaWNyb3NvZnQuRGVza3RvcFZpcnR1YWxpemF0aW9uL2hvc3Rwb29scy96aG9uZ2ppZS1hdXRvbWF0ZWQiLA0KICAgICJtc2l4RmlsZVNoYXJlIjogIlxcXFxsaXdlaWF2ZHRlc3RzYS5maWxlLmNvcmUud2luZG93cy5uZXRcXGF2ZHRlc3Rmc1xcQXBwc1xcTVNJWCIsDQogICAgIm91dHB1dEZpbGVTaGFyZVBhdGgiOiBbDQogICAgICAiXFxcXGxpd2VpYXZkdGVzdHNhLmZpbGUuY29yZS53aW5kb3dzLm5ldFxcYXZkdGVzdGZzXFxBcHBzXFxWSERYXFxYbWxOb3RlcGFkXFxYbWxOb3RlcGFkLWV4cGFuZGVkLnZoZHgiDQogICAgXSwNCiAgICAibXNpeFBhY2thZ2VTb3VyY2UiOiAiQ3VzdG9tZXJJbnB1dCINCiAgfQ0KfQ0K",
+      "Content": "ew0KICAicHJvcGVydGllcyI6IHsNCiAgICAib3V0cHV0RmlsZVNoYXJlUGF0aCI6IFsNCiAgICAgICJcXFxcbGl3ZWlhdmR0ZXN0c2EuZmlsZS5jb3JlLndpbmRvd3MubmV0XFxhdmR0ZXN0ZnNcXEFwcHNcXFZIRFhcXFhtbE5vdGVwYWRcXFhtbE5vdGVwYWQtZXhwYW5kZWQudmhkeCINCiAgICBdLA0KICAgICJob3N0cG9vbEFybVBhdGgiOiAiL3N1YnNjcmlwdGlvbnMvNjczODUwOWQtODRlZC00YWQ2LTk3NGEtN2RjNGUzYzM0MTQ2L3Jlc291cmNlZ3JvdXBzL3pob25namllLXJnLXd1cy9wcm92aWRlcnMvTWljcm9zb2Z0LkRlc2t0b3BWaXJ0dWFsaXphdGlvbi9ob3N0cG9vbHMvemhvbmdqaWUtYXV0b21hdGVkIiwNCiAgICAib3V0cHV0RmlsZVR5cGUiOiAiVkhEWCIsDQogICAgIm1zaXhQYWNrYWdlU291cmNlIjogIkN1c3RvbWVySW5wdXQiLA0KICAgICJtc2l4VW5jUGF0aCI6IFsNCiAgICAgICJcXFxcbGl3ZWlhdmR0ZXN0c2EuZmlsZS5jb3JlLndpbmRvd3MubmV0XFxhdmR0ZXN0ZnNcXEFwcHNcXFZIRFhcXFhtbE5vdGVwYWRcXFhtbE5vdGVwYWQudmhkeCINCiAgICBdLA0KICAgICJtc2l4RmlsZVNoYXJlIjogIlxcXFxsaXdlaWF2ZHRlc3RzYS5maWxlLmNvcmUud2luZG93cy5uZXRcXGF2ZHRlc3Rmc1xcQXBwc1xcTVNJWCINCiAgfQ0KfQ0K",
       "isContentBase64": false,
       "Headers": {
       },
@@ -92,14 +92,14 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "x-ms-failure-cause": [ "gateway" ],
-        "x-ms-request-id": [ "10e39584-da02-4780-afd4-906e1e4f5958" ],
-        "x-ms-correlation-request-id": [ "10e39584-da02-4780-afd4-906e1e4f5958" ],
-        "x-ms-routing-request-id": [ "WESTUS2:20260506T094848Z:10e39584-da02-4780-afd4-906e1e4f5958" ],
+        "x-ms-request-id": [ "e00acfc9-eb62-4dd8-9a0e-4545634cf97c" ],
+        "x-ms-correlation-request-id": [ "e00acfc9-eb62-4dd8-9a0e-4545634cf97c" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062054Z:e00acfc9-eb62-4dd8-9a0e-4545634cf97c" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "X-Cache": [ "CONFIG_NOCACHE" ],
-        "X-MSEdge-Ref": [ "Ref A: C5F51939DBFC4E1E9674AAF8178E8F67 Ref B: TYO201100115017 Ref C: 2026-05-06T09:48:48Z" ],
-        "Date": [ "Wed, 06 May 2026 09:48:48 GMT" ]
+        "X-MSEdge-Ref": [ "Ref A: 660FFB3877F74E66BEEC9C25AA84FE27 Ref B: TYO201100114047 Ref C: 2026-05-07T06:20:54Z" ],
+        "Date": [ "Thu, 07 May 2026 06:20:53 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "246" ],
@@ -129,14 +129,14 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "x-ms-failure-cause": [ "gateway" ],
-        "x-ms-request-id": [ "8855559e-bba4-44a8-a06a-f8bc85a23165" ],
-        "x-ms-correlation-request-id": [ "8855559e-bba4-44a8-a06a-f8bc85a23165" ],
-        "x-ms-routing-request-id": [ "WESTUS2:20260506T094849Z:8855559e-bba4-44a8-a06a-f8bc85a23165" ],
+        "x-ms-request-id": [ "30e83e41-54a1-47aa-9c25-4f8ae6105167" ],
+        "x-ms-correlation-request-id": [ "30e83e41-54a1-47aa-9c25-4f8ae6105167" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062055Z:30e83e41-54a1-47aa-9c25-4f8ae6105167" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "X-Cache": [ "CONFIG_NOCACHE" ],
-        "X-MSEdge-Ref": [ "Ref A: 076BB778FC4F43F6AC70BF4D3C4F6158 Ref B: TYO201100115017 Ref C: 2026-05-06T09:48:48Z" ],
-        "Date": [ "Wed, 06 May 2026 09:48:49 GMT" ]
+        "X-MSEdge-Ref": [ "Ref A: 632AB1E146044C0DAB2CC836E2640032 Ref B: TYO201100114047 Ref C: 2026-05-07T06:20:54Z" ],
+        "Date": [ "Thu, 07 May 2026 06:20:54 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "246" ],
@@ -166,14 +166,14 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "x-ms-failure-cause": [ "gateway" ],
-        "x-ms-request-id": [ "ed8baeeb-be47-40b4-a9a1-3158a4824e2b" ],
-        "x-ms-correlation-request-id": [ "ed8baeeb-be47-40b4-a9a1-3158a4824e2b" ],
-        "x-ms-routing-request-id": [ "WESTUS2:20260506T094849Z:ed8baeeb-be47-40b4-a9a1-3158a4824e2b" ],
+        "x-ms-request-id": [ "a0d47e72-cee4-4126-8e9a-5c8d787fcaee" ],
+        "x-ms-correlation-request-id": [ "a0d47e72-cee4-4126-8e9a-5c8d787fcaee" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062055Z:a0d47e72-cee4-4126-8e9a-5c8d787fcaee" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "X-Cache": [ "CONFIG_NOCACHE" ],
-        "X-MSEdge-Ref": [ "Ref A: B2DA6610EE5F441C92FCE800EB6801DB Ref B: TYO201100115017 Ref C: 2026-05-06T09:48:49Z" ],
-        "Date": [ "Wed, 06 May 2026 09:48:49 GMT" ]
+        "X-MSEdge-Ref": [ "Ref A: FF63E4C77C3A40A6B454A4D84FA2771A Ref B: TYO201100114047 Ref C: 2026-05-07T06:20:55Z" ],
+        "Date": [ "Thu, 07 May 2026 06:20:54 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "246" ],
@@ -203,14 +203,14 @@
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "x-ms-failure-cause": [ "gateway" ],
-        "x-ms-request-id": [ "98471351-1c47-4750-89ed-c98f42947de4" ],
-        "x-ms-correlation-request-id": [ "98471351-1c47-4750-89ed-c98f42947de4" ],
-        "x-ms-routing-request-id": [ "WESTUS2:20260506T094849Z:98471351-1c47-4750-89ed-c98f42947de4" ],
+        "x-ms-request-id": [ "10bcde7b-8b60-4f81-a20c-a99df02c7154" ],
+        "x-ms-correlation-request-id": [ "10bcde7b-8b60-4f81-a20c-a99df02c7154" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20260507T062055Z:10bcde7b-8b60-4f81-a20c-a99df02c7154" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "X-Cache": [ "CONFIG_NOCACHE" ],
-        "X-MSEdge-Ref": [ "Ref A: B11F4FFA0C2A46139EE69781C6FB3F46 Ref B: TYO201100115017 Ref C: 2026-05-06T09:48:49Z" ],
-        "Date": [ "Wed, 06 May 2026 09:48:49 GMT" ]
+        "X-MSEdge-Ref": [ "Ref A: 20D2959B793743BF96734A62097BE97D Ref B: TYO201100114047 Ref C: 2026-05-07T06:20:55Z" ],
+        "Date": [ "Thu, 07 May 2026 06:20:54 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "246" ],
