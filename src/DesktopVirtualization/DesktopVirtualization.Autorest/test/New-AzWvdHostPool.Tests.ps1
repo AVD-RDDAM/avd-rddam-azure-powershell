@@ -55,6 +55,7 @@ Describe 'New-AzWvdHostPool' {
                                 -MaxSessionLimit 5 `
                                 -VMTemplate '{option1}' `
                                 -CustomRdpProperty $null `
+                                -ConditionalRdpProperty 'redirectclipboard:i:1:authcontext:c5,c4,c3' `
                                 -Ring $null `
                                 -ValidationEnvironment:$false `
                                 -PreferredAppGroupType 'Desktop' `
@@ -73,6 +74,7 @@ Describe 'New-AzWvdHostPool' {
                 $hostPool.VMTemplate | Should -Be '{option1}'
                 # @todo not correct since it should be null need to look into it
                 # $hostPool.CustomRdpProperty | Should -Be ""
+                $hostPool.ConditionalRdpProperty | Should -Be 'redirectclipboard:i:1:authcontext:c5,c4,c3'
                 $hostPool.Ring | Should -Be 1
                 # @todo need to check this
                 # $hostPool.ValidationEnvironment | Should -Be $false
@@ -94,6 +96,7 @@ Describe 'New-AzWvdHostPool' {
                 $hostPool.VMTemplate | Should -Be '{option1}'
                 # @todo not correct since it should be null need to look into it
                 # $hostPool.CustomRdpProperty | Should -Be ""
+                $hostPool.ConditionalRdpProperty | Should -Be 'redirectclipboard:i:1:authcontext:c5,c4,c3'
                 $hostPool.Ring | Should -Be 1
                 # @todo need to check this
                 # $hostPool.ValidationEnvironment | Should -Be $false
