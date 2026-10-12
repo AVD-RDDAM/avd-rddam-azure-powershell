@@ -18,6 +18,8 @@
         - Additional information about change #1
 -->
 ## Upcoming Release
+* Upgraded API version to 2026-09-01-preview.
+    - Added NvmeDisk placement for ephemeral OS disks in session host configurations, supporting Non-Volatile Memory Express (NVMe) disks with Standard_LRS, StandardSSD_LRS, and Premium_LRS disk types.
 
 ## Version 6.0.1
 * Upgraded API version to 2026-04-01-preview
