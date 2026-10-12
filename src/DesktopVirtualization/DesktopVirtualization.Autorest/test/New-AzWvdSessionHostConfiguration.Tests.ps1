@@ -109,6 +109,89 @@ Describe 'New-AzWvdSessionHostConfiguration' {
         $configuration.DiffDiskSettingPlacement | Should -Be "TempDisk"
     }
 
+    It 'SeptemberPreviewNvmeCrud_<ManagedDiskType>' -TestCases @(
+        @{ ManagedDiskType = 'Standard_LRS'; UpdatedDiskType = 'StandardSSD_LRS' }
+        @{ ManagedDiskType = 'StandardSSD_LRS'; UpdatedDiskType = 'Premium_LRS' }
+        @{ ManagedDiskType = 'Premium_LRS'; UpdatedDiskType = 'Standard_LRS' }
+    ) -Skip:($env.Enable20260901PreviewSmoke -ne $true) {
+        param($ManagedDiskType, $UpdatedDiskType)
+
+        if ([string]::IsNullOrWhiteSpace($env.NvmeVmSize)) {
+            throw 'Set NvmeVmSize to a compatible NVMe ephemeral OS disk VM size before running this smoke test.'
+        }
+
+        $validateApiVersion = {
+            param($request, $callback, $next)
+
+            $isConfigurationRequest = $request.RequestUri.AbsolutePath -match '/sessionHostConfigurations(?:/default)?/?$'
+            if ($isConfigurationRequest -and $request.RequestUri.Query -notmatch '(?:\?|&)api-version=2026-09-01-preview(?:&|$)') {
+                throw 'September preview smoke requires generated cmdlets using api-version=2026-09-01-preview. Regenerate and build the module first.'
+            }
+
+            return $next.SendAsync($request, $callback)
+        }
+
+        $common = @{
+            SubscriptionId = $env.SubscriptionId
+            ResourceGroupName = $env.ResourceGroup
+            HostPoolName = $env.HostPool
+            HttpPipelinePrepend = @($validateApiVersion, $Mock)
+            ErrorAction = 'Stop'
+        }
+        $create = @{
+            ManagedDiskType = $ManagedDiskType
+            DiffDiskSettingOption = 'Local'
+            DiffDiskSettingPlacement = 'NvmeDisk'
+            DomainInfoJoinType = 'AzureActiveDirectory'
+            ImageInfoImageType = 'Marketplace'
+            NetworkInfoSubnetId = $env.VnetSubnetId
+            VMAdminCredentialsPasswordKeyvaultSecretUri = $env.VMAdminCredentialsPasswordKeyvaultSecretUri
+            VMAdminCredentialsUserNameKeyvaultSecretUri = $env.VMAdminCredentialsUserNameKeyvaultSecretUri
+            VMNamePrefix = 'nvmeCrud'
+            VMSizeId = $env.NvmeVmSize
+            MarketplaceInfoExactVersion = $env.MarketplaceImageVersion
+            MarketplaceInfoOffer = $env.MarketplaceInfoOffer
+            MarketplaceInfoPublisher = $env.MarketplaceInfoPublisher
+            MarketplaceInfoSku = $env.MarketplaceInfoSku
+            SecurityInfoSecureBootEnabled = $true
+            SecurityInfoType = 'TrustedLaunch'
+            SecurityInfoVTpmEnabled = $true
+            VmLocation = $env.Location
+            VmResourceGroup = $env.ResourceGroup
+            VmTag = $vmTag
+        }
+
+        $created = New-AzWvdSessionHostConfiguration @common @create
+        $created.DiffDiskSettingPlacement | Should -Be 'NvmeDisk'
+        $created.ManagedDiskType | Should -Be $ManagedDiskType
+
+        $configuration = Get-AzWvdSessionHostConfiguration @common
+        $configuration.Name | Should -Be 'default'
+        $configuration.ManagedDiskType | Should -Be $ManagedDiskType
+        $configuration.DiffDiskSettingOption | Should -Be 'Local'
+        $configuration.DiffDiskSettingPlacement | Should -Be 'NvmeDisk'
+
+        $updated = Update-AzWvdSessionHostConfiguration @common -ManagedDiskType $UpdatedDiskType `
+                -DiffDiskSettingOption 'Local' -DiffDiskSettingPlacement 'NvmeDisk' `
+                -FriendlyName 'nvme-patched'
+        $updated.ManagedDiskType | Should -Be $UpdatedDiskType
+        $updated.DiffDiskSettingPlacement | Should -Be 'NvmeDisk'
+
+        $configuration = Get-AzWvdSessionHostConfiguration @common
+        $configuration.FriendlyName | Should -Be 'nvme-patched'
+        $configuration.ManagedDiskType | Should -Be $UpdatedDiskType
+        $configuration.DiffDiskSettingOption | Should -Be 'Local'
+        $configuration.DiffDiskSettingPlacement | Should -Be 'NvmeDisk'
+
+        $listCommand = (Get-Module Az.DesktopVirtualization.private -All).ExportedCommands['Get-AzWvdSessionHostConfiguration_List']
+        $listCommand | Should -Not -BeNullOrEmpty
+        $configurations = @(& $listCommand @common)
+        $configurations.Count | Should -Be 1
+        $configurations[0].Name | Should -Be 'default'
+        $configurations[0].ManagedDiskType | Should -Be $UpdatedDiskType
+        $configurations[0].DiffDiskSettingPlacement | Should -Be 'NvmeDisk'
+    }
+
     AfterAll{
         $hostPool = Remove-AzWvdHostPool -SubscriptionId $env.SubscriptionId `
                 -ResourceGroupName $env.ResourceGroup `

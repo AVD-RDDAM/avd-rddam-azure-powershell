@@ -1,3 +1,8 @@
+## Upcoming Release
+#### Az.DesktopVirtualization
+* Upgraded API version to 2026-09-01-preview.
+    - Added NvmeDisk placement for ephemeral OS disks in session host configurations, supporting Non-Volatile Memory Express (NVMe) disks with Standard_LRS, StandardSSD_LRS, and Premium_LRS disk types.
+
 ## 16.2.0 - August 2026
 #### Az.Accounts 5.5.2
 * Upgraded 'Azure.Core' dependency from 1.56.0 to 1.57.0.
