@@ -19,7 +19,8 @@ Update-AzWvdHostPool -Name <String> -ResourceGroupName <String> [-SubscriptionId
  [-AgentUpdateMaintenanceWindowTimeZone <String>] [-AgentUpdateType <String>]
  [-AgentUpdateUseSessionHostLocalTime] [-AllowRdpShortPathWithPrivateLink <String>]
  [-ConditionalRdpProperty <String>] [-CustomRdpProperty <String>] [-Description <String>]
- [-DirectUdp <String>] [-FriendlyName <String>] [-IdentityType <String>]
+ [-DirectUdp <String>] [-FirstPartyExtensionAutoUpdateMicrosoftMultimediaRedirection]
+ [-FirstPartyExtensionAutoUpdateTeamsMediaOptimization] [-FriendlyName <String>] [-IdentityType <String>]
  [-IdentityUserAssignedIdentity <Hashtable>] [-LoadBalancerType <String>] [-ManagedPrivateUdp <String>]
  [-MaxSessionLimit <Int32>] [-PersonalDesktopAssignmentType <String>] [-PreferredAppGroupType <String>]
  [-PublicNetworkAccess <String>] [-PublicUdp <String>] [-RegistrationInfoExpirationTime <DateTime>]
@@ -36,7 +37,8 @@ Update-AzWvdHostPool -InputObject <IDesktopVirtualizationIdentity>
  [-AgentUpdateMaintenanceWindowTimeZone <String>] [-AgentUpdateType <String>]
  [-AgentUpdateUseSessionHostLocalTime] [-AllowRdpShortPathWithPrivateLink <String>]
  [-ConditionalRdpProperty <String>] [-CustomRdpProperty <String>] [-Description <String>]
- [-DirectUdp <String>] [-FriendlyName <String>] [-IdentityType <String>]
+ [-DirectUdp <String>] [-FirstPartyExtensionAutoUpdateMicrosoftMultimediaRedirection]
+ [-FirstPartyExtensionAutoUpdateTeamsMediaOptimization] [-FriendlyName <String>] [-IdentityType <String>]
  [-IdentityUserAssignedIdentity <Hashtable>] [-LoadBalancerType <String>] [-ManagedPrivateUdp <String>]
  [-MaxSessionLimit <Int32>] [-PersonalDesktopAssignmentType <String>] [-PreferredAppGroupType <String>]
  [-PublicNetworkAccess <String>] [-PublicUdp <String>] [-RegistrationInfoExpirationTime <DateTime>]
@@ -230,6 +232,36 @@ This means that this connection is possible, but is not guaranteed, as there are
 
 ```yaml
 Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FirstPartyExtensionAutoUpdateMicrosoftMultimediaRedirection
+Whether automatic updates are enabled for the Microsoft Multimedia Redirection extension.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FirstPartyExtensionAutoUpdateTeamsMediaOptimization
+Whether automatic updates are enabled for the Teams Media Optimization extension.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

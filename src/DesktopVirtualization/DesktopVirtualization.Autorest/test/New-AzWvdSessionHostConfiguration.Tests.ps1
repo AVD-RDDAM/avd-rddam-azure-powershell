@@ -14,104 +14,45 @@ if (($null -eq $TestName) -or ($TestName -contains 'New-AzWvdSessionHostConfigur
 }
 
 Describe 'New-AzWvdSessionHostConfiguration' {
-    BeforeAll{
-        $vmTag = @{
-            "cm-resource-parent" = "/subscriptions/" + $env.SubscriptionId + "/resourceGroups/" + $env.ResourceGroup + "/providers/Microsoft.DesktopVirtualization/" + $env.HostPool
+    BeforeEach {
+        $script:shcTestHostPool = $null
+    }
+
+    It '<Scenario>' -TestCases @(
+        @{ Scenario = 'CreateExpanded'; DiskType = 'Managed' }
+        @{ Scenario = 'CreateExpanded_EphemeralOSDisk'; DiskType = 'Ephemeral' }
+    ) {
+        param($Scenario, $DiskType)
+
+        if ($env.SHCCreateTestRunId -notmatch '^[a-f0-9]{32}$') {
+            throw 'Missing or invalid SHCCreateTestRunId. Record the creation tests again.'
         }
-
-        $hostPool = New-AzWvdHostPool -SubscriptionId $env.SubscriptionId `
-                -ResourceGroupName $env.ResourceGroup `
-                -Name $env.HostPool `
-                -Location $env.Location `
-                -HostPoolType 'Pooled' `
-                -LoadBalancerType 'DepthFirst' `
-                -Description 'des' `
-                -FriendlyName 'fri' `
-                -MaxSessionLimit 5 `
-                -VMTemplate '{option1}' `
-                -CustomRdpProperty $null `
-                -Ring $null `
-                -ValidationEnvironment:$false `
-                -PreferredAppGroupType 'Desktop' `
-                -StartVMOnConnect:$false `
-                -ManagementType 'Automated' `
-                -IdentityType 'SystemAssigned'
-
-        # Run this only in the -record mode, as the -playback will not import Az.Resources. 
-        if (-not $env:AzPSAutorestTestPlaybackMode) {
-
-            # Assign 'Desktop Virtualization Virtual Machine Contributor' role for this hostpool on the Resource Group level
-            $assignment = New-AzRoleAssignment -ObjectId $hostPool.IdentityPrincipalId `
-                -RoleDefinitionName "Desktop Virtualization Virtual Machine Contributor" `
-                -Scope $env.ResourceGroupArmPath
-
-            # Assign 'Key Vault Secrets User' role for this hostpool on the Resource Group level
-            $assignment = New-AzRoleAssignment -ObjectId $hostPool.IdentityPrincipalId `
-                -RoleDefinitionName "Key Vault Secrets User" `
-                -Scope $env.KeyVaultPersistentArmPath
-            
-            # Wait for 1 minute to execute the SHC command
-            Start-Sleep -Seconds 60
+        $name = "shc-create-$($DiskType.ToLowerInvariant())-$($env.SHCCreateTestRunId)"
+        $script:shcTestHostPool = New-SessionHostConfigurationTestHostPool -Environment $env -Name $name
+        $parameters = Get-SessionHostConfigurationTestParameters -Environment $env -HostPoolName $name -DiskType $DiskType
+        $created = New-AzWvdSessionHostConfiguration @parameters
+        $saved = Get-AzWvdSessionHostConfiguration -SubscriptionId $env.SubscriptionId `
+            -ResourceGroupName $env.ResourceGroup -HostPoolName $name -ErrorAction Stop
+        foreach ($configuration in @($created, $saved)) {
+            $configuration.VMNamePrefix | Should -Be 'createTest'
+            if ($DiskType -eq 'Managed') {
+                $configuration.ManagedDiskType | Should -Be 'Standard_LRS'
+                $configuration.DiffDiskSettingOption | Should -BeNullOrEmpty
+                $configuration.DiffDiskSettingPlacement | Should -BeNullOrEmpty
+            }
+            else {
+                $configuration.ManagedDiskType | Should -BeNullOrEmpty
+                $configuration.DiffDiskSettingOption | Should -Be 'Local'
+                $configuration.DiffDiskSettingPlacement | Should -Be 'TempDisk'
+            }
         }
     }
 
-
-    It 'CreateExpanded' {
-        $configuration = New-AzWvdSessionHostConfiguration -SubscriptionId $env.SubscriptionId -ResourceGroupName $env.ResourceGroup `
-                -HostPoolName $env.HostPool -ManagedDiskType "Standard_LRS" `
-                -DomainInfoJoinType "AzureActiveDirectory" -ImageInfoImageType "Marketplace" `
-                -NetworkInfoSubnetId $env.VnetSubnetId `
-                -VMAdminCredentialsPasswordKeyvaultSecretUri $env.VMAdminCredentialsPasswordKeyvaultSecretUri `
-                -VMAdminCredentialsUserNameKeyvaultSecretUri $env.VMAdminCredentialsUserNameKeyvaultSecretUri `
-                -VMNamePrefix "createTest" -VMSizeId "Standard_D2s_v3" -MarketplaceInfoExactVersion $env.MarketplaceImageVersion `
-                -MarketplaceInfoOffer $env.MarketplaceInfoOffer -MarketplaceInfoPublisher $env.MarketplaceInfoPublisher `
-                -MarketplaceInfoSku $env.MarketplaceInfoSku `
-                -SecurityInfoSecureBootEnabled `
-                -SecurityInfoType "TrustedLaunch" `
-                -SecurityInfoVTpmEnabled `
-                -VmLocation $env.Location `
-                -VmResourceGroup $env.ResourceGroup `
-                -VmTag $vmTag
-
-        $configuration = Get-AzWvdSessionHostConfiguration -SubscriptionId $env.SubscriptionId `
-                -ResourceGroupName $env.ResourceGroup `
-                -HostPoolName $env.HostPool
-        $configuration.VMNamePrefix | Should -Be "createTest"
-        $configuration.ManagedDiskType | Should -Be "Standard_LRS"
-    }
-
-    It 'CreateExpanded_EphemeralOSDisk' {
-        # An ephemeral OS disk (DiffDiskSettingOption 'Local') can only be backed by a Premium_LRS or
-        # StandardSSD_LRS managed disk. Combining it with Standard_LRS raises MultipleDiskTypesSpecified,
-        # so the DiffDiskSettingPlacement scenario is validated separately from the Standard_LRS case above.
-        $configuration = New-AzWvdSessionHostConfiguration -SubscriptionId $env.SubscriptionId -ResourceGroupName $env.ResourceGroup `
-                -HostPoolName $env.HostPool -ManagedDiskType "Premium_LRS" `
-                -DomainInfoJoinType "AzureActiveDirectory" -ImageInfoImageType "Marketplace" `
-                -NetworkInfoSubnetId $env.VnetSubnetId `
-                -VMAdminCredentialsPasswordKeyvaultSecretUri $env.VMAdminCredentialsPasswordKeyvaultSecretUri `
-                -VMAdminCredentialsUserNameKeyvaultSecretUri $env.VMAdminCredentialsUserNameKeyvaultSecretUri `
-                -VMNamePrefix "createTest" -VMSizeId "Standard_D2s_v3" -MarketplaceInfoExactVersion $env.MarketplaceImageVersion `
-                -MarketplaceInfoOffer $env.MarketplaceInfoOffer -MarketplaceInfoPublisher $env.MarketplaceInfoPublisher `
-                -MarketplaceInfoSku $env.MarketplaceInfoSku `
-                -DiffDiskSettingOption "Local" `
-                -DiffDiskSettingPlacement "TempDisk" `
-                -SecurityInfoSecureBootEnabled `
-                -SecurityInfoType "TrustedLaunch" `
-                -SecurityInfoVTpmEnabled `
-                -VmLocation $env.Location `
-                -VmResourceGroup $env.ResourceGroup `
-                -VmTag $vmTag
-
-        $configuration = Get-AzWvdSessionHostConfiguration -SubscriptionId $env.SubscriptionId `
-                -ResourceGroupName $env.ResourceGroup `
-                -HostPoolName $env.HostPool
-        $configuration.DiffDiskSettingOption | Should -Be "Local"
-        $configuration.DiffDiskSettingPlacement | Should -Be "TempDisk"
-    }
-
-    AfterAll{
-        $hostPool = Remove-AzWvdHostPool -SubscriptionId $env.SubscriptionId `
-                -ResourceGroupName $env.ResourceGroup `
-                -Name $env.HostPool
+    AfterEach {
+        if ($null -ne $script:shcTestHostPool) {
+            Remove-AzWvdHostPool -SubscriptionId $env.SubscriptionId -ResourceGroupName $env.ResourceGroup `
+                -Name $script:shcTestHostPool.Name -Confirm:$false -ErrorAction Stop
+            $script:shcTestHostPool = $null
+        }
     }
 }

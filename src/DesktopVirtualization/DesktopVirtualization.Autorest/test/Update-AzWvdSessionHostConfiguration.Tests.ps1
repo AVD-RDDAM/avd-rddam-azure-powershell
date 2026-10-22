@@ -1,44 +1,76 @@
-if(($null -eq $TestName) -or ($TestName -contains 'Update-AzWvdSessionHostConfiguration'))
-{
-  $loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-  if (-Not (Test-Path -Path $loadEnvPath)) {
-      $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-  }
-  . ($loadEnvPath)
-  $TestRecordingFile = Join-Path $PSScriptRoot 'Update-AzWvdSessionHostConfiguration.Recording.json'
-  $currentPath = $PSScriptRoot
-  while(-not $mockingPath) {
-      $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
-      $currentPath = Split-Path -Path $currentPath -Parent
-  }
-  . ($mockingPath | Select-Object -First 1).FullName
+if (($null -eq $TestName) -or ($TestName -contains 'Update-AzWvdSessionHostConfiguration')) {
+    $loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
+    if (-Not (Test-Path -Path $loadEnvPath)) {
+        $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
+    }
+    . ($loadEnvPath)
+    $TestRecordingFile = Join-Path $PSScriptRoot 'Update-AzWvdSessionHostConfiguration.Recording.json'
+    $currentPath = $PSScriptRoot
+    while (-not $mockingPath) {
+        $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
+        $currentPath = Split-Path -Path $currentPath -Parent
+    }
+    . ($mockingPath | Select-Object -First 1).FullName
 }
 
 Describe 'Update-AzWvdSessionHostConfiguration' {
-    It 'UpdateExpanded' {    
-        $configuration = Update-AzWvdSessionHostConfiguration -SubscriptionId $env.SubscriptionId `
-        -ResourceGroupName $env.ResourceGroupPersistent `
-        -HostPoolName $env.SHMHostPoolPersistent `
-        -VMNamePrefix $env.SHMSessionHostNamePrefix `
-        -MarketplaceInfoExactVersion $env.MarketplaceImageVersion
-
-        $configuration.VMNamePrefix | Should -Be $env.SHMSessionHostNamePrefix
+    BeforeEach {
+        $script:shcTestHostPool = $null
     }
 
-    It 'UpdateExpanded_EphemeralOSDisk' {
-        # An ephemeral OS disk (DiffDiskSettingOption 'Local') can only be backed by a Premium_LRS or
-        # StandardSSD_LRS managed disk. Combining it with Standard_LRS raises MultipleDiskTypesSpecified,
-        # so the DiffDiskSettingPlacement scenario is validated separately from the case above.
-        $configuration = Update-AzWvdSessionHostConfiguration -SubscriptionId $env.SubscriptionId `
-        -ResourceGroupName $env.ResourceGroupPersistent `
-        -HostPoolName $env.SHMHostPoolPersistent `
-        -VMNamePrefix $env.SHMSessionHostNamePrefix `
-        -MarketplaceInfoExactVersion $env.MarketplaceImageVersion `
-        -ManagedDiskType "Premium_LRS" `
-        -DiffDiskSettingOption "Local" `
-        -DiffDiskSettingPlacement "TempDisk"
+    It '<Scenario>' -TestCases @(
+        @{ Scenario = 'UpdateExpanded'; DiskType = 'Managed' }
+        @{ Scenario = 'UpdateExpanded_EphemeralOSDisk'; DiskType = 'Ephemeral' }
+    ) {
+        param($Scenario, $DiskType)
 
-        $configuration.DiffDiskSettingOption | Should -Be "Local"
-        $configuration.DiffDiskSettingPlacement | Should -Be "TempDisk"
+        if ($env.SHCUpdateTestRunId -notmatch '^[a-f0-9]{32}$') {
+            throw 'Missing or invalid SHCUpdateTestRunId. Record the update tests again.'
+        }
+        $name = "shc-update-$($DiskType.ToLowerInvariant())-$($env.SHCUpdateTestRunId)"
+        $script:shcTestHostPool = New-SessionHostConfigurationTestHostPool -Environment $env -Name $name
+        $parameters = Get-SessionHostConfigurationTestParameters -Environment $env -HostPoolName $name -DiskType $DiskType
+        $initial = New-AzWvdSessionHostConfiguration @parameters
+        $initial.VMNamePrefix | Should -Be 'createTest'
+        $updateParameters = @{
+            SubscriptionId = $env.SubscriptionId
+            ResourceGroupName = $env.ResourceGroup
+            HostPoolName = $name
+            VMNamePrefix = 'updateTest'
+            MarketplaceInfoExactVersion = $env.MarketplaceImageVersion
+            Confirm = $false
+            ErrorAction = 'Stop'
+        }
+        if ($DiskType -eq 'Managed') {
+            $updateParameters.ManagedDiskType = 'Premium_LRS'
+        }
+        else {
+            $updateParameters.DiffDiskSettingOption = 'Local'
+            $updateParameters.DiffDiskSettingPlacement = 'TempDisk'
+        }
+        $updated = Update-AzWvdSessionHostConfiguration @updateParameters
+        $saved = Get-AzWvdSessionHostConfiguration -SubscriptionId $env.SubscriptionId `
+            -ResourceGroupName $env.ResourceGroup -HostPoolName $name -ErrorAction Stop
+        foreach ($configuration in @($updated, $saved)) {
+            $configuration.VMNamePrefix | Should -Be 'updateTest'
+            if ($DiskType -eq 'Managed') {
+                $configuration.ManagedDiskType | Should -Be 'Premium_LRS'
+                $configuration.DiffDiskSettingOption | Should -BeNullOrEmpty
+                $configuration.DiffDiskSettingPlacement | Should -BeNullOrEmpty
+            }
+            else {
+                $configuration.ManagedDiskType | Should -BeNullOrEmpty
+                $configuration.DiffDiskSettingOption | Should -Be 'Local'
+                $configuration.DiffDiskSettingPlacement | Should -Be 'TempDisk'
+            }
+        }
+    }
+
+    AfterEach {
+        if ($null -ne $script:shcTestHostPool) {
+            Remove-AzWvdHostPool -SubscriptionId $env.SubscriptionId -ResourceGroupName $env.ResourceGroup `
+                -Name $script:shcTestHostPool.Name -Confirm:$false -ErrorAction Stop
+            $script:shcTestHostPool = $null
+        }
     }
 }

@@ -5,6 +5,78 @@ function RandomString([bool]$allChars, [int32]$len) {
         return -join ((48..57) + (97..122) | Get-Random -Count $len | % {[char]$_})
     }
 }
+function New-SessionHostConfigurationTestHostPool {
+    param(
+        [Parameter(Mandatory)]$Environment,
+        [Parameter(Mandatory)][string]$Name
+    )
+
+    $hostPool = New-AzWvdHostPool -SubscriptionId $Environment.SubscriptionId `
+        -ResourceGroupName $Environment.ResourceGroup -Name $Name -Location $Environment.Location `
+        -HostPoolType 'Pooled' -LoadBalancerType 'DepthFirst' -PreferredAppGroupType 'Desktop' `
+        -ManagementType 'Automated' -IdentityType 'SystemAssigned' -ErrorAction Stop
+    $ready = $false
+    try {
+        if (-not $env:AzPSAutorestTestPlaybackMode) {
+            $null = New-AzRoleAssignment -ObjectId $hostPool.IdentityPrincipalId `
+                -RoleDefinitionName 'Desktop Virtualization Virtual Machine Contributor' `
+                -Scope $Environment.ResourceGroupArmPath -ErrorAction Stop
+            $null = New-AzRoleAssignment -ObjectId $hostPool.IdentityPrincipalId `
+                -RoleDefinitionName 'Key Vault Secrets User' `
+                -Scope $Environment.KeyVaultPersistentArmPath -ErrorAction Stop
+            Start-Sleep -Seconds 60
+        }
+        $ready = $true
+        return $hostPool
+    }
+    finally {
+        if (-not $ready) {
+            Remove-AzWvdHostPool -SubscriptionId $Environment.SubscriptionId `
+                -ResourceGroupName $Environment.ResourceGroup -Name $Name -Confirm:$false -ErrorAction Stop
+        }
+    }
+}
+
+function Get-SessionHostConfigurationTestParameters {
+    param(
+        [Parameter(Mandatory)]$Environment,
+        [Parameter(Mandatory)][string]$HostPoolName,
+        [Parameter(Mandatory)][ValidateSet('Managed', 'Ephemeral')][string]$DiskType
+    )
+
+    $parameters = @{
+        SubscriptionId = $Environment.SubscriptionId
+        ResourceGroupName = $Environment.ResourceGroup
+        HostPoolName = $HostPoolName
+        DomainInfoJoinType = 'AzureActiveDirectory'
+        ImageInfoImageType = 'Marketplace'
+        NetworkInfoSubnetId = $Environment.VnetSubnetId
+        VMAdminCredentialsPasswordKeyvaultSecretUri = $Environment.VMAdminCredentialsPasswordKeyvaultSecretUri
+        VMAdminCredentialsUserNameKeyvaultSecretUri = $Environment.VMAdminCredentialsUserNameKeyvaultSecretUri
+        VMNamePrefix = 'createTest'
+        VMSizeId = 'Standard_D2s_v3'
+        MarketplaceInfoExactVersion = $Environment.MarketplaceImageVersion
+        MarketplaceInfoOffer = $Environment.MarketplaceInfoOffer
+        MarketplaceInfoPublisher = $Environment.MarketplaceInfoPublisher
+        MarketplaceInfoSku = $Environment.MarketplaceInfoSku
+        SecurityInfoSecureBootEnabled = $true
+        SecurityInfoType = 'TrustedLaunch'
+        SecurityInfoVTpmEnabled = $true
+        VmLocation = $Environment.Location
+        VmResourceGroup = $Environment.ResourceGroup
+        VmTag = @{ 'cm-resource-parent' = "$($Environment.ResourceGroupArmPath)/providers/Microsoft.DesktopVirtualization/hostPools/$HostPoolName" }
+        ErrorAction = 'Stop'
+    }
+    if ($DiskType -eq 'Managed') {
+        $parameters.ManagedDiskType = 'Standard_LRS'
+    }
+    else {
+        $parameters.DiffDiskSettingOption = 'Local'
+        $parameters.DiffDiskSettingPlacement = 'TempDisk'
+    }
+    return $parameters
+}
+
 function setupEnv() {
     $env = @{}
     # Preload subscriptionId and tenant from context, which will be used in test
@@ -18,6 +90,21 @@ function setupEnv() {
     #---------- Self Contained Resources ----------
     # The following resources are created and removed within each test.
     $envFile = 'env.json'
+    $savedEnvironmentPath = Join-Path $PSScriptRoot $envFile
+    $savedEnvironment = if (Test-Path $savedEnvironmentPath) {
+        Get-Content $savedEnvironmentPath -Raw | ConvertFrom-Json
+    }
+    foreach ($operation in 'Create', 'Update') {
+        $setting = "SHC${operation}TestRunId"
+        $command = if ($operation -eq 'Create') { 'New-AzWvdSessionHostConfiguration' } else { 'Update-AzWvdSessionHostConfiguration' }
+        $selected = -not $TestName -or $TestName -contains $command
+        $env[$setting] = if ($TestMode -eq 'live' -or $selected) {
+            [guid]::NewGuid().ToString('N')
+        }
+        else {
+            $savedEnvironment.$setting
+        }
+    }
     $null = $env.Add("ResourceGroup", "zhongjie-rg-wus")
     $null = $env.Add("Location", "westus2")
     $null = $env.Add("HostPool", "HostPoolPowershellContained1")

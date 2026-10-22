@@ -20,12 +20,14 @@ New-AzWvdHostPool -HostPoolType <String> -LoadBalancerType <String> -Location <S
  [-AgentUpdateMaintenanceWindowTimeZone <String>] [-AgentUpdateType <String>]
  [-AgentUpdateUseSessionHostLocalTime] [-AllowRdpShortPathWithPrivateLink <String>]
  [-ConditionalRdpProperty <String>] [-CustomRdpProperty <String>] [-DeploymentScope <String>]
- [-Description <String>] [-DirectUdp <String>] [-ExpirationTime <DateTime>] [-FriendlyName <String>]
- [-IdentityType <String>] [-IdentityUserAssignedIdentity <Hashtable>] [-Kind <String>] [-ManagedBy <String>]
+ [-Description <String>] [-DirectUdp <String>] [-ExpirationTime <DateTime>]
+ [-FirstPartyExtensionAutoUpdateMicrosoftMultimediaRedirection]
+ [-FirstPartyExtensionAutoUpdateTeamsMediaOptimization] [-FriendlyName <String>] [-IdentityType <String>]
+ [-IdentityUserAssignedIdentity <Hashtable>] [-Kind <String>] [-ManagedBy <String>]
  [-ManagedPrivateUdp <String>] [-MaxSessionLimit <Int32>] [-OboTenantId <String>]
  [-PersonalDesktopAssignmentType <String>] [-PlanName <String>] [-PlanProduct <String>]
  [-PlanPromotionCode <String>] [-PlanPublisher <String>] [-PlanVersion <String>]
- [-PublicNetworkAccess <String>] [-PublicUdp <String>] [-RegistrationInfoToken <String>]
+ [-PublicNetworkAccess <String>] [-PublicUdp <String>] [-RegistrationInfoToken <SecureString>]
  [-RegistrationTokenOperation <String>] [-RelayUdp <String>] [-Ring <Int32>] [-SkuCapacity <Int32>]
  [-SkuFamily <String>] [-SkuName <String>] [-SkuSize <String>] [-SkuTier <String>]
  [-SsoadfsAuthority <String>] [-SsoClientId <String>] [-SsoClientSecretKeyVaultPath <String>]
@@ -309,6 +311,36 @@ Expiration time of registration token.
 
 ```yaml
 Type: System.DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FirstPartyExtensionAutoUpdateMicrosoftMultimediaRedirection
+Whether automatic updates are enabled for the Microsoft Multimedia Redirection extension.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FirstPartyExtensionAutoUpdateTeamsMediaOptimization
+Whether automatic updates are enabled for the Teams Media Optimization extension.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -697,7 +729,7 @@ Accept wildcard characters: False
 The registration token base64 encoded string.
 
 ```yaml
-Type: System.String
+Type: System.Security.SecureString
 Parameter Sets: CreateExpanded
 Aliases:
 

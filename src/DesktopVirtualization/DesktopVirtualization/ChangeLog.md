@@ -19,6 +19,12 @@
 -->
 ## Upcoming Release
 
+* Fixed session host configuration tests that specified managed and ephemeral operating system disks together.
+    - Isolated creation and update disk scenarios in dedicated host pools without modifying persistent configurations.
+* Added host pool test coverage for Microsoft Multimedia Redirection and Teams Media Optimization extension auto-update settings.
+    - Covered all creation combinations and independent enabling and disabling through name-based and identity-based updates.
+    - Verified saved values and preservation of settings omitted from updates.
+
 ## Version 6.0.1
 * Upgraded API version to 2026-04-01-preview
     - Replaced the `ResourceDisk` allowed value with `TempDisk` for `DiffDiskSettingPlacement` in `SessionHostConfiguration`.

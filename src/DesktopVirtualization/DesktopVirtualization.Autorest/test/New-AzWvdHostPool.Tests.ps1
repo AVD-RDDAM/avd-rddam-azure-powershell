@@ -12,6 +12,41 @@ while(-not $mockingPath) {
 . ($mockingPath | Select-Object -First 1).FullName
 
 Describe 'New-AzWvdHostPool' {
+    It 'FirstPartyExtensionAutoUpdate_Create_<Scenario>' -TestCases @(
+        @{ Scenario = 'BothEnabled'; MultimediaRedirection = $true; TeamsOptimization = $true }
+        @{ Scenario = 'BothDisabled'; MultimediaRedirection = $false; TeamsOptimization = $false }
+        @{ Scenario = 'OnlyMultimedia'; MultimediaRedirection = $true; TeamsOptimization = $false }
+        @{ Scenario = 'OnlyTeams'; MultimediaRedirection = $false; TeamsOptimization = $true }
+    ) {
+        param($Scenario, [bool]$MultimediaRedirection, [bool]$TeamsOptimization)
+
+        $createdHostPool = $null
+        $resourceParameters = @{
+            SubscriptionId = $env.SubscriptionId
+            ResourceGroupName = $env.ResourceGroup
+            Name = "$($env.HostPool)-fp-create-$Scenario"
+            ErrorAction = 'Stop'
+        }
+        try {
+            $createdHostPool = New-AzWvdHostPool @resourceParameters `
+                -Location $env.Location -HostPoolType 'Pooled' -LoadBalancerType 'DepthFirst' `
+                -PreferredAppGroupType 'Desktop' -ManagementType 'Standard' `
+                -FirstPartyExtensionAutoUpdateMicrosoftMultimediaRedirection:$MultimediaRedirection `
+                -FirstPartyExtensionAutoUpdateTeamsMediaOptimization:$TeamsOptimization
+
+            foreach ($hostPool in @($createdHostPool, (Get-AzWvdHostPool @resourceParameters))) {
+                $hostPool.Name | Should -Be $resourceParameters.Name
+                $hostPool.FirstPartyExtensionAutoUpdateMicrosoftMultimediaRedirection | Should -Be $MultimediaRedirection
+                $hostPool.FirstPartyExtensionAutoUpdateTeamsMediaOptimization | Should -Be $TeamsOptimization
+            }
+        }
+        finally {
+            if ($null -ne $createdHostPool) {
+                Remove-AzWvdHostPool @resourceParameters -Confirm:$false
+            }
+        }
+    }
+
     It 'FullScenarioCreate' {
         try{
             $hostPool = New-AzWvdHostPool -SubscriptionId $env.SubscriptionId `

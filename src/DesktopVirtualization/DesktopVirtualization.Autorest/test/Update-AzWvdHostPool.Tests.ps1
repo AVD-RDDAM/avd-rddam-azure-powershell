@@ -12,6 +12,73 @@ while(-not $mockingPath) {
 . ($mockingPath | Select-Object -First 1).FullName
 
 Describe 'Update-AzWvdHostPool' {
+    It 'FirstPartyExtensionAutoUpdate_<ParameterSet>_<Scenario>' -TestCases @(
+        @{ ParameterSet = 'UpdateExpanded'; Scenario = 'Enable'; InitialState = $false }
+        @{ ParameterSet = 'UpdateExpanded'; Scenario = 'Disable'; InitialState = $true }
+        @{ ParameterSet = 'UpdateViaIdentityExpanded'; Scenario = 'Enable'; InitialState = $false }
+        @{ ParameterSet = 'UpdateViaIdentityExpanded'; Scenario = 'Disable'; InitialState = $true }
+    ) {
+        param($ParameterSet, $Scenario, [bool]$InitialState)
+
+        $createdHostPool = $null
+        $targetState = -not $InitialState
+        $route = if ($ParameterSet -eq 'UpdateViaIdentityExpanded') { 'identity' } else { 'name' }
+        $resourceParameters = @{
+            SubscriptionId = $env.SubscriptionId
+            ResourceGroupName = $env.ResourceGroup
+            Name = "$($env.HostPool)-fp-update-$route-$Scenario"
+            ErrorAction = 'Stop'
+        }
+        try {
+            $createdHostPool = New-AzWvdHostPool @resourceParameters `
+                -Location $env.Location -HostPoolType 'Pooled' -LoadBalancerType 'DepthFirst' `
+                -PreferredAppGroupType 'Desktop' -ManagementType 'Standard' `
+                -FirstPartyExtensionAutoUpdateMicrosoftMultimediaRedirection:$InitialState `
+                -FirstPartyExtensionAutoUpdateTeamsMediaOptimization:$InitialState
+
+            foreach ($hostPool in @($createdHostPool, (Get-AzWvdHostPool @resourceParameters))) {
+                $hostPool.FirstPartyExtensionAutoUpdateMicrosoftMultimediaRedirection | Should -Be $InitialState
+                $hostPool.FirstPartyExtensionAutoUpdateTeamsMediaOptimization | Should -Be $InitialState
+            }
+
+            $updateParameters = @{ Confirm = $false; ErrorAction = 'Stop' }
+            if ($ParameterSet -eq 'UpdateViaIdentityExpanded') {
+                $updateParameters.InputObject = @{ Id = $createdHostPool.Id }
+            }
+            else {
+                $updateParameters.SubscriptionId = $env.SubscriptionId
+                $updateParameters.ResourceGroupName = $env.ResourceGroup
+                $updateParameters.Name = $createdHostPool.Name
+            }
+
+            $updatedHostPool = Update-AzWvdHostPool @updateParameters `
+                -FirstPartyExtensionAutoUpdateMicrosoftMultimediaRedirection:$targetState
+            foreach ($hostPool in @($updatedHostPool, (Get-AzWvdHostPool @resourceParameters))) {
+                $hostPool.FirstPartyExtensionAutoUpdateMicrosoftMultimediaRedirection | Should -Be $targetState
+                $hostPool.FirstPartyExtensionAutoUpdateTeamsMediaOptimization | Should -Be $InitialState
+            }
+
+            $updatedHostPool = Update-AzWvdHostPool @updateParameters `
+                -FirstPartyExtensionAutoUpdateTeamsMediaOptimization:$targetState
+            foreach ($hostPool in @($updatedHostPool, (Get-AzWvdHostPool @resourceParameters))) {
+                $hostPool.FirstPartyExtensionAutoUpdateMicrosoftMultimediaRedirection | Should -Be $targetState
+                $hostPool.FirstPartyExtensionAutoUpdateTeamsMediaOptimization | Should -Be $targetState
+            }
+
+            $updatedHostPool = Update-AzWvdHostPool @updateParameters -FriendlyName "fp-$Scenario"
+            foreach ($hostPool in @($updatedHostPool, (Get-AzWvdHostPool @resourceParameters))) {
+                $hostPool.FriendlyName | Should -Be "fp-$Scenario"
+                $hostPool.FirstPartyExtensionAutoUpdateMicrosoftMultimediaRedirection | Should -Be $targetState
+                $hostPool.FirstPartyExtensionAutoUpdateTeamsMediaOptimization | Should -Be $targetState
+            }
+        }
+        finally {
+            if ($null -ne $createdHostPool) {
+                Remove-AzWvdHostPool @resourceParameters -Confirm:$false
+            }
+        }
+    }
+
     It 'Update' {
         try{
             $hostPool = New-AzWvdHostPool -SubscriptionId $env.SubscriptionId `

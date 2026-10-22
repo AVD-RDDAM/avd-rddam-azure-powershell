@@ -50,7 +50,7 @@ require:
 sanitize-names: true
 subject-prefix: 'Wvd'
 input-file:
-- $(repo)/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/DesktopVirtualization/preview/2026-04-01-preview/desktopvirtualization.json
+- https://github.com/AVD-RDDAM/avd-rest-api-specs/blob/users/zhongjieli/desktopvirtualization-2026-08-01-preview/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/DesktopVirtualization/preview/2026-08-01-preview/desktopvirtualization.json
 
 module-version: 2.1.0
 title: DesktopVirtualizationClient
